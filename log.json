@@ -1,5 +1,56 @@
 [
   {
+    "evento_id": "2026-08-30-821bab9b",
+    "timestamp": "2026-08-30T16:37:28.068381+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "aviso": "sin snapshot de métricas todavía, decide con prudencia"
+    },
+    "razonamiento": "### Razonamiento Estratégico\n\n#### 1. Análisis de Estado y Diagnóstico\n- **Métricas:** Inicio de fase de indexación (Escalón 1 de la escalera). No hay histórico de clics ni impresiones aún. La prioridad matemática es construir el corpus técnico indexable y asegurar consistencia canónica sin enlaces rotos.\n- **Auditoría de Enlaces:** El `index.html` actual tenía un hipervínculo hacia `/ratio-extraccion.html` que no existía físicamente en el repositorio. Según las reglas del experimento, un enlace interno roto anula el turno completo. La acción prioritaria es generar `ratio-extraccion.html` con profundidad analítica extrema y actualizar `index.html` y `log.html` (resolviendo placeholders residuales como `[NOMBRE]`).\n- **Presupuesto:** Quedan 4.997 € con `dias_hasta_reinicio_del_tope: 1`. Al no ser acumulable, se selecciona `modelo_siguiente: \"potente\"` para mantener el estándar de arquitectura analítica sin penalización presupuestaria.\n\n#### 2. Hipótesis y Acción Técnica\n- **Pieza nueva:** Creación de `/ratio-extraccion.html` atacando la física del ratio de extracción ($1:1.5$ ristretto a $1:3$ lungo), fórmulas exactas de Rendimiento de Extracción ($EY = \\frac{\\text{TDS} \\times M_{\\text{líquido}}}{M_{\\text{dosis}}}$), cinética de solubilidad por masa molecular y matriz de calibración por grado de tueste (Agtron).\n- **Marcado Estructurado:** Inyección de JSON-LD (`TechArticle` y `FAQPage`) validado para capturar fragmentos enriquecidos y respuestas directas en SERPs.\n- **Tipografía y Rendimiento:** Implementación de pila de fuentes nativas del sistema (`ui-monospace`, `system-ui`) para eliminar bloqueos de renderizado (FCP/LCP < 0.8s) y reflejar la identidad visual de terminal de datos de laboratorio.\n\n---",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación del análisis técnico de ratios de extracción (fórmulas EY/TDS y tabla paramétrica) y corrección de enlaces en index y log.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/f60aa3f",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 91,
+        "quitadas": 1
+      },
+      {
+        "archivo": "log.html",
+        "anadidas": 74,
+        "quitadas": 27
+      },
+      {
+        "archivo": "ratio-extraccion.html",
+        "anadidas": 215,
+        "quitadas": 1
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "wdt needles 0.35mm vs 0.4mm extraction yield",
+      "grind size distribution fines boulders espresso",
+      "pre-infusion pressure profiling flow rate"
+    ],
+    "busquedas_recibidas": [
+      "distribución WDT efectos físicos",
+      "que es el dial in en espresso",
+      "retenencia molinos espresso datos"
+    ],
+    "imagenes_siguiente_turno": [],
+    "imagenes_recibidas": null,
+    "envio": null,
+    "tier_usado": "semanal",
+    "tokens_in": 9322,
+    "tokens_out": 6470,
+    "coste_estimado": 0.031254,
+    "duracion_seg": 29.32,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-08-30-sin-suscriptores",
     "timestamp": "2026-08-30T16:30:03.102165+00:00",
     "modelo_exacto": null,
