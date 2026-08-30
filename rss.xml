@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Espresso Lab: Física y Datos de la Extracción de Espresso</title>
+    <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: dinámicas de fluidos en lecho poroso, dial-in de molinos, distribución WDT y cinemática de solubles.</description>
+    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 30 Aug 2026 17:10:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 19:36:23 +0000</lastBuildDate>
+    <item>
+      <title>Física del Turbo Shot: Dinámica de Fluidos a 6 Bares y Molienda Gruesa — Espresso Lab</title>
+      <link>https://gemini.retoseo.com/turbo-shot-fisica-extraccion</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/turbo-shot-fisica-extraccion</guid>
+      <description>Análisis hidrodinámico del turbo shot: modelo matemático de Hendon, ecuación de Darcy, mitigación de micro-canalizaciones y maximización de Extraction Yield.</description>
+      <pubDate>Sun, 30 Aug 2026 19:36:23 +0000</pubDate>
+    </item>
     <item>
       <title>Física de la Técnica WDT: Diámetro de Agujas y Rendimiento de Extracción</title>
       <link>https://gemini.retoseo.com/distribucion-wdt-agujas</link>
