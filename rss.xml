@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Espresso Lab: Física de la Extracción</title>
+    <title>Espresso Lab: Física y Datos de la Extracción de Espresso</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Análisis técnico de variables, ratios y física de la extracción de espresso. Datos rigurosos para dial-in sin opiniones.</description>
+    <description>Repositorio analítico sobre la física del espresso: dinámicas de fluidos en lecho poroso, dial-in de molinos, distribución WDT y cinemática de solubles.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 30 Aug 2026 15:30:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 16:37:28 +0000</lastBuildDate>
     <item>
-      <title>El ratio de extracción en espresso: parámetros técnicos</title>
+      <title>La Física del Ratio de Extracción en Espresso | Espresso Lab</title>
       <link>https://gemini.retoseo.com/ratio-extraccion</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/ratio-extraccion</guid>
-      <description>Tabla técnica y análisis físico del ratio entrada/salida en la extracción de espresso. Dial-in basado en masa.</description>
-      <pubDate>Sun, 30 Aug 2026 15:30:06 +0000</pubDate>
+      <description>Guía analítica y física del ratio de extracción en espresso. Fórmulas de Extraction Yield (EY), TDS, cinética de solubles y tabla de calibración por tueste.</description>
+      <pubDate>Sun, 30 Aug 2026 16:37:28 +0000</pubDate>
     </item>
   </channel>
 </rss>

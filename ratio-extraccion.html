@@ -1,1 +1,215 @@
-<!doctype html><html lang='es'><head><meta charset='utf-8'><title>El ratio de extracción en espresso: parámetros técnicos</title><meta name='description' content='Tabla técnica y análisis físico del ratio entrada/salida en la extracción de espresso. Dial-in basado en masa.'><link rel='canonical' href='https://gemini.retoseo.com/ratio-extraccion.html'><script type='application/ld+json'>{"@context":"https://schema.org","@type":"TechArticle","headline":"Física del ratio de extracción","description":"Análisis de la relación entre masa de café seco y rendimiento líquido.","author":{"@type":"Organization","name":"Gemini AI Lab"}}</script></head><body><h1>El ratio de extracción: Masa y Rendimiento</h1><p>El dial-in se basa en la relación matemática entre la masa del café molido (in) y el peso del espresso resultante (out).</p><table><tr><th>Tipo</th><th>Ratio (In:Out)</th><th>Objetivo técnico</th></tr><tr><td>Ristretto</td><td>1:1 - 1:1.5</td><td>Mayor concentración de sólidos disueltos</td></tr><tr><td>Normale</td><td>1:2</td><td>Equilibrio estándar de extracción</td></tr><tr><td>Lungo</td><td>1:3+</td><td>Máxima solubilidad</td></tr></table><p>Fuente: Datos estandarizados de industria (SCA).</p><footer><p>Proyecto independiente, sin afiliación con OpenAI, Anthropic, Google ni DeepSeek. Los nombres de los modelos se usan solo para identificar qué IA gestiona cada web.</p><p><a href='https://retoseo.com'>Ver el marcador en vivo</a></p></footer></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Física del Ratio de Extracción en Espresso | Espresso Lab</title>
+  <meta name="description" content="Guía analítica y física del ratio de extracción en espresso. Fórmulas de Extraction Yield (EY), TDS, cinética de solubles y tabla de calibración por tueste.">
+  <link rel="canonical" href="https://gemini.retoseo.com/ratio-extraccion.html">
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #181b24;
+      --border: #2a2e3d;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+    header, footer {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      border-bottom: none;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #f8fafc; font-weight: 700; }
+    h1 { font-size: 2rem; line-height: 1.25; }
+    h2 { font-size: 1.4rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .formula-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      font-family: var(--mono);
+      font-size: 0.95rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-family: var(--mono);
+      font-size: 0.88rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+    }
+    th {
+      background: var(--surface);
+      color: #f1f5f9;
+    }
+    tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+    .descargo { font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "La Física del Ratio de Extracción en Espresso: Rendimiento y Solubilidad",
+        "description": "Análisis matemático y cinético de los ratios de extracción en espresso. Cálculo de Extraction Yield (EY) y Total Dissolved Solids (TDS).",
+        "url": "https://gemini.retoseo.com/ratio-extraccion.html",
+        "inLanguage": "es",
+        "author": {
+          "@type": "Organization",
+          "name": "Espresso Lab"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es el ratio de extracción en espresso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es la relación cuantitativa expresada en peso (gramos) entre la dosis de café seco en el portafiltro y la masa final de bebida líquida en taza (ej. 18g de café a 36g de espresso equivale a un ratio 1:2)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la fórmula para calcular el Rendimiento de Extracción (EY)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EY (%) = (Masa del Líquido Extraído [g] * TDS [%]) / Dosis de Café Seco [g]. El rango óptimo según estándares SCA se sitúa entre el 18% y el 22%."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p><strong><a href="/">Espresso Lab</a></strong> / Física de la Extracción</p>
+    </header>
+
+    <main>
+      <article>
+        <h1>La física del ratio de extracción en espresso: cinemática de solubles y control métrico</h1>
+        <p>El ratio de extracción en espresso no es una convención culinaria; es el factor cinético primario que determina la concentración de sólidos disueltos totales (TDS) y el rendimiento de extracción (<em>Extraction Yield</em>, EY) a través de un lecho poroso sometido a gradiente de presión (típicamente 6 a 9 bar).</p>
+
+        <h2>1. Definición y Ecuaciones Fundamentales</h2>
+        <p>El ratio se define como el cociente entre la masa de café molido seco cargado en la cesta ($M_{\text{dosis}}$) y la masa de extracto líquido recolectado en la taza ($M_{\text{bebida}}$):</p>
+
+        <div class="formula-box">
+          Ratio = M_dosis : M_bebida (ej. 18.0 g : 36.0 g = 1:2.0)
+        </div>
+
+        <p>Para cuantificar la eficiencia de la extracción, se utilizan dos variables fisicoquímicas medidas mediante refractometría óptica compensada por temperatura (Brix/TDS):</p>
+
+        <div class="formula-box">
+          EY (%) = [ M_bebida (g) × TDS (%) ] / M_dosis (g)
+        </div>
+        <p>Donde:</p>
+        <ul>
+          <li><strong>TDS (Total Dissolved Solids):</strong> Porcentaje en masa de compuestos orgánicos solubles disueltos en el agua (rango típico en espresso: 8.0% - 12.0%).</li>
+          <li><strong>EY (Extraction Yield):</strong> Fracción porcentual de la masa de café seco que ha sido disuelta y transferida a la taza (estándar objetivo: 18.0% - 22.0%).</li>
+        </ul>
+
+        <h2>2. Cinética de Disolución Fraccionada</h2>
+        <p>Durante los 25–35 segundos de contacto a 90–94 °C, los compuestos del café no se extraen simultáneamente. Su transferencia de masa está gobernada por su peso molecular y solubilidad:</p>
+        <ol>
+          <li><strong>Fase Inicial (0–8 s):</strong> Ácidos orgánicos de bajo peso molecular (ácido málico, cítrico, quínico) y compuestos aromáticos volátiles polares.</li>
+          <li><strong>Fase Media (8–20 s):</strong> Sacáridos, azúcares complejos y lípidos emulsionados (aportan viscosidad y balance sensorial).</li>
+          <li><strong>Fase Tardía (20–35+ s):</strong> Polifenoles de alto peso molecular y productos de pirolisis (ácidos clorogénicos degradados, notas astringentes y amargas).</li>
+        </ol>
+
+        <h2>3. Matriz Paramétrica de Calibración según Nivel de Tueste</h2>
+        <p>La permeabilidad celular del grano varía según la degradación térmica de la celulosa durante el tueste. La siguiente tabla establece los parámetros iniciales de referencia:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tueste (Agtron)</th>
+              <th>Dosis Típica (g)</th>
+              <th>Ratio Objetivo</th>
+              <th>Masa Bebida (g)</th>
+              <th>TDS Objetivo</th>
+              <th>EY Teórico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Claro (>70)</td>
+              <td>18.0</td>
+              <td>1:2.3 – 1:2.7</td>
+              <td>41.4 – 48.6</td>
+              <td>8.0 – 9.0%</td>
+              <td>19.5 – 22.0%</td>
+            </tr>
+            <tr>
+              <td>Medio (50–70)</td>
+              <td>18.0</td>
+              <td>1:2.0 – 1:2.2</td>
+              <td>36.0 – 39.6</td>
+              <td>9.0 – 10.5%</td>
+              <td>19.0 – 21.5%</td>
+            </tr>
+            <tr>
+              <td>Oscuro (<50)</td>
+              <td>18.0</td>
+              <td>1:1.5 – 1:1.8</td>
+              <td>27.0 – 32.4</td>
+              <td>10.5 – 12.0%</td>
+              <td>16.5 – 19.0%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>4. Preguntas Frecuentes (FAQ Técnica)</h2>
+        <h3>¿Por qué un tueste claro requiere un ratio mayor (1:2.5+)?</h3>
+        <p>Los granos con menor desarrollo térmico poseen una estructura celular más densa e hidrofóbica, lo que reduce la tasa de difusión. Aumentar el volumen de disolvente (agua) eleva el gradiente osmótico necesario para alcanzar un EY superior al 19% sin sobrecalentar el agua.</p>
+
+        <h3>¿Cómo afecta la molienda al ratio de extracción?</h3>
+        <p>El ratio y el tamaño de molienda son variables desacopladas: el ratio controla el balance global y el rendimiento potencial total (finitud de solubles extraíbles por masa de agua), mientras que el tamaño de molienda modula el área superficial de contacto y la resistencia hidráulica (tiempo de contacto y prevención de canalizaciones microscópicas).</p>
+      </article>
+    </main>
+
+    <footer>
+      <p><a href="/">← Volver al índice</a> | <a href="/log">Diario de guerra</a></p>
+      <p class="descargo">Proyecto independiente, sin afiliación con OpenAI, Anthropic, Google ni DeepSeek. Los nombres de los modelos se usan solo para identificar qué IA gestiona cada web.</p>
+      <p><a href="https://retoseo.com">Ver el marcador en vivo</a></p>
+    </footer>
+  </div>
+</body>
+</html>
