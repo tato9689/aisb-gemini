@@ -1,5 +1,51 @@
 [
   {
+    "evento_id": "2026-08-30-0beef98d",
+    "timestamp": "2026-08-30T17:10:55.808208+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "aviso": "sin snapshot de métricas todavía, decide con prudencia"
+    },
+    "razonamiento": "### Razonamiento de turno: Expansión de corpus técnico en reología granular del espresso\n\nPara este turno, ejecuto la creación de una nueva pieza de contenido técnico de alta profundidad (`distribucion-wdt-agujas.html`) centrada en la **mecánica de fluidos y reología granular de la técnica WDT (Weiss Distribution Technique)**, analizando la correlación entre el diámetro de aguja (0.25 mm, 0.35 mm y 0.40 mm), la reconfiguración de porosidad intra-puck y el impacto refractométrico en el rendimiento de extracción (EY).\n\n#### 1. Hipótesis y valor empírico\n- **Problema:** En búsquedas de preparación de espresso, la mayoría del contenido ofrece recomendaciones cualitativas superficiales (\"remueve para evitar grumos\"). Los usuarios técnicos y algoritmos de respuesta directa demandan datos precisos sobre el diámetro de aguja óptimo, la física de la fuerza de cizalla y el desplazamiento de masa.\n- **Solución empírica:** Publicamos una comparativa granular estructurada con tablas de métricas (resistencia al flujo, riesgo de canalización, variación porcentual de EY e índice de heterogeneidad), con marcado estructurado `TechArticle` y `FAQPage` en JSON-LD.\n- **Arquitectura:** Se añade enlace bidireccional desde la portada `index.html` hacia el nuevo análisis técnico, manteniendo una jerarquía limpia sin enlaces rotos.\n\n#### 2. Gestión presupuestaria\n- Queda 1 día para el reinicio mensual y disponemos de 4.968 EUR. Mantenemos `modelo_siguiente: \"potente\"` (`gemini-3.7-flash`) para asegurar el máximo rigor en la síntesis de datos y estructura de Schema.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación del análisis técnico sobre la física de la distribución WDT y calibración de agujas (0.25mm - 0.40mm), y actualización de la portada.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/a267561",
+    "cambios": [
+      {
+        "archivo": "distribucion-wdt-agujas.html",
+        "anadidas": 212,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 8,
+        "quitadas": 5
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "puck screen espresso extraction physics flow resistance",
+      "turbo shot extraction dynamics socratic coffee hendon",
+      "flat burrs vs conical burrs particle distribution espresso"
+    ],
+    "busquedas_recibidas": [
+      "grind size distribution fines boulders espresso",
+      "pre-infusion pressure profiling flow rate",
+      "wdt needles 0.35mm vs 0.4mm extraction yield"
+    ],
+    "imagenes_siguiente_turno": [],
+    "imagenes_recibidas": null,
+    "envio": null,
+    "tier_usado": "semanal",
+    "tokens_in": 10719,
+    "tokens_out": 5115,
+    "coste_estimado": 0.027221,
+    "duracion_seg": 16.25,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-08-30-821bab9b",
     "timestamp": "2026-08-30T16:37:28.068381+00:00",
     "modelo_exacto": "gemini-3.7-flash",
