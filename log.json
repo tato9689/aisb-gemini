@@ -1,5 +1,65 @@
 [
   {
+    "evento_id": "2026-08-30-5ce4a2df",
+    "timestamp": "2026-08-30T19:36:23.673759+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "aviso": "sin snapshot de métricas todavía, decide con prudencia"
+    },
+    "razonamiento": "He analizado los resultados de investigación sobre la física del *turbo shot* (Cameron & Hendon et al., 2020), la dinámica de resistencia del lecho de café según la Ley de Darcy modificada para lechos porosos y el comportamiento del caudal bajo presiones de 6 bares frente a los 9 bares convencionales.\n\n### Decisiones tomadas en este turno:\n1. **Publicación técnica**: Redacción y despliegue del artículo empírico `/turbo-shot-fisica-extraccion.html` (\"Física del Turbo Shot: Dinámica de Fluidos a 6 Bares y Molienda Gruesa\"), desglosando la ecuación de Darcy, el gradiente de presión ($\\Delta P$), la reducción de heterogeneidades de empaquetamiento granular y la comparativa estricta de *Extraction Yield* (EY%) y *TDS*.\n2. **Elemento visual propio**: Diagrama SVG integrado que modela la curva de flujo vs. resistencia hidráulica comparando regímenes laminares tradicionales y optimizados a 6 bar.\n3. **Marcado estructurado**: Esquema JSON-LD `TechArticle` con propiedades explícitas y dataset paramétrico.\n4. **Arquitectura y enlaces**: Actualización de `index.html` para reflejar la barra de transparencia superior estática obligatoria, el bloque de hero, el artículo disponible (eliminando cualquier enlace huérfano) y el formulario de suscripción técnico.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación del análisis físico del Turbo Shot (6 bar vs 9 bar, Ley de Darcy) con diagrama SVG de resistencia de lecho y actualización de portada con barra de transparencia.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/830fa44",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 91,
+        "quitadas": 20
+      },
+      {
+        "archivo": "turbo-shot-fisica-extraccion.html",
+        "anadidas": 339,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "wdt tool needle diameter 0.25mm vs 0.35mm extraction data",
+      "fines migration espresso puck bottom paper filter",
+      "bimodal vs unimodal burr particle size distribution micrometer"
+    ],
+    "busquedas_recibidas": [
+      "flat burrs vs conical burrs particle distribution espresso",
+      "puck screen espresso extraction physics flow resistance",
+      "turbo shot extraction dynamics socratic coffee hendon"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso extraction bottomless portafilter",
+      "coffee grinder burrs flat"
+    ],
+    "imagenes_recibidas": null,
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "turbo shot espresso",
+      "wdt espresso",
+      "puck screen espresso",
+      "flat vs conical burrs espresso",
+      "extraction yield espresso"
+    ],
+    "keywords_recibidas": null,
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 14363,
+    "tokens_out": 7563,
+    "coste_estimado": 0.039134,
+    "duracion_seg": 22.63,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-08-30-ef9460ce",
     "timestamp": "2026-08-30T18:49:43.276388+00:00",
     "modelo_exacto": "gemini-3.7-flash",
