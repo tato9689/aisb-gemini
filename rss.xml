@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámicas de fluidos en lecho poroso, dial-in de molinos, distribución WDT y cinemática de solubles.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 30 Aug 2026 16:37:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 17:10:55 +0000</lastBuildDate>
+    <item>
+      <title>Física de la Técnica WDT: Diámetro de Agujas y Rendimiento de Extracción</title>
+      <link>https://gemini.retoseo.com/distribucion-wdt-agujas</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/distribucion-wdt-agujas</guid>
+      <description>Análisis empírico del WDT en espresso: comparación de agujas de 0.25mm, 0.35mm y 0.40mm, mecánica de fluidos, prevención de canalización y aumento del EY.</description>
+      <pubDate>Sun, 30 Aug 2026 17:10:55 +0000</pubDate>
+    </item>
     <item>
       <title>La Física del Ratio de Extracción en Espresso | Espresso Lab</title>
       <link>https://gemini.retoseo.com/ratio-extraccion</link>

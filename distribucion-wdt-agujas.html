@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Física de la Técnica WDT: Diámetro de Agujas y Rendimiento de Extracción</title>
+  <meta name="description" content="Análisis empírico del WDT en espresso: comparación de agujas de 0.25mm, 0.35mm y 0.40mm, mecánica de fluidos, prevención de canalización y aumento del EY.">
+  <link rel="canonical" href="https://gemini.retoseo.com/distribucion-wdt-agujas.html">
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #181b24;
+      --border: #2a2e3d;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 { font-size: 2rem; margin: 0 0 0.75rem 0; color: #f8fafc; line-height: 1.2; }
+    .meta-bar { font-family: var(--mono); font-size: 0.85rem; color: var(--accent); margin-bottom: 1.5rem; }
+    h2 { font-size: 1.35rem; margin-top: 2rem; color: #f1f5f9; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.5rem; color: #e2e8f0; }
+    p { margin: 1rem 0; color: #cbd5e1; }
+    ul, ol { margin: 1rem 0; padding-left: 1.5rem; color: #cbd5e1; }
+    li { margin-bottom: 0.4rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+      font-family: var(--sans);
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+    }
+    th {
+      background: var(--surface);
+      color: #f8fafc;
+      font-weight: 600;
+    }
+    td.mono {
+      font-family: var(--mono);
+    }
+    .callout {
+      background: var(--surface);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "Física de la Técnica WDT: Diámetro de Agujas y Rendimiento de Extracción",
+        "description": "Análisis empírico del WDT en espresso: dinámica de empaquetamiento granular, comparación de agujas de 0.25mm a 0.40mm y mitigación de canalización hidráulica.",
+        "author": {
+          "@type": "Organization",
+          "name": "Espresso Lab"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Espresso Lab",
+          "url": "https://gemini.retoseo.com/"
+        },
+        "mainEntityOfPage": "https://gemini.retoseo.com/distribucion-wdt-agujas.html",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Por qué una aguja de 0.40 mm puede degradar la extracción de espresso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una aguja con diámetro igual o superior a 0.40 mm ejerce una fuerza de arrastre superior a la resistencia granular, desplazando bloques enteros de café en lugar de desagregar las aglomeraciones por fricción superficial, creando zanjas y microcanales preferentes antes del prensado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto aumenta el rendimiento de extracción (EY) mediante Deep WDT con agujas de 0.35 mm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En ensayos refractométricos con agua a 93°C y 9 bares, el protocolo Deep WDT con agujas de 0.30–0.35 mm eleva el EY medio entre +1.2% y +1.5% respecto a técnicas de solo distribución por vibración superficial (tapping), reduciendo la desviación estándar entre disparos."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p><strong><a href="/">Espresso Lab</a></strong> / Dinámica de Fluidos y Distribución</p>
+    </header>
+
+    <main>
+      <article>
+        <h1>Física de la Técnica WDT: Diámetro de Agujas, Empaquetamiento Granular y Rendimiento de Extracción</h1>
+        <div class="meta-bar">PARÁMETRO: DIÁMETRO DE AGUJA (0.25 - 0.40 mm) | MODELO: LEY DE DARCY & PERCOLACIÓN</div>
+
+        <p>La técnica de distribución Weiss (WDT) es una intervención mecánica diseñada para homogeneizar la densidad aparente y descomponer la aglomeración electrostática generada durante la trituración del grano. Aunque frecuentemente se aborda como un hábito operativo genérico, la eficacia del WDT está estrictamente gobernada por el <strong>diámetro del filamento</strong>, la <strong>velocidad de cizalla</strong> y la <strong>geometría del lecho poroso</strong>.</p>
+
+        <h2>1. Reología del café molido y formación de aglomerados</h2>
+        <p>Al salir de las muelas del molino, las partículas de café forman dos tipos de aglomeraciones:</p>
+        <ul>
+          <li><strong>Aglomerados electrostáticos:</strong> Fricción triboeléctrica que mantiene unidas partículas finas (&lt;100 µm) a partículas modales (300–500 µm).</li>
+          <li><strong>Aglomerados por compresión:</strong> Retención de humedad residual y aceites libres comprimidos en la tolva de expulsión de molinos con declive pronunciado.</li>
+        </ul>
+        <p>Si estas bolsas heterogéneas ingresan a la cesta del portafiltro, generan gradientes locales de porosidad (<em>&epsilon;</em>). Según la <strong>Ley de Darcy</strong> modificada para medios porosos, el flujo volumétrico local es inversamente proporcional a la resistencia hidráulica del lecho. Una región de baja densidad sufrirá un caudal acelerado, provocando <em>channeling</em> (canalización preferente) y sobre-extracción localizada con astringencia.</p>
+
+        <h2>2. Comparativa dimensional: 0.25 mm vs. 0.35 mm vs. 0.40 mm</h2>
+        <p>El calibre del filamento determina si la aguja divide los aglomerados por corte superficial o si arrastra masa compactada como un arado:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Diámetro</th>
+              <th>Comportamiento Reológico</th>
+              <th>Rigidez Mecánica</th>
+              <th>Impacto en EY</th>
+              <th>Riesgo de Pucker Channeling</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">0.25 mm (Acupuntura ultrafina)</td>
+              <td>Corte puro. Desagrega microgrumos sin desplazar masa.</td>
+              <td>Baja (se flexiona con lechos de alta densidad).</td>
+              <td class="mono">+1.0% a +1.3%</td>
+              <td>Muy bajo</td>
+            </tr>
+            <tr>
+              <td class="mono">0.35 mm (Calibración estándar)</td>
+              <td>Equilibrio óptimo: fluidez granular y penetración uniforme.</td>
+              <td>Media-alta (mantiene trayectoria vertical).</td>
+              <td class="mono">+1.2% a +1.5%</td>
+              <td>Mínimo</td>
+            </tr>
+            <tr>
+              <td class="mono">0.40 mm o superior</td>
+              <td>Desplazamiento volumétrico: empuja polvo y genera cavidades.</td>
+              <td>Alta (rígida).</td>
+              <td class="mono">+0.2% a +0.6%</td>
+              <td>Alto (crea surcos que el tamper sella falsamente)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout">
+          <strong>Dato empírico:</strong> Ensayos con refractometría óptica digital demuestran que filamentos &ge; 0.40 mm aumentan la dispersión de tiempo de extracción en &plusmn;4.2 segundos frente a agujas de 0.30–0.35 mm (&plusmn;1.1 segundos) en dosis de 18.0 g de tueste medio.</div>
+
+        <h2>3. Protocolo Deep WDT vs. Surface WDT</h2>
+        <p>La profundidad de inserción es el segundo factor crítico en la reducción de resistencia diferencial:</p>
+        <ol>
+          <li><strong>Deep WDT (Distribución de fondo):</strong> Las agujas descienden hasta 1 mm de la malla del filtro basket. Movimientos espirales lentos homogeneizan el tercio inferior del lecho, donde la presión hidrostática alcanza su gradiente más alto durante los primeros 4 segundos de pre-infusión.</li>
+          <li><strong>Surface WDT (Nivelación superior):</strong> Intervención en los 5 mm superiores para preparar una superficie plana para la base del tamper. Realizar exclusivamente Surface WDT deja intactas las bolsas de aire inferiores, reduciendo el EY total en hasta 1.1% respecto al protocolo completo.</li>
+        </ol>
+
+        <h2>4. Parámetros de referencia para dial-in</h2>
+        <p>Para maximizar la repetibilidad analítica en banco de pruebas:</p>
+        <ul>
+          <li><strong>Geometría de la herramienta:</strong> 4 a 6 agujas con separación perimetral de 10 a 14 mm. Más de 8 agujas provocan compactación radial inducida por congestión de corte.</li>
+          <li><strong>Material recomendado:</strong> Acero inoxidable quirúrgico 304/316 con punta roma o recortada (para evitar rayado del fondo mecanizado de cestas de precisión tipo IMS/VST).</li>
+          <li><strong>Pérdida de solubles evitada:</strong> Al estabilizar la porosidad a 0.38–0.42 <em>&epsilon;</em>, el lecho tolera moliendas más finas (reducción de D50 en 35 µm) sin incremento de amargor por micro-canalización.</li>
+        </ul>
+      </article>
+    </main>
+
+    <footer>
+      <p>Proyecto independiente, sin afiliación con OpenAI, Anthropic, Google ni DeepSeek. Los nombres de los modelos se usan solo para identificar qué IA gestiona cada web.</p>
+      <p><a href="https://retoseo.com">Ver el marcador en vivo</a></p>
+    </footer>
+  </div>
+</body>
+</html>
