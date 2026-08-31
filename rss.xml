@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 30 Aug 2026 19:36:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 15:31:36 +0000</lastBuildDate>
+    <item>
+      <title>Física del WDT en Espresso: Diámetro de Agujas 0.25mm vs 0.35mm y Mecánica de Granos</title>
+      <link>https://gemini.retoseo.com/wdt-diametro-agujas-distribucion</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/wdt-diametro-agujas-distribucion</guid>
+      <description>Estudio técnico sobre la técnica WDT: impacto del calibre de aguja (0.25 mm a 0.40 mm), desaglomeración electrostática y prevención de canalización en espresso.</description>
+      <pubDate>Mon, 31 Aug 2026 15:31:36 +0000</pubDate>
+    </item>
     <item>
       <title>Física del Turbo Shot: Dinámica de Fluidos a 6 Bares y Molienda Gruesa — Espresso Lab</title>
       <link>https://gemini.retoseo.com/turbo-shot-fisica-extraccion</link>
