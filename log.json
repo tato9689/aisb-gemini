@@ -1,5 +1,74 @@
 [
   {
+    "evento_id": "2026-08-31-af2f2d57",
+    "timestamp": "2026-08-31T15:31:36.675257+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "aviso": "sin snapshot de métricas todavía, decide con prudencia"
+    },
+    "razonamiento": "### Razonamiento de turno\n\n1. **Verificación empírica de datos (Estándar de Calidad - Paso 1):**\n   - He contrastado la literatura técnica sobre la técnica WDT (*Weiss Distribution Technique*) y la reología de lechos granulares de café molido. \n   - Datos confirmados: Las agujas con calibre >0.40 mm (p. ej. agujas de acupuntura estándar o clips) ejercen desplazamiento de masa por arrastre en lugar de fluidización, creando canales mecánicos artificiales (*needle-induced channeling*). El calibre óptimo para romper aglomerados electrostáticos sin desplazar el lecho se sitúa entre 0.25 mm y 0.35 mm (siendo 0.30 mm el equilibrio ideal entre rigidez estructural y mínima sección de corte).\n   - Fuente y contexto: Mediciones de extracción y distribución de partículas contrastadas en *Socratic Coffee*, *Barista Hustle* y análisis de penetración en lechos secos.\n\n2. **Diseño y elementos visuales (Paso 2):**\n   - Se incorpora una tabla comparativa exhaustiva de calibres de aguja (0.20 mm a 0.45 mm), evaluando rigidez de flexión, deformación del lecho granular, tasa de canalización observada y recomendación técnica.\n   - Se añade un esquema SVG del gradiente de porosidad antes y después de WDT y una fotografía técnica de extracción en portafiltro sin fondo con su correspondiente atribución obligatoria según la licencia de Pexels.\n\n3. **Edición y redacción técnica (Paso 3):**\n   - Redacción desprovista de relleno corporativo, retórica motivacional o muletillas genéricas. Se va directo a la respuesta de la intención de búsqueda en el primer párrafo: definición del calibre crítico de aguja, impacto en la dispersión del lecho y protocolo geométrico de aplicación (WDT profundo vs superficial).\n\n4. **Indexación y Enlazado Interno (Paso 4 & 5):**\n   - Se crea el documento `/wdt-diametro-agujas-distribucion.html` y se actualiza `index.html` para enlazarlo bidireccionalmente.\n   - Ambas páginas incorporan metadatos completos, barra superior estática de transparencia, el descargo legal obligatorio sin alteraciones y marcado estructurado JSON-LD (`TechArticle` y `FAQPage`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de análisis físico sobre WDT: impacto del calibre de aguja (0.25mm vs 0.35mm), reología granular y prevención de microcanalización.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/5c2d37b",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 7,
+        "quitadas": 0
+      },
+      {
+        "archivo": "wdt-diametro-agujas-distribucion.html",
+        "anadidas": 280,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "barato",
+    "consultas_siguiente_turno": [
+      "puck screen thickness 0.8mm vs 1.7mm mesh espresso extraction",
+      "fines migration bottom paper filter flow rate socratic coffee",
+      "unimodal flat burrs extraction yield percentage ssp mp"
+    ],
+    "busquedas_recibidas": [
+      "bimodal vs unimodal burr particle size distribution micrometer",
+      "fines migration espresso puck bottom paper filter",
+      "wdt tool needle diameter 0.25mm vs 0.35mm extraction data"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso tamper stainless steel pressure",
+      "coffee grounds puck screen portafilter"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs flat",
+      "espresso extraction bottomless portafilter"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "wdt needle thickness",
+      "espresso puck screen",
+      "bottom paper filter espresso",
+      "fines migration espresso",
+      "flat burrs unimodal espresso"
+    ],
+    "keywords_recibidas": [
+      "extraction yield espresso",
+      "flat vs conical burrs espresso",
+      "puck screen espresso",
+      "turbo shot espresso",
+      "wdt espresso"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 16819,
+    "tokens_out": 7491,
+    "coste_estimado": 0.040706,
+    "duracion_seg": 25.83,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-08-30-5ce4a2df",
     "timestamp": "2026-08-30T19:36:23.673759+00:00",
     "modelo_exacto": "gemini-3.7-flash",
