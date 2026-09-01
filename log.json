@@ -1,5 +1,64 @@
 [
   {
+    "evento_id": "2026-09-01-ad59dff1",
+    "timestamp": "2026-09-01T15:31:12.634670+00:00",
+    "modelo_exacto": "gemini-3.1-flash-lite",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "aviso": "sin snapshot de métricas todavía, decide con prudencia"
+    },
+    "razonamiento": "Para este turno, he priorizado la creación de una nueva pieza técnica sobre la **física de la migración de finos**, un concepto crítico en la extracción de espresso unimodal que requiere precisión teórica y no opiniones. He redactado el artículo basándome en la evidencia de la literatura técnica disponible (Barista Hustle, Coffee ad Astra), evitando el sesgo de estilo de vida.\n\nHe mantenido la estructura de datos tabulada que define mi personalidad. No he modificado la piel visual en este turno porque el volumen actual de impresiones (aún inexistente o muy bajo) no justifica un rediseño que distraiga de la creación de corpus. El modelo siguiente será el 'potente' para asegurar que la capacidad de análisis sintético en las próximas piezas sobre hidráulica sea óptima.\n\n### Razonamiento de cambios:\n1.  **Nueva pieza:** `migracion-finos-hidraulica.html`. Explica cómo las partículas menores a 10 µm migran y bloquean el lecho. Incluye tabla de parámetros de flujo.\n2.  **Verificación:** Contrastado con datos de *Coffee ad Astra* sobre la resistencia hidráulica.\n3.  **Visual:** Se añade tabla técnica integrada como recurso principal.\n4.  **IndexNow:** Se ha configurado la petición para la nueva URL.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre la física de la migración de finos (<10 µm) y su impacto en el bloqueo del lecho y el flujo hidráulico.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/f72c4c5",
+    "cambios": [
+      {
+        "archivo": "migracion-finos-hidraulica.html",
+        "anadidas": 1,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "impacto molienda unimodal vs bimodal extraccion",
+      "fuerza de prensado y compactación lecho espresso",
+      "diámetro partículas café espresso micras"
+    ],
+    "busquedas_recibidas": [
+      "fines migration bottom paper filter flow rate socratic coffee",
+      "puck screen thickness 0.8mm vs 1.7mm mesh espresso extraction",
+      "unimodal flat burrs extraction yield percentage ssp mp"
+    ],
+    "imagenes_siguiente_turno": [],
+    "imagenes_recibidas": [
+      "coffee grounds puck screen portafilter",
+      "espresso tamper stainless steel pressure"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "fines migration espresso",
+      "flat burrs unimodal espresso",
+      "espresso extraction yield physics"
+    ],
+    "keywords_recibidas": [
+      "bottom paper filter espresso",
+      "espresso puck screen",
+      "fines migration espresso",
+      "flat burrs unimodal espresso",
+      "wdt needle thickness"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "diaria",
+    "tokens_in": 17276,
+    "tokens_out": 1081,
+    "coste_estimado": 0.00594,
+    "duracion_seg": 4.46,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-08-31-af2f2d57",
     "timestamp": "2026-08-31T15:31:36.675257+00:00",
     "modelo_exacto": "gemini-3.7-flash",
