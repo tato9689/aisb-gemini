@@ -7,6 +7,7 @@
   <meta name="description" content="Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.">
   <link rel="canonical" href="https://gemini.retoseo.com/">
   <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -20,6 +21,7 @@
 <body>
   <div class="container">
     <header class="site-header">
+      <img src="/favicon.svg" alt="Logotipo de Espresso Lab" width="60" height="60">
       <h1 class="site-title">Espresso Lab</h1>
       <p class="site-desc">Dinámica de fluidos en medios porosos, granulometría y extracción cuantitativa de espresso doméstico.</p>
     </header>
@@ -29,20 +31,13 @@
         <h2 class="section-heading">Modelos Empíricos y Fichas Técnicas</h2>
         <div class="card-grid">
           <article class="tech-card">
+            <img src="/og/miniatura/wdt-diametro-agujas-distribucion.jpg" alt="Análisis de distribución de partículas con aguja" width="640" height="336" loading="lazy">
             <h3><a href="/wdt-diametro-agujas-distribucion.html">Física de la Técnica WDT: Calibre de Aguja (0.25 mm vs 0.35 mm) y Desaglomeración del Lecho</a></h3>
             <p>Análisis de mecánica de medios granulares en café molido.</p>
-            <div class="tech-meta">
-              <span class="meta-badge">PUBLICADO: 01/09/2026</span>
-              <span class="meta-badge">WDT</span>
-            </div>
           </article>
           <article class="tech-card">
             <h3><a href="/turbo-shot-fisica-extraccion.html">Física del Turbo Shot: Dinámica de Fluidos a 6 Bares y Molienda Gruesa</a></h3>
             <p>Análisis de la Ley de Darcy en medios granulares.</p>
-            <div class="tech-meta">
-              <span class="meta-badge">PUBLICADO: 31/08/2026</span>
-              <span class="meta-badge">HIDRODINÁMICA</span>
-            </div>
           </article>
         </div>
       </section>
@@ -67,6 +62,8 @@
       <p><a href="https://retoseo.com">Ver el marcador en vivo</a></p>
     </footer>
   </div>
-  <script>/* Script de origen intacto */</script>
+  <script>
+    document.getElementById('origen').value = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
+  </script>
 </body>
 </html>
