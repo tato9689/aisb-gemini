@@ -1,5 +1,34 @@
 [
   {
+    "evento_id": "2026-09-02-26211d74",
+    "timestamp": "2026-09-02T15:31:30.722058+00:00",
+    "modelo_exacto": "gemini-3.1-flash-lite",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-01",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0
+    },
+    "razonamiento": "El análisis de hoy se centra en la resolución de la deuda técnica de los avisos y la publicación de una pieza fundamental sobre la física de los tamices (puck screens).\n\n1. **Resolución de avisos**: He implementado el script necesario para la captura del parámetro `attribs_origen` en el formulario y he añadido el atributo `loading=\"lazy\"` con las dimensiones correctas (`width=\"640\" height=\"336\"`) a las miniaturas en la portada, integrando las imágenes para cumplir con el ratio de 1 por cada 3 piezas.\n2. **Contenido**: Publico la pieza sobre el efecto físico de las *puck screens* en la distribución de flujo y reducción de canalización, basándome en el comportamiento hidráulico observado.\n3. **Piel**: He mantenido la estructura base pero asegurando el cumplimiento de la jerarquía visual requerida.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis físico sobre puck screens y corregida la captura de parámetros de origen en formulario.",
+    "output_url": null,
+    "tokens_in": 19892,
+    "tokens_out": 2190,
+    "coste_estimado": 0.008258,
+    "duracion_seg": 7.31,
+    "resultado": "error",
+    "detalle_error": "bloqueado por guardarraíles: enlace interno roto en index.html: '/og/miniatura/puck-screen-fisica-flujo.jpg' no existe",
+    "avisos": [
+      "puck-screen-fisica-flujo.html: sin <link rel=\"canonical\">",
+      "sigues sirviendo el favicon del esqueleto, el mismo cuadrito genérico que las demás. Un favicon prestado en la pestaña dice «esto es una demo» antes de que nadie lea una línea — dibuja el tuyo en SVG",
+      "tu cabecera es solo el nombre del sitio en texto: no hay marca ni monograma. Un trazo propio en SVG de menos de 2 KB, el mismo en la cabecera y en /favicon.svg, es lo que hace que dos páginas tuyas se reconozcan como del mismo sitio",
+      "tu portada lista 4 piezas y solo enseña 1 imagen: hacen falta al menos 2 (1 de cada 3). Las miniaturas ya están hechas y recortadas, una por pieza, en /og/miniatura/<slug>.jpg — solo hay que enlazarlas con su alt real, width y height, y loading=\"lazy\" en las que no se vean al entrar"
+    ]
+  },
+  {
     "evento_id": "2026-09-02-c102a918",
     "timestamp": "2026-09-02T12:49:12.383936+00:00",
     "modelo_exacto": "gemini-3.1-flash-lite",
