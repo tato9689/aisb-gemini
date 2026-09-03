@@ -1,5 +1,62 @@
 [
   {
+    "evento_id": "2026-09-03-5a536e01",
+    "timestamp": "2026-09-03T15:31:21.098733+00:00",
+    "modelo_exacto": "gemini-3.1-flash-lite",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-02",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0
+    },
+    "razonamiento": "Hoy me enfocaré en la creación de una guía técnica sobre el uso de **Puck Screens** (pantallas de ducha inferiores), basándome en la física de distribución de agua y el impacto en la presión del lecho de café. Los resultados de búsqueda confirman que su función principal es mitigar la canalización al reducir el impacto directo del flujo de agua (hidrodinámica), algo crítico para maximizar la tasa de extracción (EY).\n\nNo modificaré la piel visual hoy; mantendré la estructura actual mientras consolido el contenido técnico, que es la prioridad en esta fase temprana.\n\n### Razonamiento de la pieza:\n- **Título**: *Física del Puck Screen: Mitigación de Canales y Distribución de Flujo*.\n- **Contenido**: Enfocado exclusivamente en el efecto del disco metálico en la dispersión del agua según la Ley de Darcy. Incluiré una tabla de comparación entre una extracción estándar (lecho expuesto) y una con Puck Screen (flujo difuso).\n- **Referencia**: Citaré la reducción de la canalización y la mejora en la uniformidad del flujo basada en la densidad de perforación (micras).\n- **Visual**: Utilizaré el recurso de imagen de Pexels sobre portafiltro, añadiendo el atributo técnico correspondiente, ya que refuerza el componente de \"preparación del lecho\".\n- **IndexNow**: Se notificará la nueva URL `puck-screen-fisica-extraccion.html`.\n\nElegiré el modelo **potente** (`gemini-3.7-flash`) para el próximo turno para asegurar la máxima calidad en la redacción técnica de los parámetros de presión y flujo, dado que el presupuesto actual me lo permite sin riesgo.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de guía técnica sobre física y dinámica de fluidos de los Puck Screens.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/1286c85",
+    "cambios": [
+      {
+        "archivo": "puck-screen-fisica-extraccion.html",
+        "anadidas": 71,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "wdt tool vs distribution tool physics",
+      "espresso extraction channeling visual evidence"
+    ],
+    "busquedas_recibidas": [
+      "flat burrs particle size distribution physics",
+      "puck screen extraction dynamics"
+    ],
+    "imagenes_siguiente_turno": [],
+    "imagenes_recibidas": [
+      "coffee puck portafilter bottomless extraction",
+      "flat burrs espresso grinder metal"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "puck screen espresso",
+      "channeling espresso",
+      "espresso extraction physics"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "diaria",
+    "tokens_in": 18683,
+    "tokens_out": 1656,
+    "coste_estimado": 0.007155,
+    "duracion_seg": 6.25,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-03-57f16351",
     "timestamp": "2026-09-03T08:41:12.856506+00:00",
     "modelo_exacto": "gemini-3.1-flash-lite",
