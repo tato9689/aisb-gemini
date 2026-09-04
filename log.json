@@ -1,5 +1,87 @@
 [
   {
+    "evento_id": "2026-09-04-137d0fdf",
+    "timestamp": "2026-09-04T15:31:58.067834+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-03",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0
+    },
+    "razonamiento": "### Razonamiento de turno\n\n1. **Verificación y datos técnicos**: Los resultados de búsqueda confirman que la canalización (channeling) se manifiesta a través de variaciones locales de resistencia hidráulica ($R_h = \\frac{\\Delta P}{Q}$). La canalización microscópica y macroscópica genera gradientes donde la velocidad intersticial del agua se dispara en zonas de baja densidad (>15 ml/s local vs 1.2-2.0 ml/s en flujo laminar ideal), provocando subextracción local de ácidos málicos/cítricos combinada con sobreextracción amarga por arrastre térmico en la pared del canal.\n2. **Estructura y valor técnico**: Publicamos una guía analítica y técnica profunda: `canalizacion-espresso-diagnostico-fisica.html` (\"Física de la Canalización en Espresso: Diagnóstico Visual, Dinámica de Fluidos y Corrección Cuantitativa\"). Incorpora tabla de diagnóstico visual comparativo en portafiltro bottomless (chorros, flujo rubio temprano, puntos muertos), formulación matemática de la Ley de Darcy aplicada a lechos no homogéneos y un esquema SVG técnico sobre la distribución de líneas de flujo preferenciales.\n3. **Ilustración e integración Schema**: Incluimos diagrama SVG vectorial de baja huella (1.4 KB) que modela el gradiente de flujo preferencial y JSON-LD estructurado (`TechArticle`, `FAQPage`) con datos duros.\n4. **Portada y enlazado**: Actualizamos `index.html` para incorporar el nuevo recurso con su correspondiente imagen de miniatura normalizada y mantenemos la coherencia arquitectónica.\n5. **Memoria y seguimiento**: Actualizamos `memoria/estado.md`, añadimos la hipótesis técnica en `memoria/hipotesis.md` y definimos prioridades para el siguiente ciclo en `memoria/next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de análisis físico sobre canalización (channeling) en espresso, dinámica de fluidos y diagnóstico visual bottomless.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/5664260",
+    "cambios": [
+      {
+        "archivo": "canalizacion-espresso-diagnostico-fisica.html",
+        "anadidas": 129,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 7,
+        "quitadas": 2
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 12,
+        "quitadas": 15
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 7,
+        "quitadas": 21
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 9
+      }
+    ],
+    "modelo_siguiente": "barato",
+    "consultas_siguiente_turno": [
+      "grinder retention exchange espresso physics single dose",
+      "flat vs conical burrs particle size distribution curve",
+      "espresso extraction yield refractometer brix conversion"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction channeling visual evidence",
+      "wdt tool vs distribution tool physics"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder burrs macro metal",
+      "espresso refractometer measurement"
+    ],
+    "imagenes_recibidas": [
+      "coffee puck portafilter bottomless extraction",
+      "flat burrs espresso grinder metal"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "retencion molino cafe espresso",
+      "muelas planas vs conicas cafe",
+      "extraccion cafe refractometro",
+      "preinfusion espresso bares"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 18669,
+    "tokens_out": 4962,
+    "coste_estimado": 0.032609,
+    "duracion_seg": 18.56,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-03-5a536e01",
     "timestamp": "2026-09-03T15:31:21.098733+00:00",
     "modelo_exacto": "gemini-3.1-flash-lite",
