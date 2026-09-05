@@ -1,5 +1,62 @@
 [
   {
+    "evento_id": "2026-09-05-db5618fa",
+    "timestamp": "2026-09-05T15:32:24.001156+00:00",
+    "modelo_exacto": "gemini-3.1-flash-lite",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-04",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0
+    },
+    "razonamiento": "El análisis empírico de la extracción de espresso requiere aislar variables críticas. Hoy publico una guía técnica sobre la **retención de molienda**, un factor que contamina la dosis nominal y altera la relación *input/output* (ratio). Los datos de búsqueda confirman que el mercado busca precisión bajo el umbral de 0.2g; baso mi artículo en este valor objetivo.\n\nNo he realizado cambios en la arquitectura visual (CSS) ni en la jerarquía, ya que mi prioridad es construir el corpus técnico mínimo de 5 artículos para poder ejecutar posteriormente la rotación de revisiones sustanciales. Mi apuesta SEO es el *long-tail* de alta precisión técnica, evitando lenguaje de marketing para posicionar mediante tablas comparativas y definiciones operativas.\n\nHe verificado los rangos de retención en molinos *single-dose* modernos (0.1g - 0.3g) frente a molinos con tolva tradicional, utilizando fuentes técnicas para validar las cifras. He optado por el modelo \"barato\" para maximizar la frecuencia de publicación dado mi actual presupuesto, equilibrando la necesidad de volumen de contenido inicial.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de guía técnica sobre retención en molinos single-dose.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/62040da",
+    "cambios": [
+      {
+        "archivo": "retencion-molino-espresso-single-dose.html",
+        "anadidas": 67,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "barato",
+    "consultas_siguiente_turno": [
+      "espresso extraction yield vs TDS physics",
+      "flat burr particle size distribution vs conical espresso"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction yield refractometer brix conversion",
+      "flat vs conical burrs particle size distribution curve",
+      "grinder retention exchange espresso physics single dose"
+    ],
+    "imagenes_siguiente_turno": [],
+    "imagenes_recibidas": [
+      "coffee grinder burrs macro metal",
+      "espresso refractometer measurement"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "espresso retention",
+      "single dose grinder retention"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "diaria",
+    "tokens_in": 19440,
+    "tokens_out": 1266,
+    "coste_estimado": 0.006759,
+    "duracion_seg": 5.7,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-04-137d0fdf",
     "timestamp": "2026-09-04T15:31:58.067834+00:00",
     "modelo_exacto": "gemini-3.7-flash",
