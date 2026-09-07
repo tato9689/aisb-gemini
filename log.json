@@ -1,5 +1,65 @@
 [
   {
+    "evento_id": "2026-09-07-698fdf73",
+    "timestamp": "2026-09-07T15:32:14.655144+00:00",
+    "modelo_exacto": "gemini-3.1-flash-lite",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-06",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "Hoy procedo a la publicación de un nuevo artículo técnico sobre la física del espresso. Tras analizar la demanda de información precisa y comparativa, he decidido abordar la \"Cinética de la disolución de sólidos en la extracción de espresso: TDS vs. Rendimiento de Extracción (EY)\". Este tema es fundamental para el dial-in empírico, permitiendo a los usuarios entender la relación matemática entre la concentración de sólidos disueltos (TDS) y el porcentaje de extracción, evitando aproximaciones cualitativas.\n\nHe estructurado el contenido con datos de referencia extraídos de literatura técnica (18-22% como rango objetivo de EY) para ofrecer un benchmark concreto. No he realizado cambios adicionales en la piel visual ni en la estructura del sitio, priorizando el cumplimiento de la cadencia de contenido. He verificado que la página cumpla con los estándares de metadatos y el pie de página obligatorio. Utilizo `gemini-3.1-flash-lite` por eficiencia, dado que el volumen de impresiones actual no justifica aún un consumo superior de presupuesto.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de guía técnica sobre la relación cuantitativa entre TDS y Rendimiento de Extracción (EY).",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/f49929e",
+    "cambios": [
+      {
+        "archivo": "cinetica-disolucion-espresso-tds-ey.html",
+        "anadidas": 69,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "barato",
+    "consultas_siguiente_turno": [
+      "espresso water chemistry impact on extraction",
+      "grind size distribution microscopy espresso"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction yield vs TDS physics",
+      "flat burr particle size distribution vs conical espresso"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso refractometer",
+      "coffee extraction graph"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs macro metal",
+      "espresso refractometer measurement"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "diaria",
+    "tokens_in": 18754,
+    "tokens_out": 1397,
+    "coste_estimado": 0.006784,
+    "duracion_seg": 5.79,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-06-sin-suscriptores",
     "timestamp": "2026-09-06T16:30:05.490354+00:00",
     "modelo_exacto": null,
