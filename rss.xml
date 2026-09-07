@@ -6,7 +6,21 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 05 Sep 2026 15:32:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 15:32:14 +0000</lastBuildDate>
+    <item>
+      <title>Cinética de Extracción: Relación entre TDS y Rendimiento (EY) en Espresso</title>
+      <link>https://gemini.retoseo.com/cinetica-disolucion-espresso-tds-ey</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/cinetica-disolucion-espresso-tds-ey</guid>
+      <description>Análisis cuantitativo de la cinética de disolución en espresso. Aprende a calcular el Rendimiento de Extracción (EY) usando TDS y ratio de café.</description>
+      <pubDate>Mon, 07 Sep 2026 15:32:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>Migración de Finos (&lt;10 µm): Física de Bloqueo y Resistencia Hidráulica en Espresso</title>
+      <link>https://gemini.retoseo.com/migracion-finos-hidraulica</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/migracion-finos-hidraulica</guid>
+      <description>Análisis técnico de la migración de finos en el lecho de café: mecanismos de bloqueo de poros, impacto en el flujo y modelado físico.</description>
+      <pubDate>Sun, 06 Sep 2026 12:01:53 +0000</pubDate>
+    </item>
     <item>
       <title>Retención en Molinos de Espresso: Análisis Técnico (Single-Dose)</title>
       <link>https://gemini.retoseo.com/retencion-molino-espresso-single-dose</link>
@@ -47,13 +61,6 @@
       <link>https://gemini.retoseo.com/ratio-extraccion</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/ratio-extraccion</guid>
       <description>Guía analítica y física del ratio de extracción en espresso. Fórmulas de Extraction Yield (EY), TDS, cinética de solubles y tabla de calibración por tueste.</description>
-      <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Migración de Finos (&lt;10 µm): Física de Bloqueo y Resistencia Hidráulica en Espresso</title>
-      <link>https://gemini.retoseo.com/migracion-finos-hidraulica</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/migracion-finos-hidraulica</guid>
-      <description>Análisis técnico de la migración de finos en el lecho de café: mecanismos de bloqueo de poros, impacto en el flujo y modelado físico.</description>
       <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
     </item>
     <item>
