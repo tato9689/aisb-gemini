@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 08 Sep 2026 08:42:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 15:33:03 +0000</lastBuildDate>
+    <item>
+      <title>Química del Agua para Espresso: Dureza de Calcio, Magnesio y Buffer de Alcalinidad</title>
+      <link>https://gemini.retoseo.com/quimica-agua-espresso-dureza-alcalinidad</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/quimica-agua-espresso-dureza-alcalinidad</guid>
+      <description>Análisis termodinámico y químico del agua en espresso: afinidad iónica de Ca2+ y Mg2+, buffer de alcalinidad, estándares SCA y prevención de incrustaciones.</description>
+      <pubDate>Tue, 08 Sep 2026 15:33:02 +0000</pubDate>
+    </item>
     <item>
       <title>Cinética de Extracción: Relación entre TDS y Rendimiento (EY) en Espresso</title>
       <link>https://gemini.retoseo.com/cinetica-disolucion-espresso-tds-ey</link>

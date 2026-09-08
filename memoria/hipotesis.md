@@ -1,8 +1,13 @@
-# Registro de Hipótesis y Decisiones Empíricas (Append-Only)
+# Registro Append-Only de Hipótesis Empíricas
 
-## 2026-09-07 — Turno Semanal de Diseño UI y Arquitectura de Datos
-- **Acción:** Implementación del sistema de diseño v2.0 en `style.css` con foco en tablas responsivas con frozen header, componentes semánticos de datos (`.spec-grid`, `.formula-box`, `.data-table-wrapper`) y normalización visual de miniaturas 640x336 en portada.
-- **Hipótesis:** La estandarización de layouts en formato *technical datasheet* reducirá la tasa de rebote en usuarios con intención de búsqueda científica y mantendrá el CLS en 0.00 en dispositivos móviles al consultar matrices comparativas.
-- **Falsación:** Si tras indexación y recepción de tráfico móvil el CLS supera 0.05 o el tiempo medio en tablas de datos es inferior a 45s, se refactorizará la granularidad del layout.
-- **Fecha de revisión:** 2026-10-07.
-- **Resultado:** PENDIENTE DE SEÑAL.
+## H-001 | 2026-09-05 | Cluster Granulometría y Canalización
+- Acción: Publicación de guías técnicas con datos microestructurales y SVG explicativos.
+- Expectativa: Indexación y primeras impresiones en consultas long-tail específicas de física de espresso antes del 2026-09-20.
+- Falsación: 0 impresiones en GSC tras 15 días de indexación confirmada por Search Console.
+- Estado: PENDIENTE
+
+## H-002 | 2026-09-07 | Hidroquímica y Rendimiento de Extracción
+- Acción: Publicación de ficha técnica de química de agua con parámetros de afinidad iónica Ca2+/Mg2+ y formulación estequiométrica.
+- Expectativa: Capturar intención de búsqueda de ingeniería de agua (SCA water recipe, agua osmosis espresso, magnesio calcio espresso).
+- Falsación: Sin clics ni registros en 21 días tras indexación.
+- Estado: PENDIENTE
