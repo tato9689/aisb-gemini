@@ -1,5 +1,96 @@
 [
   {
+    "evento_id": "2026-09-09-5231127f",
+    "timestamp": "2026-09-09T15:34:00.475531+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-08",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento Técnico del Turno\n\n1. **Corrección del aviso de tipografía (`style.css`)**:\n   - Se actualiza la pila de fuentes del sistema eliminando nombres huérfanos que provocaban avisos (`SF Mono` sin importar). Se establece una pila de sistema nativa robusta (`ui-monospace, Menlo, Monaco, Consolas, monospace` y `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`) con escala modular tipográfica y variables CSS de espaciado y contraste conformes a WCAG AAA.\n\n2. **Verificación y Contraste de Datos**:\n   - Se contrastaron los parámetros hidrodinámicos de la curva de presión decreciente en espresso:\n     - Preinfusión a baja presión (1.5–3.0 bar, saturación por capilaridad sin compactación precoz).\n     - Pico de extracción (8.0–9.0 bar, pico de resistencia hidráulica antes de la elución de solubles).\n     - Declive progresivo de presión (6.0–4.5 bar, compensación de la pérdida de masa del lecho y prevención de microcanalización tardía).\n   - Datos físicos respaldados por el modelo de percolación de Illy & Viani y la literatura de flujo en medios porosos granulares (Ecuación de Kozeny-Carman aplicada a camas de café desgasificadas).\n\n3. **Nueva Publicación Técnica (`perfilado-presion-curva-flujo-espresso.html`)**:\n   - **Target Keyword**: *perfilado de presion espresso curva flujo 6 bar decaimiento*.\n   - **Estructura empírica**:\n     - Diagrama SVG vectorial con la curva de presión clásica de resorte (Spring Lever) vs bomba rotativa constante (Flat 9-bar).\n     - Tabla comparativa de fases de extracción: Presión (bar), Caudal ($Q$ en ml/s), Resistencia hidráulica ($R$), TDS relativo y riesgo de canalización.\n     - Marcado Schema JSON-LD anidado: `TechArticle`, `Dataset` y `FAQPage`.\n   - **Recursos visuales y accesibilidad**: SVG interactivo inline de bajo peso (<3 KB), miniatura automática `/og/miniatura/perfilado-presion-curva-flujo-espresso.jpg` y metadatos rigurosos.\n\n4. **Indexación y Portada**:\n   - Actualización de `index.html` integrando la nueva ficha en la rejilla de datos, manteniendo todas las miniaturas en `/og/miniatura/<slug>.jpg` con sus atributos de dimensiones físicas (`640x336`) y carga diferida (`loading=\"lazy\"`).\n   - Se preparan las consultas de búsqueda para la próxima entrega: granulometría unimodal vs bimodal en muelas planas y cónicas.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado nuevo artículo técnico sobre física del perfilado de presión decreciente (9 a 6 bar) vs presión fija, con diagrama vectorial SVG y marcado Schema. Corregida pila tipográfica en style.css.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/9888606",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 21,
+        "quitadas": 11
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 4,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 8,
+        "quitadas": 4
+      },
+      {
+        "archivo": "perfilado-presion-curva-flujo-espresso.html",
+        "anadidas": 219,
+        "quitadas": 0
+      },
+      {
+        "archivo": "style.css",
+        "anadidas": 153,
+        "quitadas": 286
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "flat vs conical burrs particle size distribution fines laser diffraction",
+      "coffee grinder retention static rdt water droplet triboelectric"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction yield refractometer temperature compensation vst",
+      "flat vs conical burrs particle size distribution bimodal unimodal",
+      "pressure profiling flow rate espresso extraction spring lever curve"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder burrs macro espresso",
+      "coffee refractometer tds extraction"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs macro",
+      "espresso machine lever extraction"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "muelas planas vs conicas cafe",
+      "distribucion bimodal molienda cafe",
+      "retencion molino cafe rdt",
+      "refractometro cafe tds espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 20404,
+    "tokens_out": 10499,
+    "coste_estimado": 0.054674,
+    "duracion_seg": 33.72,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-08-566e57c9",
     "timestamp": "2026-09-08T15:33:03.451683+00:00",
     "modelo_exacto": "gemini-3.7-flash",
