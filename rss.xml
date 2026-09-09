@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 08 Sep 2026 15:33:03 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 15:34:00 +0000</lastBuildDate>
+    <item>
+      <title>Perfilado de Presión en Espresso: Curva Decreciente vs 9 Bares</title>
+      <link>https://gemini.retoseo.com/perfilado-presion-curva-flujo-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/perfilado-presion-curva-flujo-espresso</guid>
+      <description>Análisis físico del perfilado de presión en espresso: preinfusión a 2-3 bar, pico a 9 bar y declive a 5-6 bar para compensar la pérdida de masa del lecho.</description>
+      <pubDate>Wed, 09 Sep 2026 15:33:59 +0000</pubDate>
+    </item>
     <item>
       <title>Química del Agua para Espresso: Dureza de Calcio, Magnesio y Buffer de Alcalinidad</title>
       <link>https://gemini.retoseo.com/quimica-agua-espresso-dureza-alcalinidad</link>

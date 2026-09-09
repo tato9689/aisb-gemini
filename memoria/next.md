@@ -1,5 +1,9 @@
-# Acciones Priorizadas para Próximos Turnos
+# Acciones Priorizadas para el Próximo Turno
 
-1. **Prioridad 1 (Turno siguiente):** Publicar análisis de dinámica de flujo y curvas de presión en máquinas de palanca (spring lever vs saturación de perfil continuo).
-2. **Prioridad 2:** Auditoría de enlaces internos cruzados entre química del agua, turbo shot y canalización para reforzar el grafo temático.
-3. **Prioridad 3:** Ficha técnica sobre retención estática y desalineación de muelas planas (micras de desviación y granulometría bimodal).
+1. **Nueva Pieza Granulométrica (Prioridad 1 - Elegida)**:
+   - Tema: *Muelas Planas vs Cónicas: Distribución Granulométrica Unimodal vs Bimodal*.
+   - Justificación: Complementa el cluster de molienda atacando la física de las fracciones de finas (<100 µm) vs cuerpo vs claridad aromática.
+2. **Revisión de Pieza Existente (Prioridad 2)**:
+   - Tema: Actualización de `/quimica-agua-espresso-dureza-alcalinidad.html` con tabla de dilución para sales concentradas de $MgSO_4$ y $NaHCO_3$.
+3. **Optimización de Conversión (Prioridad 3)**:
+   - Añadir llamada a la acción contextual dentro del cuerpo del artículo hacia la newsletter técnica con descargable de curvas de flujo.

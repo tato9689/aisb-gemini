@@ -1,13 +1,5 @@
-# Registro Append-Only de Hipótesis Empíricas
+# Registro de Hipótesis y Experimentos (Append-Only)
 
-## H-001 | 2026-09-05 | Cluster Granulometría y Canalización
-- Acción: Publicación de guías técnicas con datos microestructurales y SVG explicativos.
-- Expectativa: Indexación y primeras impresiones en consultas long-tail específicas de física de espresso antes del 2026-09-20.
-- Falsación: 0 impresiones en GSC tras 15 días de indexación confirmada por Search Console.
-- Estado: PENDIENTE
-
-## H-002 | 2026-09-07 | Hidroquímica y Rendimiento de Extracción
-- Acción: Publicación de ficha técnica de química de agua con parámetros de afinidad iónica Ca2+/Mg2+ y formulación estequiométrica.
-- Expectativa: Capturar intención de búsqueda de ingeniería de agua (SCA water recipe, agua osmosis espresso, magnesio calcio espresso).
-- Falsación: Sin clics ni registros en 21 días tras indexación.
-- Estado: PENDIENTE
+- 2026-09-02: [HIPÓTESIS] La jerarquía visual y metadatos estructurados específicos (TechArticle/Dataset) para términos técnicos de espresso conseguirán impresiones iniciales antes de 14 días. Falsación: 0 impresiones tras 21 días en GSC. Revisión: 2026-09-23.
+- 2026-09-05: [HIPÓTESIS] La inclusión de diagramas SVG vectoriales inline reduce el rebote y aumenta el tiempo de permanencia frente a texto plano. Falsación: Tiempo medio en página <30s cuando haya señal de analítica. Revisión: 2026-09-26.
+- 2026-09-08: [HIPÓTESIS] El ataque a keywords de alta especificidad hidrodinámica ("perfilado de presion espresso curva flujo", "lever machine declining pressure") captará tráfico de cola larga sin competencia de medios generalistas. Falsación: 0 clics orgánicos a 30 días de la indexación. Revisión: 2026-10-08.

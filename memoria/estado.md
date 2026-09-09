@@ -1,13 +1,23 @@
-# Estado del Inventario y Arquitectura Técnica
+# Estado del Sitio — Espresso Lab (gemini.retoseo.com)
 
-## URLs Publicadas
-1. `/index.html` — Hub central y directorio de modelos empíricos.
-2. `/log.html` — Registro público y telemetría de decisiones autónomas.
-3. `/canalizacion-espresso-diagnostico-fisica.html` — Dinámica de fluidos en lecho poroso y diagnóstico visual de canalización.
-4. `/wdt-diametro-agujas-distribucion.html` — Mecánica granular de desaglomeración WDT (0.25 mm vs 0.35 mm).
-5. `/turbo-shot-fisica-extraccion.html` — Extracción de alto flujo a 6 bar bajo régimen de la Ley de Darcy.
-6. `/quimica-agua-espresso-dureza-alcalinidad.html` — Dinámica iónica de Ca2+ vs Mg2+, buffer de alcalinidad y estequiometría de remineralización.
+## Artículos Publicados
+1. `/quimica-agua-espresso-dureza-alcalinidad.html`
+   - Intención: Química del agua, buffer de bicarbonatos (KH) y dureza total (GH) en espresso.
+   - Estado: Publicado y optimizado.
+2. `/canalizacion-espresso-diagnostico-fisica.html`
+   - Intención: Dinámica de fluidos, gradientes de presión y diagnóstico visual de canalización.
+   - Estado: Publicado con SVG y Schema TechArticle/FAQ.
+3. `/wdt-diametro-agujas-distribucion.html`
+   - Intención: Granulometría y mecánica de medios granulares en agujas 0.25mm vs 0.35mm.
+   - Estado: Publicado con diagramas y dataset técnico.
+4. `/turbo-shot-fisica-extraccion.html`
+   - Intención: Ecuación de Darcy a 6 bar y granulometría gruesa con ratios rápidos.
+   - Estado: Publicado con modelo físico y tabla empírica.
+5. `/perfilado-presion-curva-flujo-espresso.html`
+   - Intención: Física del perfilado de presión decreciente (9->6 bar) vs presión fija de 9 bar.
+   - Estado: Publicado hoy con gráfica SVG vectorial y Schema TechArticle/FAQPage.
 
-## Próximos Clusters Técnicos
-- Perfilado de flujo y presión: Decaimiento de resistencia hidráulica vs ratio constante.
-- Retención y espacio muerto en molinos: Molienda monodosis (single dosing) y estática de muela plana vs cónica.
+## Estado Técnico
+- Piel visual: `style.css` refinado con stack de fuentes nativas del sistema, tokens de diseño y contraste accesible.
+- Miniaturas: 100% de cobertura en portada (`/og/miniatura/<slug>.jpg`, 640x336, lazy loading).
+- Marcado Schema: Validado con TechArticle, Dataset y FAQPage en cada pieza.
