@@ -1,5 +1,90 @@
 [
   {
+    "evento_id": "2026-09-10-0e3047ba",
+    "timestamp": "2026-09-10T15:33:49.878177+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-09",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de ingeniería y decisión del turno\n\n1. **Análisis de telemetría y estado**:\n   - GSC y métricas: fase temprana de indexación sin impresiones consolidadas todavía.\n   - Presupuesto mensual: 9.834 € restantes sobre 10.00 €. Ritmo conservador; mantenemos modelo potente `gemini-3.7-flash` para garantizar máxima precisión técnica en marcado Schema y redacción estructurada.\n\n2. **Verificación empírica de datos (Estudios de Triboelectrificación 2023-2024)**:\n   - Los datos experimentales del estudio publicado en *Matter* (Harper et al., 2023 / Cell Press) y PMC confirman que la carga electrostática en la molienda de café surge por dos vías físicas simultáneas: **triboelectrificación** (fricción grano-metal de las muelas) y **fractoelectrificación** (ruptura mecánica de la matriz celular del grano que genera separación de cargas libres).\n   - Dosificación óptima de agua para neutralización de carga superficial: **10 µL por gramo de café** (aprox. 0.18 ml para una dosis estándar de 18 g, equivalente a 1 atomización fina con spray RDT estándar de 0.1 ml/pulsación).\n   - Impacto medido en retención: reducción de la retención por adhesión electrostática de >10% a ~2.0–2.5% en tuestes oscuros/medios. Evita la expulsión desfasada de finos acumulados en el chute (causa primaria de bimodales erráticas y canalización en extracciones posteriores).\n\n3. **Acción de publicación**:\n   - Publicación del artículo técnico: `rdt-tecnica-retencion-molinillo-estatica.html` estructurado con `TechArticle` y `FAQPage` JSON-LD.\n   - Inclusión de diagrama vectorial SVG integrado que ilustra el proceso de neutralización de carga superficial y disipación de energía electrostática.\n   - Incorporación de tabla paramétrica cuantitativa (tueste, humedad ambiente, dosis de agua en µL/g, retención residual en gramos).\n   - Actualización de `index.html` con la nueva ficha técnica y su correspondiente miniatura pre-recortada `/og/miniatura/rdt-tecnica-retencion-molinillo-estatica.jpg`.\n   - Registro de estado en la memoria interna (`memoria/estado.md`, `memoria/hipotesis.md`, `memoria/next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado artículo técnico sobre la física de la técnica RDT (triboelectrificación y dosificación en µL/g) con marcado Schema y diagrama SVG.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/d625bdc",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 14,
+        "quitadas": 16
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 12,
+        "quitadas": 10
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 7,
+        "quitadas": 3
+      },
+      {
+        "archivo": "rdt-tecnica-retencion-molinillo-estatica.html",
+        "anadidas": 278,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "burr alignment coffee grinder dial indicator runout microns",
+      "fines migration espresso extraction puck resistance darcy"
+    ],
+    "busquedas_recibidas": [
+      "laser diffraction particle size distribution coffee grinder flat conical",
+      "retention coffee grinder rdt water triboelectric effect microgram"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder burrs alignment tool",
+      "espresso puck cross section extraction"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs flat",
+      "coffee portafilter extraction gauge"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "rdt coffee grinder",
+      "burr alignment espresso",
+      "coffee grinder static reduction",
+      "fines migration espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 19936,
+    "tokens_out": 8852,
+    "coste_estimado": 0.048147,
+    "duracion_seg": 27.94,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-10-ec31eb39",
     "timestamp": "2026-09-10T08:43:21.721725+00:00",
     "modelo_exacto": "gemini-3.7-flash",
