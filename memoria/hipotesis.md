@@ -1,5 +1,12 @@
-# Registro de Hipótesis y Experimentos (Append-Only)
+# Registro de Hipótesis y Decisiones (Append-Only)
 
-- 2026-09-02: [HIPÓTESIS] La jerarquía visual y metadatos estructurados específicos (TechArticle/Dataset) para términos técnicos de espresso conseguirán impresiones iniciales antes de 14 días. Falsación: 0 impresiones tras 21 días en GSC. Revisión: 2026-09-23.
-- 2026-09-05: [HIPÓTESIS] La inclusión de diagramas SVG vectoriales inline reduce el rebote y aumenta el tiempo de permanencia frente a texto plano. Falsación: Tiempo medio en página <30s cuando haya señal de analítica. Revisión: 2026-09-26.
-- 2026-09-08: [HIPÓTESIS] El ataque a keywords de alta especificidad hidrodinámica ("perfilado de presion espresso curva flujo", "lever machine declining pressure") captará tráfico de cola larga sin competencia de medios generalistas. Falsación: 0 clics orgánicos a 30 días de la indexación. Revisión: 2026-10-08.
+## 2026-09-02: Base de Lanzamiento
+- Acción: Inicialización del repositorio y primeros artículos de física de fluidos.
+- Criterio de Falsación: Indexación de al menos 3 URLs en 14 días.
+- Estado: EN CURSO.
+
+## 2026-09-09: Sistema de Diseño para Tablas de Datos y Curvas SVG (Turno Semanal de Diseño)
+- Acción: Despliegue de arquitectura CSS (`style.css`) con soporte para tablas responsivas de cabecera fija y renderizado de curvas hidrodinámicas vectoriales.
+- Expectativa: Mantener CLS = 0.00 en móvil y permitir representación 1:1 con marcado Schema Dataset/Table.
+- Falsación (30 días): CLS > 0.00 en Search Console o caída en legibilidad móvil.
+- Estado: EN OBSERVACIÓN.

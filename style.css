@@ -1,30 +1,50 @@
+/* ==========================================================================
+   ESPRESSO LAB — SISTEMA DE DISEÑO TÉCNICO & DATASHEETS (v2.0)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
 :root {
-  --bg-page: #0d1117;
-  --bg-surface: #161b22;
-  --bg-surface-elevated: #21262d;
-  --text-main: #c9d1d9;
-  --text-bright: #f0f6fc;
-  --text-dim: #8b949e;
-  --text-accent: #58a6ff;
-  --text-accent-hover: #79c0ff;
-  --border-subtle: #30363d;
-  --border-accent: #1f6feb;
-  --color-success: #238636;
-  --color-warning: #d29922;
-  --color-error: #da3633;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
+  /* Paleta Cromática Técnica */
+  --bg-canvas: #0c0e12;
+  --bg-surface: #14171f;
+  --bg-surface-elevated: #1c212c;
+  --bg-surface-subtle: #242a38;
+  
+  --border-subtle: #2a3142;
+  --border-strong: #3d475f;
+  --border-accent: #d97706;
+  --border-accent-bright: #f59e0b;
+
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-accent: #f59e0b;
+  --text-cyan: #38bdf8;
+
+  /* Tipografía */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Espaciado Modular */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
-  --max-width: 860px;
+  --space-2xl: 3rem;
+
+  /* Radios y Bordes */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Layout */
+  --container-max-width: 900px;
 }
 
+/* Reset y Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -32,48 +52,49 @@
 }
 
 body {
-  background-color: var(--bg-page);
+  background-color: var(--bg-canvas);
   color: var(--text-main);
   font-family: var(--font-sans);
-  line-height: 1.6;
   font-size: 1rem;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: var(--container-max-width);
   margin: 0 auto;
   padding: var(--space-xl) var(--space-md);
+}
+
+/* Tipografía de Cabecera */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 { font-size: 2.1rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.5rem; letter-spacing: -0.01em; margin-top: var(--space-xl); margin-bottom: var(--space-md); }
+h3 { font-size: 1.2rem; margin-top: var(--space-lg); margin-bottom: var(--space-xs); }
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--text-muted);
 }
 
 a {
   color: var(--text-accent);
   text-decoration: none;
-  transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--text-accent-hover);
+  color: var(--border-accent-bright);
   text-decoration: underline;
 }
 
-/* Encabezados */
-h1, h2, h3, h4 {
-  color: var(--text-bright);
-  font-weight: 600;
-  line-height: 1.25;
-  margin-bottom: var(--space-md);
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; margin-top: var(--space-xl); border-bottom: 1px solid var(--border-subtle); padding-bottom: var(--space-xs); }
-h3 { font-size: 1.2rem; margin-top: var(--space-lg); }
-
-p {
-  margin-bottom: var(--space-md);
-}
-
-/* Cabecera del sitio */
+/* Header */
 .site-header {
   border-bottom: 1px solid var(--border-subtle);
   padding-bottom: var(--space-lg);
@@ -81,28 +102,37 @@ p {
 }
 
 .site-title {
-  font-size: 2.2rem;
-  letter-spacing: -0.02em;
-  margin-bottom: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: 1.8rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
 }
 
 .site-desc {
+  font-size: 0.95rem;
   color: var(--text-dim);
-  font-size: 1.05rem;
+  margin-top: var(--space-2xs);
+  margin-bottom: 0;
 }
 
 .site-nav {
   margin-top: var(--space-md);
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
 }
 
-/* Grilla de artículos y tarjetas */
+/* Rejilla de Artículos / Tarjetas Técnicas */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .tech-card {
@@ -112,12 +142,11 @@ p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  transition: border-color 0.2s ease;
 }
 
 .tech-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--border-accent);
+  border-color: var(--border-strong);
 }
 
 .tech-card img {
@@ -125,201 +154,274 @@ p {
   height: auto;
   aspect-ratio: 640 / 336;
   object-fit: cover;
+  display: block;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .tech-card-body {
   padding: var(--space-md);
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .tech-card-body h3 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   margin-top: 0;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  line-height: 1.4;
+}
+
+.tech-card-body h3 a {
+  color: var(--text-main);
+}
+
+.tech-card-body h3 a:hover {
+  color: var(--text-accent);
+  text-decoration: none;
 }
 
 .tech-card-body p {
-  font-size: 0.9rem;
-  color: var(--text-dim);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
   flex-grow: 1;
 }
 
 .tech-card-meta {
   display: flex;
-  justify-content: space-between;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-accent);
-  border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-sm);
-  margin-top: var(--space-sm);
+  font-size: 0.72rem;
+  color: var(--text-dim);
 }
 
-/* Tablas técnicas */
+.tech-card-meta span {
+  background: var(--bg-surface-elevated);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Tablas de Datos Responsivas (Frozen Headers & Contenedor de Scroll) */
 .data-table-container {
+  width: 100%;
   overflow-x: auto;
   margin: var(--space-lg) 0;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  position: relative;
 }
 
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   text-align: left;
+  min-width: 600px;
 }
 
-.data-table th, .data-table td {
+.data-table th, 
+.data-table td {
   padding: var(--space-sm) var(--space-md);
   border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
 }
 
 .data-table th {
   background: var(--bg-surface-elevated);
-  color: var(--text-bright);
   font-family: var(--font-mono);
-  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-bottom: 2px solid var(--border-strong);
 }
 
-.data-table tr:last-child td {
-  border-bottom: none;
+.data-table tr:hover td {
+  background: var(--bg-surface-subtle);
 }
 
-.data-table tr:hover {
-  background: var(--bg-surface);
-}
-
-/* Cajas de notas y fórmulas */
-.tech-box {
-  background: var(--bg-surface);
-  border-left: 3px solid var(--border-accent);
-  padding: var(--space-md);
-  margin: var(--space-lg) 0;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-}
-
-.tech-box code, p code, li code {
+.data-table td.num,
+.data-table th.num {
+  text-align: right;
   font-family: var(--font-mono);
+}
+
+.data-table-caption {
+  padding: var(--space-xs) var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
   background: var(--bg-surface-elevated);
-  padding: 0.15rem 0.35rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.88em;
-  color: var(--text-bright);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-/* Gráficos vectoriales SVG */
+/* Gráficos y Diagramas SVG Nativos */
 .chart-container {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: var(--space-md);
   margin: var(--space-lg) 0;
-  text-align: center;
 }
 
-.chart-container svg {
-  max-width: 100%;
+.chart-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-accent);
+  margin-bottom: var(--space-sm);
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-svg {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
 
-.chart-caption {
-  font-size: 0.8rem;
+.chart-grid line {
+  stroke: var(--border-subtle);
+  stroke-dasharray: 2 2;
+}
+
+.chart-axis text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--text-dim);
+}
+
+.chart-curve-pressure {
+  stroke: var(--text-accent);
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.chart-curve-flow {
+  stroke: var(--text-cyan);
+  stroke-width: 2.5;
+  fill: none;
+}
+
+/* Bloques de Metadatos y Fichas Schema */
+.dataset-spec {
+  background: var(--bg-surface);
+  border-left: 3px solid var(--border-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-md);
+  margin: var(--space-lg) 0;
+  font-size: 0.9rem;
+}
+
+.dataset-spec dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-xs) var(--space-md);
+}
+
+.dataset-spec dt {
+  font-family: var(--font-mono);
   color: var(--text-dim);
-  margin-top: var(--space-sm);
+  font-size: 0.8rem;
+}
+
+.dataset-spec dd {
+  font-family: var(--font-mono);
+  color: var(--text-main);
+  font-size: 0.85rem;
+}
+
+/* Formularios de Captación */
+.newsletter-section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  margin: var(--space-2xl) 0;
+}
+
+.newsletter-section h3 {
+  margin-top: 0;
   font-family: var(--font-mono);
 }
 
-/* Listas técnicas */
-ul, ol {
-  margin-left: var(--space-lg);
-  margin-bottom: var(--space-md);
-}
-
-li {
-  margin-bottom: var(--space-xs);
-}
-
-/* Sección de Newsletter y Formulario */
-.newsletter-section {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-accent);
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  margin: var(--space-xl) 0;
-}
-
 .newsletter-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
   margin-top: var(--space-md);
 }
 
 .form-row {
   display: flex;
+  flex-direction: column;
   gap: var(--space-sm);
-  flex-wrap: wrap;
+}
+
+@media (min-width: 480px) {
+  .form-row {
+    flex-direction: row;
+  }
 }
 
 .form-input {
-  flex: 1 1 240px;
-  background: var(--bg-page);
+  flex-grow: 1;
+  background: var(--bg-canvas);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
   padding: var(--space-sm) var(--space-md);
-  color: var(--text-bright);
-  font-family: var(--font-sans);
+  border-radius: var(--radius-sm);
 }
 
 .form-input:focus {
-  outline: none;
+  outline: 2px solid var(--border-accent);
   border-color: var(--border-accent);
 }
 
 .btn-primary {
   background: var(--border-accent);
-  color: #ffffff;
+  color: #0c0e12;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
   border: none;
-  border-radius: var(--radius-md);
   padding: var(--space-sm) var(--space-lg);
-  font-weight: 600;
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: background 0.15s ease;
 }
 
 .btn-primary:hover {
-  background: #1158c7;
+  background: var(--border-accent-bright);
 }
 
 .consentimiento {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
+  margin-top: var(--space-xs);
 }
 
-/* Pie de página */
+.consentimiento input {
+  margin-right: var(--space-xs);
+  vertical-align: middle;
+}
+
+/* Footer Obligatorio */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-xl);
-  margin-top: var(--space-xl);
-  font-size: 0.85rem;
+  padding-top: var(--space-lg);
+  margin-top: var(--space-2xl);
+  font-size: 0.8rem;
   color: var(--text-dim);
+  line-height: 1.6;
 }
 
 .site-footer p {
   margin-bottom: var(--space-xs);
-}
-
-.changelog-box {
-  border-top: 1px dashed var(--border-subtle);
-  padding-top: var(--space-md);
-  margin-top: var(--space-xl);
-  font-size: 0.8rem;
   color: var(--text-dim);
-  font-family: var(--font-mono);
 }
