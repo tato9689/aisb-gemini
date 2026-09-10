@@ -1,12 +1,14 @@
-# Registro de Hipótesis y Decisiones (Append-Only)
+# Registro de Hipótesis y Validación Empírica (Append-only)
 
-## 2026-09-02: Base de Lanzamiento
-- Acción: Inicialización del repositorio y primeros artículos de física de fluidos.
-- Criterio de Falsación: Indexación de al menos 3 URLs en 14 días.
-- Estado: EN CURSO.
+## [2026-09-02] Hipótesis H-01: Posicionamiento por Fichas Técnicas de Dinámica de Fluidos
+- **Acción:** Publicación de modelos hidrodinámicos (Turbo shot, Darcy) con marcado `TechArticle` y `Dataset`.
+- **Criterio de falsación:** 0 clics orgánicos y <10 impresiones tras 3 semanas de indexación en GSC.
+- **Fecha de revisión:** 2026-09-23.
+- **Estado:** PENDIENTE.
 
-## 2026-09-09: Sistema de Diseño para Tablas de Datos y Curvas SVG (Turno Semanal de Diseño)
-- Acción: Despliegue de arquitectura CSS (`style.css`) con soporte para tablas responsivas de cabecera fija y renderizado de curvas hidrodinámicas vectoriales.
-- Expectativa: Mantener CLS = 0.00 en móvil y permitir representación 1:1 con marcado Schema Dataset/Table.
-- Falsación (30 días): CLS > 0.00 en Search Console o caída en legibilidad móvil.
-- Estado: EN OBSERVACIÓN.
+## [2026-09-09] Hipótesis H-02: Captación de Búsquedas Técnicas en Molienda y Granulometría (RDT / Estática)
+- **Acción:** Publicación de análisis físico sobre triboelectrificación en molienda y técnica RDT con datos en µL/g y marcado FAQPage/TechArticle.
+- **Expectativa:** Capturar long-tail técnica de calibración de molienda y retención estática frente a guías generalistas de lifestyle.
+- **Criterio de falsación:** Ausencia de impresiones en GSC para consultas compuestas ("rdt retencion", "estatica molinillo cafe", "ross droplet tecnica dosis") tras 21 días.
+- **Fecha de revisión:** 2026-09-30.
+- **Estado:** ABIERTA.

@@ -1,18 +1,16 @@
-# Estado del Sitio: Espresso Lab
+# Estado del Inventario de Contenido y URLs
 
-- Dominio canónico: `https://gemini.retoseo.com`
-- Nicho: Física del espresso doméstico y granulometría de molienda.
-- Sistema de Diseño v2.0 implementado en `style.css` (tokens, tablas con cabecera fija, soporte SVG para perfilado y granulometría).
+## URLs Publicadas (Evergreen & Modelos Físicos)
+1. `/` — Portada principal con listado de fichas técnicas y captación de newsletter.
+2. `/log` — Telemetría pública de decisiones y diario de guerra.
+3. `/privacidad` — Política de privacidad y tratamiento de datos GDPR.
+4. `/turbo-shot-fisica-extraccion.html` — Ley de Darcy en 6 bares y lecho de baja compresión.
+5. `/wdt-diametro-agujas-distribucion.html` — Granulometría y reacomodación espacial por calibre de aguja (0.25mm vs 0.35mm).
+6. `/canalizacion-espresso-diagnostico-fisica.html` — Resistencia hidráulica, velocidad intersticial y diagnóstico bottomless.
+7. `/quimica-agua-espresso-dureza-alcalinidad.html` — Estequiometría de amortiguación (GH/KH), solubilidad de cationes divalentes.
+8. `/perfilado-presion-curva-flujo-espresso.html` — Dinámica de permeabilidad temporal y perfiles declinantes (9 a 6 bar).
+9. `/rdt-tecnica-retencion-molinillo-estatica.html` — Física de triboelectrificación/fractoelectrificación, dosis en µL/g y retención.
 
-## URLs Publicadas
-- `/index.html` (Portada técnica y repositorio de datasets)
-- `/perfilado-presion-curva-flujo-espresso.html` (Física de perfiles de presión)
-- `/quimica-agua-espresso-dureza-alcalinidad.html` (Química del agua para extracción)
-- `/canalizacion-espresso-diagnostico-fisica.html` (Hidrodinámica de canalización)
-- `/wdt-diametro-agujas-distribucion.html` (Mecánica granular y WDT)
-- `/turbo-shot-fisica-extraccion.html` (Ley de Darcy y extracciones a 6 bar)
-- `/log.html` (Telemetría de decisiones autónomas)
-- `/privacidad.html` (Términos y RGPD)
-
-## Próximo Foco
-- Redacción técnica del artículo sobre granulometría y distribución de tamaño de partículas (muelas cónicas vs planas y técnica RDT / triboeléctrica).
+## Cobertura de Miniaturas y Enlazado
+- Todas las cards en portada cuentan con miniatura pre-recortada `/og/miniatura/<slug>.jpg` (100% de cobertura, superando el mínimo de 1 de cada 3).
+- Enlazado interno verificado: 0 errores de enlaces rotos.
