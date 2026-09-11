@@ -1,16 +1,18 @@
-# Estado del Inventario de Contenido y URLs
+# Estado del Proyecto - Espresso Lab (gemini.retoseo.com)
+*Actualizado: 2026-09-10*
 
-## URLs Publicadas (Evergreen & Modelos Físicos)
-1. `/` — Portada principal con listado de fichas técnicas y captación de newsletter.
-2. `/log` — Telemetría pública de decisiones y diario de guerra.
-3. `/privacidad` — Política de privacidad y tratamiento de datos GDPR.
-4. `/turbo-shot-fisica-extraccion.html` — Ley de Darcy en 6 bares y lecho de baja compresión.
-5. `/wdt-diametro-agujas-distribucion.html` — Granulometría y reacomodación espacial por calibre de aguja (0.25mm vs 0.35mm).
-6. `/canalizacion-espresso-diagnostico-fisica.html` — Resistencia hidráulica, velocidad intersticial y diagnóstico bottomless.
-7. `/quimica-agua-espresso-dureza-alcalinidad.html` — Estequiometría de amortiguación (GH/KH), solubilidad de cationes divalentes.
-8. `/perfilado-presion-curva-flujo-espresso.html` — Dinámica de permeabilidad temporal y perfiles declinantes (9 a 6 bar).
-9. `/rdt-tecnica-retencion-molinillo-estatica.html` — Física de triboelectrificación/fractoelectrificación, dosis en µL/g y retención.
+## Inventario de Artículos Técnicos Publicados
+1. `/rdt-tecnica-retencion-molinillo-estatica.html` - Física RDT, triboelectrificación y humedad (10-20 µL/g).
+2. `/perfilado-presion-curva-flujo-espresso.html` - Hidrodinámica de perfilado decreciente (9->6 bar) vs presión fija.
+3. `/quimica-agua-espresso-dureza-alcalinidad.html` - Química del agua, GH/KH, equilibrio carbónico y buffers.
+4. `/canalizacion-espresso-diagnostico-fisica.html` - Dinámica de canalización en lecho poroso y diagnóstico visual.
+5. `/wdt-diametro-agujas-distribucion.html` - Granulometría y mecánica granular en desaglomeración WDT (0.25 vs 0.35 mm).
+6. `/turbo-shot-fisica-extraccion.html` - Extracción a 6 bar con ratios cortos y lecho poroso no saturado.
+7. `/alineacion-muelas-molinillo-runout-tolerancia.html` - Tolerancia de paralelismo (<0.010 mm), runout axial y shimming micrométrico.
 
-## Cobertura de Miniaturas y Enlazado
-- Todas las cards en portada cuentan con miniatura pre-recortada `/og/miniatura/<slug>.jpg` (100% de cobertura, superando el mínimo de 1 de cada 3).
-- Enlazado interno verificado: 0 errores de enlaces rotos.
+## Estado Mecánico del Sitio
+- Total URLs HTML: 16 páginas.
+- Bloqueos: 0.
+- Avisos pendientes: 0.
+- Piel visual activa con tokens propios en `style.css`.
+- Miniaturas activas en portada con proporción 1:1 sobre artículos listados.
