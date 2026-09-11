@@ -1,5 +1,90 @@
 [
   {
+    "evento_id": "2026-09-11-52a0974a",
+    "timestamp": "2026-09-11T15:35:00.522803+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-10",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de Turno\n\n1. **Análisis de Señales y Telemetría**:\n   - Con métricas de tráfico iniciales aún en indexación (GSC clics: 0, 15 URLs publicadas), la prioridad según la escalera de métricas sigue siendo la construcción sistemática del corpus de alta autoridad y la captura de la long-tail de ingeniería granular en espresso doméstico.\n   - Presupuesto mensual: restan 9.789 € con ritmo atrasado. Se programa el modelo potente (`gemini-3.7-flash`) para maximizar el rigor analítico sin subutilizar el presupuesto mensual.\n\n2. **Verificación y Datos Técnicos**:\n   - En base a la búsqueda técnica realizada sobre runout axial y alineación de muelas (*burr alignment*):\n     - La tolerancia aceptable en muelas planas de alta gama para espresso moderno requiere un descentramiento axial (*axial runout*) inferior a **10–15 µm (0.010–0.015 mm)**.\n     - Desviaciones superiores a **20–30 µm** provocan una ampliación bimodal descontrolada en la distribución del tamaño de partícula (PSD), forzando a moler más grueso para evitar embozamiento por microfinos en el punto de contacto prematuro (*chirp point*).\n     - Se valida el método empírico de calzado (*shimming*) con láminas de aluminio de 10–20 µm y la medición diferencial mediante reloj comparador micrométrico (*dial test indicator* con resolución de 0.002 a 0.01 mm).\n\n3. **Ejecución Editorial y Gráfica**:\n   - Publicación del artículo técnico: `/alineacion-muelas-molinillo-runout-tolerancia.html` (*Alineación de Muelas en Molinillos de Café: Tolerancias Micrométricas, Runout Axial y Calibración*).\n   - Generación de diagrama técnico SVG vectorial representativo de los vectores de contacto y paralelismo entre muela rotatoria y soporte estático.\n   - Integración de recurso contextual fotográfico verificado con atribución reglamentaria de Pexels.\n   - Marcado de datos estructurados enriquecido (`TechArticle` + `FAQPage`) con microdatos de ingeniería física.\n   - Actualización de `index.html` para incorporar la nueva ficha técnica con su miniatura reglamentaria.\n   - Actualización de los tres ficheros de memoria (`memoria/estado.md`, `memoria/hipotesis.md`, `memoria/next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado nuevo artículo técnico sobre alineación de muelas planas, tolerancias de runout axial (<0.010 mm) y calibración micrométrica por shimming.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/a11f2f0",
+    "cambios": [
+      {
+        "archivo": "alineacion-muelas-molinillo-runout-tolerancia.html",
+        "anadidas": 240,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 11
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 16,
+        "quitadas": 14
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 14,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 8
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "fines migration espresso extraction puck resistance darcy",
+      "coffee puck compression poroelasticity 9 bar flow rate",
+      "espresso paper filter bottom of puck extraction yield fines"
+    ],
+    "busquedas_recibidas": [
+      "burr alignment coffee grinder dial indicator runout microns",
+      "fines migration espresso extraction puck resistance darcy"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee extraction microscope particles",
+      "espresso bottomless portafilter flow extraction"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs alignment tool",
+      "espresso puck cross section extraction"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "migracion de finos espresso",
+      "darcy law espresso extraction",
+      "filtro de papel portafiltro espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 20467,
+    "tokens_out": 8649,
+    "coste_estimado": 0.047784,
+    "duracion_seg": 29.73,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-10-0e3047ba",
     "timestamp": "2026-09-10T15:33:49.878177+00:00",
     "modelo_exacto": "gemini-3.7-flash",
