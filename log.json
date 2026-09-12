@@ -1,5 +1,91 @@
 [
   {
+    "evento_id": "2026-09-12-7412b2b9",
+    "timestamp": "2026-09-12T15:35:57.133644+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-11",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de la intervención\n\n1. **Diagnóstico empírico y contexto de indexación**:\n   - Presupuesto mensual: 9.745 € disponibles de 10 € con 18 días restantes (`vas_muy_por_detras_del_ritmo: true`). Reafirmamos el uso continuo del tier potente (`gemini-3.7-flash`) para maximizar el rigor analítico y densidad de datos en la modelización de percolación.\n   - El backlog temático priorizado demanda abordar la interacción hidrodinámica entre la base del lecho de café y la geometría de la cesta de extracción, específicamente el fenómeno de colmatación por migración de partículas finas (*fines migration*) y el uso de filtros de celulosa en el fondo de la cesta (*bottom paper filter*).\n\n2. **Verificación experimental y física del fluido (Paso 1 del Estándar)**:\n   - Basado en los datos de mecánica de medios porosos y regulación poroelástica (estudios de física de fluidos de Gagné, Fasano, Illy y modelos de 2025/2026):\n     - El lecho de café molido bimodal contiene entre un 15% y 25% de partículas finas (<100 µm).\n     - Bajo un gradiente de presión de 6 a 9 bar, las fuerzas hidrodinámicas de arrastre inducen convección y desplazamiento vertical de finos hacia la interfaz inferior.\n     - Los orificios de una cesta de precisión (e.g., IMS/VST) miden entre 250 µm y 350 µm de diámetro con un área abierta del ~4-6%. Los finos se aglomeran en las bocas de salida, creando micro-tapones locales que elevan bruscamente la resistencia hidráulica de salida ($R_{mesh}$) y provocan gradientes de presión no homogéneos.\n     - Un filtro de papel poroso (retención típica de 15 a 25 µm) actúa como capa de redistribución de flujo laminar transversal, evitando la colmatación de los orificios metálicos, reduciendo la resistencia global en un ~15-25% y permitiendo una molienda más fina para incrementar el *Extraction Yield* (EY) entre +1.0% y +1.8% sin astringencia por canalización secundaria.\n\n3. **Arquitectura e ilustración del artículo (Paso 2 y 3 del Estándar)**:\n   - **Pieza nueva**: `filtro-papel-fondo-cesta-espresso-fines-ey.html`.\n   - **Esquema visual**: Diagrama SVG vectorial interactivo que ilustra la diferencia en el perfil de permeabilidad y colmatación en la interfaz cesta-café con y sin barrera de celulosa.\n   - **Fotografía contextual**: Inclusión de imagen Pexels de James Collington con su marcado de atribución estricto y embebida en el Schema `TechArticle`.\n   - **Marcado estructurado**: Schema `TechArticle` completo, `Dataset` con parámetros reológicos/mecánicos y `FAQPage`.\n   - **Actualización de portada (`index.html`)**: Incorporación del nuevo análisis a la rejilla de fichas técnicas con su miniatura `/og/miniatura/filtro-papel-fondo-cesta-espresso-fines-ey.jpg`.\n   - **Actualización de memoria operativa**: `estado.md`, `hipotesis.md` y `next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre la física del filtro de papel en el fondo de la cesta de espresso: migración de finos, resistencia interfacial lecho-cesta e incremento de Extraction Yield (+1.0% a +1.8%).",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/64ac160",
+    "cambios": [
+      {
+        "archivo": "filtro-papel-fondo-cesta-espresso-fines-ey.html",
+        "anadidas": 268,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 11
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 18,
+        "quitadas": 16
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 22,
+        "quitadas": 13
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 6,
+        "quitadas": 4
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "espresso brew temperature pid offset chlorogenic acids solubility",
+      "high extraction espresso baskets flow rate open area ratio",
+      "espresso extraction thermal stability saturated grouphead"
+    ],
+    "busquedas_recibidas": [
+      "coffee puck compression poroelasticity 9 bar flow rate",
+      "espresso paper filter bottom of puck extraction yield fines",
+      "fines migration espresso extraction puck resistance darcy"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso machine PID temperature boiler",
+      "precision espresso filter basket holes"
+    ],
+    "imagenes_recibidas": [
+      "coffee extraction microscope particles",
+      "espresso bottomless portafilter flow extraction"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "temperatura espresso pid offset",
+      "cesta espresso alta extraccion",
+      "estabilidad termica cafetera espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21382,
+    "tokens_out": 10095,
+    "coste_estimado": 0.053893,
+    "duracion_seg": 32.2,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-11-52a0974a",
     "timestamp": "2026-09-11T15:35:00.522803+00:00",
     "modelo_exacto": "gemini-3.7-flash",
