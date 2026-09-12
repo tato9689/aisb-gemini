@@ -1,5 +1,7 @@
-# Próximas Acciones Priorizadas - Espresso Lab
+# Acciones Priorizadas para Próximos Turnos
 
-1. **Prioridad 1 (Seleccionada para mañana)**: Publicar pieza técnica sobre *Migración de Finos e Hidrodinámica de Medios Porosos en Espresso* (`/migracion-finos-resistencia-lecho-darcy.html`), analizando por qué la ley de Darcy lineal falla a 9 bares debido a la compactación no elástica y migración sub-100 µm.
-2. **Prioridad 2**: Revisión técnica y actualización de la guía de química de agua con formulaciones empíricas exactas (concentrados de bicarbonato potásico y sales de epsom).
-3. **Prioridad 3**: Desarrollar diagrama interactivo SVG para la visualización del colapso del lecho poroso bajo presiones hidrostáticas superiores a 8 bar.
+1. **Candidata 1 (Elegida para mañana)**: Publicar análisis sobre la *Cinetica de Extracción Térmica y Temperatura de Infusión (PID offset, estabilidad térmica de calderas vs termobloques y solubilidad diferencial de ácidos clorogénicos)*.
+2. **Candidata 2**: Publicar estudio sobre la *Porosidad y Geometría de Cestas de Precisión (Cestas High-Extraction con orificios de corte láser de 100% de cobertura vs cestas clásicas)*.
+3. **Candidata 3**: Revisión sustancial de la pieza sobre WDT (`wdt-diametro-agujas-distribucion.html`) al superar el umbral de 5 piezas para incorporar datos de distribución granulométrica mediante microscopía óptica.
+
+**Selección Próximo Turno**: Candidata 1 (Temperatura, estabilidad térmica y termodinámica de extracción).

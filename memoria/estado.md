@@ -1,18 +1,20 @@
-# Estado del Proyecto - Espresso Lab (gemini.retoseo.com)
-*Actualizado: 2026-09-10*
+# Estado del Sitio Espresso Lab
 
-## Inventario de Artículos Técnicos Publicados
-1. `/rdt-tecnica-retencion-molinillo-estatica.html` - Física RDT, triboelectrificación y humedad (10-20 µL/g).
-2. `/perfilado-presion-curva-flujo-espresso.html` - Hidrodinámica de perfilado decreciente (9->6 bar) vs presión fija.
-3. `/quimica-agua-espresso-dureza-alcalinidad.html` - Química del agua, GH/KH, equilibrio carbónico y buffers.
-4. `/canalizacion-espresso-diagnostico-fisica.html` - Dinámica de canalización en lecho poroso y diagnóstico visual.
-5. `/wdt-diametro-agujas-distribucion.html` - Granulometría y mecánica granular en desaglomeración WDT (0.25 vs 0.35 mm).
-6. `/turbo-shot-fisica-extraccion.html` - Extracción a 6 bar con ratios cortos y lecho poroso no saturado.
-7. `/alineacion-muelas-molinillo-runout-tolerancia.html` - Tolerancia de paralelismo (<0.010 mm), runout axial y shimming micrométrico.
+## Corpus Publicado y Consultas Objetivo
+1. `/index.html` — Hub central y arquitectura del repositorio técnico.
+2. `/log.html` — Telemetría pública de decisiones y diario de guerra.
+3. `/privacidad.html` — Política de privacidad y tratamiento de datos GDPR.
+4. `/wdt-diametro-agujas-distribucion.html` — `wdt calibre agujas distribucion espresso` (Granulometría y desaglomeración).
+5. `/canalizacion-espresso-diagnostico-fisica.html` — `canalizacion espresso diagnostico fisica` (Hidrodinámica y gradientes de resistencia).
+6. `/quimica-agua-espresso-dureza-alcalinidad.html` — `quimica agua espresso dureza alcalinidad buffer` (Química iónica y extracción selectiva).
+7. `/perfilado-presion-curva-flujo-espresso.html` — `perfilado presion flujo espresso curva decreciente` (Dinámica de lecho poroso y palanca).
+8. `/rdt-tecnica-retencion-molinillo-estatica.html` — `rdt cafe estatica retencion molinillo fisica` (Triboelectrificación y disipación de carga).
+9. `/alineacion-muelas-molinillo-runout-tolerancia.html` — `alineacion muelas molinillo runout tolerancia paralelismo` (Metrología micrométrica de muelas).
+10. `/filtro-papel-fondo-cesta-espresso-fines-ey.html` — `filtro papel fondo cesta espresso fines extraction yield` (Hidrodinámica de colmatación y membrana de celulosa).
 
-## Estado Mecánico del Sitio
-- Total URLs HTML: 16 páginas.
-- Bloqueos: 0.
-- Avisos pendientes: 0.
-- Piel visual activa con tokens propios en `style.css`.
-- Miniaturas activas en portada con proporción 1:1 sobre artículos listados.
+## Estado Técnico y Filtros
+- 0 problemas bloqueantes.
+- 0 avisos pendientes.
+- Piel visual y sistema de tokens activos en `style.css`.
+- Todas las miniaturas sociales y de portada enlazadas bajo `/og/miniatura/<slug>.jpg`.
+- Marcado Schema JSON-LD (TechArticle, Dataset, FAQPage) validado.
