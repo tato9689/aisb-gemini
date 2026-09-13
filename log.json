@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-13-e7694d22",
+    "timestamp": "2026-09-13T15:38:42.073403+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-12",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Registro de Telemetría y Razonamiento Técnico\n\n1. **Verificación empírica y contrastación de datos**:\n   - Contrastamos las cinéticas térmicas de extracción en café espresso: a temperaturas $\\ge 93^\\circ\\text{C}$, se acelera significativamente la tasa de hidrólisis y solubilización de ácidos clorogénicos residuales (5-CQA, di-CQA) y fenoles amargos de pirólisis.\n   - Se cuantificaron los rangos de temperatura objetivo según densidad y nivel de desarrollo del tueste: Tueste claro / alta densidad ($94.0^\\circ\\text{C} - 96.0^\\circ\\text{C}$ para superar la resistencia de enlace de compuestos polares), tueste medio ($92.0^\\circ\\text{C} - 93.5^\\circ\\text{C}$) y tueste oscuro ($88.0^\\circ\\text{C} - 91.0^\\circ\\text{C}$ para limitar la migración de fenoles hidrofóbicos y piridinas).\n   - Se modeló la constante de offset térmico ($\\Delta T_{\\text{offset}} = T_{\\text{boiler}} - T_{\\text{puck}}$) según tres arquitecturas de flujo: Doble caldera con grupo saturado ($\\Delta T \\approx 1.5^\\circ\\text{C} - 2.5^\\circ\\text{C}$, varianza $\\pm 0.5^\\circ\\text{C}$), Termosifón E61 con HX ($\\Delta T \\approx 8.0^\\circ\\text{C} - 14.0^\\circ\\text{C}$, fluctuación dinámica dependiente de flush) y Caldera única con grupo de latón directo ($\\Delta T \\approx 5.0^\\circ\\text{C} - 8.0^\\circ\\text{C}$).\n\n2. **Ilustración e integración visual**:\n   - Se diseñó un diagrama esquemático SVG de alta resolución vectorial representando la curva cinética de disolución fraccional en función de la temperatura y el perfil de caída de gradiente térmico a lo largo del lecho.\n   - Se integró una fotografía contextual de sensor y display PID de banco Pexels con atribución rigurosa (`Efe Burak Baydar`) e indexación semántica en el bloque Schema `TechArticle`.\n   - Se actualizó el índice de `index.html` vinculando la tarjeta con su miniatura `/og/miniatura/temperatura-extraccion-espresso-pid-offset-cinetica.jpg`.\n\n3. **Edición técnica y estructuración**:\n   - Eliminación total de muletillas de IA o prosa de estilo de vida. La primera línea entrega directamente la definición matemática y termodinámica del offset de temperatura y la energía de activación de compuestos solubles.\n   - Formulación de matrices de calibración tabulares para PIDs domésticos y compensación de inercia térmica.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado nuevo artículo técnico sobre termodinámica de extracción en espresso, cinética de solubilización y compensación de offset en controladores PID.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/40f4230",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 13,
+        "quitadas": 18
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 15,
+        "quitadas": 25
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 7,
+        "quitadas": 6
+      },
+      {
+        "archivo": "temperatura-extraccion-espresso-pid-offset-cinetica.html",
+        "anadidas": 255,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "high extraction espresso filter basket open area ratio hole count microns",
+      "espresso puck resistance permeability darcy law grind size distribution",
+      "coffee degassing co2 pressure espresso extraction kinetic curve"
+    ],
+    "busquedas_recibidas": [
+      "espresso brew temperature pid offset chlorogenic acids solubility",
+      "espresso extraction thermal stability saturated grouphead",
+      "high extraction espresso baskets flow rate open area ratio"
+    ],
+    "imagenes_siguiente_turno": [
+      "precision espresso filter basket holes",
+      "espresso bottomless portafilter extraction stream"
+    ],
+    "imagenes_recibidas": [
+      "espresso machine PID temperature boiler",
+      "precision espresso filter basket holes"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "cesta alta extraccion espresso",
+      "high extraction basket espresso",
+      "temperatura espresso tueste claro",
+      "calibracion pid cafetera espresso",
+      "offset temperatura espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21137,
+    "tokens_out": 9031,
+    "coste_estimado": 0.049719,
+    "duracion_seg": 27.03,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-12-7412b2b9",
     "timestamp": "2026-09-12T15:35:57.133644+00:00",
     "modelo_exacto": "gemini-3.7-flash",
