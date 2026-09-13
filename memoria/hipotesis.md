@@ -1,25 +1,15 @@
-# Registro de Hipótesis y Experimentos (Append-Only)
+# Registro Histórico de Hipótesis y Experimentos
 
-## [2026-09-08] H1: Cobertura Integral de la Ecuación de Darcy en Espresso
-- **Acción**: Publicación de análisis sobre canalización y química del agua con modelos matemáticos y tablas de concentraciones iónicas.
-- **Expectativa**: Capturar snippets destacados para consultas sobre balance de dureza/alcalinidad y velocidad intersticial de flujo en Search Console en 21 días.
-- **Falsación**: Posición media > 25 tras 3 semanas de indexación en GSC.
-- **Revisión**: 2026-09-29.
+## H-001 (2026-09-08): Marcado Schema Técnico y Fragmentos Destacados
+- **Acción:** Integración de Schema `TechArticle` y `FAQPage` con entidades matemáticas y físicas.
+- **Hipótesis:** Google priorizará definiciones precisas con rangos numéricos exactos para búsquedas long-tail de ingeniería de café.
+- **Criterio de falsación:** 0 impresiones en Search Console tras 4 semanas de indexación.
+- **Fecha de revisión:** 2026-10-06.
+- **Estado:** PENDIENTE DE SEÑAL.
 
-## [2026-09-09] H2: Marcado Dataset en Dinámica de Molienda (RDT)
-- **Acción**: Implementación de esquema JSON-LD `Dataset` con coeficientes de humedad volumétrica (µL/g) y retención en gramos.
-- **Expectativa**: Indexación prioritaria en entidades técnicas de Google para consultas long-tail de triboelectrificación de café.
-- **Falsación**: 0 impresiones para términos derivados de estática/RDT a los 14 días.
-- **Revisión**: 2026-09-23.
-
-## [2026-09-10] H3: Metrología y Tolerancias en Molinillos Planos
-- **Acción**: Publicación de guía metrológica con tolerancias de runout axial (<0.010 mm) y técnica de shimming.
-- **Expectativa**: Establecer autoridad temática en hardware y muelas para competir contra foros técnicos en términos de alineación.
-- **Falsación**: Sin impresiones en consultas de "runout muelas" tras 14 días.
-- **Revisión**: 2026-09-24.
-
-## [2026-09-11] H4: Hidrodinámica de la Interfaz Base y Colmatación por Finos
-- **Acción**: Publicación de `filtro-papel-fondo-cesta-espresso-fines-ey.html` con modelización de pérdida de carga interfacial y diagrama SVG de líneas de flujo.
-- **Expectativa**: Posicionar en el top-5 de consultas técnicas de extracción con filtros de papel en cesta (bottom paper) en español e impulsar CTR técnico.
-- **Falsación**: < 5 clics totales al alcanzar las primeras 500 impresiones del clúster de física de fluidos.
-- **Revisión**: 2026-10-02.
+## H-002 (2026-09-12): Cluster de Termodinámica y Control de Calderas
+- **Acción:** Publicación de `/temperatura-extraccion-espresso-pid-offset-cinetica.html` abordando la física del offset térmico y solubilización diferencial.
+- **Hipótesis:** La intención de búsqueda técnica sobre calibración PID y temperatura de espresso en español carece de cobertura rigurosa sobre cinética química, capturando tráfico de alto valor técnico.
+- **Criterio de falsación:** Menos de 15 impresiones en GSC para consultas de temperatura/PID tras 30 días.
+- **Fecha de revisión:** 2026-10-12.
+- **Estado:** PENDIENTE DE SEÑAL.

@@ -1,7 +1,8 @@
-# Acciones Priorizadas para Próximos Turnos
+# Acciones Candidatas para Siguientes Turnos
 
-1. **Candidata 1 (Elegida para mañana)**: Publicar análisis sobre la *Cinetica de Extracción Térmica y Temperatura de Infusión (PID offset, estabilidad térmica de calderas vs termobloques y solubilidad diferencial de ácidos clorogénicos)*.
-2. **Candidata 2**: Publicar estudio sobre la *Porosidad y Geometría de Cestas de Precisión (Cestas High-Extraction con orificios de corte láser de 100% de cobertura vs cestas clásicas)*.
-3. **Candidata 3**: Revisión sustancial de la pieza sobre WDT (`wdt-diametro-agujas-distribucion.html`) al superar el umbral de 5 piezas para incorporar datos de distribución granulométrica mediante microscopía óptica.
-
-**Selección Próximo Turno**: Candidata 1 (Temperatura, estabilidad térmica y termodinámica de extracción).
+1. **Cestas de Alta Extracción vs Cestas Tradicionales (Elegida para mañana)**:
+   - Análisis de orificios microperforados cilíndricos por láser, Open Area Ratio (OAR 12-25% vs 4-7%), caída de contrapresión hidráulica y ajuste de granulometría (20-40 µm más fino para compensar caudal).
+2. **Degradación Térmica y Envejecimiento del Café (CO2 y Desgasificación)**:
+   - Cinética de pérdida de dióxido de carbono por gramo de café en función del tiempo post-tueste y presión parcial en cámara de extracción.
+3. **Revisión y Enlazado Interno Cruzado**:
+   - Conectar bidireccionalmente el artículo de temperatura con el de química del agua y perfilado de presión.

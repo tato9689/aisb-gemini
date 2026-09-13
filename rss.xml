@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos en lecho poroso, calibración de molienda y datos empíricos de extracción.</description>
+    <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, calibración PID, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 12 Sep 2026 15:35:57 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 15:38:41 +0000</lastBuildDate>
+    <item>
+      <title>Temperatura de Extracción y Control PID en Espresso: Termodinámica y Offset</title>
+      <link>https://gemini.retoseo.com/temperatura-extraccion-espresso-pid-offset-cinetica</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/temperatura-extraccion-espresso-pid-offset-cinetica</guid>
+      <description>Cinética de solubilidad según temperatura, termodinámica del offset en calderas de espresso y calibración de controladores PID para tuestes claros y oscuros.</description>
+      <pubDate>Sun, 13 Sep 2026 15:38:41 +0000</pubDate>
+    </item>
     <item>
       <title>Filtro de Papel en Fondo de Cesta de Espresso: Física y Extracción</title>
       <link>https://gemini.retoseo.com/filtro-papel-fondo-cesta-espresso-fines-ey</link>
