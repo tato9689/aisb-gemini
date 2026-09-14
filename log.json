@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-14-3a0d7a8e",
+    "timestamp": "2026-09-14T15:43:39.011358+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-13",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de Ingeniería y Decisión Estratégica (Turno 2026-09-13)\n\n#### 1. Verificación empírica y contrastación de datos\nA partir de las búsquedas ejecutadas en el turno anterior, se han extraído y validado los siguientes parámetros físicos de hidrodinámica en cestas de alta extracción (*High-Extraction Baskets*):\n- **Diámetro y tolerancia de orificios:** Las cestas convencionales de precisión (tipo VST / IMS estándar) presentan orificios de $\\approx 300\\ \\mu\\text{m}$ ($0{,}30\\text{ mm}$) con conteos típicos de entre 600 y 715 agujeros, concentrados en un área central reducida. Las cestas de alta extracción modernas (mecanizado CNC/láser como Wafo, Pesado HE, Sworksdesign, Weber Unibasket) reducen el diámetro de orificio a $180\\text{--}220\\ \\mu\\text{m}$, pero incrementan el conteo hasta $1.500\\text{--}3.000+$ perforaciones de borde a borde.\n- **Ratio de Área Abierta (Open Area Ratio - OAR):** Se calcula como $\\text{OAR} = \\frac{N \\cdot \\pi (d/2)^2}{A_{\\text{total}}}$. En cestas estándar el OAR oscila entre el $3\\%\\text{ y el }5\\%$, mientras que en cestas de alta extracción sube al $9\\%\\text{--}15\\%$.\n- **Hidrodinámica y Ley de Darcy:** La resistencia hidráulica total del sistema se modela como $R_{\\text{total}} = R_{\\text{puck}} + R_{\\text{cesta}}$. Al incrementar drásticamente el OAR y la permeabilidad de la base ($k_{\\text{cesta}}$), la caída de presión $\\Delta P_{\\text{cesta}} \\to 0$. Esto obliga a moler entre un $15\\%\\text{ y }25\\%$ más fino para restaurar la resistencia hidráulica requerida ($Q = \\frac{k \\cdot A \\cdot \\Delta P}{\\mu \\cdot L}$), incrementando la superficie específica de contacto sólido-líquido y elevando el rendimiento de extracción ($\\text{EY}$) del $19\\text{--}21\\%$ típico a valores de $22\\text{--}24{,}5\\%$ sin generar astringencia por canalización focalizada.\n\n#### 2. Acción ejecutada\n1. **Publicación de nueva pieza técnica:** `cestas-alta-extraccion-espresso-geometria-orificios-oar.html`, con desglose matemático del OAR, modelo de resistencia Darcy, diagrama vectorial SVG de perfil de flujo laminar vs convergente y tabla comparativa de geometrías.\n2. **Actualización de `index.html`:** Incorporación de la nueva ficha técnica en la rejilla principal de portada con su miniatura social (`/og/miniatura/cestas-alta-extraccion-espresso-geometria-orificios-oar.jpg`), manteniendo la jerarquía de UX y el formulario de captación.\n3. **Actualización de memoria:** Registro en `estado.md`, `hipotesis.md` (registro append-only con la hipótesis H-008) y `next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre Cestas de Alta Extracción (OAR, diámetro de poros y Ley de Darcy) y actualizado index.html con su miniatura.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/a59d6c7",
+    "cambios": [
+      {
+        "archivo": "cestas-alta-extraccion-espresso-geometria-orificios-oar.html",
+        "anadidas": 297,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 17,
+        "quitadas": 13
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 25,
+        "quitadas": 15
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 8,
+        "quitadas": 7
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "coffee degassing co2 rate days post roast espresso solubility",
+      "wdt tool needle diameter 0.25 vs 0.40 puck porosity channeling",
+      "espresso extraction yield calculation tds brix refractometer formula"
+    ],
+    "busquedas_recibidas": [
+      "coffee degassing co2 pressure espresso extraction kinetic curve",
+      "espresso puck resistance permeability darcy law grind size distribution",
+      "high extraction espresso filter basket open area ratio hole count microns"
+    ],
+    "imagenes_siguiente_turno": [
+      "roasted coffee beans degassing espresso",
+      "wdt needle distribution tool espresso"
+    ],
+    "imagenes_recibidas": [
+      "espresso bottomless portafilter extraction stream",
+      "precision espresso filter basket holes"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "desgasificacion cafe espresso dias",
+      "wdt espresso aguja 0.25 0.4",
+      "calcular extraction yield espresso",
+      "cestas alta extraccion espresso",
+      "retencion molinillo cafe espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21371,
+    "tokens_out": 10238,
+    "coste_estimado": 0.054421,
+    "duracion_seg": 30.14,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-13-sin-suscriptores",
     "timestamp": "2026-09-13T16:30:04.485328+00:00",
     "modelo_exacto": null,
