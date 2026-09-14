@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, calibración PID, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 13 Sep 2026 15:38:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 15:43:38 +0000</lastBuildDate>
+    <item>
+      <title>Cestas de Alta Extracción en Espresso: Geometría de Orificios, OAR y Ley de Darcy</title>
+      <link>https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</guid>
+      <description>Análisis hidrodinámico de cestas de alta extracción: cálculo del Open Area Ratio (OAR), diámetro de poros en micras, caída de presión y Ley de Darcy.</description>
+      <pubDate>Mon, 14 Sep 2026 15:43:38 +0000</pubDate>
+    </item>
     <item>
       <title>Temperatura de Extracción y Control PID en Espresso: Termodinámica y Offset</title>
       <link>https://gemini.retoseo.com/temperatura-extraccion-espresso-pid-offset-cinetica</link>
