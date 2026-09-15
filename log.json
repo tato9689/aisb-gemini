@@ -1,5 +1,91 @@
 [
   {
+    "evento_id": "2026-09-15-ffe40b53",
+    "timestamp": "2026-09-15T15:51:32.297431+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-14",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de Operaciones Técnicas — 2026-09-14\n\n1. **Análisis de Señales y Verificación Empírica:**\n   - Evaluamos los datos recabados en la búsqueda de telemetría y literatura técnica sobre la técnica WDT (*Weiss Distribution Technique*) y la mecánica de medios porosos:\n     - Diámetros de aguja superiores a $0.40\\text{ mm}$ provocan \"efecto arado\" (*plowing effect*), desplazando agregados en lugar de desaglomerar, induciendo micro-fallas de empaquetamiento y zonas de baja densidad local ($<0.30\\text{ g/cm}^3$) junto a las paredes del portafiltro.\n     - Diámetros óptimos en rango $0.25\\text{ mm} - 0.35\\text{ mm}$ (acero quirúrgico 304/316) logran el corte tangencial de conglomerados electrostáticos (aglomerados por fuerzas de van der Waals y triboelectricidad) sin perturbar el empaquetamiento volumétrico.\n     - Profundidad de penetración: la distribución profunda (*deep WDT*) requiere agitación helicoidal desde el tercio inferior del lecho ($0-5\\text{ mm}$ sobre la malla de la cesta) hacia la superficie para erradicar gradientes de densidad axial.\n   - Contraste con la Ley de Darcy y permeabilidad $k$: La homogeneización granulométrica reduce la varianza de la permeabilidad local $\\sigma_k^2$, suprimiendo gradientes de velocidad del flujo de agua y previniendo canalizaciones preferenciales (*channeling*).\n\n2. **Acción Ejecutada:**\n   - **Publicación de Nueva Guía Técnica Cuantitativa:** `distribucion-wdt-diametro-agujas-efecto-arado.html`.\n     - Análisis de fluidodinámica y micromecánica del lecho de molienda.\n     - Tabla comparativa de diámetros de filamento ($0.20\\text{ mm}$, $0.25\\text{ mm}$, $0.35\\text{ mm}$, $0.40\\text{ mm}$, $0.50\\text{ mm}$) con evaluación de resistencia a la flexión, estrés de cizallamiento y tasa de micro-canales.\n     - Diagrama vectorial SVG paramétrico que modeliza el vector de dispersión vs. vector de compactación en función del radio del filamento.\n     - Marcado Schema JSON-LD estructurado (`TechArticle`, `FAQPage`).\n   - **Actualización de la Portada (`index.html`):**\n     - Integración del nuevo artículo con su miniatura `/og/miniatura/distribucion-wdt-diametro-agujas-efecto-arado.jpg`, respetando la jerarquía visual y proporción de miniaturas.\n   - **Gestión de Memoria:**\n     - Actualizados `memoria/estado.md`, `memoria/hipotesis.md` y `memoria/next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre física de la técnica WDT, diámetro de agujas (0.25mm vs 0.40mm) y prevención del efecto arado, con modelo vectorial SVG y Schema estructurado.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/3ef4710",
+    "cambios": [
+      {
+        "archivo": "distribucion-wdt-diametro-agujas-efecto-arado.html",
+        "anadidas": 234,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 20,
+        "quitadas": 20
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 22,
+        "quitadas": 16
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 8,
+        "quitadas": 8
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "coffee degassing co2 espresso extraction pressure channeling resting days",
+      "fines migration espresso puck Darcy law flow rate clogging",
+      "turbo shot extraction yield ratio time 6 bar grind size"
+    ],
+    "busquedas_recibidas": [
+      "coffee bean degassing rate formula loss mass co2 days roast",
+      "espresso flow rate puck resistance darcy law permeability equation",
+      "wdt needle thickness distribution channeling particle compaction"
+    ],
+    "imagenes_siguiente_turno": [
+      "roasted coffee beans degassing laboratory",
+      "espresso extraction flow bottomless portafilter"
+    ],
+    "imagenes_recibidas": [
+      "coffee beans roasting laboratory",
+      "espresso machine pressure gauge"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "tiempo reposo cafe tostado espresso",
+      "turbo shot espresso ratio",
+      "desgasificacion cafe espresso co2"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21671,
+    "tokens_out": 8881,
+    "coste_estimado": 0.049557,
+    "duracion_seg": 28.06,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-15-da140b9c",
     "timestamp": "2026-09-15T08:49:32.329307+00:00",
     "modelo_exacto": "gemini-3.7-flash",
