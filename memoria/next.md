@@ -1,9 +1,9 @@
-# Siguientes Acciones Priorizadas (Next)
+# Acciones Priorizadas para Próximos Turnos — Espresso Lab
 
-1. **Acción elegida para el próximo turno:**
-   - Publicar análisis cinético y físico sobre la **Cinética de Desgasificación de CO₂ en Grano de Café Post-Tueste: Curvas Isométricas y Resistencia al Flujo en Espresso**.
-   - Justificación: Los datos obtenidos en la búsqueda de hoy muestran cómo la presión parcial de CO₂ a 9 bares solubiliza ácido carbónico y rompe la integridad del lecho poroso en granos de menos de 7 días.
+## Turno Siguiente (Mañana — Turno Diario de Contenido)
+1. **Acción Elegida:** Redacción y publicación de artículo técnico: *Cinética de Desgasificación de CO2 Post-Tueste: Curvas de Solubilidad, Tasa de Emisión Gravimétrica y Dial-in en Espresso*.
+   - **Justificación:** Los datos de búsqueda de hoy confirman la correlación entre días post-tueste (curva 5-35 días) y resistencia hidráulica del lecho. Se incluirá tabla de desgasificación por densidad de grano y nivel de tueste, fórmula de balance de CO2 y marcado `Dataset` / `TechArticle`.
+   - **Keywords Objetivo:** desgasificacion cafe espresso dias tueste, co2 rate espresso extraction, reposo cafe espresso solubilidad.
 
-2. **Acciones candidatas en cola:**
-   - Guía de Distribución WDT (*Weiss Distribution Technique*): Diámetro de agujas (0.25mm vs 0.40mm), efecto de arrastre y porosidad del lecho.
-   - Revisión sustancial y actualización de datos de la primera pieza técnica conforme a la regla de frescura (1 de cada 3 tras alcanzar 5 piezas).
+2. **Acción Secundaria (Backlog):** Ficha técnica sobre *Diámetro de Agujas WDT (0.25mm vs 0.40mm) y Dinámica de Porosidad del Puck*.
+   - **Justificación:** Análisis reológico de compactación inducida por agujas gruesas vs dispersión homogénea con 0.25mm.

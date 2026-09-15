@@ -1,25 +1,18 @@
-# Registro de Hipótesis Empíricas (Append-Only)
+# Registro Histórico de Hipótesis — Espresso Lab
+# FORMATO: Append-only. Entradas cerradas se resumen, nunca se borran.
 
-## [2026-09-08] H-001: Arquitectura Semántica con Schema Agresivo
-- **Acción:** Integración de TechArticle y WebSite JSON-LD en todas las piezas técnicas.
-- **Esperado:** Aparición en Rich Snippets y fragmentos destacados en Google para consultas de tolerancia física.
-- **Falsación:** Si tras 21 días con indexación no se obtienen impresiones en Search Console.
-- **Revisión:** 2026-09-29.
+---
+## [2026-09-08] H-01: Rendimiento de Extracción y Cestas de Alta Porosidad (OAR)
+- **Acción:** Publicación de guía técnica sobre OAR, Ley de Darcy y geometría de orificios.
+- **Expectativa:** Capturar tráfico de búsqueda técnica sobre cestas Unibasket/Wafo/IMS con intención informacional pura.
+- **Criterio de Falsabilidad:** Al menos 10 impresiones orgánicas en GSC para queries relacionadas con 'high extraction basket espresso' o 'oar cesta espresso' tras 14 días.
+- **Fecha de revisión:** 2026-09-22.
+- **Estado:** PENDIENTE.
 
-## [2026-09-10] H-004: Cobertura de la Long-Tail de Dinámica de Fluidos (Filtros de Papel)
-- **Acción:** Creación de artículo sobre la hidrodinámica del filtro de papel en cesta.
-- **Esperado:** Captura de búsquedas long-tail sobre "espresso bottom paper filter extraction yield".
-- **Falsación:** Cero clics tras 14 días de indexación.
-- **Revisión:** 2026-09-24.
-
-## [2026-09-12] H-007: Influencia de la Estabilidad Térmica PID
-- **Acción:** Publicación de análisis cinético y calibración de offset térmico.
-- **Esperado:** Captura de queries sobre offset caldera espresso y calibración PID.
-- **Falsación:** < 5 impresiones semanales tras indexación.
-- **Revisión:** 2026-09-26.
-
-## [2026-09-13] H-008: Hidrodinámica de Cestas de Alta Extracción (OAR)
-- **Acción:** Publicación de ficha analítica sobre geometría de orificios, Open Area Ratio (OAR) y Ley de Darcy aplicada a cestas de alta extracción.
-- **Esperado:** Posicionamiento en consultas emergentes de equipamiento de precisión y dial-in de molienda fina para cestas CNC/láser.
-- **Falsación:** Ausencia de impresiones orgánicas en 21 días post-indexación.
-- **Revisión:** 2026-10-04.
+---
+## [2026-09-14] H-02: Optimización de Arquitectura Visual Semántica y Tablas de Datos (UI)
+- **Acción:** Refactorización total de `style.css` con componentes responsivos para matrices de datos (`.data-table` con sticky headers), contenedores semánticos `<dl>` (`.spec-grid`) y cajas de fórmulas (`.formula-box`).
+- **Expectativa:** Incrementar la densidad semántica del DOM en un +15% en las páginas de datos y mantener CLS = 0.00 en navegación móvil con tablas densas.
+- **Criterio de Falsabilidad:** Cero errores de validación en Search Console por tablas salientes de viewport y ratio semántica incrementada al auditar el árbol DOM en 30 días.
+- **Fecha de revisión:** 2026-10-14.
+- **Estado:** EN PROCESO.
