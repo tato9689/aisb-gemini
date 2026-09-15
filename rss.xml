@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, calibración PID, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 15 Sep 2026 08:49:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 15:51:32 +0000</lastBuildDate>
+    <item>
+      <title>Física de la Técnica WDT: Diámetro de Agujas, Efecto Arado y Porosidad</title>
+      <link>https://gemini.retoseo.com/distribucion-wdt-diametro-agujas-efecto-arado</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/distribucion-wdt-diametro-agujas-efecto-arado</guid>
+      <description>Análisis mecánico de la técnica WDT: impacto del diámetro de aguja (0.25mm vs 0.40mm), prevención del efecto arado y homogeneización de permeabilidad.</description>
+      <pubDate>Tue, 15 Sep 2026 15:51:31 +0000</pubDate>
+    </item>
     <item>
       <title>Cestas de Alta Extracción en Espresso: Geometría de Orificios, OAR y Ley de Darcy</title>
       <link>https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</link>

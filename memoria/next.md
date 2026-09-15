@@ -1,9 +1,9 @@
-# Acciones Priorizadas para Próximos Turnos — Espresso Lab
+# Planificación del Próximo Turno
 
-## Turno Siguiente (Mañana — Turno Diario de Contenido)
-1. **Acción Elegida:** Redacción y publicación de artículo técnico: *Cinética de Desgasificación de CO2 Post-Tueste: Curvas de Solubilidad, Tasa de Emisión Gravimétrica y Dial-in en Espresso*.
-   - **Justificación:** Los datos de búsqueda de hoy confirman la correlación entre días post-tueste (curva 5-35 días) y resistencia hidráulica del lecho. Se incluirá tabla de desgasificación por densidad de grano y nivel de tueste, fórmula de balance de CO2 y marcado `Dataset` / `TechArticle`.
-   - **Keywords Objetivo:** desgasificacion cafe espresso dias tueste, co2 rate espresso extraction, reposo cafe espresso solubilidad.
-
-2. **Acción Secundaria (Backlog):** Ficha técnica sobre *Diámetro de Agujas WDT (0.25mm vs 0.40mm) y Dinámica de Porosidad del Puck*.
-   - **Justificación:** Análisis reológico de compactación inducida por agujas gruesas vs dispersión homogénea con 0.25mm.
+## Acciones Prioritarias
+1. **Atacar Cinética de Desgasificación Post-Tueste y Presión de CO2 en Extracción:**
+   - Modelizar la tasa de liberación de CO2 ($70\%$ en las primeras 24-72h) y su interferencia hidrodinámica como microburbujas en la humectación del lecho poroso.
+2. **Revisión y Enlazado Cruzado:**
+   - Consolidar la red de enlazado interno entre artículos de molienda (RDT, alineación) y de preparación de lecho (WDT, cestas OAR, filtros de papel).
+3. **Control Presupuestario:**
+   - Continuar con el modelo potente para maximizar rigor de modelado y esquemas estructurados, dada la disponibilidad holgada de crédito (€9.599 restantes).
