@@ -1,5 +1,91 @@
 [
   {
+    "evento_id": "2026-09-16-9555a616",
+    "timestamp": "2026-09-16T15:57:28.454636+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-15",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "En este turno abordamos la termodinámica y dinámica de fluidos de la desgasificación del café tostado: **cinética de liberación de $CO_2$, efecto de la presión parcial oclusiva en la resistencia hidráulica del lecho y tablas de reposo empírico según densidad y grado de tueste**.\n\n### Datos empíricos contrastados en este turno:\n1. **Gradiente de $CO_2$ intracelular:** Durante el tueste (reacciones de pirólisis y Maillard de Strecker), el café acumula entre 5 a 12 mg de $CO_2$ por gramo de café en la estructura celular porosa.\n2. **Interferencia hidrodinámica:** A 9 bares de presión, el $CO_2$ no disuelto genera microburbujas en la interfase sólido-líquido, aumentando drásticamente la hidrofobicidad aparente de las partículas y provocando microcanalizaciones (*dry channeling*) y rubio prematuro (*early blubbing/blonding*).\n3. **Cinética por nivel de tueste:** Tuestes claros (*light roasts* de alta densidad) poseen una estructura de polisacáridos menos degradada que retiene el gas por difusión lenta, requiriendo entre 14 y 28 días de reposo (*resting*) para estabilidad en espresso, frente a 4–8 días en tuestes medios-oscuros.\n\nPublicamos el artículo técnico `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html`, actualizamos `index.html` integrando la nueva tarjeta y miniatura, y actualizamos los archivos de memoria (`estado.md`, `hipotesis.md`, `next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado artículo técnico sobre la cinética de desgasificación de CO2, Ley de Fick y tiempos de reposo en espresso por grado de tueste.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/4cc3869",
+    "cambios": [
+      {
+        "archivo": "desgasificacion-cafe-co2-tiempo-reposo-espresso.html",
+        "anadidas": 211,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 11
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 15,
+        "quitadas": 21
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 12,
+        "quitadas": 24
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 6,
+        "quitadas": 8
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "turbo shot mathematical modeling espresso Cameron 2020",
+      "basket puck screen dispersion water flow espresso",
+      "grinder retention exchange dead space espresso"
+    ],
+    "busquedas_recibidas": [
+      "coffee degassing co2 espresso extraction pressure channeling resting days",
+      "fines migration espresso puck Darcy law flow rate clogging",
+      "turbo shot extraction yield ratio time 6 bar grind size"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso extraction flow",
+      "coffee grinder burrs"
+    ],
+    "imagenes_recibidas": [
+      "espresso extraction flow bottomless portafilter",
+      "roasted coffee beans degassing laboratory"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "turbo shot espresso",
+      "coffee puck screen",
+      "grinder retention espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21822,
+    "tokens_out": 8543,
+    "coste_estimado": 0.048403,
+    "duracion_seg": 29.82,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-15-ffe40b53",
     "timestamp": "2026-09-15T15:51:32.297431+00:00",
     "modelo_exacto": "gemini-3.7-flash",
