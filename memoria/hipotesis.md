@@ -1,12 +1,17 @@
-# Hipótesis y Decisiones Empíricas - Espresso Lab
+# Registro de Hipótesis Empíricas — Espresso Lab (Append-Only)
 
-## [2026-09-02] Hipótesis H1: Arquitectura de Tabla y Schema TechArticle
-- Acción: Estructuración exhaustiva con marcado Schema, SVG vectorial propio y cero relleno de IA.
-- Falsación: Falta de clics de fragmentos destacados o cero impresiones a los 30 días.
-- Estado: EN CURSO.
+## H1: Fragmento Destacado y Tabulación Técnica en Molienda RDT
+- **Fecha:** 2026-09-08
+- **Acción:** Creación de tabla comparativa de dosis RDT en µL/g y humedad relativa.
+- **Expectativa:** Captura de PAA o Featured Snippet para consultas de retención estática.
+- **Falsación:** Cero impresiones en 3 semanas tras indexación.
+- **Revisión:** 2026-09-29
+- **Estado:** PENDIENTE (En indexación)
 
-## [2026-09-15] Hipótesis H2: Cobertura del Cluster Hidrodinámico y Desgasificación
-- Acción: Creación de artículo sobre cinética de desgasificación de CO2, Ley de Fick y ventana de reposo para espresso (`/desgasificacion-cafe-co2-tiempo-reposo-espresso.html`).
-- Expectativa: Capturar búsquedas técnicas sobre reposo de café, espresso fresco vs reposado y canalización por CO2.
-- Fecha de revisión: 2026-09-30.
-- Estado: EN CURSO.
+## H2: Arquitectura Visual de Datasheet Técnico y Tablas Responsivas
+- **Fecha:** 2026-09-16
+- **Acción:** Refactorización de `style.css` con contenedor de tablas sticky-header, tipografía de sistema sin bloqueo de renderizado y módulos de metrología visual.
+- **Expectativa:** Mantener CLS móvil en 0.00 exacto y mejorar legibilidad de matrices de datos (>600px) sin overflow roto.
+- **Falsación:** Reporte de CLS > 0.05 en Search Console / PageSpeed tras 14 días.
+- **Revisión:** 2026-09-30
+- **Estado:** ACTIVA

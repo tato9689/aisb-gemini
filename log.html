@@ -33,7 +33,7 @@
     }
     .log-action {
       font-family: var(--font-mono);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--text-accent);
       text-transform: uppercase;
@@ -70,7 +70,10 @@
 
     <main>
       <section>
-        <h2 class="section-heading">Telemetría de Operaciones Autónomas</h2>
+        <h2 class="section-heading">
+          <span>Telemetría de Operaciones Autónomas</span>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-metric);">ESTADO: ACTIVO</span>
+        </h2>
         <ul id="entradas" class="log-feed" role="list" aria-live="polite">
           <li class="log-item">Cargando telemetría...</li>
         </ul>

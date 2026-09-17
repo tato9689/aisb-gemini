@@ -1,36 +1,32 @@
 /* ==========================================================================
-   ESPRESSO LAB — SISTEMA DE DISEÑO TÉCNICO Y ARQUITECTURA DE DATOS
-   Estándar: Hoja de datos metrológica, alto contraste, cero ruido decorativo.
+   ESPRESSO LAB — HOJA DE ESTILOS DE ARQUITECTURA DE INFORMACIÓN TÉCNICA
+   Versión: 2.1 (Diseño de Datos Empíricos e Ingeniería de Fluidos)
    ========================================================================== */
 
 :root {
-  /* Tokens de Color Base (Espacio de Laboratorio Oscuro) */
-  --bg-base: #090c10;
-  --bg-surface: #121820;
-  --bg-surface-raised: #1a222d;
-  --bg-surface-alt: #161e29;
+  /* Tokens de Color — Entorno de Instrumentación y Alto Contraste */
+  --bg-canvas: #090d12;
+  --bg-surface: #0f1620;
+  --bg-surface-elevated: #162231;
+  --bg-surface-subtle: #1a2738;
   
-  /* Jerarquía de Bordes Metrológicos */
-  --border-subtle: #232f3e;
-  --border-medium: #334459;
+  --border-subtle: #1e2e42;
+  --border-medium: #2a3f5a;
   --border-accent: #38bdf8;
-  --border-amber: #f59e0b;
-  --border-emerald: #10b981;
+  --border-warning: #f59e0b;
 
-  /* Escala de Texto de Alto Contraste */
-  --text-main: #e6edf3;
-  --text-muted: #8b9bb0;
-  --text-dim: #65778d;
-  --text-bright: #ffffff;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
   --text-accent: #38bdf8;
-  --text-amber: #fbbf24;
-  --text-emerald: #34d399;
+  --text-highlight: #f8fafc;
+  --text-metric: #34d399;
 
-  /* Pilas Tipográficas */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* Tipografía de Sistema de Alta Precisión */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
-  /* Espaciado y Ritmo Modular */
+  /* Escala Espacial */
   --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
@@ -39,16 +35,17 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
 
-  /* Radios Funcionales */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  /* Radios de Precisión */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
 
-  /* Transiciones Funcionales de Estado */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Máximo Ancho de Lectura */
+  --max-width-content: 840px;
+  --max-width-container: 1080px;
 }
 
-/* Reset y Base */
+/* Reset y Normalización Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -56,11 +53,11 @@
 }
 
 html {
-  background-color: var(--bg-base);
-  color: var(--text-main);
-  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.6;
+  background-color: var(--bg-canvas);
+  color: var(--text-main);
+  font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -71,59 +68,64 @@ body {
   flex-direction: column;
 }
 
-/* Enlaces */
+/* Enlaces y Micro-interacciones */
 a {
   color: var(--text-accent);
   text-decoration: underline;
-  text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--text-bright);
-  text-decoration-color: var(--text-bright);
+  color: #7dd3fc;
+  text-decoration-color: #7dd3fc;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--border-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
 }
 
 /* Contenedor Principal */
 .container {
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
 }
 
-/* Encabezado del Sitio */
+/* Cabecera del Sitio */
 .site-header {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-xl);
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: var(--space-lg);
   margin-bottom: var(--space-2xl);
 }
 
 .site-title {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--text-bright);
+  color: var(--text-highlight);
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .site-title img {
   display: block;
 }
 
-.site-title a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .site-desc {
+  font-size: 1rem;
   color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-top: var(--space-xs);
-  max-width: 65ch;
+  max-width: 680px;
+  font-family: var(--font-sans);
   line-height: 1.5;
 }
 
@@ -133,36 +135,26 @@ a:hover {
   font-size: 0.85rem;
 }
 
-/* Tipografía de Contenido y Jerarquía */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-bright);
-  font-weight: 600;
-  line-height: 1.3;
-}
-
+/* Encabezados de Sección */
 .section-heading {
   font-size: 1.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-highlight);
+  border-bottom: 1px solid var(--border-medium);
+  padding-bottom: var(--space-xs);
   margin-bottom: var(--space-lg);
-  border-left: 3px solid var(--border-accent);
-  padding-left: var(--space-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-/* Rejilla de Artículos / Informes Técnicos */
+/* Rejilla de Artículos / Tarjetas Técnicas */
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-lg);
   margin-bottom: var(--space-2xl);
-}
-
-@media (min-width: 680px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .tech-card {
@@ -172,12 +164,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .tech-card:hover {
   border-color: var(--border-medium);
-  transform: translateY(-2px);
+  background-color: var(--bg-surface-elevated);
 }
 
 .tech-card img {
@@ -187,23 +179,25 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   display: block;
   border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-surface-subtle);
 }
 
 .tech-card-body {
-  padding: var(--space-md);
+  padding: var(--space-lg);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .tech-card-body h3 {
-  font-size: 1.05rem;
-  margin-bottom: var(--space-xs);
-  line-height: 1.4;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: var(--space-sm);
 }
 
 .tech-card-body h3 a {
-  color: var(--text-bright);
+  color: var(--text-highlight);
   text-decoration: none;
 }
 
@@ -212,65 +206,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tech-card-body p {
+  font-size: 0.9rem;
   color: var(--text-muted);
-  font-size: 0.875rem;
+  line-height: 1.5;
   margin-bottom: var(--space-md);
   flex-grow: 1;
-  line-height: 1.5;
 }
 
 .tech-card-meta {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-subtle);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--text-dim);
-  border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-sm);
 }
 
 .tech-card-meta span {
-  background: var(--bg-surface-raised);
+  background: var(--bg-surface-subtle);
   padding: 2px 6px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
 }
 
-/* ==========================================================================
-   ARQUITECTURA DE TABLAS DE DATOS RESPONSIVAS (CORE METROLOGY)
-   ========================================================================== */
-
-.table-responsive-wrapper {
+/* Tablas Técnicas Responsivas (Prioridad 1) */
+.table-container {
   width: 100%;
-  margin: var(--space-lg) 0;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  margin: var(--space-lg) 0;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   background: var(--bg-surface);
-  position: relative;
-}
-
-/* Indicador sutil de scroll para pantallas táctiles */
-.table-responsive-wrapper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 24px;
-  background: linear-gradient(90deg, transparent, rgba(9, 12, 16, 0.6));
-  pointer-events: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.875rem;
   text-align: left;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
+  font-size: 0.9rem;
+  min-width: 600px;
 }
 
 .data-table th,
@@ -280,11 +257,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .data-table th {
-  background: var(--bg-surface-raised);
-  color: var(--text-bright);
+  background: var(--bg-surface-elevated);
+  color: var(--text-highlight);
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   position: sticky;
@@ -293,229 +270,149 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid var(--border-medium);
 }
 
-.data-table tbody tr:nth-child(even) {
-  background: var(--bg-surface-alt);
-}
-
 .data-table tbody tr:hover {
-  background: var(--bg-surface-raised);
+  background: var(--bg-surface-subtle);
 }
 
-/* Alineación de datos según naturaleza semántica */
-.data-table td.num,
-.data-table th.num {
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table td.numeric {
+  font-family: var(--font-mono);
   text-align: right;
-  font-family: var(--font-mono);
+  color: var(--text-highlight);
 }
 
-.data-table td.center,
-.data-table th.center {
-  text-align: center;
-}
-
-.data-table .highlight {
-  color: var(--text-accent);
-  font-weight: 600;
-}
-
-/* ==========================================================================
-   COMPONENTES SEMÁNTICOS Y ESPECIFICACIONES TÉCNICAS (SCHEMA UI)
-   ========================================================================== */
-
-/* Bloques de Especificaciones de Producto / Extracción */
-.spec-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-sm);
-  margin: var(--space-lg) 0;
-}
-
-.spec-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: var(--space-sm) var(--space-md);
-}
-
-.spec-card dt {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 2px;
-}
-
-.spec-card dd {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-bright);
-  font-family: var(--font-mono);
-}
-
-/* Bloque de Fórmulas y Ecuaciones Físicas */
-.formula-box {
-  background: var(--bg-surface);
-  border-left: 3px solid var(--border-accent);
-  border-top: 1px solid var(--border-subtle);
-  border-right: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: var(--space-md);
-  margin: var(--space-lg) 0;
-  font-family: var(--font-mono);
-}
-
-.formula-box .formula-title {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: var(--text-accent);
-  font-weight: 700;
-  margin-bottom: var(--space-xs);
-  letter-spacing: 0.04em;
-}
-
-.formula-box .formula-math {
-  font-size: 1.05rem;
-  color: var(--text-bright);
-  background: var(--bg-base);
-  padding: var(--space-sm);
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
-  overflow-x: auto;
-  margin-bottom: var(--space-xs);
-}
-
-.formula-box .formula-desc {
-  font-size: 0.825rem;
-  color: var(--text-muted);
-  font-family: var(--font-sans);
-  line-height: 1.4;
-}
-
-/* Contenedor de Diagramas Vectoriales SVG */
-.svg-chart-container {
-  width: 100%;
+/* Componentes de Diagramas SVG y Métricas */
+.chart-container {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  padding: var(--space-lg);
   margin: var(--space-lg) 0;
 }
 
-.svg-chart-container svg {
+.chart-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.chart-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.chart-svg {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.chart-caption {
+.data-source {
+  margin-top: var(--space-sm);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--text-dim);
-  text-align: center;
-  margin-top: var(--space-xs);
+  border-top: 1px dashed var(--border-subtle);
+  padding-top: var(--space-xs);
 }
 
-/* ==========================================================================
-   FORMULARIO DE CAPTACIÓN TÉCNICA
-   ========================================================================== */
-
+/* Sección de Newsletter / Captación Técnica */
 .newsletter-section {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-accent);
   border-radius: var(--radius-md);
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--space-xl);
   margin: var(--space-2xl) 0;
-  border-top: 2px solid var(--border-accent);
 }
 
 .newsletter-section h3 {
   font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-highlight);
   margin-bottom: var(--space-xs);
-  color: var(--text-bright);
 }
 
 .newsletter-section p {
+  font-size: 0.95rem;
   color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
-.newsletter-form {
+.newsletter-form .form-row {
   display: flex;
-  flex-direction: column;
   gap: var(--space-sm);
-  max-width: 480px;
-}
-
-.form-row {
-  display: flex;
-  gap: var(--space-xs);
+  flex-wrap: wrap;
 }
 
 .form-input {
-  flex-grow: 1;
-  background: var(--bg-base);
+  flex: 1 1 280px;
+  background: var(--bg-canvas);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-md);
-  color: var(--text-bright);
+  color: var(--text-highlight);
   font-family: var(--font-mono);
-  font-size: 0.875rem;
-  transition: border-color var(--transition-fast), outline var(--transition-fast);
+  font-size: 0.9rem;
+  transition: border-color 0.15s ease;
 }
 
 .form-input:focus {
-  outline: 2px solid var(--accent-blue, #38bdf8);
-  border-color: transparent;
+  outline: none;
+  border-color: var(--border-accent);
 }
 
 .btn-primary {
-  background: var(--text-accent);
-  color: var(--bg-base);
+  background: var(--border-accent);
+  color: #020617;
   border: none;
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-lg);
-  font-weight: 600;
-  font-size: 0.875rem;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
   font-family: var(--font-sans);
-  transition: background var(--transition-fast);
-  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
 }
 
 .btn-primary:hover {
-  background: var(--text-bright);
+  background: #7dd3fc;
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--text-highlight);
+  outline-offset: 2px;
 }
 
 .consentimiento {
-  font-size: 0.775rem;
+  margin-top: var(--space-sm);
+  font-size: 0.8rem;
   color: var(--text-dim);
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
 }
 
 .consentimiento input[type="checkbox"] {
   accent-color: var(--border-accent);
+  margin-right: 4px;
 }
 
-/* ==========================================================================
-   PIE DE PÁGINA Y TRANSPARENCIA OBLIGATORIA
-   ========================================================================== */
-
+/* Pie de Página Obligatorio */
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--border-subtle);
-  padding: var(--space-xl) 0;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+  font-size: 0.85rem;
   color: var(--text-dim);
-  font-size: 0.8rem;
-  line-height: 1.6;
-}
-
-.site-footer p {
-  margin-bottom: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .site-footer a {
@@ -523,5 +420,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer a:hover {
-  color: var(--text-bright);
+  color: var(--text-accent);
+}
+
+/* Adaptación Responsiva */
+@media (max-width: 640px) {
+  .site-header {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-lg);
+  }
+  .site-title {
+    font-size: 1.4rem;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-section {
+    padding: var(--space-lg);
+  }
+  .btn-primary {
+    width: 100%;
+  }
 }
