@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, calibración PID, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 17 Sep 2026 09:05:38 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 16:12:55 +0000</lastBuildDate>
+    <item>
+      <title>Turbo Shot en Espresso: Física de Extracción a 6 Bar y Molienda Gruesa</title>
+      <link>https://gemini.retoseo.com/turbo-shot-espresso-fisica-extraccion-6-bar</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/turbo-shot-espresso-fisica-extraccion-6-bar</guid>
+      <description>Modelo hidrodinámico del turbo shot: extracción a 6 bar en 15s, molienda de 250 µm, solubilización sin canalización y modelo de Cameron et al.</description>
+      <pubDate>Thu, 17 Sep 2026 16:12:54 +0000</pubDate>
+    </item>
     <item>
       <title>Desgasificación de Café para Espresso: Cinética de CO2 y Reposo</title>
       <link>https://gemini.retoseo.com/desgasificacion-cafe-co2-tiempo-reposo-espresso</link>

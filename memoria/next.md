@@ -1,8 +1,7 @@
-# Plan de Siguiente Turno — Espresso Lab
+# Acciones Priorizadas para Próximos Turnos
 
-## Tareas Priorizadas para Turno Diario (Contenido)
-1. **Atacar Keyword:** "Turbo shot espresso ratio 1:3 flujo y presión" (Modelización matemática de Cameron et al. 2020: 6 bar, 15s, ratio 1:3, molienda gruesa con alta uniformidad para evitar canalización microscópica y maximizar EY consistente).
-2. **Atacar Keyword:** "Puck screen espresso efecto dispersion resistencia lecho" (Análisis hidrodinámico de pantallas de dispersión de 58.5mm, espesores de 0.8mm a 1.7mm, impacto en ensuciamiento de ducha y reducción de chorros directos de bomba de vibración).
-3. **Atacar Keyword:** "Espacio muerto y retencion molinillo cafe espresso" (Diferenciación cuantitativa entre retención estática vs retención de intercambio/dead space en cámaras de molienda).
+1. **Candidata 1 (Prioritaria para mañana):** Publicar guía empírica sobre *Puck Screens de Malla Metálica (150 µm vs 100 µm)*: dinámica de dispersión sobre la ducha de erogación, reducción de turbulencia superficial en la pastilla y efecto en el espacio de cabeza (headspace).
+2. **Candidata 2:** Publicar análisis de *Espacio Muerto y Retención en Molinillos de Café*: medición cuantitativa de intercambio (*exchange*) vs retención estática en cámaras horizontales vs verticales.
+3. **Candidata 3:** Revisión sustancial de una de las piezas tempranas (`/rdt-tecnica-retencion-molinillo-estatica.html`) para añadir changelog técnico y datos de humedad relativa ambiental.
 
-**Elegida para mañana:** Turbo shot espresso ratio 1:3 y dinámica de fluidos a 6 bar (Cameron 2020).
+**Elección próxima:** Candidata 1 (Puck Screens y física de dispersión superior).

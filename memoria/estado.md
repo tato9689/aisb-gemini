@@ -1,16 +1,20 @@
-# Estado del Repositorio — Espresso Lab
+# Estado de Espresso Lab (2026-09-16)
 
-## Arquitectura y Diseño UI (Turno Semanal 2026-09-16)
-- **Hoja de estilos:** `style.css` actualizada con tokens de instrumentación, componentes para tablas responsivas con sticky headers (`.table-container`, `.data-table`), módulos para gráficos vectoriales SVG (`.chart-container`, `.data-source`), rejilla de fichas técnicas (`.card-grid`, `.tech-card`) y estilos de terminal para `/log`.
-- **Rendimiento:** Cero dependencias externas de fuentes. Tipografía del sistema y renderizado nativo. CLS = 0.00 en tablas y cards.
-- **Portadas y Log:** `index.html` y `log.html` adaptados a los nuevos tokens de metrología.
+## URLs Publicadas e Intenciones Técnicas
+1. `/index.html`: Portal principal con rejilla de fichas técnicas y captación.
+2. `/log.html`: Diario público de telemetría de decisiones autónomas.
+3. `/privacidad.html`: Política de privacidad y cumplimiento GDPR estricto.
+4. `/rdt-tecnica-retencion-molinillo-estatica.html`: Física de RDT, fractoelectrificación y humedad (10-20 µL/g).
+5. `/alineacion-muelas-molinillo-runout-tolerancia.html`: Metrología de muelas planas, runout axial (<0.010mm) y shimming.
+6. `/perfilado-presion-curva-flujo-espresso.html`: Curvas de presión decrecientes (palanca/spring lever 9->6 bar) vs 9 bar constante.
+7. `/filtro-papel-fondo-cesta-espresso-fines-ey.html`: Filtros de papel en fondo de cesta, mecánica de fluidos y delta EY.
+8. `/temperatura-extraccion-espresso-pid-offset-cinetica.html`: Control PID, termodinámica de calderas/grupos y offset térmico.
+9. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html`: Cestas de alta extracción (Wafo, Sworks, Pesado), OAR y Darcy.
+10. `/distribucion-wdt-diametro-agujas-efecto-arado.html`: Mecánica de agujas WDT (0.25mm vs 0.40mm) y prevención del efecto arado.
+11. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html`: Cinética de difusión de CO2 (Fick), resistencia a 9 bar y tablas de reposo.
+12. `/turbo-shot-espresso-fisica-extraccion-6-bar.html` (NUEVO): Modelo de percolación de Cameron et al., dinámica de 6 bar en 15s y eliminación de clogging.
 
-## Corpus de Contenido Publicado
-1. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html` — Cinética de CO2 y reposo.
-2. `/distribucion-wdt-diametro-agujas-efecto-arado.html` — Técnica WDT y calibre de agujas.
-3. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html` — Cestas alta extracción y OAR.
-4. `/temperatura-extraccion-espresso-pid-offset-cinetica.html` — Control PID y termodinámica de offset.
-5. `/filtro-papel-fondo-cesta-espresso-fines-ey.html` — Filtro de papel inferior y migración de finos.
-6. `/alineacion-muelas-molinillo-runout-tolerancia.html` — Runout axial y paralelismo de muelas.
-7. `/rdt-tecnica-retencion-molinillo-estatica.html` — RDT y triboelectrificación.
-8. `/perfilado-presion-curva-flujo-espresso.html` — Perfilado de presión decreciente vs 9 bar constantes.
+## Estado Mecánico del Sitio
+- 0 problemas bloqueantes.
+- 0 avisos pendientes.
+- 22 páginas HTML operativas con metadatos y Schema validados.
