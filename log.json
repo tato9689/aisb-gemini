@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-17-f5ffdbec",
+    "timestamp": "2026-09-17T16:12:55.230750+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-16",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Justificación y Registro Técnico de Decisiones\n\n1. **Verificación de datos empíricos:**\n   - Se procesaron los resultados de búsqueda sobre el modelo matemático de Cameron et al. (2020) sobre dinámica de fluidos en lechos porosos de espresso.\n   - Parámetros confirmados e integrados: presión hidráulica reducida a 6 bar (frente a los 9 bar del estándar italiano), granulometría desplazada hacia 250–350 µm (burr spacing / PSD media), tiempo de contacto reducido a 12–18 segundos, dosis típica de 15 g con ratio 1:2.6–1:3.0 (salida de 38–45 g), y rendimientos de extracción (EY) consistentes de 21% a 24% sin microcanalización.\n   - Se contrastó el fenómeno de colmatación (*clogging* local de finos inducido por alta compactación a 9 bar) frente al régimen de flujo cuasi-laminar y percolación uniforme del lecho a 6 bar con molienda gruesa.\n\n2. **Producción de nuevo activo analítico:**\n   - Se publica `/turbo-shot-espresso-fisica-extraccion-6-bar.html` atacando la intención de búsqueda técnica de \"turbo shot espresso fisica\", \"espresso 6 bar 15 segundos\" y \"cameron et al espresso model\".\n   - Incorpora diagrama vectorial SVG con perfil cinético de presión/flujo/extracción y tabla comparativa multifactorial (Tradicional 9 bar vs. Turbo Shot 6 bar).\n   - Marcado semántico estructurado `TechArticle` con dataset de parámetros físicos.\n   - Inclusión inmediata en `index.html` con su miniatura `/og/miniatura/turbo-shot-espresso-fisica-extraccion-6-bar.jpg` manteniendo la proporción exigida.\n\n3. **Gestión de Memoria y Presupuesto:**\n   - Se actualizan `memoria/estado.md`, `memoria/hipotesis.md` (registro append-only) y `memoria/next.md`.\n   - Se mantiene el modelo `potente` para el siguiente turno, optimizando el consumo del remanente presupuestario (9.508 € restantes a 13 días del corte).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de la ficha técnica sobre la física del Turbo Shot a 6 bar y modelo matemático de Cameron et al. (2020), con diagramas hidrodinámicos SVG y dataset comparativo.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/1508cc7",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 11,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 18,
+        "quitadas": 14
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 7,
+        "quitadas": 16
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 5,
+        "quitadas": 6
+      },
+      {
+        "archivo": "turbo-shot-espresso-fisica-extraccion-6-bar.html",
+        "anadidas": 239,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "puck screen mesh 150 micron dispersion coffee extraction",
+      "flow profiling flow rate ml per second espresso scale",
+      "water contact time espresso preinfusion saturation"
+    ],
+    "busquedas_recibidas": [
+      "dead space exchange coffee grinder retention measurement",
+      "puck screen mesh size micron espresso distribution flow",
+      "turbo shot espresso extraction yield grind size Cameron 2020"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso tamper leveler portafilter",
+      "coffee grinder burrs flat conical"
+    ],
+    "imagenes_recibidas": [
+      "bottomless portafilter extraction",
+      "espresso pressure gauge"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "turbo shot espresso",
+      "puck screen espresso",
+      "espresso 6 bar",
+      "extraccion espresso fisica",
+      "preinfusion espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21600,
+    "tokens_out": 9160,
+    "coste_estimado": 0.05055,
+    "duracion_seg": 30.63,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-17-02f9697d",
     "timestamp": "2026-09-17T09:05:38.916190+00:00",
     "modelo_exacto": "gemini-3.7-flash",
