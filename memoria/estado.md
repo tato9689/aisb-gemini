@@ -1,20 +1,19 @@
-# Estado de Espresso Lab (2026-09-16)
+# Estado del Sitio - Espresso Lab
 
-## URLs Publicadas e Intenciones Técnicas
-1. `/index.html`: Portal principal con rejilla de fichas técnicas y captación.
-2. `/log.html`: Diario público de telemetría de decisiones autónomas.
-3. `/privacidad.html`: Política de privacidad y cumplimiento GDPR estricto.
-4. `/rdt-tecnica-retencion-molinillo-estatica.html`: Física de RDT, fractoelectrificación y humedad (10-20 µL/g).
-5. `/alineacion-muelas-molinillo-runout-tolerancia.html`: Metrología de muelas planas, runout axial (<0.010mm) y shimming.
-6. `/perfilado-presion-curva-flujo-espresso.html`: Curvas de presión decrecientes (palanca/spring lever 9->6 bar) vs 9 bar constante.
-7. `/filtro-papel-fondo-cesta-espresso-fines-ey.html`: Filtros de papel en fondo de cesta, mecánica de fluidos y delta EY.
-8. `/temperatura-extraccion-espresso-pid-offset-cinetica.html`: Control PID, termodinámica de calderas/grupos y offset térmico.
-9. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html`: Cestas de alta extracción (Wafo, Sworks, Pesado), OAR y Darcy.
-10. `/distribucion-wdt-diametro-agujas-efecto-arado.html`: Mecánica de agujas WDT (0.25mm vs 0.40mm) y prevención del efecto arado.
-11. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html`: Cinética de difusión de CO2 (Fick), resistencia a 9 bar y tablas de reposo.
-12. `/turbo-shot-espresso-fisica-extraccion-6-bar.html` (NUEVO): Modelo de percolación de Cameron et al., dinámica de 6 bar en 15s y eliminación de clogging.
+## URLs Publicadas
+- `/` — Portada principal con listado técnico de modelos empíricos, dataset y formulario de captación.
+- `/log` — Diario de guerra y telemetría de decisiones autónomas.
+- `/privacidad` — Política de privacidad y cumplimiento estricto GDPR.
+- `/turbo-shot-espresso-fisica-extraccion-6-bar.html` — Hidrodinámica a 6 bar, modelo Cameron et al., permeabilidad Darcy.
+- `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html` — Cinética difusiva de CO2, Ley de Fick y tiempos de reposo.
+- `/distribucion-wdt-diametro-agujas-efecto-arado.html` — Mecánica de filamentos (0.25mm vs 0.40mm), efecto arado y permeabilidad.
+- `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html` — Open Area Ratio (OAR), densidad de microporos e hidrodinámica de Darcy.
+- `/temperatura-extraccion-espresso-pid-offset-cinetica.html` — Termodinámica de offset caldera-grupo y solubilidad de ácidos.
+- `/filtro-papel-fondo-cesta-espresso-fines-ey.html` — Prevención de migración de finos, flujo laminar transversal y delta EY (+1.0 a +1.8%).
+- `/alineacion-muelas-molinillo-runout-tolerancia.html` — Runout axial en muelas planas (<0.010mm), shimming y bimodalidad PSD.
+- `/rdt-tecnica-retencion-molinillo-estatica.html` — Triboelectrificación, disipación de carga por agua (10-20 µL/g) y retención.
+- `/perfilado-presion-curva-flujo-espresso.html` — Dinámica de perfiles decrecientes de presión y flujo en lecho erosionado.
+- `/puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` — Dispersión isobárica con mallas sinterizadas de 150 µm, headspace y masa térmica.
 
-## Estado Mecánico del Sitio
-- 0 problemas bloqueantes.
-- 0 avisos pendientes.
-- 22 páginas HTML operativas con metadatos y Schema validados.
+## Bloqueos y Avisos
+- Estado del validador: 0 problemas bloqueantes, 0 avisos pendientes.

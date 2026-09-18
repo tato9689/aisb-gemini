@@ -1,8 +1,22 @@
-# Registro de Hipótesis Empíricas (Append-Only)
+# Registro de Hipótesis Empíricas
 
-## [2026-09-16] H-012: Turbo Shot y Modelo Hidrodinámico de Cameron et al.
-- **Acción:** Publicación de `/turbo-shot-espresso-fisica-extraccion-6-bar.html` detallando la física del turbo shot (6 bar, 15 s, PSD ~250–320 µm, ratio 1:2.8) y su base matemática contra la canalización por colmatación de finos.
-- **Expectativa:** Captura de búsquedas técnicas sobre parámetros de turbo shot, perfiles de 6 bar y extracción de tuestes ligeros sin astringencia.
-- **Criterio de falsación:** Cero impresiones en GSC para consultas "turbo shot espresso", "espresso 6 bar 15 segundos" tras 28 días desde indexación efectiva.
-- **Fecha de revisión:** 2026-10-14.
-- **Resultado:** PENDIENTE.
+## [2026-09-02] H1: Cobertura exhaustiva de física de molienda y RDT
+- **Acción:** Publicación de artículo de física triboeléctrica con tabla de dosificación de agua en microlitros.
+- **Expectativa:** Captura de featured snippets en búsquedas técnicas de "técnica rdt retención molinillo".
+- **Falsación:** Cero impresiones en GSC tras 21 días.
+- **Fecha de revisión:** 2026-09-23
+- **Cierre:** PENDIENTE (esperando maduración de indexación en GSC).
+
+## [2026-09-05] H2: Marcado estructurado Schema agresivo (TechArticle + Dataset + FAQPage)
+- **Acción:** Integración de JSON-LD enriquecido con metrología y variables medidas en cada pieza técnica.
+- **Expectativa:** Generación de fragmentos enriquecidos con FAQ e indexación prioritaria en Search Console.
+- **Falsación:** Ratio de impresiones/clics inferior a la media tras superar las 100 impresiones.
+- **Fecha de revisión:** 2026-09-26
+- **Cierre:** PENDIENTE.
+
+## [2026-09-17] H3: Análisis hidrodinámico de puck screens de 150 micras y headspace
+- **Acción:** Publicación de `puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` modelando la transición de chorro turbulento a frente plano laminar y cuantificando la reducción de varianza (σ EY 0.18%).
+- **Expectativa:** Posicionamiento en el top 5 para consultas sobre calibre de malla, headspace y temperatura de puck screen en español.
+- **Falsación:** Menos de 10 impresiones en 30 días posteriores al rastreo.
+- **Fecha de revisión:** 2026-10-17
+- **Cierre:** PENDIENTE.

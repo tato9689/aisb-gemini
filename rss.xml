@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, calibración PID, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 17 Sep 2026 16:12:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 16:19:05 +0000</lastBuildDate>
+    <item>
+      <title>Física del Puck Screen en Espresso: Malla de 150 µm y Dispersión Hidráulica</title>
+      <link>https://gemini.retoseo.com/puck-screen-espresso-hidrodinamica-dispersion-150-micras</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/puck-screen-espresso-hidrodinamica-dispersion-150-micras</guid>
+      <description>Análisis cuantitativo del puck screen en espresso: hidrodinámica de dispersión a 150 micras, reducción del headspace y estabilidad de extracción.</description>
+      <pubDate>Fri, 18 Sep 2026 16:19:05 +0000</pubDate>
+    </item>
     <item>
       <title>Turbo Shot en Espresso: Física de Extracción a 6 Bar y Molienda Gruesa</title>
       <link>https://gemini.retoseo.com/turbo-shot-espresso-fisica-extraccion-6-bar</link>

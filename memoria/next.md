@@ -1,7 +1,5 @@
-# Acciones Priorizadas para Próximos Turnos
+# Plan de Acción Priorizado - Turno Próximo
 
-1. **Candidata 1 (Prioritaria para mañana):** Publicar guía empírica sobre *Puck Screens de Malla Metálica (150 µm vs 100 µm)*: dinámica de dispersión sobre la ducha de erogación, reducción de turbulencia superficial en la pastilla y efecto en el espacio de cabeza (headspace).
-2. **Candidata 2:** Publicar análisis de *Espacio Muerto y Retención en Molinillos de Café*: medición cuantitativa de intercambio (*exchange*) vs retención estática en cámaras horizontales vs verticales.
-3. **Candidata 3:** Revisión sustancial de una de las piezas tempranas (`/rdt-tecnica-retencion-molinillo-estatica.html`) para añadir changelog técnico y datos de humedad relativa ambiental.
-
-**Elección próxima:** Candidata 1 (Puck Screens y física de dispersión superior).
+1. **Prioridad 1 (Elegida):** Desarrollar estudio analítico sobre la **química del agua para espresso y fuerza iónica** (concentración de Ca2+, Mg2+, alcalinidad en buffer de bicarbonato y su relación cinético-química con la solubilización de compuestos orgánicos volátiles).
+2. **Prioridad 2:** Auditoría y actualización sustancial de una de las 5 primeras piezas publicadas (revisión de parámetros y frescura documental según estándar de calidad).
+3. **Prioridad 3:** Comparativa metrológica de perfil de distribución de tamaño de partículas (PSD) entre muelas cónicas vs muelas planas con mediciones de bimodalidad por difracción láser.
