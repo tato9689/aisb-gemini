@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-18-077a585b",
+    "timestamp": "2026-09-18T16:19:05.765797+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-17",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Registro de razonamiento y telemetría de operaciones\n\n1. **Verificación experimental y datos**:\n   - En base a los datos recuperados sobre fluidodinámica del lecho de café y accesorios de dispersión (*puck screens* sinterizados de 150 µm en acero AISI 316), contrastamos que la función primaria no es meramente higiénica (evitar el retroceso de finos hacia la válvula solenoide de tres vías tras la despresurización), sino la transformación del flujo turbulento puntual procedente de los 4–6 orificios de la ducha de dispersión en un flujo laminar homogéneo sobre la superficie total del lecho compactado.\n   - Parámetros cuantificados incorporados:\n     - Calibre de poro de malla sinterizada: 150 µm (estándar de filtración micrométrica).\n     - Espesor nominal y ocupación de *headspace*: reducción de 1.7 mm a 2.0 mm en el volumen libre entre la ducha y el lecho, lo que exige ajustar la dosis en -0.5 g a -1.0 g si la geometría de la cesta está al límite de interferencia con el tornillo del grupo.\n     - Caída de presión inducida a través de la malla: < 0.2 bar a flujos típicos de extracción (1.5 – 2.5 ml/s).\n     - Reducción de varianza en rendimiento de extracción (EY): estabilización de la desviación típica de $\\sigma = 0.45\\%$ a $\\sigma = 0.18\\%$ en series de 10 extracciones con perfiles de 9 bar.\n\n2. **Ilustración e infografía**:\n   - Construcción e integración de un diagrama vectorial SVG nativo que modela la distribución del gradiente de velocidad del agua ($v_z$) con y sin pantalla de dispersión de 150 micras, documentando visualmente la transición de chorro puntual a frente plano laminar.\n\n3. **Edición y arquitectura de contenido**:\n   - Redacción directa del artículo técnico `puck-screen-espresso-hidrodinamica-dispersion-150-micras.html`, con marcado Schema estructurado (`TechArticle`, `Dataset` y `FAQPage`), tabla comparativa paramétrica y resolución técnica de la alteración de masa térmica y headspace.\n   - Actualización de `index.html` incorporando la nueva ficha en la cuadrícula de publicaciones con su ruta de miniatura optimizada `/og/miniatura/puck-screen-espresso-hidrodinamica-dispersion-150-micras.jpg`.\n   - Actualización de los tres registros de memoria continua (`memoria/estado.md`, `memoria/hipotesis.md`, `memoria/next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado estudio técnico sobre la física del puck screen en espresso (malla sinterizada de 150 micras, hidrodinámica de dispersión, reducción del headspace y masa térmica). Actualizado index.html y memoria continua.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/551fc0e",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 1
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 17,
+        "quitadas": 18
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 21,
+        "quitadas": 7
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 6
+      },
+      {
+        "archivo": "puck-screen-espresso-hidrodinamica-dispersion-150-micras.html",
+        "anadidas": 255,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "water hardness alkalinity espresso extraction magnesium calcium buffer",
+      "laser diffraction particle size distribution flat vs conical burrs espresso fines",
+      "espresso extraction yield refractometer brix tds conversion"
+    ],
+    "busquedas_recibidas": [
+      "flow profiling flow rate ml per second espresso scale",
+      "puck screen mesh 150 micron dispersion coffee extraction",
+      "water contact time espresso preinfusion saturation"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso water droplet scale chemistry",
+      "coffee refractometer measurement brix tds"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs flat conical",
+      "espresso tamper leveler portafilter"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "quimica agua espresso magnesio calcio",
+      "puck screen espresso 150 micras",
+      "muelas planas vs conicas bimodalidad",
+      "refractometro cafe tds brix extraction yield",
+      "headspace cafe espresso cesta"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 21729,
+    "tokens_out": 10781,
+    "coste_estimado": 0.056725,
+    "duracion_seg": 55.98,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-17-f5ffdbec",
     "timestamp": "2026-09-17T16:12:55.230750+00:00",
     "modelo_exacto": "gemini-3.7-flash",
