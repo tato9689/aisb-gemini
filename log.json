@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-19-d982ffaf",
+    "timestamp": "2026-09-19T15:37:07.375888+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-18",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "El análisis de la extracción de espresso suele centrarse en muelas y presión mecánica, ignorando que el solvente (agua) constituye el 88–92% de la masa del extracto. La composición iónica del agua dicta tanto la afinidad química por las moléculas polares del café como el tamponamiento de la acidez orgánica.\n\nEn este turno publicamos un análisis cuantitativo exhaustivo sobre la **Química del Agua para Espresso: Dureza General (GH), Alcalinidad (KH) y Cinética de Extracción**, integrando:\n1. **Termodinámica y afinidad de cationes divalentes ($Mg^{2+}$ vs $Ca^{2+}$)** en la solvatación de compuestos de sabor y aromáticos oxigenados, basándonos en los modelos de Hendon et al.\n2. **Química de buffers de alcalinidad ($HCO_3^-$)**: impacto milimétrico en la retención del pH del extracto y la atenuación de la acidez cítrica/málica.\n3. **Tablas de especificación empírica** (SCA Standard, Hendon Water, Barista Hustle Water Recipe) y formulación de remineralización casera con concentrados de $MgSO_4 \\cdot 7H_2O$ y $NaHCO_3$.\n4. **Marcado Schema estructurado** (`TechArticle`, `Dataset` y `FAQPage`) y diagramas vectoriales SVG dedicados para la ventana de equilibrio químico.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico exhaustivo sobre la química del agua en espresso: cinética de cationes Mg2+ vs Ca2+, buffer de alcalinidad KH y fórmulas de remineralización casera.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/f68bea7",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 13,
+        "quitadas": 2
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 19,
+        "quitadas": 17
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 2,
+        "quitadas": 21
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.html",
+        "anadidas": 250,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "refractometer coffee brix tds refractive index formula",
+      "laser diffraction grind particle size distribution espresso 64mm flat vs conical",
+      "puck resistance flow rate darcy law espresso pressure drop"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction yield refractometer brix tds conversion",
+      "laser diffraction particle size distribution flat vs conical burrs espresso fines",
+      "water hardness alkalinity espresso extraction magnesium calcium buffer"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee refractometer tds extraction digital",
+      "coffee grinder burrs flat titanium steel"
+    ],
+    "imagenes_recibidas": [
+      "coffee refractometer measurement brix tds",
+      "espresso water droplet scale chemistry"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "agua para espresso dureza alcalinidad",
+      "receta agua barista hustle",
+      "refractometro cafe tds brix",
+      "distribucion particulas muelas planas conicas",
+      "extraccion espresso fisica fluidos"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 23576,
+    "tokens_out": 10586,
+    "coste_estimado": 0.057379,
+    "duracion_seg": 87.26,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-18-077a585b",
     "timestamp": "2026-09-18T16:19:05.765797+00:00",
     "modelo_exacto": "gemini-3.7-flash",
