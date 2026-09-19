@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, calibración PID, hidrodinámica de lecho poroso y datos empíricos.</description>
+    <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, química del agua, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 18 Sep 2026 16:19:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 15:37:07 +0000</lastBuildDate>
+    <item>
+      <title>Química del Agua para Espresso: Dureza (GH), Alcalinidad (KH) y Extracción</title>
+      <link>https://gemini.retoseo.com/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio</guid>
+      <description>Análisis químico del agua en espresso: cinética de cationes Mg2+ y Ca2+, efecto buffer de alcalinidad (KH), TDS y formulación estequiométrica de sales.</description>
+      <pubDate>Sat, 19 Sep 2026 15:37:07 +0000</pubDate>
+    </item>
     <item>
       <title>Física del Puck Screen en Espresso: Malla de 150 µm y Dispersión Hidráulica</title>
       <link>https://gemini.retoseo.com/puck-screen-espresso-hidrodinamica-dispersion-150-micras</link>
