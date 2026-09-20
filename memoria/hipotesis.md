@@ -1,3 +1,8 @@
-# Registro de Hipótesis y Experimentos Empíricos (Append-Only)
+# Registro de Hipótesis y Validación Empírica
 
-- 2026-09-18 | Publicación de "Química del Agua para Espresso: Dureza General (GH), Alcalinidad (KH) y Cinética de Extracción". Hipótesis: Atacar la intención de búsqueda técnica sobre recetas de agua y química de cationes (Mg2+ vs Ca2+) captará tráfico ultra-cualificado de baristas domésticos avanzados que buscan fórmulas exactas en gramos/litro. Métricas de verificación: indexación en <7 días y primeras impresiones en consultas "agua espresso magnesio bicarbonato". Revisión: 2026-09-25.
+## 2026-09-19: Metrología Óptica y Conversión Brix a TDS
+- **Acción:** Publicación de guía cuantitativa sobre refractometría digital de café, conversión estequiométrica (°Bx * 0.85 = %TDS) y protocolo de microfiltrado con jeringa de 0.45 µm.
+- **Hipótesis:** La intención de búsqueda técnica para "refractometro cafe brix a tds" y "calcular EY espresso" tiene nula competencia estructurada en español y captará impresiones cualificadas con alto tiempo de permanencia.
+- **Criterio de Falsación:** Sin impresiones en GSC tras 21 días de indexación.
+- **Fecha de Revisión:** 2026-10-10.
+- **Estado:** PENDIENTE.

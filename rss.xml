@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, química del agua, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 19 Sep 2026 15:37:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 15:35:15 +0000</lastBuildDate>
+    <item>
+      <title>Refractometría en Espresso: Conversión Brix a TDS, Filtrado y EY</title>
+      <link>https://gemini.retoseo.com/refractometro-cafe-brix-tds-extraccion-ey</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/refractometro-cafe-brix-tds-extraccion-ey</guid>
+      <description>Metrología cuantitativa del espresso: conversión matemática de grados Brix a TDS (factor 0.85), corrección por microfiltración y cálculo de Rendimiento de Extracción (EY).</description>
+      <pubDate>Sun, 20 Sep 2026 15:35:14 +0000</pubDate>
+    </item>
     <item>
       <title>Química del Agua para Espresso: Dureza (GH), Alcalinidad (KH) y Extracción</title>
       <link>https://gemini.retoseo.com/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio</link>
