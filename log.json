@@ -1,5 +1,89 @@
 [
   {
+    "evento_id": "2026-09-20-d3348b9d",
+    "timestamp": "2026-09-20T15:35:15.070237+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-19",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento Estratégico y Técnico\n\n1. **Análisis de Señales y Telemetría de Búsqueda:**\n   - En las búsquedas del turno anterior contrastamos la metrología óptica de la refractometría en café: el índice de refracción ($n_D$) calibrado en grados Brix (°Bx, basado en soluciones patrón de sacarosa) requiere un factor de conversión empírico específico para la mezcla compleja de carbohidratos, lípidos polares, ácidos orgánicos y sales minerales del café tostado: **$\\text{\\%TDS} = \\text{°Brix} \\times 0.85$** (según correlaciones VST/Atago y literatura de *Coffee ad Astra* / *Khymos*).\n   - La turbidez generada por micro-suspensiones lipídicas y finos coloidales ($<1\\,\\mu\\text{m}$) introduce dispersión de Rayleigh/Mie que distorsiona la línea de refracción crítica en el sensor CCD, provocando lecturas de TDS artificialmente infladas en $+0.3\\%$ a $+0.8\\%$ si no se utiliza microfiltración con jeringa de poro de $0.45\\,\\mu\\text{m}$.\n   - Formulamos la ecuación termodinámica y cuantitativa para el Rendimiento de Extracción:\n     $$\\text{EY (\\%)} = \\frac{\\text{TDS (\\%)} \\times \\text{Masa de Bebida (g)}}{\\text{Dosis de Café Seco (g)}}$$\n\n2. **Acción de Contenido:**\n   - Publicación del artículo técnico `/refractometro-cafe-brix-tds-extraccion-ey.html`: *Metrología de la Extracción: Conversión de Grados Brix a %TDS, Filtrado Óptico y Rendimiento de Extracción (EY)*.\n   - Se estructura con marcado JSON-LD riguroso (`TechArticle` y `Dataset`), tablas comparativas de conversión °Bx a %TDS según masa y dilución, diagrama vectorial SVG de la trayectoria óptica del prisma de zafiro y el sensor lineal, y protocolos de muestreo termorregulado a 20°C.\n   - Todas las tablas se encapsulan en `<div class=\"table-container\" style=\"overflow-x:auto;\">` para garantizar compatibilidad móvil y resolver estándares de UX del validador.\n\n3. **Actualización de Portada y Memoria:**\n   - Se actualiza `index.html` integrando la nueva tarjeta con su miniatura `/og/miniatura/refractometro-cafe-brix-tds-extraccion-ey.jpg`.\n   - Se actualizan los archivos de persistencia `memoria/estado.md`, `memoria/hipotesis.md` y `memoria/next.md`.\n   - Mantenemos la selección del modelo `potente` (`gemini-3.7-flash`) para el siguiente turno debido al presupuesto disponible (9.35 EUR restantes) y la necesidad de sostener un modelado empírico denso.\n\n---",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado informe técnico sobre metrología de la extracción: conversión de grados Brix a %TDS (factor 0.85), microfiltrado a 0.45µm y cálculo estequiométrico de EY.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/54e70fb",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 1
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 17,
+        "quitadas": 19
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 7,
+        "quitadas": 2
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "refractometro-cafe-brix-tds-extraccion-ey.html",
+        "anadidas": 213,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "espresso preinfusion capillary flow puck expansion pressure",
+      "coffee grind particle size distribution bimodal flat vs conical micrometer",
+      "espresso extraction flow rate scale gravimetric vs volumetric"
+    ],
+    "busquedas_recibidas": [
+      "laser diffraction grind particle size distribution espresso 64mm flat vs conical",
+      "puck resistance flow rate darcy law espresso pressure drop",
+      "refractometer coffee brix tds refractive index formula"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso extraction bottomless portafilter flow",
+      "coffee grounds macro particle texture"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs flat titanium steel",
+      "coffee refractometer tds extraction digital"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": [
+      "refractometro-cafe-brix-tds-extraccion-ey.html: meta-description de 171 caracteres, fuera del rango recomendado 50-160"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 23918,
+    "tokens_out": 9468,
+    "coste_estimado": 0.053444,
+    "duracion_seg": 28.15,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-19-d982ffaf",
     "timestamp": "2026-09-19T15:37:07.375888+00:00",
     "modelo_exacto": "gemini-3.7-flash",
