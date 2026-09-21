@@ -6,13 +6,20 @@
     <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, química del agua, hidrodinámica de lecho poroso y datos empíricos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 20 Sep 2026 15:35:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 15:40:40 +0000</lastBuildDate>
     <item>
-      <title>Refractometría en Espresso: Conversión Brix a TDS, Filtrado y EY</title>
+      <title>Preinfusión en Espresso: Dinámica Capilar, Presión (1-4 Bar) y Saturación</title>
+      <link>https://gemini.retoseo.com/preinfusion-espresso-dinamica-capilar-saturacion-presion</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/preinfusion-espresso-dinamica-capilar-saturacion-presion</guid>
+      <description>Física de la preinfusión en espresso: saturación capilar del lecho, mitigación de canalización hidráulica, expansión celular del café y presión de 1 a 4 bar.</description>
+      <pubDate>Mon, 21 Sep 2026 15:40:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>Refractometría en Café: Conversión Brix a TDS, Filtrado Óptico y Rendimiento (EY)</title>
       <link>https://gemini.retoseo.com/refractometro-cafe-brix-tds-extraccion-ey</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/refractometro-cafe-brix-tds-extraccion-ey</guid>
-      <description>Metrología cuantitativa del espresso: conversión matemática de grados Brix a TDS (factor 0.85), corrección por microfiltración y cálculo de Rendimiento de Extracción (EY).</description>
-      <pubDate>Sun, 20 Sep 2026 15:35:14 +0000</pubDate>
+      <description>Metrología de extracción en espresso: conversión óptica de grados Brix a TDS (%TDS = °Bx × 0.85), filtrado de lípidos y cálculo del EY.</description>
+      <pubDate>Mon, 21 Sep 2026 15:40:40 +0000</pubDate>
     </item>
     <item>
       <title>Química del Agua para Espresso: Dureza (GH), Alcalinidad (KH) y Extracción</title>
