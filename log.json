@@ -1,5 +1,97 @@
 [
   {
+    "evento_id": "2026-09-21-73dc0630",
+    "timestamp": "2026-09-21T15:40:40.812374+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-20",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Telemetría de Operaciones y Razonamiento Analítico\n\n1. **Diagnóstico Mecánico y Corrección de Metadatos**:\n   - Se subsana el aviso pendiente en `refractometro-cafe-brix-tds-extraccion-ey.html` recortando la `meta description` a 142 caracteres (dentro del intervalo estricto [50, 160]), eliminando redundancias en la cadena óptica.\n\n2. **Investigación e Integración de Datos (Física de la Preinfusión)**:\n   - Contrastación empírica vía resultados de búsqueda sobre permeabilidad de lecho poroso (*Coffee ad Astra*, Rao, Decent espresso data).\n   - *Hallazgo físico clave*: La inyección abrupta a 9 bar antes de la saturación capilar completa genera gradientes de presión hidrostática transversales ($\\nabla P > 1.2 \\text{ bar/mm}$), provocando microfracturas y migración forzada de finos hacia la interfaz inferior.\n   - *Régimen óptimo de preinfusión*: Tasa de flujo volumétrico restringida a $1.5 - 2.5 \\text{ mL/s}$ a presiones $\\le 3.0 \\text{ bar}$ hasta el umbral de percolación inicial (primeras gotas en portafiltro), permitiendo el hinchamiento volumétrico isotrópico de la celulosa del grano (+12% a +18% volumen celular) y estabilizando la resistencia intrínseca de la pastilla ($R_{puck}$).\n\n3. **Publicación y Arquitectura On-Page**:\n   - Generación de `preinfusion-espresso-dinamica-capilar-saturacion-presion.html` estructurado como artículo técnico con esquema JSON-LD `TechArticle` y `FAQPage`.\n   - Inclusión de diagrama vectorial SVG de dinámicas de presión y capilaridad.\n   - Tabla técnica envuelta explícitamente en contenedor responsivo `tabla-contenedor` (`overflow-x: auto`) para prevenir desbordamientos en viewport móvil.\n   - Actualización del índice `index.html` con tarjeta técnica y referencia a `/og/miniatura/preinfusion-espresso-dinamica-capilar-saturacion-presion.jpg`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre física de la preinfusión en espresso: dinámica capilar, hinchamiento de pastilla (+15% vol) y mitigación de canalización a 1-4 bar. Subsanado aviso de meta-description en refractometría.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/1e6fc63",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 20,
+        "quitadas": 17
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 10,
+        "quitadas": 7
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "preinfusion-espresso-dinamica-capilar-saturacion-presion.html",
+        "anadidas": 182,
+        "quitadas": 0
+      },
+      {
+        "archivo": "refractometro-cafe-brix-tds-extraccion-ey.html",
+        "anadidas": 90,
+        "quitadas": 159
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "flat vs conical burrs particle size distribution microns fines espresso",
+      "espresso gravimetric vs volumetric flow profile yield scale",
+      "coffee grind unimodal bimodal extraction yield clarity"
+    ],
+    "busquedas_recibidas": [
+      "coffee grind particle size distribution bimodal flat vs conical micrometer",
+      "espresso extraction flow rate scale gravimetric vs volumetric",
+      "espresso preinfusion capillary flow puck expansion pressure"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder burrs flat conical",
+      "espresso flow extraction close up"
+    ],
+    "imagenes_recibidas": [
+      "coffee grounds macro particle texture",
+      "espresso extraction bottomless portafilter flow"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "flat vs conical burrs espresso",
+      "preinfusion espresso pressure",
+      "espresso particle size distribution",
+      "gravimetric espresso workflow"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 24365,
+    "tokens_out": 11466,
+    "coste_estimado": 0.061271,
+    "duracion_seg": 34.6,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-20-sin-suscriptores",
     "timestamp": "2026-09-20T16:30:03.983130+00:00",
     "modelo_exacto": null,
