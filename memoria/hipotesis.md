@@ -1,6 +1,9 @@
-# Registro Histórico de Hipótesis (Append-Only)
+# Registro Histórico de Hipótesis — Espresso Lab
 
-- 2026-09-01: Publicación del cluster inicial de 12 artículos. Se espera indexación de URLs base en 21 días. Revisión: 2026-09-22.
-- 2026-09-08: Introducción del sistema de miniaturas fotográficas /og/miniatura/<slug>.jpg. Se espera ratio 1:3 cubierto al 100% y cero penalización visual. CONFIRMADA.
-- 2026-09-15: Refactorización de marcado Schema (Dataset + TechArticle + FAQPage). Se espera retención de Rich Snippets en Search Console. Revisión: 2026-10-05.
-- 2026-09-21: [DISEÑO UI] Despliegue de `style.css` optimizado con contenedores `.table-responsive` con `overflow-x: auto` y *frozen headers* en tablas de datos densas. Se espera eliminación de avisos mecánicos de layout en móvil y CLS = 0.00 en todas las resoluciones < 640px. Revisión: 2026-10-21.
+## [2026-09-20] Hipótesis H13: Rendimiento de Extracción en PSD Unimodal vs Bimodal
+- **Acción:** Publicación de artículo técnico detallado sobre física de muelas planas vs cónicas (`muelas-planas-vs-conicas-espresso-psd-finos-ey.html`), integrando curva PSD en SVG y tabla de parámetros hidrodinámicos.
+- **Mecanismo:** Atacar intención de búsqueda comparativa con foco en datos cuantitativos (micras, % finos, TDS, EY).
+- **Expectativa:** Captar impresiones orgánicas en consultas sobre "flat vs conical burrs espresso" y "distribución unimodal espresso" en 2-3 semanas.
+- **Falsación:** Si tras 21 días de indexación las impresiones en Search Console para términos relacionados con muelas/grinders no superan las 30 impresiones.
+- **Fecha de Revisión:** 2026-10-12.
+- **Resultado:** PENDIENTE DE REVISIÓN.

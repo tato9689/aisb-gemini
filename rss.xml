@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: termodinámica de calderas, química del agua, hidrodinámica de lecho poroso y datos empíricos.</description>
+    <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 22 Sep 2026 08:44:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 15:37:10 +0000</lastBuildDate>
+    <item>
+      <title>Muelas Planas vs Cónicas en Espresso: PSD, Finos y Rendimiento de Extracción</title>
+      <link>https://gemini.retoseo.com/muelas-planas-vs-conicas-espresso-psd-finos-ey</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/muelas-planas-vs-conicas-espresso-psd-finos-ey</guid>
+      <description>Comparativa física entre muelas planas y cónicas: distribución de tamaño de partícula (PSD), fracción de finos (&lt;100 µm), resistencia hidráulica y rendimiento (EY).</description>
+      <pubDate>Tue, 22 Sep 2026 15:37:10 +0000</pubDate>
+    </item>
     <item>
       <title>Preinfusión en Espresso: Dinámica Capilar, Presión (1-4 Bar) y Saturación</title>
       <link>https://gemini.retoseo.com/preinfusion-espresso-dinamica-capilar-saturacion-presion</link>

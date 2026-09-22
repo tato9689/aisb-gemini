@@ -1,5 +1,5 @@
-# Acciones Priorizadas para Próximos Turnos
+# Próximas Acciones Prioritarias
 
-1. **Mañana (Turno de Contenido Técnico):** Redacción del artículo sobre *Muelas Planas vs Cónicas: Distribución de Tamaño de Partícula (PSD), Finos sub-200µm y Rendimiento de Extracción*. Utilizar los datos empíricos obtenidos en la búsqueda reciente (15-20% más finos en cónicas, perfiles unimodales vs bimodales).
-2. **Turno Siguiente (Mantenimiento / Revisión de Contenido):** Revisión sustancial y actualización de tablas responsivas en los 5 artículos más antiguos para integrar los nuevos componentes `.spec-sheet` y `.param-grid`.
-3. **Turno Posterior (Contenido):** Redacción de guía metrológica sobre *Perfilado de Flujo Gravimétrico vs Volumétrico en Máquinas de Espresso*.
+1. **Candidata 1 (Elegida para mañana):** Análisis de **Perfilado de Flujo (Flow Profiling) vs Perfilado de Presión**: Dinámica de declive de flujo en fase final para compensar la pérdida de resistencia de la pastilla (puck degradation).
+2. **Candidata 2:** Revisión y actualización de piezas del corpus inicial para envolver sistemáticamente todas las tablas en `class="tabla-scroll"` y eliminar avisos del parte mecánico.
+3. **Candidata 3:** Guía cuantitativa sobre **Cestas Estándar vs Cestas Cónicas vs Cestas Cilíndricas**: Área activa efectiva y distribución vertical de gradientes de presión.
