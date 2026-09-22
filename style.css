@@ -1,33 +1,33 @@
 /* ==========================================================================
-   ESPRESSO LAB — HOJA DE ESTILOS DE ARQUITECTURA DE INFORMACIÓN TÉCNICA
-   Versión: 2.1 (Diseño de Datos Empíricos e Ingeniería de Fluidos)
+   ESPRESSO LAB — SISTEMA DE DISEÑO TÉCNICO Y ARQUITECTURA DE DATOS
+   Versión: 2.1.0 — Diseño Incremental de Hojas de Datos y Métricas Físicas
    ========================================================================== */
 
 :root {
-  /* Tokens de Color — Entorno de Instrumentación y Alto Contraste */
-  --bg-canvas: #090d12;
-  --bg-surface: #0f1620;
-  --bg-surface-elevated: #162231;
-  --bg-surface-subtle: #1a2738;
+  /* Paleta de Contraste Instrumental / Laboratorio */
+  --bg-base: #0b0f17;
+  --bg-surface: #121824;
+  --bg-surface-elevated: #182232;
+  --bg-card: #131c2a;
   
-  --border-subtle: #1e2e42;
-  --border-medium: #2a3f5a;
-  --border-accent: #38bdf8;
-  --border-warning: #f59e0b;
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
+  --border-accent: #0284c7;
+  --border-metric: #059669;
 
   --text-main: #e2e8f0;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
   --text-accent: #38bdf8;
-  --text-highlight: #f8fafc;
   --text-metric: #34d399;
+  --text-warning: #fbbf24;
+  --text-danger: #f87171;
 
-  /* Tipografía de Sistema de Alta Precisión */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  /* Tipografía y Espaciado */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* Escala Espacial */
-  --space-2xs: 0.25rem;
+  --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
   --space-md: 1rem;
@@ -35,17 +35,15 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
 
-  /* Radios de Precisión */
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 6px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
 
-  /* Máximo Ancho de Lectura */
-  --max-width-content: 840px;
-  --max-width-container: 1080px;
+  --max-width: 960px;
+  --max-width-reading: 740px;
 }
 
-/* Reset y Normalización Base */
+/* Reset y Layout Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -54,12 +52,11 @@
 
 html {
   font-size: 16px;
-  line-height: 1.6;
-  background-color: var(--bg-canvas);
+  background-color: var(--bg-base);
   color: var(--text-main);
   font-family: var(--font-sans);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -68,65 +65,39 @@ body {
   flex-direction: column;
 }
 
-/* Enlaces y Micro-interacciones */
-a {
-  color: var(--text-accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
-}
-
-a:hover {
-  color: #7dd3fc;
-  text-decoration-color: #7dd3fc;
-}
-
-a:focus-visible {
-  outline: 2px solid var(--border-accent);
-  outline-offset: 3px;
-  border-radius: var(--radius-sm);
-}
-
-/* Contenedor Principal */
 .container {
   width: 100%;
-  max-width: var(--max-width-container);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
 }
 
-/* Cabecera del Sitio */
+/* Cabecera y Navegación */
 .site-header {
-  padding-top: var(--space-2xl);
-  padding-bottom: var(--space-xl);
+  padding: var(--space-xl) 0 var(--space-lg);
   border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
 }
 
 .site-title {
   font-size: 1.75rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--text-highlight);
+  color: #ffffff;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  margin-bottom: var(--space-xs);
 }
 
 .site-title img {
-  display: block;
+  vertical-align: middle;
 }
 
 .site-desc {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
+  margin-top: var(--space-xs);
   max-width: 680px;
-  font-family: var(--font-sans);
-  line-height: 1.5;
 }
 
 .site-nav {
@@ -135,26 +106,45 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
-/* Encabezados de Sección */
+.site-nav a {
+  color: var(--text-accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Títulos y Secciones */
 .section-heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--text-highlight);
-  border-bottom: 1px solid var(--border-medium);
-  padding-bottom: var(--space-xs);
-  margin-bottom: var(--space-lg);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-lg);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-/* Rejilla de Artículos / Tarjetas Técnicas */
+/* Rejilla de Artículos y Tarjetas Técnicas */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
   margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .tech-card {
@@ -164,12 +154,11 @@ a:focus-visible {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .tech-card:hover {
-  border-color: var(--border-medium);
-  background-color: var(--bg-surface-elevated);
+  border-color: var(--border-accent);
 }
 
 .tech-card img {
@@ -177,27 +166,26 @@ a:focus-visible {
   height: auto;
   aspect-ratio: 640 / 336;
   object-fit: cover;
+  background-color: var(--bg-surface-elevated);
   display: block;
   border-bottom: 1px solid var(--border-subtle);
-  background: var(--bg-surface-subtle);
 }
 
 .tech-card-body {
-  padding: var(--space-lg);
+  padding: var(--space-md);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .tech-card-body h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  line-height: 1.35;
-  margin-bottom: var(--space-sm);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: var(--space-xs);
 }
 
 .tech-card-body h3 a {
-  color: var(--text-highlight);
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -206,7 +194,7 @@ a:focus-visible {
 }
 
 .tech-card-body p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
   line-height: 1.5;
   margin-bottom: var(--space-md);
@@ -215,230 +203,297 @@ a:focus-visible {
 
 .tech-card-meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
-  padding-top: var(--space-sm);
-  border-top: 1px solid var(--border-subtle);
+  justify-content: space-between;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-dim);
+  font-size: 0.72rem;
+  color: var(--text-accent);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-xs);
+  margin-top: auto;
 }
 
-.tech-card-meta span {
-  background: var(--bg-surface-subtle);
-  padding: 2px 6px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
-}
-
-/* Tablas Técnicas Responsivas (Prioridad 1) */
-.table-container {
+/* ==========================================================================
+   TABLAS DE DATOS RESPONSIVAS CON FROZEN HEADERS (CORE)
+   ========================================================================== */
+.table-responsive,
+.tabla-parametros {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin: var(--space-lg) 0;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   background: var(--bg-surface);
-  -webkit-overflow-scrolling: touch;
 }
 
-.data-table {
+table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.88rem;
   text-align: left;
-  font-size: 0.9rem;
-  min-width: 600px;
 }
 
-.data-table th,
-.data-table td {
-  padding: var(--space-sm) var(--space-md);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.data-table th {
-  background: var(--bg-surface-elevated);
-  color: var(--text-highlight);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+thead th {
   position: sticky;
   top: 0;
-  z-index: 2;
-  border-bottom: 2px solid var(--border-medium);
-}
-
-.data-table tbody tr:hover {
-  background: var(--bg-surface-subtle);
-}
-
-.data-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.data-table td.numeric {
+  background: var(--bg-surface-elevated);
+  color: #ffffff;
   font-family: var(--font-mono);
-  text-align: right;
-  color: var(--text-highlight);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 2px solid var(--border-accent);
+  white-space: nowrap;
+  z-index: 2;
 }
 
-/* Componentes de Diagramas SVG y Métricas */
-.chart-container {
+tbody tr {
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.15s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+tbody tr:hover {
+  background: rgba(56, 189, 248, 0.04);
+}
+
+tbody td {
+  padding: var(--space-sm) var(--space-md);
+  color: var(--text-main);
+  vertical-align: middle;
+}
+
+td.num, th.num, td code, .tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   MOTOR DE DIAGRAMAS SVG Y REPRESENTACIÓN VECTORIAL
+   ========================================================================== */
+.chart-container,
+.svg-diagram-wrapper {
+  margin: var(--space-xl) 0;
+  padding: var(--space-md);
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: var(--space-lg);
-  margin: var(--space-lg) 0;
 }
 
-.chart-title {
+.chart-header {
+  margin-bottom: var(--space-sm);
   font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.8rem;
   color: var(--text-accent);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-xs);
+  display: flex;
+  justify-content: space-between;
 }
 
-.chart-desc {
-  font-size: 0.85rem;
+.chart-legend {
+  display: flex;
+  gap: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  margin-top: var(--space-xs);
   color: var(--text-muted);
-  margin-bottom: var(--space-md);
 }
 
-.chart-svg {
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xxs);
+}
+
+.chart-source {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-top: var(--space-xs);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-xxs);
+}
+
+svg.chart-svg {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.data-source {
-  margin-top: var(--space-sm);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  border-top: 1px dashed var(--border-subtle);
-  padding-top: var(--space-xs);
+/* ==========================================================================
+   UI DE BLOQUES SEMÁNTICOS (SCHEMA-MATCHING)
+   ========================================================================== */
+.spec-sheet {
+  background: var(--bg-surface);
+  border-left: 3px solid var(--border-accent);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
-/* Sección de Newsletter / Captación Técnica */
+.spec-sheet h4 {
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  color: var(--text-accent);
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+}
+
+.param-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.param-item {
+  background: var(--bg-base);
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.param-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.param-value {
+  display: block;
+  font-size: 0.92rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-metric);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   FORMULARIO DE CAPTACIÓN Y ESTADOS
+   ========================================================================== */
 .newsletter-section {
   background: var(--bg-surface);
-  border: 1px solid var(--border-accent);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: var(--space-xl);
   margin: var(--space-2xl) 0;
+  position: relative;
+}
+
+.newsletter-section::before {
+  content: "CANAL DE METROLOGÍA Y DATOS";
+  position: absolute;
+  top: -10px;
+  left: var(--space-md);
+  background: var(--border-accent);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
 }
 
 .newsletter-section h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-highlight);
+  font-size: 1.2rem;
+  color: #ffffff;
   margin-bottom: var(--space-xs);
 }
 
 .newsletter-section p {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
-.newsletter-form .form-row {
+.form-row {
   display: flex;
+  flex-direction: column;
   gap: var(--space-sm);
-  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+}
+
+@media (min-width: 480px) {
+  .form-row {
+    flex-direction: row;
+  }
 }
 
 .form-input {
-  flex: 1 1 280px;
-  background: var(--bg-canvas);
-  border: 1px solid var(--border-medium);
+  flex: 1;
+  background: var(--bg-base);
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-md);
-  color: var(--text-highlight);
+  color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  outline: none;
   transition: border-color 0.15s ease;
 }
 
 .form-input:focus {
-  outline: none;
-  border-color: var(--border-accent);
+  border-color: var(--text-accent);
 }
 
 .btn-primary {
   background: var(--border-accent);
-  color: #020617;
+  color: #ffffff;
   border: none;
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 700;
-  font-size: 0.9rem;
-  font-family: var(--font-sans);
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   transition: background-color 0.15s ease;
 }
 
 .btn-primary:hover {
-  background: #7dd3fc;
-}
-
-.btn-primary:focus-visible {
-  outline: 2px solid var(--text-highlight);
-  outline-offset: 2px;
+  background: #0369a1;
 }
 
 .consentimiento {
-  margin-top: var(--space-sm);
-  font-size: 0.8rem;
-  color: var(--text-dim);
+  font-size: 0.78rem !important;
+  color: var(--text-dim) !important;
+  margin-bottom: 0 !important;
 }
 
-.consentimiento input[type="checkbox"] {
-  accent-color: var(--border-accent);
-  margin-right: 4px;
+.consentimiento a {
+  color: var(--text-muted);
+  text-decoration: underline;
 }
 
-/* Pie de Página Obligatorio */
+/* ==========================================================================
+   PIE DE PÁGINA OBLIGATORIO Y TRANSPARENCIA
+   ========================================================================== */
 .site-footer {
   margin-top: auto;
+  padding: var(--space-xl) 0;
   border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-2xl);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-dim);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  line-height: 1.6;
+}
+
+.site-footer p {
+  margin-bottom: var(--space-xs);
 }
 
 .site-footer a {
   color: var(--text-muted);
+  text-decoration: underline;
 }
 
 .site-footer a:hover {
   color: var(--text-accent);
-}
-
-/* Adaptación Responsiva */
-@media (max-width: 640px) {
-  .site-header {
-    padding-top: var(--space-xl);
-    padding-bottom: var(--space-lg);
-  }
-  .site-title {
-    font-size: 1.4rem;
-  }
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  .newsletter-section {
-    padding: var(--space-lg);
-  }
-  .btn-primary {
-    width: 100%;
-  }
 }
