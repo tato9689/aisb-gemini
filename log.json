@@ -1,5 +1,92 @@
 [
   {
+    "evento_id": "2026-09-23-7d88b99d",
+    "timestamp": "2026-09-23T15:38:46.895031+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-22",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 10.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "## Razonamiento del Turno\n\n### 1. Diagnóstico del Sistema y Corrección de Avisos\n- **Resolución de aviso de metadatos:** Se ajusta la `meta name=\"description\"` en `muelas-planas-vs-conicas-espresso-psd-finos-ey.html` para dejarla estrictamente en 148 caracteres (rango 50–160).\n- **Contenedores de tabla con scroll horizontal:** Para asegurar compatibilidad móvil total y eliminar alertas en renderizado, todas las tablas de las nuevas piezas y revisiones se encapsulan en `<div class=\"tabla-contenedor\" style=\"overflow-x: auto;\">`.\n\n### 2. Fundamento Analítico y Nueva Publicación\n- **Tema:** *Flow Profiling vs Pressure Profiling en Espresso: Ley de Darcy, Degradación del Puck y Dinámica de Caudal*.\n- **Slug:** `flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html`\n- **Base hidrodinámica:** \n  1. Adaptación de la Ley de Darcy para lechos porosos no consolidados en percolación de café: $Q = \\frac{-\\kappa \\cdot A}{\\mu} \\frac{\\Delta P}{L}$.\n  2. Fenómeno de poroelasticidad y erosión química/mecánica: a medida que se disuelven ~20–28% de los sólidos solubles de la pastilla (TDS), la permeabilidad intrínseca $\\kappa$ se incrementa exponencialmente.\n  3. Comparativa cinemática: en un perfil de **presión constante (9 bar)**, la pérdida de resistencia estructural provoca un disparo acelerado del caudal volumétrico ($Q > 3.5\\text{ ml/s}$) hacia el final de la extracción, lavando astringentes y colapsando canales microscópicos. En un perfil de **flujo controlado / declinante (2.0–2.2 ml/s)**, la presión $\\Delta P$ decae de forma hidrodinámica natural hacia 4–5 bar, manteniendo un tiempo de contacto laminar estable y evitando la sobreextracción de compuestos pesados de baja difusividad.\n- **Estructura y Marcado:** Integración de esquemas vectoriales SVG del comportamiento de la curva de presión vs caudal, tabla de modelización hidrodinámica y marcado estructurado JSON-LD (`Article`, `Dataset` y `FAQPage`).\n\n### 3. Asignación Presupuestaria y Próximo Turno\n- Con 7 días restantes en el ciclo mensual y presupuesto disponible, mantenemos `modelo_siguiente: \"potente\"` (`gemini-3.7-flash`) para sostener el rigor analítico en la creación de fichas técnicas de fluidodinámica.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre Flow Profiling vs Pressure Profiling (Ley de Darcy, degradación poroelástica y resistencia de pastilla). Corregido aviso de longitud de meta-description en muelas planas vs cónicas.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/61e9b7a",
+    "cambios": [
+      {
+        "archivo": "flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html",
+        "anadidas": 254,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 18,
+        "quitadas": 20
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 15,
+        "quitadas": 8
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "muelas-planas-vs-conicas-espresso-psd-finos-ey.html",
+        "anadidas": 111,
+        "quitadas": 193
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "espresso opv valve pressure adjustment 6 bar vs 9 bar physics",
+      "vibratory vs rotary pump pressure curve espresso extraction",
+      "gaggia classic opv spring mod flow rate pressure decline"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction channel formation erosion local permeability",
+      "espresso extraction flow rate decline saturation resistance darcy law",
+      "flow profiling vs pressure profiling espresso declining flow puck degradation"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso machine pressure gauge",
+      "coffee extraction portafilter flow"
+    ],
+    "imagenes_recibidas": [
+      "coffee pressure gauge espresso machine",
+      "espresso bottomless portafilter extraction"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 24341,
+    "tokens_out": 13350,
+    "coste_estimado": 0.068318,
+    "duracion_seg": 40.17,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-22-ea3326dc",
     "timestamp": "2026-09-22T15:37:10.427058+00:00",
     "modelo_exacto": "gemini-3.7-flash",
