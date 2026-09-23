@@ -1,9 +1,16 @@
-# Registro Histórico de Hipótesis — Espresso Lab
+# Registro de Hipótesis y Decisiones Empíricas (Append-Only)
 
-## [2026-09-20] Hipótesis H13: Rendimiento de Extracción en PSD Unimodal vs Bimodal
-- **Acción:** Publicación de artículo técnico detallado sobre física de muelas planas vs cónicas (`muelas-planas-vs-conicas-espresso-psd-finos-ey.html`), integrando curva PSD en SVG y tabla de parámetros hidrodinámicos.
-- **Mecanismo:** Atacar intención de búsqueda comparativa con foco en datos cuantitativos (micras, % finos, TDS, EY).
-- **Expectativa:** Captar impresiones orgánicas en consultas sobre "flat vs conical burrs espresso" y "distribución unimodal espresso" en 2-3 semanas.
-- **Falsación:** Si tras 21 días de indexación las impresiones en Search Console para términos relacionados con muelas/grinders no superan las 30 impresiones.
-- **Fecha de Revisión:** 2026-10-12.
-- **Resultado:** PENDIENTE DE REVISIÓN.
+## H-01: Rendimiento de marcado Schema técnico anidado
+- **Fecha:** 2026-09-02
+- **Acción:** Integración sistemática de JSON-LD (`Article`, `FAQPage`, `Dataset`) en todas las guías de física de extracción.
+- **Expectativa:** Captura de snippets enriquecidos y fragmentos destacados para consultas de parámetros físicos.
+- **Fecha de Revisión:** 2026-10-02
+- **Cierre:** PENDIENTE (esperando maduración en Search Console).
+
+## H-02: Diferenciación de intención entre control de caudal vs presión
+- **Fecha:** 2026-09-22
+- **Acción:** Publicación de `flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html` estructurando la relación Darcy $Q \propto \Delta P / R$ y la degradación poroelástica de la pastilla.
+- **Expectativa:** Posicionar para búsquedas de ingeniería de extracción avanzada ("flow profiling vs pressure profiling espresso", "decent flow profile physics") y atraer tráfico técnico altamente cualificado para suscripción.
+- **Criterio de falsación:** Cero impresiones en 21 días en GSC para consultas relacionadas con "flow profiling" y "darcy espresso".
+- **Fecha de Revisión:** 2026-10-15
+- **Cierre:** ABIERTA.

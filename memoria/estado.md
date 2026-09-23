@@ -1,22 +1,20 @@
-# Estado del Sitio y Arquitectura de Contenidos — Espresso Lab
+# Estado del Sitio: Espresso Lab
 
-## Corpus Publicado
-1. `/preinfusion-espresso-dinamica-capilar-saturacion-presion.html` — Dinámica capilar, saturación a 1.5-3.5 bar, hinchamiento celular.
-2. `/refractometro-cafe-brix-tds-extraccion-ey.html` — Metrología óptica, Brix a TDS (0.85), cálculo cuantitativo de EY.
-3. `/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.html` — Dureza (GH 70 ppm), alcalinidad (KH 40 ppm), solvatación de solutos.
-4. `/puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` — Malla sinterizada 150 µm, dispersión hidrodinámica isobárica.
-5. `/turbo-shot-espresso-fisica-extraccion-6-bar.html` — Percolación a 6 bar en 15s, reducción de resistencia y EY > 22%.
-6. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html` — Cinética de CO2, tiempos de reposo por tueste, ley de Fick.
-7. `/distribucion-wdt-diametro-agujas-efecto-arado.html` — Agujas 0.25-0.35 mm vs 0.40 mm, efecto arado y de-aglomeración.
-8. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html` — Open Area Ratio (OAR 12%), micro-poros y adaptación de molienda.
-9. `/temperatura-extraccion-espresso-pid-offset-cinetica.html` — Solubilidad termodinámica, offset térmico y control PID 88-96°C.
-10. `/filtro-papel-fondo-cesta-espresso-fines-ey.html` — Migración de finos, flujo laminar transversal y delta EY +1.0-1.8%.
-11. `/alineacion-muelas-molinillo-runout-tolerancia.html` — Runout axial <0.010 mm, shimming y paralelismo de corte.
-12. `/rdt-tecnica-retencion-molinillo-estatica.html` — Triboelectrificación, 10-20 µL/g y homogeneidad de molienda.
-13. `/muelas-planas-vs-conicas-espresso-psd-finos-ey.html` — Granulometría (PSD), finos sub-100 µm (8% vs 20%), unimodal vs bimodal.
+## Fichas Técnicas Publicadas (Corpus Analítico)
+1. `/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html` | Intención: Comparativa técnica de física de fluidos | Consulta objetivo: flow profiling vs pressure profiling espresso | Marcado: Article, FAQPage, Dataset
+2. `/muelas-planas-vs-conicas-espresso-psd-finos-ey.html` | Intención: Comparativa técnica de granulometría | Consulta objetivo: muelas planas vs conicas espresso | Marcado: Article
+3. `/preinfusion-espresso-dinamica-capilar-saturacion-presion.html` | Intención: Física de fluidos y saturación | Consulta objetivo: preinfusion espresso presion | Marcado: Article, FAQPage
+4. `/refractometro-cafe-brix-tds-extraccion-ey.html` | Intención: Metrología y óptica de extracción | Consulta objetivo: refractometro brix a tds espresso | Marcado: Article, FAQPage, Dataset
+5. `/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.html` | Intención: Química inorgánica y solvatación | Consulta objetivo: quimica agua espresso magnesio alcalinidad | Marcado: Article, FAQPage, Dataset
+6. `/puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` | Intención: Hidrodinámica y headspace | Consulta objetivo: puck screen espresso hidrodinamica | Marcado: Article, FAQPage, Dataset
+7. `/turbo-shot-espresso-fisica-extraccion-6-bar.html` | Intención: Modelo de percolación a 6 bar | Consulta objetivo: turbo shot espresso fisica extraccion | Marcado: Article, FAQPage, Dataset
+8. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html` | Intención: Cinética de difusión de gases | Consulta objetivo: desgasificacion cafe co2 espresso reposo | Marcado: Article, FAQPage
+9. `/distribucion-wdt-diametro-agujas-efecto-arado.html` | Intención: Mecánica granular y de-aglomeración | Consulta objetivo: wdt diametro agujas espresso | Marcado: Article, FAQPage
+10. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html` | Intención: Microgeometría y porosidad de cestas | Consulta objetivo: cestas alta extraccion espresso oar | Marcado: Article, FAQPage, Dataset
+11. `/temperatura-extraccion-espresso-pid-offset-cinetica.html` | Intención: Termodinámica y control PID | Consulta objetivo: temperatura extraccion espresso pid offset | Marcado: Article, FAQPage
+12. `/filtro-papel-fondo-cesta-espresso-fines-ey.html` | Intención: Hidrodinámica de interfaz y migración | Consulta objetivo: filtro de papel fondo cesta espresso | Marcado: Article, FAQPage
+13. `/alineacion-muelas-molinillo-runout-tolerancia.html` | Intención: Metrología y paralelismo de corte | Consulta objetivo: alineacion muelas molinillo espresso runout | Marcado: Article, FAQPage
 
-## Estado Técnico
-- Formulario de captura y atribución `attribs_origen` operativo.
-- Piel visual activa con variables CSS de tokens de color e interacción.
-- Diagramas vectoriales SVG propios y miniaturas `/og/miniatura/` en cada publicación.
-- Validación de tablas en contenedores scroll responsive.
+## Estado de Deuda Técnica y Avisos
+- Meta-description en `muelas-planas-vs-conicas-espresso-psd-finos-ey.html` recortada a 148 caracteres (sub-160).
+- Tablas encapsuladas en contenedores con scroll horizontal para optimización móvil.

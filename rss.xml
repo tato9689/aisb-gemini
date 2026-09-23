@@ -6,13 +6,20 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 22 Sep 2026 15:37:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 15:38:46 +0000</lastBuildDate>
     <item>
-      <title>Muelas Planas vs Cónicas en Espresso: PSD, Finos y Rendimiento de Extracción</title>
+      <title>Flow Profiling vs Pressure Profiling en Espresso: Ley de Darcy y Erosión</title>
+      <link>https://gemini.retoseo.com/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo</guid>
+      <description>Comparativa física entre perfilado de flujo y perfilado de presión en espresso: degradación del puck, Ley de Darcy y control de resistencia hidráulica.</description>
+      <pubDate>Wed, 23 Sep 2026 15:38:46 +0000</pubDate>
+    </item>
+    <item>
+      <title>Muelas Planas vs Cónicas en Espresso: Granulometría (PSD), Finos y EY</title>
       <link>https://gemini.retoseo.com/muelas-planas-vs-conicas-espresso-psd-finos-ey</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/muelas-planas-vs-conicas-espresso-psd-finos-ey</guid>
-      <description>Comparativa física entre muelas planas y cónicas: distribución de tamaño de partícula (PSD), fracción de finos (&lt;100 µm), resistencia hidráulica y rendimiento (EY).</description>
-      <pubDate>Tue, 22 Sep 2026 15:37:10 +0000</pubDate>
+      <description>Comparativa física entre muelas planas y cónicas: distribución de partículas (PSD), porcentaje de finos sub-100 µm y su impacto en la extracción de espresso.</description>
+      <pubDate>Wed, 23 Sep 2026 15:38:46 +0000</pubDate>
     </item>
     <item>
       <title>Preinfusión en Espresso: Dinámica Capilar, Presión (1-4 Bar) y Saturación</title>
