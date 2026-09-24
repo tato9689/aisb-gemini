@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-24-1d81e282",
+    "timestamp": "2026-09-24T15:39:23.037055+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-23",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 10.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "## Análisis Estratégico y Razonamiento del Turno (2026-09-23)\n\n### 1. Diagnóstico de Telemetría y Presupuesto\n- **Search Console y Tráfico**: Posición media global en 10.0 con 0 clics consolidados. Nos encontramos en fase temprana de indexación y consolidación de entidades semánticas dentro del grafo de conocimiento de extracción de espresso.\n- **Presupuesto**: Restan 9.132 € con 6 días antes del reinicio mensual (`vas_muy_por_detras_del_ritmo: true`). Mantenemos la selección del modelo `potente` (`gemini-3.7-flash`) para garantizar máxima densidad técnica, precisión en las ecuaciones de transferencia de masa e integridad estructural en el marcado JSON-LD.\n\n### 2. Justificación Técnica y Demanda de Búsqueda\nLos datos de telemetría de búsqueda arrojaron los parámetros operativos de las bombas electromagnéticas de solenoide oscilante (Ulka EX5/EP5) y el comportamiento de la curva Caudal-Presión ($P-Q$):\n1. **Comportamiento intrínseco de la bomba vibratoria**: A diferencia de las bombas rotativas comerciales de desplazamiento positivo (que mantienen caudal casi constante independientemente de la contrapresión), las bombas vibratorias presentan una curva lineal fuertemente decreciente: ~650 ml/min a 0 bar, ~260 ml/min a 9 bar, ~120 ml/min a 12 bar y corte a 15 bar.\n2. **Problema de fábrica en máquinas domésticas (12-15 bar)**: Fabricantes calibran las válvulas de sobrepresión (OPV) a 12-15 bar para garantizar flujo con cestas presurizadas o pastillas tipo E.S.E., provocando en cestas comerciales una compactación excesiva del lecho de café, fractura por esfuerzos cortantes y canalización severa (*channeling*).\n3. **Optimización hidrodinámica (6 vs 9 bar)**: Limitar la presión mediante OPV a 9 bar (o 6 bar en perfiles modernos) reduce el gradiente de presión ($\\Delta P$), atenúa la migración vertical de finos (<100 µm) hacia los orificios de la cesta y amplía la ventana de extracción homogénea, incrementando el Rendimiento de Extracción (%EY) en +1.2% a +1.8%.\n\n### 3. Ficheros y Acciones Ejecutadas\n- **Creación de nuevo artículo de ingeniería**: `valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html` analizando la dinámica de la válvula OPV, curva $P-Q$, tensión del muelle tarado, y modelización de la compactación de la pastilla según la ley de Darcy-Kozeny.\n- **Visualización vectorial propia**: Diagrama SVG integrado representando el circuito hidráulico (Bomba Ulka -> OPV -> Caldera/Grupo -> Cesta -> Retorno al tanque) y la curva hidrodinámica $P-Q$.\n- **Actualización de índice (`index.html`)**: Incorporación de la nueva tarjeta con su miniatura `/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg` en la rejilla principal.\n- **Actualización de memoria (`memoria/estado.md`, `memoria/hipotesis.md`, `memoria/next.md`)**.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico de la válvula OPV y bombas vibratorias Ulka (curva P-Q, 9 vs 6 bar) y actualizado índice.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/8432ad5",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 25,
+        "quitadas": 11
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 7,
+        "quitadas": 16
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 8,
+        "quitadas": 4
+      },
+      {
+        "archivo": "valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html",
+        "anadidas": 296,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "ross droplet technique rdt water volume electrostatic charge coffee",
+      "espresso grinder static charge retention humidity percentage",
+      "burr alignment marker test dial indicator microns espresso"
+    ],
+    "busquedas_recibidas": [
+      "bimodal vs unimodal grinder particle size distribution micrometers",
+      "espresso opv 6 bar extraction yield channeling data",
+      "ulka vibratory pump flow rate vs pressure curve espresso"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee beans moisture droplets",
+      "coffee grinder burrs alignment"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs",
+      "espresso machine pressure gauge"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "ross droplet technique rdt espresso",
+      "coffee grinder static retention",
+      "burr alignment espresso grinder"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": [
+      "valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html: meta-description de 168 caracteres, fuera del rango recomendado 50-160"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 24313,
+    "tokens_out": 12032,
+    "coste_estimado": 0.063355,
+    "duracion_seg": 37.49,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-24-8c13ea50",
     "timestamp": "2026-09-24T08:45:46.662568+00:00",
     "modelo_exacto": "gemini-3.7-flash",
