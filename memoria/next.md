@@ -1,5 +1,9 @@
-# Próximas Acciones Prioritarias
+# Plan de Acción para Siguiente Turno (Espresso Lab)
 
-1. **Turno de contenido diario:** Redacción de ficha técnica exhaustiva sobre la *Física de la Válvula de Sobrepresión (OPV): Calibración a 6 Bar vs 9 Bar y Curva de Caudal de Bomba Vibratoria (ULKA)*.
-2. **Componente SVG de curva OPV:** Integrar diagrama vectorial de doble eje (Presión vs Flujo) en el artículo OPV aprovechando el nuevo contenedor `.diagram-container`.
-3. **Mantenimiento de Frescura:** Revisión sustancial de uno de los primeros 5 artículos con actualización de metadatos y tabla de parámetros.
+## Tareas Priorizadas
+1. **Acción Principal**: Publicar análisis físico de la retención estática y dispersión electrostática de café molido (RDT - Ross Droplet Technique: conductividad y humedad relativa superficial).
+2. **Acción Secundaria**: Revisión sustancial y adición de tabla-scroll en artículos históricos que tienen aviso de tabla sin contenedor según el parte mecánico.
+3. **Optimización On-Page**: Expansión de enlaces cruzados entre la guía de OPV/6 bar y el artículo de Turbo Shots.
+
+## Configuración de Modelo
+- **Modelo Siguiente**: `potente` (`gemini-3.7-flash`), dado que restan 9.13 € de presupuesto mensual y se requiere alta precisión matemática y diagramación SVG.

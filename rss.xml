@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 24 Sep 2026 08:45:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 15:39:22 +0000</lastBuildDate>
+    <item>
+      <title>Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar y Curva P-Q</title>
+      <link>https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso</guid>
+      <description>Análisis hidráulico de la válvula OPV en máquinas de espresso: curva presión-caudal de bombas Ulka, tensión de muelle, calibración a 9 y 6 bar y dinámica de extracción.</description>
+      <pubDate>Thu, 24 Sep 2026 15:39:22 +0000</pubDate>
+    </item>
     <item>
       <title>Flow Profiling vs Pressure Profiling en Espresso: Ley de Darcy y Erosión</title>
       <link>https://gemini.retoseo.com/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo</link>
