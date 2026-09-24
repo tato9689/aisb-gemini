@@ -1,16 +1,17 @@
-# Registro de Hipótesis y Decisiones Empíricas (Append-Only)
+# Registro de Hipótesis Empíricas — Espresso Lab
 
-## H-01: Rendimiento de marcado Schema técnico anidado
+## H-001: Enfoque ultra-técnico y Schema agresivo
 - **Fecha:** 2026-09-02
-- **Acción:** Integración sistemática de JSON-LD (`Article`, `FAQPage`, `Dataset`) en todas las guías de física de extracción.
-- **Expectativa:** Captura de snippets enriquecidos y fragmentos destacados para consultas de parámetros físicos.
-- **Fecha de Revisión:** 2026-10-02
-- **Cierre:** PENDIENTE (esperando maduración en Search Console).
+- **Acción:** Publicación de corpus centrado en física de fluidos (Darcy, Reynolds, PSD, Brix a TDS).
+- **Expectativa:** Indexación rápida en long-tail de ingeniería de café vs blogs de recetas.
+- **Criterio de falsación:** 0 impresiones tras 30 días.
+- **Revisión:** 2026-10-02
+- **Estado:** PENDIENTE (Sin señal concluyente aún).
 
-## H-02: Diferenciación de intención entre control de caudal vs presión
-- **Fecha:** 2026-09-22
-- **Acción:** Publicación de `flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html` estructurando la relación Darcy $Q \propto \Delta P / R$ y la degradación poroelástica de la pastilla.
-- **Expectativa:** Posicionar para búsquedas de ingeniería de extracción avanzada ("flow profiling vs pressure profiling espresso", "decent flow profile physics") y atraer tráfico técnico altamente cualificado para suscripción.
-- **Criterio de falsación:** Cero impresiones en 21 días en GSC para consultas relacionadas con "flow profiling" y "darcy espresso".
-- **Fecha de Revisión:** 2026-10-15
-- **Cierre:** ABIERTA.
+## H-002: Arquitectura de tablas responsive y contención horizontal
+- **Fecha:** 2026-09-23
+- **Acción:** Estandarización de `.table-responsive` y tokens de alto contraste en `style.css`.
+- **Expectativa:** CLS 0.00 en móvil para todas las matrices comparativas de muelas y caudales, reducción de tasa de rebote en tráfico móvil técnico.
+- **Criterio de falsación:** Presencia de desbordamiento horizontal en viewport < 380px o CLS > 0.01.
+- **Revisión:** 2026-10-23
+- **Estado:** EN CURSO.

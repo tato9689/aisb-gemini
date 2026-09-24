@@ -1,49 +1,53 @@
 /* ==========================================================================
-   ESPRESSO LAB — SISTEMA DE DISEÑO TÉCNICO Y ARQUITECTURA DE DATOS
-   Versión: 2.1.0 — Diseño Incremental de Hojas de Datos y Métricas Físicas
+   Espresso Lab — Sistema de Diseño Técnico y Arquitectura de Datos
+   Enfoque: Datasheets de ingeniería, física de fluidos y granulometría.
    ========================================================================== */
 
 :root {
-  /* Paleta de Contraste Instrumental / Laboratorio */
-  --bg-base: #0b0f17;
-  --bg-surface: #121824;
-  --bg-surface-elevated: #182232;
-  --bg-card: #131c2a;
+  /* Paleta Base: Laboratorio / Grafito de Alto Contraste */
+  --bg-main: #0b0f14;
+  --bg-surface: #121922;
+  --bg-surface-elevated: #182330;
+  --bg-code: #070a0d;
   
-  --border-subtle: #1e293b;
-  --border-strong: #334155;
-  --border-accent: #0284c7;
-  --border-metric: #059669;
-
+  /* Jerarquía de Texto */
   --text-main: #e2e8f0;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
-  --text-accent: #38bdf8;
-  --text-metric: #34d399;
-  --text-warning: #fbbf24;
-  --text-danger: #f87171;
-
-  /* Tipografía y Espaciado */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
+  
+  /* Acentos Funcionales (Medición y Precisión) */
+  --accent-copper: #e08844;
+  --accent-amber: #f59e0b;
+  --accent-cyan: #38bdf8;
+  --accent-green: #10b981;
+  --accent-border: #243547;
+  --border-subtle: #1e2c3b;
+  
+  /* Tipografía */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+  /* Espaciado Modular */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 3rem;
-
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  
+  /* Radios Geométricos y Sombras Sutiles */
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
-
-  --max-width: 960px;
-  --max-width-reading: 740px;
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.5);
+  
+  /* Contenedores */
+  --max-width: 880px;
+  --max-width-wide: 1100px;
 }
 
-/* Reset y Layout Base */
+/* Reset y Normalización de Caja */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -52,11 +56,12 @@
 
 html {
   font-size: 16px;
-  background-color: var(--bg-base);
+  background-color: var(--bg-main);
   color: var(--text-main);
   font-family: var(--font-sans);
   line-height: 1.65;
-  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -65,17 +70,41 @@ body {
   flex-direction: column;
 }
 
+/* Enlaces y Micro-interacciones */
+a {
+  color: var(--accent-copper);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: #f39c55;
+  text-decoration-color: #f39c55;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+/* Contenedor Principal */
 .container {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: var(--space-lg) var(--space-md);
 }
 
-/* Cabecera y Navegación */
+.container-wide {
+  max-width: var(--max-width-wide);
+}
+
+/* Cabecera del Sitio */
 .site-header {
-  padding: var(--space-xl) 0 var(--space-lg);
   border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-lg);
   margin-bottom: var(--space-xl);
 }
 
@@ -89,15 +118,16 @@ body {
   gap: var(--space-sm);
 }
 
-.site-title img {
-  vertical-align: middle;
+.site-title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .site-desc {
-  font-size: 0.95rem;
   color: var(--text-muted);
+  font-size: 0.95rem;
   margin-top: var(--space-xs);
-  max-width: 680px;
+  font-family: var(--font-mono);
 }
 
 .site-nav {
@@ -107,20 +137,15 @@ body {
 }
 
 .site-nav a {
-  color: var(--text-accent);
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xxs);
-  transition: color 0.15s ease;
+  color: var(--text-muted);
 }
 
 .site-nav a:hover {
-  text-decoration: underline;
-  color: #ffffff;
+  color: var(--accent-copper);
 }
 
-/* Títulos y Secciones */
+/* Secciones y Encabezados */
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -130,10 +155,11 @@ body {
   margin-bottom: var(--space-lg);
   font-size: 1.15rem;
   font-weight: 700;
+  letter-spacing: -0.01em;
   color: #ffffff;
 }
 
-/* Rejilla de Artículos y Tarjetas Técnicas */
+/* Grid de Artículos / Tarjetas de Datos */
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -141,7 +167,7 @@ body {
   margin-bottom: var(--space-2xl);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -158,7 +184,8 @@ body {
 }
 
 .tech-card:hover {
-  border-color: var(--border-accent);
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
 }
 
 .tech-card img {
@@ -166,9 +193,8 @@ body {
   height: auto;
   aspect-ratio: 640 / 336;
   object-fit: cover;
-  background-color: var(--bg-surface-elevated);
-  display: block;
   border-bottom: 1px solid var(--border-subtle);
+  display: block;
 }
 
 .tech-card-body {
@@ -182,20 +208,21 @@ body {
   font-size: 1.05rem;
   line-height: 1.4;
   margin-bottom: var(--space-xs);
+  font-weight: 700;
 }
 
 .tech-card-body h3 a {
-  color: #ffffff;
+  color: var(--text-main);
   text-decoration: none;
 }
 
 .tech-card-body h3 a:hover {
-  color: var(--text-accent);
+  color: var(--accent-copper);
 }
 
 .tech-card-body p {
-  font-size: 0.85rem;
   color: var(--text-muted);
+  font-size: 0.85rem;
   line-height: 1.5;
   margin-bottom: var(--space-md);
   flex-grow: 1;
@@ -203,20 +230,29 @@ body {
 
 .tech-card-meta {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-accent);
+  font-size: 0.7rem;
+  color: var(--text-dim);
   border-top: 1px solid var(--border-subtle);
   padding-top: var(--space-xs);
-  margin-top: auto;
+}
+
+.tech-card-meta span {
+  background: var(--bg-main);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
 }
 
 /* ==========================================================================
-   TABLAS DE DATOS RESPONSIVAS CON FROZEN HEADERS (CORE)
+   Tablas de Datos Técnicos y Matrices Responsivas (Core Directiva)
    ========================================================================== */
+
 .table-responsive,
-.tabla-parametros {
+.tabla-parametros,
+.tabla-scroll {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -231,269 +267,303 @@ table {
   border-collapse: collapse;
   font-size: 0.88rem;
   text-align: left;
+  min-width: 540px;
 }
 
 thead th {
-  position: sticky;
-  top: 0;
   background: var(--bg-surface-elevated);
   color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: var(--space-sm) var(--space-md);
-  border-bottom: 2px solid var(--border-accent);
+  border-bottom: 2px solid var(--accent-border);
   white-space: nowrap;
-  z-index: 2;
 }
 
 tbody tr {
   border-bottom: 1px solid var(--border-subtle);
-  transition: background-color 0.15s ease;
+  transition: background-color 0.1s ease;
 }
 
-tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.015);
+tbody tr:last-child {
+  border-bottom: none;
 }
 
 tbody tr:hover {
-  background: rgba(56, 189, 248, 0.04);
+  background-color: rgba(224, 136, 68, 0.04);
 }
 
-tbody td {
+td {
   padding: var(--space-sm) var(--space-md);
   color: var(--text-main);
-  vertical-align: middle;
+  vertical-align: top;
 }
 
-td.num, th.num, td code, .tabular {
+/* Alineación y formatos numéricos exactos */
+td.num, th.num,
+td:has(code), td[data-unit] {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
 }
 
 /* ==========================================================================
-   MOTOR DE DIAGRAMAS SVG Y REPRESENTACIÓN VECTORIAL
+   Fichas Técnicas (Datasheets) y Parámetros
    ========================================================================== */
-.chart-container,
-.svg-diagram-wrapper {
-  margin: var(--space-xl) 0;
-  padding: var(--space-md);
+
+.datasheet {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-copper);
   border-radius: var(--radius-md);
-}
-
-.chart-header {
-  margin-bottom: var(--space-sm);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--text-accent);
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-}
-
-.chart-legend {
-  display: flex;
-  gap: var(--space-md);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  margin-top: var(--space-xs);
-  color: var(--text-muted);
-}
-
-.chart-legend span {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xxs);
-}
-
-.chart-source {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-dim);
-  margin-top: var(--space-xs);
-  border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-xxs);
-}
-
-svg.chart-svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ==========================================================================
-   UI DE BLOQUES SEMÁNTICOS (SCHEMA-MATCHING)
-   ========================================================================== */
-.spec-sheet {
-  background: var(--bg-surface);
-  border-left: 3px solid var(--border-accent);
   padding: var(--space-md) var(--space-lg);
   margin: var(--space-lg) 0;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
-.spec-sheet h4 {
-  font-size: 0.95rem;
+.datasheet-title {
   font-family: var(--font-mono);
-  color: var(--text-accent);
-  margin-bottom: var(--space-xs);
+  font-size: 0.85rem;
   text-transform: uppercase;
+  color: var(--accent-copper);
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .param-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: var(--space-sm);
+  gap: var(--space-md);
   margin-top: var(--space-sm);
 }
 
-.param-item {
-  background: var(--bg-base);
-  padding: var(--space-xs) var(--space-sm);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-}
-
-.param-label {
-  display: block;
-  font-size: 0.72rem;
-  color: var(--text-dim);
+.param-item dt {
   font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
   text-transform: uppercase;
 }
 
-.param-value {
-  display: block;
-  font-size: 0.92rem;
+.param-item dd {
   font-family: var(--font-mono);
+  font-size: 1.05rem;
   font-weight: 700;
-  color: var(--text-metric);
-  font-variant-numeric: tabular-nums;
+  color: #ffffff;
+  margin-top: 2px;
 }
 
 /* ==========================================================================
-   FORMULARIO DE CAPTACIÓN Y ESTADOS
+   Contenedores para Motor de Gráficos SVG (Física de Extracción)
    ========================================================================== */
+
+.diagram-container {
+  margin: var(--space-xl) 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.diagram-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--bg-code);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+figcaption.diagram-caption {
+  margin-top: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-xs);
+}
+
+/* ==========================================================================
+   Contenido del Artículo / Tipografía Editorial
+   ========================================================================== */
+
+article.article-content {
+  margin-bottom: var(--space-2xl);
+}
+
+.article-header {
+  margin-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-lg);
+}
+
+.article-header h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: var(--space-sm);
+}
+
+.article-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.article-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: var(--space-xl) 0 var(--space-md) 0;
+  color: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-xs);
+}
+
+.article-content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: var(--space-lg) 0 var(--space-sm) 0;
+  color: var(--text-main);
+}
+
+.article-content p {
+  margin-bottom: var(--space-md);
+  color: var(--text-main);
+}
+
+.article-content ul, .article-content ol {
+  margin: var(--space-md) 0 var(--space-lg) var(--space-lg);
+  color: var(--text-main);
+}
+
+.article-content li {
+  margin-bottom: var(--space-xs);
+}
+
+.article-content blockquote {
+  border-left: 3px solid var(--accent-amber);
+  background: var(--bg-surface);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Formulario de Captación y Newsletter
+   ========================================================================== */
+
 .newsletter-section {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: var(--space-xl);
   margin: var(--space-2xl) 0;
-  position: relative;
-}
-
-.newsletter-section::before {
-  content: "CANAL DE METROLOGÍA Y DATOS";
-  position: absolute;
-  top: -10px;
-  left: var(--space-md);
-  background: var(--border-accent);
-  color: #ffffff;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
-  letter-spacing: 0.05em;
+  text-align: left;
 }
 
 .newsletter-section h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: var(--space-xs);
 }
 
 .newsletter-section p {
-  font-size: 0.88rem;
   color: var(--text-muted);
+  font-size: 0.9rem;
   margin-bottom: var(--space-md);
+}
+
+.newsletter-form {
+  max-width: 480px;
 }
 
 .form-row {
   display: flex;
-  flex-direction: column;
   gap: var(--space-sm);
   margin-bottom: var(--space-sm);
 }
 
-@media (min-width: 480px) {
+@media (max-width: 520px) {
   .form-row {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
 .form-input {
-  flex: 1;
-  background: var(--bg-base);
-  border: 1px solid var(--border-strong);
+  flex-grow: 1;
+  background: var(--bg-main);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: var(--space-sm) var(--space-md);
+  padding: 0.65rem 0.85rem;
   color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.88rem;
-  outline: none;
+  font-size: 0.9rem;
   transition: border-color 0.15s ease;
 }
 
 .form-input:focus {
-  border-color: var(--text-accent);
+  border-color: var(--accent-copper);
 }
 
 .btn-primary {
-  background: var(--border-accent);
+  background: var(--accent-copper);
   color: #ffffff;
   border: none;
   border-radius: var(--radius-sm);
-  padding: var(--space-sm) var(--space-lg);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+  padding: 0.65rem 1.25rem;
   font-weight: 700;
+  font-size: 0.9rem;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
   transition: background-color 0.15s ease;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
-  background: #0369a1;
+  background: #f39c55;
 }
 
 .consentimiento {
-  font-size: 0.78rem !important;
-  color: var(--text-dim) !important;
-  margin-bottom: 0 !important;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
 }
 
-.consentimiento a {
-  color: var(--text-muted);
-  text-decoration: underline;
+.consentimiento input[type="checkbox"] {
+  accent-color: var(--accent-copper);
 }
 
 /* ==========================================================================
-   PIE DE PÁGINA OBLIGATORIO Y TRANSPARENCIA
+   Pie de Página Obligatorio
    ========================================================================== */
+
 .site-footer {
   margin-top: auto;
-  padding: var(--space-xl) 0;
   border-top: 1px solid var(--border-subtle);
-  font-size: 0.82rem;
+  padding: var(--space-xl) 0 var(--space-lg) 0;
+  font-size: 0.8rem;
   color: var(--text-dim);
-  line-height: 1.6;
-}
-
-.site-footer p {
-  margin-bottom: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  line-height: 1.5;
 }
 
 .site-footer a {
   color: var(--text-muted);
-  text-decoration: underline;
 }
 
 .site-footer a:hover {
-  color: var(--text-accent);
+  color: var(--accent-copper);
 }

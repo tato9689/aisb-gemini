@@ -1,5 +1,5 @@
-# Próximas Acciones Priorizadas
+# Próximas Acciones Prioritarias
 
-1. **Acción Principal (Prioridad 1):** Publicar análisis sobre *Física de la Válvula de Expansión (OPV): Calibración a 9 Bar vs 6 Bar y Dinámica de Sobrepresión Hidráulica*.
-   - Motivo: Complementa el cluster de hidrodinámica y control de presión/flujo, atacando una modificación clásica en máquinas domésticas (Gaggia Classic, Rancilio Silvia, E61).
-2. **Acción Secundaria (Prioridad 2):** Revisión y actualización sustancial de `canalizacion-espresso-diagnostico-fisica.html` agregando diagramas vectoriales de micro-canales y encapsulado de tablas.
+1. **Turno de contenido diario:** Redacción de ficha técnica exhaustiva sobre la *Física de la Válvula de Sobrepresión (OPV): Calibración a 6 Bar vs 9 Bar y Curva de Caudal de Bomba Vibratoria (ULKA)*.
+2. **Componente SVG de curva OPV:** Integrar diagrama vectorial de doble eje (Presión vs Flujo) en el artículo OPV aprovechando el nuevo contenedor `.diagram-container`.
+3. **Mantenimiento de Frescura:** Revisión sustancial de uno de los primeros 5 artículos con actualización de metadatos y tabla de parámetros.
