@@ -3,34 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar y Curva P-Q</title>
-  <meta name="description" content="Análisis hidráulico de la válvula OPV en máquinas de espresso: curva presión-caudal de bombas Ulka, tensión de muelle, calibración a 9 y 6 bar y dinámica de extracción.">
+  <title>Válvula OPV y Bomba Vibratoria en Espresso: Calibración a 9 y 6 Bar</title>
+  <meta name="description" content="Guía física de la válvula OPV y bomba vibratoria en espresso: curva caudal-presión (P-Q), calibración a 9 y 6 bar y prevención de colapso granular.">
   <link rel="canonical" href="https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html">
+  <meta property="og:title" content="Válvula OPV y Bomba Vibratoria en Espresso: Calibración a 9 y 6 Bar">
+  <meta property="og:description" content="Curva P-Q de bombas Ulka, contrapresión de fábrica (12-15 bar), regulación por muelle y dinámica de extracción a 9 y 6 bar.">
+  <meta property="og:image" content="https://gemini.retoseo.com/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg">
+  <meta property="og:url" content="https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html">
+  <meta property="og:type" content="article">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar y Curva P-Q">
-  <meta property="og:description" content="Análisis hidráulico de la válvula OPV en máquinas de espresso: curva presión-caudal de bombas Ulka, calibración a 9 y 6 bar y física de extracción.">
-  <meta property="og:image" content="https://gemini.retoseo.com/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg">
-  <meta property="og:type" content="article">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar, Curva P-Q y Dinámica de Extracción",
-    "description": "Estudio empírico e hidrodinámico del comportamiento de las bombas vibratorias solenoide (Ulka EX5/EP5) acopladas a válvulas de sobrepresión (OPV) y su impacto en la compactación de la pastilla de café.",
+    "headline": "Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar, Curva P-Q y Física de Extracción",
+    "description": "Análisis hidrodinámico de la válvula de sobrepresión (OPV) y la bomba electromagnética vibratoria en cafeteras espresso domésticas.",
     "url": "https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html",
     "image": "https://gemini.retoseo.com/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg",
+    "inLanguage": "es",
     "author": {
       "@type": "Organization",
       "name": "Espresso Lab"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Espresso Lab",
-      "url": "https://gemini.retoseo.com/"
-    },
-    "datePublished": "2026-09-23",
-    "dateModified": "2026-09-23"
+    }
   }
   </script>
 </head>
@@ -38,243 +33,136 @@
   <div class="container">
     <header class="site-header">
       <div class="site-title">
-        <a href="/" style="display: inline-flex; align-items: center; gap: var(--space-sm); color: inherit; text-decoration: none;">
-          <img src="/favicon.svg" alt="Logotipo Espresso Lab" width="32" height="32">
-          Espresso Lab
-        </a>
+        <img src="/favicon.svg" alt="Logotipo de Espresso Lab" width="36" height="36">
+        <a href="/" style="text-decoration: none; color: inherit;">Espresso Lab</a>
       </div>
       <p class="site-desc">Dinámica de fluidos en medios porosos, granulometría y extracción cuantitativa de espresso doméstico.</p>
+      <nav class="site-nav">
+        <a href="/">← Volver al Índice Principal</a>
+      </nav>
     </header>
 
     <main>
       <article>
         <header class="article-header">
-          <div class="meta-tag">INGENIERÍA HIDRÁULICA // BOMBAS Y VÁLVULAS</div>
-          <h1 class="article-title">Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar, Curva P-Q y Física de Extracción</h1>
+          <h1>Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar, Curva P-Q y Física de Extracción</h1>
           <div class="article-meta">
-            <span>PUBLICADO: 23/09/2026</span>
-            <span>LECTURA: 7 MIN</span>
-            <span>VERIFICACIÓN: EMPÍRICA (DATASET ULKA &amp; TRANSDUCTORES)</span>
+            <span>Última revisión: 24/09/2026</span>
+            <span>MÓDULO: HIDRÁULICA Y CONTROL DE PRESIÓN</span>
           </div>
         </header>
 
-        <figure class="article-hero-image">
-          <img src="/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg" alt="Manómetro de presión hidráulica y circuito de válvula OPV en cafetera de espresso" width="640" height="336">
-          <figcaption>Figura 1: Medición de contrapresión hidráulica en circuito cerrado con manómetro glicerina de 0-16 bar.</figcaption>
-        </figure>
+        <img src="/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg" alt="Válvula de sobrepresión OPV conectada a circuito hidráulico de máquina espresso" class="article-hero-img" width="640" height="336">
 
-        <section>
-          <p>La válvula de sobrepresión (<strong>OPV</strong>, del inglés <em>Over Pressure Valve</em> o válvula de expansión) es el elemento regulador fundamental en la hidráulica del espresso doméstico. La inmensa mayoría de máquinas domésticas y semi-comerciales incorporan bombas electromagnéticas de pistón oscilante (comúnmente modelos <strong>Ulka EX5</strong> o <strong>EP5</strong> de 48 W a 50 Hz). A diferencia de las bombas volumétricas rotativas de desplazamiento positivo utilizadas en hostelería industrial, una bomba vibratoria no entrega un caudal volumétrico fijo independiente de la contrapresión, sino que opera bajo una <strong>curva de transferencia Caudal-Presión ($P-Q$) fuertemente decreciente</strong>.</p>
-          
-          <p>De fábrica, múltiples fabricantes calibran la OPV estática a 12 o incluso 15 bar con el propósito exclusivo de permitir la extracción mediante filtros presurizados de doble fondo o monodosis de papel (E.S.E. pods). Cuando se trabaja con café en grano recién tostado, cestas de precisión despresurizadas y molienda ultrafina, una contrapresión no regulada de 12-15 bar provoca una <strong>hipercompactación del lecho granular</strong>, colapso de la porosidad intersticial y canalizaciones (*channeling*) severas.</p>
-        </section>
+        <p class="lead">Las cafeteras espresso domésticas con bomba vibratoria entregan de fábrica presiones estáticas de entre 12 y 15 bar debido a la curva característica caudal-presión (P-Q) de los solenoides electromagnéticos. La instalación y calibración de una válvula de sobrepresión (OPV, <em>Over Pressure Valve</em>) a 9 o 6 bar estabiliza el gradiente hidráulico y previene la compactación destructiva y la microcanalización del lecho de café.</p>
 
-        <section>
-          <h2>1. Termohidráulica de la Bomba Vibratoria (Ulka EX5)</h2>
-          <p>La bomba oscilante opera mediante un diodo rectificador de media onda que activa un electroimán a la frecuencia de red (50 Hz o 60 Hz). Durante el semiciclo positivo, el pistón de acero inoxidable es atraído magnéticamente contra un resorte de retorno, comprimiendo un volumen fijo de agua (~0.12 ml por pulso) hacia la cámara de salida a través de una válvula de retención de teflón.</p>
+        <h2>1. Dinámica de la Bomba Vibratoria y la Curva P-Q</h2>
+        <p>Una bomba vibratoria estándar (típicamente Ulka E5 o EX5) opera mediante un pistón accionado electromagnéticamente a 50 Hz (3.000 oscilaciones por minuto en corriente alterna europea). A diferencia de una bomba rotativa comercial que mantiene un caudal constante independiente de la contrapresión, la bomba vibratoria exhibe una relación inversa estricta entre presión y caudal:</p>
 
-          <div class="tabla-scroll">
-            <table class="tabla-datos">
-              <thead>
-                <tr>
-                  <th>Presión Hidráulica ($P$)</th>
-                  <th>Caudal de Descarga ($Q$)</th>
-                  <th>Frecuencia de Ciclo</th>
-                  <th>Comportamiento Físico de la Pastilla</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>0 bar (Flujo libre)</strong></td>
-                  <td>650 ml/min (~10.8 ml/s)</td>
-                  <td>50 pulsos/s</td>
-                  <td>Llenado de espacio libre (*headspace*) antes de compresión.</td>
-                </tr>
-                <tr>
-                  <td><strong>6 bar (Modo Turbo)</strong></td>
-                  <td>380 ml/min (~6.3 ml/s)</td>
-                  <td>50 pulsos/s</td>
-                  <td>Baja compactación, alta permeabilidad $k$, nula erosión estructural.</td>
-                </tr>
-                <tr>
-                  <td><strong>9 bar (Estándar SCA)</strong></td>
-                  <td>260 ml/min (~4.3 ml/s)</td>
-                  <td>50 pulsos/s</td>
-                  <td>Punto de equilibrio entre solubilización lipídica y resistencia del lecho.</td>
-                </tr>
-                <tr>
-                  <td><strong>12 bar (Ajuste Fábrica)</strong></td>
-                  <td>130 ml/min (~2.1 ml/s)</td>
-                  <td>50 pulsos/s</td>
-                  <td>Micro-fracturas del disco, colapso de canales capilares.</td>
-                </tr>
-                <tr>
-                  <td><strong>15 bar (Presión Ciega)</strong></td>
-                  <td>0 ml/min (Corte / Stall)</td>
-                  <td>50 pulsos/s</td>
-                  <td>Estancamiento total; vibración disipada íntegramente en calor.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="table-container" style="overflow-x: auto;">
+          <table class="tabla-parametros">
+            <thead>
+              <tr>
+                <th>Presión de Sistema (Bar)</th>
+                <th>Caudal Entregado (ml/min)</th>
+                <th>Caudal por Segundo (ml/s)</th>
+                <th>Estado de Operación Hidráulica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0 (Flujo Libre)</td>
+                <td>650</td>
+                <td>10.8</td>
+                <td>Carga inicial y purga de caldera</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>380</td>
+                <td>6.3</td>
+                <td>Régimen de alta permeabilidad (Turbo shot / molienda fina)</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>260</td>
+                <td>4.3</td>
+                <td>Punto nominal de extracción estándar</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>140</td>
+                <td>2.3</td>
+                <td>Configuración de fábrica estándar en máquinas básicas</td>
+              </tr>
+              <tr>
+                <td>15 (Ciego)</td>
+                <td>0</td>
+                <td>0.0</td>
+                <td>Presión máxima de estancamiento de pistón</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <p>Como demuestra la curva característica, si la pastilla de café opone suficiente resistencia hidráulica y no existe una OPV que abra a 9 bar, la bomba aumentará la presión estática hasta alcanzar 12-14 bar mientras el caudal desciende a valores inferiores a 1.5 ml/s. A estas presiones extremas, el fluido busca selectivamente los caminos de menor densidad en la matriz granular, taladrando canales microscópicos que arruinan el rendimiento de extracción (%EY).</p>
-        </section>
+        <h2>2. Mecanismo de Funcionamiento de la Válvula OPV</h2>
+        <p>La válvula OPV es un elemento de alivio proporcional compuesto por un asiento cónico (o almohadilla de elastómero EPDM/silicona) presionado contra el conducto de descarga mediante un muelle calibrado. Cuando la presión hidrostática generada por la resistencia de la pastilla supera la tensión mecánica del muelle ($F = k \cdot x$), el obturador se desplaza, derivando el exceso de caudal hacia el depósito de agua o la bandeja de goteo.</p>
 
-        <section>
-          <h2>2. Mecánica de Funcionamiento de la Válvula OPV</h2>
-          <p>Una OPV es una válvula de alivio proporcional con resorte calibrado. Se ubica en el circuito hidráulico inmediatamente después de la descarga de la bomba y antes de la caldera o bloque térmico. Consta de un asiento cónico de latón o acero, una junta de elastómero (EPDM o vitón) y un muelle helicoidal tarado.</p>
+        <div class="table-container" style="overflow-x: auto;">
+          <table class="tabla-parametros">
+            <thead>
+              <tr>
+                <th>Parámetro de Calibración</th>
+                <th>Ajuste de Fábrica (Sin OPV Regulable)</th>
+                <th>Calibración Clásica (9 Bar)</th>
+                <th>Calibración Moderna (6 Bar)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Presión con Filtro Ciego</td>
+                <td>13.0 - 15.0 bar</td>
+                <td>9.5 - 10.0 bar</td>
+                <td>6.5 - 7.0 bar</td>
+              </tr>
+              <tr>
+                <td>Presión Dinámica en Extracción</td>
+                <td>11.5 - 13.5 bar</td>
+                <td>8.5 - 9.0 bar</td>
+                <td>5.8 - 6.2 bar</td>
+              </tr>
+              <tr>
+                <td>Riesgo de Canalización</td>
+                <td>Muy Alto (colapso de matriz)</td>
+                <td>Moderado (estándar SCA)</td>
+                <td>Mínimo (máxima tolerancia a finos)</td>
+              </tr>
+              <tr>
+                <td>Rendimiento de Extracción (EY)</td>
+                <td>17.0 - 19.5% (heterogéneo)</td>
+                <td>20.0 - 21.5%</td>
+                <td>21.5 - 23.5% (con molienda ultrafina)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div class="diagram-container">
-            <svg viewBox="0 0 700 280" width="100%" height="auto" aria-label="Diagrama del circuito hidráulico con bomba Ulka y válvula OPV" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 12px;">
-              <!-- Tanque de Agua -->
-              <rect x="30" y="80" width="90" height="120" rx="4" fill="none" stroke="var(--border-accent)" stroke-width="2"/>
-              <text x="75" y="145" fill="var(--text-main)" text-anchor="middle" font-weight="bold">TANQUE</text>
-              <text x="75" y="165" fill="var(--text-dim)" text-anchor="middle" font-size="10">H₂O (0 bar)</text>
+        <h2>3. Procedimiento de Calibración con Manómetro de Portafiltro</h2>
+        <ol>
+          <li><strong>Instalación del Manómetro:</strong> Conectar un manómetro de glicerina (rango 0-16 bar, precisión ±1.6%) con rosca 3/8" al cuerpo del portafiltro.</li>
+          <li><strong>Medición del Offset Estático:</strong> Al usar un filtro ciego o manómetro estanco, la bomba opera a caudal $Q = 0$. La presión leída es aproximadamente 0.5 a 1.0 bar superior a la presión dinámica real durante una extracción a $2\text{ ml/s}$. Para un objetivo real de 9 bar en taza, la OPV debe calibrarse a 9.7-10.0 bar en ciego. Para 6 bar en taza, calibrar a 6.7-7.0 bar en ciego.</li>
+          <li><strong>Ajuste del Tornillo/Muelle:</strong> Girar el tornillo de regulación en sentido antihorario para comprimir menos el muelle (reducción de presión de alivio) o sustituir el muelle por una variante calibrada a 9 bar (como en los mods para Gaggia Classic Pro).</li>
+        </ol>
 
-              <!-- Tubo Tanque a Bomba -->
-              <line x1="120" y1="120" x2="180" y2="120" stroke="var(--text-accent)" stroke-width="3"/>
-              
-              <!-- Bomba Ulka -->
-              <rect x="180" y="90" width="110" height="60" rx="4" fill="none" stroke="var(--border-accent)" stroke-width="2"/>
-              <text x="235" y="120" fill="var(--text-main)" text-anchor="middle" font-weight="bold">BOMBA ULKA</text>
-              <text x="235" y="135" fill="var(--text-dim)" text-anchor="middle" font-size="10">EX5 / 48W</text>
-
-              <!-- Tubo Bomba a OPV -->
-              <line x1="290" y1="120" x2="350" y2="120" stroke="var(--text-accent)" stroke-width="3"/>
-
-              <!-- Valvula OPV -->
-              <polygon points="350,100 390,120 350,140" fill="none" stroke="var(--border-accent)" stroke-width="2"/>
-              <rect x="370" y="110" width="40" height="20" fill="none" stroke="var(--border-accent)" stroke-width="1.5"/>
-              <text x="390" y="90" fill="var(--text-metric)" text-anchor="middle" font-weight="bold">OPV (9 BAR)</text>
-
-              <!-- Linea de Retorno al Tanque -->
-              <path d="M 390 130 L 390 220 L 75 220 L 75 200" fill="none" stroke="var(--text-dim)" stroke-width="2" stroke-dasharray="4,4"/>
-              <text x="235" y="240" fill="var(--text-dim)" text-anchor="middle" font-size="10">By-pass de sobrepresión (Exceso de caudal)</text>
-
-              <!-- Tubo OPV a Caldera/Grupo -->
-              <line x1="410" y1="120" x2="480" y2="120" stroke="var(--text-accent)" stroke-width="3"/>
-
-              <!-- Grupo y Portafiltro -->
-              <rect x="480" y="80" width="140" height="80" rx="4" fill="none" stroke="var(--border-accent)" stroke-width="2"/>
-              <text x="550" y="115" fill="var(--text-main)" text-anchor="middle" font-weight="bold">GRUPO / CESTA</text>
-              <text x="550" y="135" fill="var(--text-metric)" text-anchor="middle" font-size="11">P_pastilla = 9.0 bar</text>
-
-              <!-- Salida Espresso -->
-              <line x1="550" y1="160" x2="550" y2="200" stroke="var(--text-accent)" stroke-width="3"/>
-              <text x="550" y="215" fill="var(--text-main)" text-anchor="middle" font-size="10">Flujo: ~2.0 ml/s</text>
-            </svg>
-          </div>
-
-          <p>Cuando la presión en el circuito alcanza el umbral fijado por la fuerza del resorte ($F_k = k \cdot \Delta x$), el obturador se desplaza venciendo la constante de rigidez $k$. La sección transversal abierta permite desviar el caudal excedente hacia el depósito de agua o hacia la bandeja de goteo, fijando de manera estricta el límite máximo de contrapresión hidrostática que experimenta la pastilla de café.</p>
-        </section>
-
-        <section>
-          <h2>3. Comparativa Empírica: 12 Bar vs 9 Bar vs 6 Bar</h2>
-          <p>El comportamiento reológico de la pastilla de café comprimida bajo flujo forzado se modeliza mediante la ecuación de Ergun para lechos fijos porosos acoplada a la Ley de Darcy:</p>
-          
-          <div class="code-block" style="background: var(--bg-surface); padding: var(--space-md); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.9rem; margin: var(--space-md) 0;">
-            Q = ( - k · A / μ ) · ( ΔP / L )
-          </div>
-
-          <p>Donde $Q$ es el caudal volumétrico, $k$ la permeabilidad del lecho, $A$ el área de la cesta (26.4 cm² en 58 mm), $\mu$ la viscosidad dinámica del agua a 93 °C ($0.30 \times 10^{-3} \text{ Pa}\cdot\text{s}$), $\Delta P$ la caída de presión y $L$ la altura del lecho. A presiones elevadas ($\Delta P > 10 \text{ bar}$), el lecho sufre una compactación no elástica que reduce exponencialmente la permeabilidad $k$.</p>
-
-          <div class="tabla-scroll">
-            <table class="tabla-datos">
-              <thead>
-                <tr>
-                  <th>Parámetro Físico</th>
-                  <th>Calibración 12 Bar (Fábrica)</th>
-                  <th>Calibración 9 Bar (SCA)</th>
-                  <th>Calibración 6 Bar (Flujo Rápido)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Compactación relativa del lecho</strong></td>
-                  <td>Máxima (Colapso interparticular)</td>
-                  <td>Media-Alta (Estable)</td>
-                  <td>Baja (-30% densidad aparente)</td>
-                </tr>
-                <tr>
-                  <td><strong>Probabilidad de canalización</strong></td>
-                  <td>Muy Alta (> 45% de extracciones)</td>
-                  <td>Moderada (&lt; 10% con WDT)</td>
-                  <td>Casi nula (&lt; 2% de varianza)</td>
-                </tr>
-                <tr>
-                  <td><strong>Granulometría requerida</strong></td>
-                  <td>Gruesa (para evitar atasco)</td>
-                  <td>Fina estándar (~320-380 µm)</td>
-                  <td>Ultrafina (~220-280 µm)</td>
-                </tr>
-                <tr>
-                  <td><strong>Tiempo de extracción (Ratio 1:2)</strong></td>
-                  <td>32 - 40 s (Flujo estrangulado)</td>
-                  <td>25 - 30 s</td>
-                  <td>14 - 18 s</td>
-                </tr>
-                <tr>
-                  <td><strong>Rendimiento de Extracción (%EY)</strong></td>
-                  <td>17.5% - 19.2% (Astringente)</td>
-                  <td>19.5% - 21.0% (Equilibrado)</td>
-                  <td>21.5% - 23.2% (Alta claridad)</td>
-                </tr>
-                <tr>
-                  <td><strong>Concentración (%TDS)</strong></td>
-                  <td>9.5% - 11.0%</td>
-                  <td>8.5% - 9.8%</td>
-                  <td>7.0% - 8.2%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section>
-          <h2>4. Procedimiento de Calibración con Portafiltro Ciego y Manómetro</h2>
-          <p>Para tarar con exactitud la OPV en máquinas como Gaggia Classic, Rancilio Silvia, Lelit Anna o Profitec Go, se requiere un <strong>portafiltro con manómetro acoplado</strong> (escala 0-16 bar de glicerina) y una válvula de aguja auxiliar para simular flujo real:</p>
-
-          <ol style="margin-left: var(--space-lg); line-height: 1.7;">
-            <li><strong>Medición Estática vs Dinámica:</strong> La presión leída con portafiltro ciego cerrado sin salida de agua (*presión estática*) es aproximadamente <strong>0.5 a 1.0 bar superior</strong> a la presión real de extracción cuando el café permite un flujo de 1.5 a 2.0 ml/s. Por tanto, para obtener 9 bar dinámicos reales en la pastilla, la OPV debe tararse a <strong>9.5 - 10.0 bar estáticos</strong>.</li>
-            <li><strong>Ajuste Mecánico del Muelle:</strong>
-              <ul style="margin-top: var(--space-xs);">
-                <li><em>Válvulas ajustables por rosca:</em> Aflojar el tornillo hexagonal interno en sentido antihorario reduce la pre-tensión del resorte (cada media vuelta suele reducir ~1.5 bar).</li>
-                <li><em>Válvulas con muelle intercambiable:</em> En modelos con resorte fijo, se sustituye el muelle de fábrica (12-15 bar) por un muelle de constante elástica menor tarado a 9 bar (100 kPa/mm) o 6 bar.</li>
-              </ul>
-            </li>
-            <li><strong>Comprobación del Retorno:</strong> Activar la bomba durante 15 segundos y verificar que el flujo de alivio por el tubo de silicona al depósito sea continuo y uniforme sin pulsaciones erráticas.</li>
-          </ol>
-        </section>
-
-        <section>
-          <h2>Preguntas Frecuentes sobre la Válvula OPV</h2>
-          <div class="faq-block" style="margin-top: var(--space-md); display: flex; flex-direction: column; gap: var(--space-md);">
-            <div style="background: var(--bg-surface); padding: var(--space-md); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h3 style="margin-top: 0; font-size: 1.05rem; color: var(--text-accent);">¿Por qué los fabricantes no calibran la OPV a 9 bar desde la fábrica?</h3>
-              <p style="margin-bottom: 0; font-size: 0.95rem;">Porque el mercado generalista utiliza café comercial molido grueso de supermercado o monodosis presurizadas E.S.E. Si la máquina se limitara a 9 bar con un filtro de doble fondo presurizado, la resistencia combinada sería insuficiente para generar la espuma/crema artificial que busca el consumidor no especializado.</p>
-            </div>
-            <div style="background: var(--bg-surface); padding: var(--space-md); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h3 style="margin-top: 0; font-size: 1.05rem; color: var(--text-accent);">¿Se puede hacer un Turbo Shot a 6 bar solo modificando la molienda sin tocar la OPV?</h3>
-              <p style="margin-bottom: 0; font-size: 0.95rem;">No con estabilidad. Si la molienda se ajusta muy gruesa para permitir 6 bar dinámicos sin OPV que limite el techo, cualquier mínima variación en la compactación o en la dosis de café hará que la bomba vibratoria suba abruptamente de presión a lo largo de su curva P-Q, destruyendo la reproducibilidad entre disparos.</p>
-            </div>
-            <div style="background: var(--bg-surface); padding: var(--space-md); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h3 style="margin-top: 0; font-size: 1.05rem; color: var(--text-accent);">¿Afecta la modificación de la OPV a la potencia de vapor?</h3>
-              <p style="margin-bottom: 0; font-size: 0.95rem;">No. El circuito de vapor opera por termodinámica de cambio de fase dentro de la caldera sellada (habitualmente a 1.2 - 1.8 bar de presión manométrica de vapor). La OPV solo interviene en la rama de agua líquida fría presurizada por la bomba hacia la entrada de la caldera.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="newsletter-section" style="margin-top: var(--space-xl);">
-          <h3>Base de Datos de Dinámica de Fluidos</h3>
-          <p>Suscríbete para recibir análisis metrológicos sobre termodinámica, hidráulica y control cuantitativo en espresso doméstico.</p>
+        <section class="newsletter-section">
+          <h3>Suscripción a Informes Técnicos</h3>
+          <p>Análisis empíricos de termodinámica, hidráulica y física de la molienda para optimización de espresso doméstico.</p>
           <form class="newsletter-form" action="https://panel.retoseo.com/subscription/form" method="post">
             <div class="form-row">
               <input class="form-input" type="email" name="email" placeholder="ingenieria@dominio.com" required>
               <button type="submit" class="btn-primary">Suscribirse</button>
             </div>
             <input type="hidden" name="l" value="5">
-            <input type="hidden" name="attribs_origen" id="origen_art" value="directo">
+            <input type="hidden" name="attribs_origen" id="origen" value="directo">
             <p class="consentimiento">
               <input type="checkbox" name="consentimiento" required> He leído la <a href="/privacidad">política de privacidad</a>.
             </p>
@@ -290,7 +178,7 @@
     </footer>
   </div>
   <script>
-    document.getElementById('origen_art').value = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
+    document.getElementById('origen').value = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
   </script>
 </body>
 </html>

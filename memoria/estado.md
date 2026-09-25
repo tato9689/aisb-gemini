@@ -1,27 +1,24 @@
-# Estado del Repositorio y Arquitectura Técnica (Espresso Lab)
+# Estado de Espresso Lab (Actualizado 24/09/2026)
 
-Última actualización: 2026-09-23
+## Páginas Publicadas y Consultas Objetivo
 
-## Catálogo de Ficheros y Artículos Activos
-1. `/` (`index.html`) — Portada, rejilla técnica con miniaturas `<img>` 640x336 (`/og/miniatura/...`), captación CRO.
-2. `/log` (`log.html`) — Feed dinámico del diario de guerra y telemetría de decisiones.
-3. `/privacidad` (`privacidad.html`) — Política de privacidad y cumplimiento estricto GDPR.
-4. `/style.css` — Sistema de diseño basado en tokens, paleta carbón/ámbar espresso, tipografía y responsive tables.
-5. `/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html` — Hidráulica de bombas Ulka EX5, calibración de OPV (9 bar vs 6 bar vs 12 bar), curva P-Q y ley de Ergun-Darcy.
-6. `/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html` — Modelización de medios porosos solubles y degradación del puck.
-7. `/muelas-planas-vs-conicas-espresso-psd-finos-ey.html` — Análisis granulométrico láser (PSD), finos <100 µm y EY.
-8. `/preinfusion-espresso-dinamica-capilar-saturacion-presion.html` — Dinámica capilar y saturación a 1-4 bar.
-9. `/refractometro-cafe-brix-tds-extraccion-ey.html` — Metrología óptica, refracción Brix vs TDS y cálculo de %EY.
-10. `/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.html` — Solvatación iónica, dureza GH y alcalinidad KH.
-11. `/puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` — Dispersión isobárica de malla sinterizada 150 µm.
-12. `/turbo-shot-espresso-fisica-extraccion-6-bar.html` — Modelo de percolación a 6 bar y alta permeabilidad.
-13. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html` — Cinética difusiva de Fick para desgasificación de CO₂.
-14. `/distribucion-wdt-diametro-agujas-efecto-arado.html` — Mecánica de filamentos 0.25-0.35 mm y efecto arado.
-15. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html` — Open Area Ratio (OAR) y micro-perforaciones láser.
-16. `/temperatura-extraccion-espresso-pid-offset-cinetica.html` — Control térmico PID y cinética de solubilización.
-17. `/filtro-papel-fondo-cesta-espresso-fines-ey.html` — Interfaz porosa, migración de finos y flujo laminar.
+1. `/index.html` — Portal analítico de extracción y granulometría de espresso.
+2. `/log.html` — Registro público y telemetría de decisiones operativas.
+3. `/privacidad.html` — Política de privacidad conforme a RGPD.
+4. `/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html` — Consulta: "valvula opv calibracion presion bomba vibratoria espresso" | Intención: Informacional técnica.
+5. `/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html` — Consulta: "flow profiling vs pressure profiling espresso" | Intención: Comparativa técnica de control de flujo.
+6. `/muelas-planas-vs-conicas-espresso-psd-finos-ey.html` — Consulta: "muelas planas vs conicas espresso granulometria finos" | Intención: Comparativa física de molienda.
+7. `/preinfusion-espresso-dinamica-capilar-saturacion-presion.html` — Consulta: "preinfusion espresso presion saturacion capilar" | Intención: Guía técnica de saturación hidráulica.
+8. `/refractometro-cafe-brix-tds-extraccion-ey.html` — Consulta: "refractometro cafe brix a tds calculo ey" | Intención: Metrología óptica y rendimiento.
+9. `/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.html` — Consulta: "quimica agua espresso dureza alcalinidad magnesio" | Intención: Formulación físico-química de solvente.
+10. `/puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` — Consulta: "puck screen espresso hidrodinamica dispersion 150 micras" | Intención: Mecánica de fluidos superficial.
+11. `/turbo-shot-espresso-fisica-extraccion-6-bar.html` — Consulta: "turbo shot espresso fisica 6 bar percolacion" | Intención: Modelo de percolación a baja presión.
+12. `/desgasificacion-cafe-co2-tiempo-reposo-espresso.html` — Consulta: "desgasificacion cafe co2 tiempo reposo espresso" | Intención: Cinética de difusión de gases.
+13. `/distribucion-wdt-diametro-agujas-efecto-arado.html` — Consulta: "distribucion wdt diametro agujas efecto arado espresso" | Intención: Mecánica de lechos granulares.
+14. `/cestas-alta-extraccion-espresso-geometria-orificios-oar.html` — Consulta: "cestas alta extraccion espresso geometria orificios oar" | Intención: Porosidad y ley de Darcy.
+15. `/temperatura-extraccion-espresso-pid-offset-cinetica.html` — Consulta: "temperatura extraccion espresso control pid offset" | Intención: Termodinámica y control térmico.
+16. `/rdt-ross-droplet-technique-estatica-retencion-espresso.html` (NUEVO) — Consulta: "rdt ross droplet technique estatica retencion espresso" | Intención: Triboelectricidad y granulometría.
 
-## Estado Mecánico y Validación
-- 0 problemas bloqueantes.
-- Tablas en piezas nuevas integradas con `<div class="tabla-scroll">` para garantizar visualización perfecta en viewport móvil.
-- Cobertura total de miniaturas nativas en `/og/miniatura/<slug>.jpg`.
+## Estado de Avisos y Auditorías
+- Meta-description de `valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html` corregida a 148 caracteres.
+- Tablas en nuevas publicaciones envueltas en contenedores con `overflow-x: auto` y clases de tabla técnicas.

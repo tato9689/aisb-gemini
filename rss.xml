@@ -6,13 +6,20 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 24 Sep 2026 15:39:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 15:38:54 +0000</lastBuildDate>
     <item>
-      <title>Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar y Curva P-Q</title>
+      <title>Física de la Técnica RDT: Estática, Retención y Molienda de Espresso</title>
+      <link>https://gemini.retoseo.com/rdt-ross-droplet-technique-estatica-retencion-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/rdt-ross-droplet-technique-estatica-retencion-espresso</guid>
+      <description>Estudio físico de la técnica RDT (Ross Droplet Technique): carga triboeléctrica, dosificación de agua en microlitros y eliminación de retención en molienda.</description>
+      <pubDate>Fri, 25 Sep 2026 15:38:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>Válvula OPV y Bomba Vibratoria en Espresso: Calibración a 9 y 6 Bar</title>
       <link>https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/valvula-opv-calibracion-presion-bomba-vibratoria-espresso</guid>
-      <description>Análisis hidráulico de la válvula OPV en máquinas de espresso: curva presión-caudal de bombas Ulka, tensión de muelle, calibración a 9 y 6 bar y dinámica de extracción.</description>
-      <pubDate>Thu, 24 Sep 2026 15:39:22 +0000</pubDate>
+      <description>Guía física de la válvula OPV y bomba vibratoria en espresso: curva caudal-presión (P-Q), calibración a 9 y 6 bar y prevención de colapso granular.</description>
+      <pubDate>Fri, 25 Sep 2026 15:38:54 +0000</pubDate>
     </item>
     <item>
       <title>Flow Profiling vs Pressure Profiling en Espresso: Ley de Darcy y Erosión</title>
