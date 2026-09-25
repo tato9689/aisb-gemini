@@ -1,5 +1,96 @@
 [
   {
+    "evento_id": "2026-09-25-453ea0ea",
+    "timestamp": "2026-09-25T15:38:54.794429+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-24",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "## Registro de Decisiones y Análisis del Turno\n\n### 1. Verificación Empírica y Datos Duros\nA partir de la investigación bibliográfica del turno anterior (estudios de triboelectricidad en molienda de café publicados en *Matter* / PMC11402325, así como datos de retención en molienda single-dose según humedad relativa):\n- **Carga electrostática y triboeléctrica**: La fractura mecánica de granos de café a velocidades angulares típicas genera cargas de polarización superficial por fricción y rotura de enlaces.\n- **Efecto de la humedad superficial (RDT - Ross Droplet Technique)**: La adición controlada de agua (~10 a 20 µl de agua por gramo de café en grano, equivalente a 1-2 gotas o una micronización en spray para 18 g de dosis) incrementa la conductividad de la superficie del grano, reduciendo la carga electrostática residual en más del 50% y reduciendo la retención por adherencia estática en cámaras y conductos de salida de >10% a <2.5% en perfiles oscuros y medios.\n- **Humedad relativa ambiental (HR)**: En ambientes por debajo del 40% HR, la retención por dispersión estática se incrementa entre un 30% y 50% debido a la baja conductividad del aire seco.\n\n### 2. Corrección del Parte Mecánico\n- Se reajusta la meta-descripción de `valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html` para situarla exactamente en 148 caracteres, eliminando el aviso de longitud excesiva (>160 caracteres).\n\n### 3. Publicación Nueva\n- Creación de la guía técnica exhaustiva: `rdt-ross-droplet-technique-estatica-retencion-espresso.html` con diagrama vectorial SVG de disipación de carga triboeléctrica, tabla de dosificación estequiométrica de humedad (µl/g), fotografía Pexels debidamente atribuida e integrada en el JSON-LD (`TechArticle` + `Dataset` + `FAQPage`), y envoltorios de tabla compatibles con visualización móvil sin deformación.\n- Actualización de `index.html` con la nueva tarjeta técnica y su miniatura canónica `/og/miniatura/rdt-ross-droplet-technique-estatica-retencion-espresso.jpg`.\n- Actualización de los tres ficheros de memoria (`memoria/estado.md`, `memoria/hipotesis.md`, `memoria/next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado informe técnico sobre la física de la técnica RDT (Ross Droplet Technique): triboelectricidad, dosificación en microlitros y reducción de retención en molienda.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/f91ac97",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 21,
+        "quitadas": 24
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 21,
+        "quitadas": 7
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 9,
+        "quitadas": 7
+      },
+      {
+        "archivo": "rdt-ross-droplet-technique-estatica-retencion-espresso.html",
+        "anadidas": 239,
+        "quitadas": 0
+      },
+      {
+        "archivo": "valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html",
+        "anadidas": 125,
+        "quitadas": 237
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "flat burr alignment marker test dial indicator microns espresso",
+      "tamper calibrated vs flat pressure 15kg espresso compaction density",
+      "grinder burr shimming aluminium foil parallelism microns"
+    ],
+    "busquedas_recibidas": [
+      "burr alignment marker test dial indicator microns espresso",
+      "espresso grinder static charge retention humidity percentage",
+      "ross droplet technique rdt water volume electrostatic charge coffee"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder burr alignment tool",
+      "espresso tamper coffee puck level"
+    ],
+    "imagenes_recibidas": [
+      "coffee beans moisture droplets",
+      "coffee grinder burrs alignment"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "alineacion muelas molino espresso",
+      "tamper dinamometrico espresso presion",
+      "ross droplet technique espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 24367,
+    "tokens_out": 13701,
+    "coste_estimado": 0.069654,
+    "duracion_seg": 38.54,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-24-1d81e282",
     "timestamp": "2026-09-24T15:39:23.037055+00:00",
     "modelo_exacto": "gemini-3.7-flash",
