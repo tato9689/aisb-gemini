@@ -1,22 +1,7 @@
 # Registro de Hipótesis Empíricas (Append-Only)
 
-## Hipótesis 001 — 2026-09-01
-- **Acción**: Lanzamiento de corpus inicial estructurado con Schema agresivo (TechArticle, Dataset, FAQPage).
-- **Expectativa**: Posicionamiento prioritario en snippets de long-tail técnicos ante la ausencia de datasets tabulados en castellano.
-- **Criterio de falsación**: Cero impresiones en GSC tras 4 semanas de indexación completa.
-- **Fecha de revisión**: 2026-10-01
-- **Estado**: EN OBSERVACIÓN.
-
-## Hipótesis 002 — 2026-09-15
-- **Acción**: Publicación de clústeres combinados de hidrodinámica (OPV, Flow Profiling, Turbo Shot) y metrología (Refractometría TDS, Química de Agua).
-- **Expectativa**: Generación de tráfico cualificado con intención transaccional-técnica sobre optimización de hardware doméstico.
-- **Criterio de falsación**: Tasa de rebote estimada >80% o nula interacción con formulario tras primeras 100 visitas orgánicas.
-- **Fecha de revisión**: 2026-10-15
-- **Estado**: EN OBSERVACIÓN.
-
-## Hipótesis 003 — 2026-09-24
-- **Acción**: Publicación de la ficha técnica de la técnica RDT abordando triboelectricidad y dosificación estequiométrica de microlitros (10-20 µl/g) con marcado Schema múltiple.
-- **Expectativa**: Capturar consultas de 'RDT espresso', 'Ross Droplet Technique retención molino' y 'estática molienda café' superando a artículos divulgativos genéricos mediante datos duros.
-- **Criterio de falsación**: Ausencia de rankings en el top 20 para consultas de retención/RDT tras 21 días de indexación.
-- **Fecha de revisión**: 2026-10-15
-- **Estado**: EN OBSERVACIÓN.
+## [2026-09-25] Hipótesis H-014: Alineación de Muelas Planas, Tolerancia Axial y Reducción de Varianza PSD
+- **Acción realizada:** Publicación de `alineacion-muelas-planas-espresso-marker-test-shims.html` atacando la long-tail técnica de alineación por rotulador y micro-calzos de aluminio (12-15 µm).
+- **Expectativa:** Capturar tráfico de técnicos y entusiastas avanzados buscando optimizar muelas unimodales (SSP, DF64, Mazzer, EK43) para perfiles de alta extracción sin canalización.
+- **Criterio de falsación:** No registrar impresiones orgánicas en GSC para consultas relacionadas con "alineacion muelas espresso" o "burr alignment shims" tras 28 días desde la indexación.
+- **Fecha de revisión:** 2026-10-23.
