@@ -1,5 +1,93 @@
 [
   {
+    "evento_id": "2026-09-26-c0ad5023",
+    "timestamp": "2026-09-26T15:37:50.524194+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-25",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "## Registro de Operaciones y Razonamiento Analítico\n\n### 1. Verificación Empírica y Datos Físicos\nA partir de la telemetría y consultas de ingeniería de molienda ejecutadas en el turno anterior, se contrastaron los siguientes parámetros de tolerancia mecánica:\n- **Espesor de calzo (foil shim):** El papel de aluminio doméstico estándar presenta un espesor medio de $12\\ \\mu\\text{m}\\ (0.012\\ \\text{mm})$ a $15\\ \\mu\\text{m}$, mientras que el foil de precisión industrial desciende a $8\\text{--}10\\ \\mu\\text{m}$.\n- **Tolerancia de paralelismo y excentricidad (*runout*):** Un juego de muelas planas sin alinear presenta desviaciones de paralelismo de $30\\text{--}80\\ \\mu\\text{m}$. La alineación mediante el test de rotulador de borrado en seco (*marker test*) y calzado selectivo reduce el error de coplanaridad por debajo de $10\\ \\mu\\text{m}$ (con estándar óptimo $\\le 5\\ \\mu\\text{m}$).\n- **Impacto granulométrico:** La desalineación angular entre el anillo estacionario y el rotatorio provoca una zona de molienda por fricción/compresión indebida (generando finos coloidales bimodales asimétricos) y una zona de fuga de partículas gruesas (boulders), ensanchando la curva de distribución de tamaño de partícula (PSD) y reduciendo el rendimiento de extracción ($EY$).\n\n### 2. Ilustración y Visualización Técnica\n- Se genera un esquema vectorial SVG interactivo y responsive que modeliza el vector de paralelismo angular ($\\theta$), la zona de contacto asimétrico (*rubbing zone*) y el punto de inserción del calzo de aluminio.\n- Se implementa la miniatura estándar de alta eficiencia `/og/miniatura/alineacion-muelas-planas-espresso-marker-test-shims.jpg` con atributos explícitos `width=\"640\"` y `height=\"336\"`.\n- Todas las tablas de diagnóstico y pares de apriete se integran en contenedores estructurados con clase `.tabla-parametros` garantizando `overflow-x: auto` en viewports móviles.\n\n### 3. Edición y Estructuración de Información\n- Respuesta directa sin preámbulos: definición física de coplanaridad y protocolo en cuatro fases (diagnóstico, mapeo con rotulador, compensación de altura con microcalzos y validación de apriete).\n- Marcado Schema.org enriquecido mediante `TechArticle` y `HowTo` integrado con parámetros exactos.\n\n### 4. Actualización de Memoria y Estado\n- Registro de la hipótesis técnica sobre reducción de varianza granulométrica post-alineación.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación del artículo técnico sobre alineación de muelas planas mediante marker test y calzos en micras, más actualización del índice de investigaciones.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/ddfc682",
+    "cambios": [
+      {
+        "archivo": "alineacion-muelas-planas-espresso-marker-test-shims.html",
+        "anadidas": 227,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 19,
+        "quitadas": 22
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 5,
+        "quitadas": 20
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 5,
+        "quitadas": 10
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "espresso tamping force saturation limit 15kg puck density",
+      "dual boiler vs thermoblock temperature stability PID delta T espresso",
+      "water contact time percolation kinetics espresso yield"
+    ],
+    "busquedas_recibidas": [
+      "flat burr alignment marker test dial indicator microns espresso",
+      "grinder burr shimming aluminium foil parallelism microns",
+      "tamper calibrated vs flat pressure 15kg espresso compaction density"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso calibrated tamper distribution puck",
+      "espresso machine boiler heating element"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burr alignment tool",
+      "espresso tamper coffee puck level"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "presion prensado espresso",
+      "fuerza tamper espresso kg",
+      "calibrar tamper espresso",
+      "estabilidad termica cafetera espresso",
+      "temperatura extraccion espresso pid"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 24277,
+    "tokens_out": 10615,
+    "coste_estimado": 0.058014,
+    "duracion_seg": 31.39,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-25-453ea0ea",
     "timestamp": "2026-09-25T15:38:54.794429+00:00",
     "modelo_exacto": "gemini-3.7-flash",
