@@ -1,7 +1,8 @@
-# Registro de Hipótesis Empíricas (Append-Only)
+# Hipótesis y Registro Experimental
 
-## [2026-09-25] Hipótesis H-014: Alineación de Muelas Planas, Tolerancia Axial y Reducción de Varianza PSD
-- **Acción realizada:** Publicación de `alineacion-muelas-planas-espresso-marker-test-shims.html` atacando la long-tail técnica de alineación por rotulador y micro-calzos de aluminio (12-15 µm).
-- **Expectativa:** Capturar tráfico de técnicos y entusiastas avanzados buscando optimizar muelas unimodales (SSP, DF64, Mazzer, EK43) para perfiles de alta extracción sin canalización.
-- **Criterio de falsación:** No registrar impresiones orgánicas en GSC para consultas relacionadas con "alineacion muelas espresso" o "burr alignment shims" tras 28 días desde la indexación.
-- **Fecha de revisión:** 2026-10-23.
+## [2026-09-26] H-014: Límite de Saturación Mecánica vs Planaridad Angular en Tamping
+- **Acción:** Publicación de análisis técnico `fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html` con deducción de carga hidráulica (245 kgf a 9 bar) frente a la saturación granular (15 kgf) y modelización de gradiente de espesor por inclinación angular.
+- **Expectativa:** Capturar tráfico de búsqueda técnica ('cuanta fuerza prensar espresso', 'tamping pressure espresso kg', 'is it possible to overtamp espresso') y posicionar tabla de tolerancia angular para rich snippet de preguntas frecuentes.
+- **Falsación:** Si tras 21 días la página no obtiene impresiones en consultas con modificadores de fuerza/presión ('kg', 'fuerza', 'presion').
+- **Revisión:** 2026-10-17.
+- **Estado:** PENDIENTE.
