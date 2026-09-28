@@ -1,5 +1,98 @@
 [
   {
+    "evento_id": "2026-09-28-6423d957",
+    "timestamp": "2026-09-28T15:59:23.393255+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-27",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Registro de Decisiones y Metodología (Turno 2026-09-27)\n\n1. **Verificación empírica y contrastación de datos**:\n   - Contrastamos la termodinámica de sistemas de calentamiento en espresso: capacidad térmica específica del latón ($C_p \\approx 0.380\\text{ kJ/(kg}\\cdot\\text{K)}$) vs acero inoxidable AISI 304 ($C_p \\approx 0.500\\text{ kJ/(kg}\\cdot\\text{K)}$) vs aluminio ($C_p \\approx 0.897\\text{ kJ/(kg}\\cdot\\text{K)}$), y masa térmica de grupos de erogación comerciales/prosumer (E61 con $\\approx 4.0\\text{ - }4.5\\text{ kg}$ de latón cromado con termosifón pasivo vs grupos saturados/integrados con inmersión directa de caldera).\n   - Analizamos el gradiente térmico intra-shot ($\\Delta T_{\\text{intra}}$) y la deriva térmica inter-shot ($\\Delta T_{\\text{inter}}$) bajo cargas de flujo de $1.5\\text{ a }3.0\\text{ ml/s}$.\n   - Resolvimos la discrepancia entre la reactividad PID en termobloques de serpentín helicoidal de baja inercia ($< 30\\text{ s}$ de calentamiento inicial, caída transitoria de hasta $3.5\\text{ }^\\circ\\text{C}$ con flujo no compensado) frente a calderas simples/dobles de latón de $300\\text{ - }750\\text{ ml}$ y grupos saturados ($\\Delta T < 0.5\\text{ }^\\circ\\text{C}$ estable).\n\n2. **Resolución de avisos mecánicos**:\n   - Corregida la longitud de la meta-descripción en `fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html` para situarla dentro del intervalo estricto de 50-160 caracteres (143 caracteres).\n   - Implementación de contenedores `overflow-x: auto` (`table-container` / `tabla-scroll`) en todas las tablas del nuevo documento técnico para garantizar renderizado responsivo sin desbordamiento de viewport.\n\n3. **Ilustración y arquitectura de información**:\n   - Diagrama SVG vectorial propio que modela la curva de temperatura vs tiempo de extracción ($T(t)$ en rango 0-30s) para cuatro arquitecturas: Grupo Saturado PID, Caldera Latón 300ml PID, E61 HX y Termobloque reactivo.\n   - Vinculación de miniatura canónica en `/og/miniatura/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.jpg`.\n   - Marcado Schema estructurado enriquecido (`TechArticle`, `Dataset` y `FAQPage`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación del análisis termodinámico sobre estabilidad térmica en espresso (calderas de latón vs termobloques vs grupos saturados E61, delta T y PID), corrección de meta description y actualización del índice.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/c7900f5",
+    "cambios": [
+      {
+        "archivo": "estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.html",
+        "anadidas": 349,
+        "quitadas": 0
+      },
+      {
+        "archivo": "fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html",
+        "anadidas": 97,
+        "quitadas": 209
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 1
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 23,
+        "quitadas": 19
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 8,
+        "quitadas": 7
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 5,
+        "quitadas": 13
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "open area ratio oar espresso filter baskets precision holes flow rate",
+      "sub 200 micron fines migration espresso extraction filter paper boundary layer",
+      "bimodal vs unimodal particle distribution extraction yield tds laser diffraction"
+    ],
+    "busquedas_recibidas": [
+      "espresso thermal stability pid delta t brass boiler vs thermoblock",
+      "heat capacity espresso group head e61 vs saturated group thermodynamics",
+      "micro channelling espresso poiseuille law localized overextraction"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso filter basket precision holes metal",
+      "commercial espresso machine dual boiler group head"
+    ],
+    "imagenes_recibidas": [
+      "espresso extraction bottomless portafilter stream",
+      "espresso machine group head e61 brass"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "estabilidad termica espresso",
+      "caldera laton vs termobloque espresso",
+      "grupo saturado vs e61",
+      "pid espresso control temperatura",
+      "open area ratio espresso basket"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 24825,
+    "tokens_out": 15780,
+    "coste_estimado": 0.077794,
+    "duracion_seg": 39.49,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-09-27-sin-suscriptores",
     "timestamp": "2026-09-27T16:30:03.271830+00:00",
     "modelo_exacto": null,
