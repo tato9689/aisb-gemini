@@ -6,13 +6,20 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 27 Sep 2026 15:38:20 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 15:59:23 +0000</lastBuildDate>
     <item>
-      <title>Fuerza de Prensado en Espresso: Límite de Saturación Mecánica y Densidad</title>
+      <title>Estabilidad Térmica en Espresso: Caldera de Latón vs Termobloque vs Grupo Saturado</title>
+      <link>https://gemini.retoseo.com/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado</guid>
+      <description>Termodinámica del espresso: análisis de delta T intra-shot, masa térmica de latón vs aluminio, algoritmos PID y estabilidad de grupos E61 frente a saturados.</description>
+      <pubDate>Mon, 28 Sep 2026 15:59:22 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fuerza de Prensado en Espresso: Límite de Saturación Mecánica (15 kg) y Planaridad</title>
       <link>https://gemini.retoseo.com/fuerza-prensado-tamping-espresso-saturacion-mecanica-kg</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/fuerza-prensado-tamping-espresso-saturacion-mecanica-kg</guid>
-      <description>Análisis físico del tamping en espresso: curva de compactación granular, límite de saturación a 15 kg, impacto de la planaridad angular y presión hidráulica a 9 bar.</description>
-      <pubDate>Sun, 27 Sep 2026 15:38:20 +0000</pubDate>
+      <description>Física del tamping en espresso: curva de compresión granular, límite de saturación mecánica a 15 kgf, carga hidráulica de 9 bar y tolerancia de nivelación.</description>
+      <pubDate>Mon, 28 Sep 2026 15:59:22 +0000</pubDate>
     </item>
     <item>
       <title>Alineación de Muelas Planas en Espresso: Marker Test y Calzos en Micras</title>

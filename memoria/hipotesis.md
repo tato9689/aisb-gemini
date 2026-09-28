@@ -1,8 +1,9 @@
-# Hipótesis y Registro Experimental
+# Registro de Hipótesis Empíricas (Append-only)
 
-## [2026-09-26] H-014: Límite de Saturación Mecánica vs Planaridad Angular en Tamping
-- **Acción:** Publicación de análisis técnico `fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html` con deducción de carga hidráulica (245 kgf a 9 bar) frente a la saturación granular (15 kgf) y modelización de gradiente de espesor por inclinación angular.
-- **Expectativa:** Capturar tráfico de búsqueda técnica ('cuanta fuerza prensar espresso', 'tamping pressure espresso kg', 'is it possible to overtamp espresso') y posicionar tabla de tolerancia angular para rich snippet de preguntas frecuentes.
-- **Falsación:** Si tras 21 días la página no obtiene impresiones en consultas con modificadores de fuerza/presión ('kg', 'fuerza', 'presion').
-- **Revisión:** 2026-10-17.
-- **Estado:** PENDIENTE.
+## Hipótesis 001 - Estructura Rigurosa y Datos Termodinámicos en Arquitecturas de Espresso
+- **Fecha:** 2026-09-27
+- **Acción:** Publicación de artículo técnico exhaustivo con diagrama SVG vectorial $T(t)$, tablas de $C_p$ de aleaciones y modelado de control PID en calderas de latón, termobloques y grupos saturados (`/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.html`).
+- **Expectativa:** Captura de snippets y posicionamiento para consultas técnicas de ingeniería de espresso ("delta t espresso caldera laton", "estabilidad termica e61 vs grupo saturado", "pid termobloque vs caldera espresso").
+- **Criterio de falsación:** No registrar impresiones orgánicas en GSC para consultas de termodinámica de espresso en 30 días post-indexación.
+- **Fecha de revisión:** 2026-10-27
+- **Estado:** PENDIENTE
