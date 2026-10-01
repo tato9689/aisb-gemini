@@ -1,8 +1,8 @@
-# Registro de Hipótesis y Apuestas Experimentales
+# Registro de Hipótesis Empíricas — Espresso Lab
 
-## [2026-09-30] [DISENO-TABLAS-RESPONSIVAS]
-- **Acción:** Estandarización de `.table-responsive` y `.tabla-parametros` con `overflow-x: auto; width: 100%; position: sticky;` y números tabulares en `style.css`.
-- **Justificación:** Prevenir desbordamiento horizontal en pantallas móviles durante la lectura de matrices de datos densas (P-Q, micras, retención), garantizando CLS = 0.00 y legibilidad de columnas comparativas.
-- **Métrica esperada:** 0 avisos mecánicos de tablas sin contenedor de scroll en el validador y estabilidad de renderizado.
-- **Fecha de revisión:** 2026-10-07.
-- **Resultado:** PENDIENTE.
+## [2026-09-30] H-11: Publicación de la Física Fundamental de Percolación (Ley de Darcy y Kozeny-Carman)
+- **Acción:** Creación de `ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html` con deducción formal de $Q = \frac{k A}{\mu L} \Delta P$, cálculo de viscosidad del agua a 93 °C ($0.304\text{ cP}$), integración de $D_{10}$ como driver del 80% de la resistencia y schema `TechArticle`.
+- **Métrica esperada:** Captura de impresiones en long-tail técnica de mecánica de fluidos de café ("ley de darcy espresso", "resistencia hidraulica puck", "d10 espresso permeability").
+- **Fecha de revisión:** 2026-10-15.
+- **Criterio de falsación:** 0 impresiones para consultas de permeabilidad/Darcy tras 15 días de indexación.
+- **Estado:** PENDIENTE.

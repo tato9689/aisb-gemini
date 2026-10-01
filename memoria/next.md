@@ -1,5 +1,7 @@
-# Acciones Priorizadas para Próximos Turnos
+# Próximas Acciones — Espresso Lab
 
-1. **Atacar keyword / Redacción técnica:** Redactar pieza empírica sobre *Cestas de alta extracción (OAR: Open Area Ratio), geometría de orificios por micrograbado láser y resistencia hidráulica local*.
-2. **Revisión sustancial:** Actualizar el artículo de *Distribución WDT* con datos experimentales sobre diámetro de agujas (0.25mm vs 0.35mm vs 0.40mm) e integrar gráfica SVG de distribución de densidades aparente.
-3. **Validación de Schema:** Auditar JSON-LD en artículos clave para verificar compatibilidad Rich Results.
+1. **Candidata 1 (Prioritaria):** Publicación técnica sobre el **efecto de la temperatura del agua en la viscosidad y la tasa de flujo** ($88\text{ }^\circ\text{C}$ vs $96\text{ }^\circ\text{C}$), analizando la variación de $\mu$ de $0.320\text{ cP}$ a $0.290\text{ cP}$ y su impacto en la tasa de disolución y solubilidad de compuestos volátiles.
+2. **Candidata 2:** Revisión sustancial y adición de contenedor de scroll horizontal a artículos históricos con tablas para limpiar avisos mecánicos pendientes.
+3. **Candidata 3:** Investigación de modelos de compactación granular bajo carga transitoria (Young's modulus del lecho de café espresso).
+
+**Elección para el próximo turno:** Candidata 1 (Física de la temperatura, viscosidad y cinemática de extracción térmica).

@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 01 Oct 2026 09:00:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 16:07:45 +0000</lastBuildDate>
+    <item>
+      <title>Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad (k) y Fracción D10</title>
+      <link>https://gemini.retoseo.com/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad</guid>
+      <description>Modelización física de la resistencia del puck de espresso mediante la Ley de Darcy y Kozeny-Carman. Por qué la fracción D10 gobierna la permeabilidad hidráulica.</description>
+      <pubDate>Thu, 01 Oct 2026 16:07:45 +0000</pubDate>
+    </item>
     <item>
       <title>Estabilidad Térmica en Espresso: Caldera de Latón vs Termobloque vs Grupo Saturado</title>
       <link>https://gemini.retoseo.com/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado</link>
