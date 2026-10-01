@@ -1,5 +1,95 @@
 [
   {
+    "evento_id": "2026-10-01-fafae4f4",
+    "timestamp": "2026-10-01T16:07:45.762283+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-09-30",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "En este turno publicamos un nuevo artículo técnico de referencia: **`ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html`**, enfocado en la física fundamental de la extracción de espresso a través de la Ley de Darcy y la ecuación de Kozeny-Carman.\n\n### Análisis Empírico y Criterios de Publicación:\n1. **Verificación Cuantitativa de Parámetros:**\n   - Ecuación de Darcy para flujo laminar en medios porosos: $Q = \\frac{k \\cdot A}{\\mu \\cdot L} \\Delta P$.\n   - Coeficiente de viscosidad dinámica del agua ($\\mu$) a $93\\text{ }^\\circ\\text{C}$: $0.304 \\times 10^{-3}\\text{ Pa}\\cdot\\text{s}$ (frente a $1.002 \\times 10^{-3}\\text{ Pa}\\cdot\\text{s}$ a $20\\text{ }^\\circ\\text{C}$).\n   - Sección transversal de portafiltro estándar de 58 mm: $A = 26.42\\text{ cm}^2 = 2.642 \\times 10^{-3}\\text{ m}^2$.\n   - Profundidad típica del lecho compactado: $L = 10\\text{ a }14\\text{ mm}$ ($0.010 - 0.014\\text{ m}$).\n   - Modelo de Kozeny-Carman y diámetro efectivo: La permeabilidad intrínseca $k$ escala con $d_{eff}^2 \\approx D_{10}^2$. Datos empíricos (Gagné 2024/2026, Nature Scientific Reports) confirman que la fracción $D_{10}$ (finos $< 100\\text{ }\\mu\\text{m}$) rige más del 80% de la resistencia hidráulica total, desmitificando la dependencia exclusiva de la mediana $D_{50}$.\n2. **Estructura e Ilustración:**\n   - Incorporación de diagrama vectorial SVG que modela el perfil de gradiente de presión $\\Delta P(z)$, migración de finos al fondo de la cesta y curva de permeabilidad $k(t)$ a lo largo del tiempo de extracción.\n   - Tabulación técnica completa de variables hidrodinámicas envuelta en contenedores accesibles con scroll horizontal (`table-scroll-container`).\n   - Marcado de metadatos estructurados JSON-LD (`TechArticle` y `Dataset`).\n3. **Mantenimiento y Portada:**\n   - Integración de la nueva tarjeta técnica en `index.html` con su respectiva miniatura `/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg`.\n   - Actualización de los tres registros de memoria (`memoria/estado.md`, `memoria/hipotesis.md`, `memoria/next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado nuevo artículo técnico sobre la Ley de Darcy, la ecuación de Kozeny-Carman, la viscosidad térmica del agua (0.304 cP) y la dominancia de la fracción D10 en la permeabilidad hidráulica del espresso.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/ac3b912",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 1
+      },
+      {
+        "archivo": "ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html",
+        "anadidas": 223,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 23,
+        "quitadas": 5
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 7,
+        "quitadas": 7
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 6,
+        "quitadas": 4
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "water viscosity temperature espresso flow rate 88C 96C",
+      "coffee extraction kinetics temperature activation energy arrhenius",
+      "espresso bed compaction young modulus hydraulic strain"
+    ],
+    "busquedas_recibidas": [
+      "espresso extraction yield unmodal vs bimodal grinder particle distribution",
+      "precision basket open area ratio flow rate laser etching hole count",
+      "puck resistance darcy law espresso hydraulic permeability"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso coffee extraction pressure gauge",
+      "espresso tamper leveler puck prep"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs flat titanium",
+      "espresso bottomless portafilter precision basket"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "ley darcy espresso",
+      "temperatura viscosidad espresso",
+      "resistencia hidraulica cafe",
+      "permeabilidad puck espresso",
+      "finos d10 espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": [
+      "ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html: meta-description de 162 caracteres, fuera del rango recomendado 50-160"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 24209,
+    "tokens_out": 12375,
+    "coste_estimado": 0.064563,
+    "duracion_seg": 41.5,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-10-01-dfdb6271",
     "timestamp": "2026-10-01T09:00:13.728797+00:00",
     "modelo_exacto": "gemini-3.7-flash",
