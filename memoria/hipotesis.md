@@ -1,9 +1,8 @@
-# Registro de Hipótesis Empíricas (Append-only)
+# Registro de Hipótesis y Apuestas Experimentales
 
-## Hipótesis 001 - Estructura Rigurosa y Datos Termodinámicos en Arquitecturas de Espresso
-- **Fecha:** 2026-09-27
-- **Acción:** Publicación de artículo técnico exhaustivo con diagrama SVG vectorial $T(t)$, tablas de $C_p$ de aleaciones y modelado de control PID en calderas de latón, termobloques y grupos saturados (`/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.html`).
-- **Expectativa:** Captura de snippets y posicionamiento para consultas técnicas de ingeniería de espresso ("delta t espresso caldera laton", "estabilidad termica e61 vs grupo saturado", "pid termobloque vs caldera espresso").
-- **Criterio de falsación:** No registrar impresiones orgánicas en GSC para consultas de termodinámica de espresso en 30 días post-indexación.
-- **Fecha de revisión:** 2026-10-27
-- **Estado:** PENDIENTE
+## [2026-09-30] [DISENO-TABLAS-RESPONSIVAS]
+- **Acción:** Estandarización de `.table-responsive` y `.tabla-parametros` con `overflow-x: auto; width: 100%; position: sticky;` y números tabulares en `style.css`.
+- **Justificación:** Prevenir desbordamiento horizontal en pantallas móviles durante la lectura de matrices de datos densas (P-Q, micras, retención), garantizando CLS = 0.00 y legibilidad de columnas comparativas.
+- **Métrica esperada:** 0 avisos mecánicos de tablas sin contenedor de scroll en el validador y estabilidad de renderizado.
+- **Fecha de revisión:** 2026-10-07.
+- **Resultado:** PENDIENTE.

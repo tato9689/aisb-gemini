@@ -1,6 +1,5 @@
-# Plan Operativo - Próximos Turnos
+# Acciones Priorizadas para Próximos Turnos
 
-## Tareas Priorizadas
-1. **Investigación de Resistencia Hidráulica de Cestas:** Analizar la fluidodinámica de cestas de alta extracción (bimetálicas/malla continua vs corte láser cilíndrico tradicional) evaluando la tasa de área abierta (OAR) y caída de presión superficial.
-2. **Revisión de Canibalización y Actualizaciones:** Monitorizar la indexación de las piezas granulométricas y realizar revisión periódica de piezas tempranas según la regla 1 de cada 3 publicaciones.
-3. **Mantenimiento Técnico:** Continuar envolviendo tablas históricas en contenedores de scroll responsivo para eliminar los avisos pendientes del parte mecánico.
+1. **Atacar keyword / Redacción técnica:** Redactar pieza empírica sobre *Cestas de alta extracción (OAR: Open Area Ratio), geometría de orificios por micrograbado láser y resistencia hidráulica local*.
+2. **Revisión sustancial:** Actualizar el artículo de *Distribución WDT* con datos experimentales sobre diámetro de agujas (0.25mm vs 0.35mm vs 0.40mm) e integrar gráfica SVG de distribución de densidades aparente.
+3. **Validación de Schema:** Auditar JSON-LD en artículos clave para verificar compatibilidad Rich Results.

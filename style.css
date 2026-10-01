@@ -1,176 +1,139 @@
-/* ==========================================================================
-   Espresso Lab — Sistema de Diseño Técnico y Arquitectura de Datos
-   Enfoque: Datasheets de ingeniería, física de fluidos y granulometría.
-   ========================================================================== */
-
 :root {
-  /* Paleta Base: Laboratorio / Grafito de Alto Contraste */
-  --bg-main: #0b0f14;
-  --bg-surface: #121922;
-  --bg-surface-elevated: #182330;
-  --bg-code: #070a0d;
+  --bg-main: #0c0e12;
+  --bg-surface: #14171f;
+  --bg-surface-elevated: #1b202c;
+  --bg-code: #08090c;
   
-  /* Jerarquía de Texto */
+  --border-subtle: #242938;
+  --border-accent: #3a4560;
+  --border-focus: #4e6bb4;
+  
   --text-main: #e2e8f0;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
+  --text-accent: #60a5fa;
+  --text-metric: #38bdf8;
+  --text-warning: #f59e0b;
+  --text-success: #34d399;
   
-  /* Acentos Funcionales (Medición y Precisión) */
-  --accent-copper: #e08844;
-  --accent-amber: #f59e0b;
-  --accent-cyan: #38bdf8;
-  --accent-green: #10b981;
-  --accent-border: #243547;
-  --border-subtle: #1e2c3b;
-  
-  /* Tipografía */
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   
-  /* Espaciado Modular */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2.5rem;
-  --space-2xl: 4rem;
-  
-  /* Radios Geométricos y Sombras Sutiles */
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.5);
   
-  /* Contenedores */
-  --max-width: 880px;
-  --max-width-wide: 1100px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  
+  --max-width: 920px;
 }
 
-/* Reset y Normalización de Caja */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-size: 16px;
+body {
   background-color: var(--bg-main);
   color: var(--text-main);
   font-family: var(--font-sans);
+  font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Enlaces y Micro-interacciones */
-a {
-  color: var(--accent-copper);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
-}
-
-a:hover {
-  color: #f39c55;
-  text-decoration-color: #f39c55;
-}
-
-a:focus-visible, button:focus-visible, input:focus-visible {
-  outline: 2px solid var(--accent-cyan);
-  outline-offset: 2px;
-}
-
-/* Contenedor Principal */
 .container {
-  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-lg) var(--space-md);
+  padding: var(--space-xl) var(--space-md);
 }
 
-.container-wide {
-  max-width: var(--max-width-wide);
-}
-
-/* Cabecera del Sitio */
+/* Encabezados */
 .site-header {
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: var(--space-lg);
-  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .site-title {
   font-size: 1.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
-.site-title a {
-  color: inherit;
-  text-decoration: none;
+.site-title img {
+  vertical-align: middle;
 }
 
 .site-desc {
   color: var(--text-muted);
   font-size: 0.95rem;
-  margin-top: var(--space-xs);
-  font-family: var(--font-mono);
+  max-width: 680px;
 }
 
 .site-nav {
   margin-top: var(--space-md);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
 }
 
 .site-nav a {
+  color: var(--text-accent);
   text-decoration: none;
-  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
 }
 
 .site-nav a:hover {
-  color: var(--accent-copper);
+  text-decoration: underline;
 }
 
-/* Secciones y Encabezados */
+/* Headings */
+h1, h2, h3, h4 {
+  color: #f8fafc;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 { font-size: 1.85rem; margin-bottom: var(--space-md); }
+h2 { font-size: 1.35rem; margin: var(--space-xl) 0 var(--space-md); }
+h3 { font-size: 1.1rem; margin: var(--space-lg) 0 var(--space-sm); }
+
 .section-heading {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: var(--space-xs);
+  padding-bottom: var(--space-sm);
   margin-bottom: var(--space-lg);
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: #ffffff;
 }
 
-/* Grid de Artículos / Tarjetas de Datos */
+/* Enlaces */
+a {
+  color: var(--text-accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tarjetas y Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-lg);
   margin-bottom: var(--space-2xl);
-}
-
-@media (min-width: 680px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .tech-card {
@@ -180,18 +143,16 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
 .tech-card:hover {
-  border-color: var(--accent-border);
-  transform: translateY(-2px);
+  border-color: var(--border-accent);
 }
 
 .tech-card img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 640 / 336;
+  height: 160px;
   object-fit: cover;
   border-bottom: 1px solid var(--border-subtle);
   display: block;
@@ -205,19 +166,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 .tech-card-body h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
+  margin: 0 0 var(--space-sm) 0;
   line-height: 1.4;
-  margin-bottom: var(--space-xs);
-  font-weight: 700;
 }
 
 .tech-card-body h3 a {
-  color: var(--text-main);
-  text-decoration: none;
-}
-
-.tech-card-body h3 a:hover {
-  color: var(--accent-copper);
+  color: #fff;
 }
 
 .tech-card-body p {
@@ -230,29 +185,18 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .tech-card-meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
+  justify-content: space-between;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   color: var(--text-dim);
   border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-xs);
+  padding-top: var(--space-sm);
 }
 
-.tech-card-meta span {
-  background: var(--bg-main);
-  padding: 2px 6px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
-}
-
-/* ==========================================================================
-   Tablas de Datos Técnicos y Matrices Responsivas (Core Directiva)
-   ========================================================================== */
-
+/* Tablas de Datos Responsivas (Core Layout) */
 .table-responsive,
 .tabla-parametros,
-.tabla-scroll {
+.data-matrix-wrap {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -270,209 +214,128 @@ table {
   min-width: 540px;
 }
 
-thead th {
+th, td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+th {
   background: var(--bg-surface-elevated);
-  color: #ffffff;
+  color: #f1f5f9;
+  font-weight: 600;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: var(--space-sm) var(--space-md);
-  border-bottom: 2px solid var(--accent-border);
-  white-space: nowrap;
-}
-
-tbody tr {
-  border-bottom: 1px solid var(--border-subtle);
-  transition: background-color 0.1s ease;
-}
-
-tbody tr:last-child {
-  border-bottom: none;
-}
-
-tbody tr:hover {
-  background-color: rgba(224, 136, 68, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 td {
-  padding: var(--space-sm) var(--space-md);
   color: var(--text-main);
-  vertical-align: top;
 }
 
-/* Alineación y formatos numéricos exactos */
-td.num, th.num,
-td:has(code), td[data-unit] {
+td.num, td.metric {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
+  color: var(--text-metric);
 }
 
-/* ==========================================================================
-   Fichas Técnicas (Datasheets) y Parámetros
-   ========================================================================== */
+tr:last-child td {
+  border-bottom: none;
+}
 
-.datasheet {
+tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Callouts y Cajas Técnicas */
+.data-callout {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-left: 3px solid var(--accent-copper);
+  border: 1px solid var(--border-accent);
+  border-left: 3px solid var(--text-accent);
   border-radius: var(--radius-md);
-  padding: var(--space-md) var(--space-lg);
+  padding: var(--space-md);
   margin: var(--space-lg) 0;
 }
 
-.datasheet-title {
+.data-callout-title {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: var(--accent-copper);
-  margin-bottom: var(--space-sm);
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
-}
-
-.param-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: var(--space-md);
-  margin-top: var(--space-sm);
-}
-
-.param-item dt {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-dim);
   text-transform: uppercase;
+  color: var(--text-accent);
+  margin-bottom: var(--space-xs);
 }
 
-.param-item dd {
-  font-family: var(--font-mono);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-top: 2px;
+.data-callout p {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin: 0;
 }
 
-/* ==========================================================================
-   Contenedores para Motor de Gráficos SVG (Física de Extracción)
-   ========================================================================== */
-
-.diagram-container {
-  margin: var(--space-xl) 0;
+/* Motor de Diagramas SVG */
+.chart-container {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: var(--space-md);
+  margin: var(--space-lg) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.diagram-container svg {
-  width: 100%;
+.chart-container svg {
+  max-width: 100%;
   height: auto;
   display: block;
+}
+
+.chart-caption {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+/* Bloques de Código y Parámetros */
+pre, code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+code {
   background: var(--bg-code);
+  padding: 2px 6px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
+  color: var(--text-metric);
 }
 
-figcaption.diagram-caption {
-  margin-top: var(--space-sm);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: var(--space-xs);
+pre code {
+  display: block;
+  padding: var(--space-md);
+  overflow-x: auto;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-code);
+  border-radius: var(--radius-md);
 }
 
-/* ==========================================================================
-   Contenido del Artículo / Tipografía Editorial
-   ========================================================================== */
-
-article.article-content {
-  margin-bottom: var(--space-2xl);
-}
-
-.article-header {
-  margin-bottom: var(--space-xl);
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: var(--space-lg);
-}
-
-.article-header h1 {
-  font-size: 1.85rem;
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  margin-bottom: var(--space-sm);
-}
-
-.article-meta {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--text-dim);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-md);
-}
-
-.article-content h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: var(--space-xl) 0 var(--space-md) 0;
-  color: #ffffff;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: var(--space-xs);
-}
-
-.article-content h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin: var(--space-lg) 0 var(--space-sm) 0;
-  color: var(--text-main);
-}
-
-.article-content p {
-  margin-bottom: var(--space-md);
-  color: var(--text-main);
-}
-
-.article-content ul, .article-content ol {
-  margin: var(--space-md) 0 var(--space-lg) var(--space-lg);
-  color: var(--text-main);
-}
-
-.article-content li {
-  margin-bottom: var(--space-xs);
-}
-
-.article-content blockquote {
-  border-left: 3px solid var(--accent-amber);
-  background: var(--bg-surface);
-  padding: var(--space-md) var(--space-lg);
-  margin: var(--space-lg) 0;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  font-style: italic;
-  color: var(--text-muted);
-}
-
-/* ==========================================================================
-   Formulario de Captación y Newsletter
-   ========================================================================== */
-
+/* Formulario de Captación */
 .newsletter-section {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
   padding: var(--space-xl);
   margin: var(--space-2xl) 0;
-  text-align: left;
 }
 
 .newsletter-section h3 {
   font-size: 1.25rem;
-  font-weight: 700;
-  color: #ffffff;
+  margin-top: 0;
   margin-bottom: var(--space-xs);
 }
 
@@ -482,77 +345,59 @@ article.article-content {
   margin-bottom: var(--space-md);
 }
 
-.newsletter-form {
-  max-width: 480px;
-}
-
-.form-row {
+.newsletter-form .form-row {
   display: flex;
   gap: var(--space-sm);
   margin-bottom: var(--space-sm);
 }
 
-@media (max-width: 520px) {
-  .form-row {
-    flex-direction: column;
-  }
-}
-
 .form-input {
   flex-grow: 1;
-  background: var(--bg-main);
+  background: var(--bg-code);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 0.65rem 0.85rem;
-  color: #ffffff;
+  padding: 10px 14px;
+  color: #fff;
   font-family: var(--font-mono);
   font-size: 0.9rem;
-  transition: border-color 0.15s ease;
 }
 
 .form-input:focus {
-  border-color: var(--accent-copper);
+  outline: none;
+  border-color: var(--border-focus);
 }
 
 .btn-primary {
-  background: var(--accent-copper);
-  color: #ffffff;
+  background: #2563eb;
+  color: #fff;
   border: none;
   border-radius: var(--radius-sm);
-  padding: 0.65rem 1.25rem;
-  font-weight: 700;
+  padding: 10px 20px;
+  font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.15s ease;
-  white-space: nowrap;
+  transition: background 0.15s ease;
 }
 
 .btn-primary:hover {
-  background: #f39c55;
+  background: #1d4ed8;
 }
 
 .consentimiento {
   font-size: 0.78rem;
   color: var(--text-dim);
-  margin-top: var(--space-xs);
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
 }
 
-.consentimiento input[type="checkbox"] {
-  accent-color: var(--accent-copper);
+.consentimiento a {
+  color: var(--text-muted);
 }
 
-/* ==========================================================================
-   Pie de Página Obligatorio
-   ========================================================================== */
-
+/* Pie de página obligatorio */
 .site-footer {
-  margin-top: auto;
   border-top: 1px solid var(--border-subtle);
-  padding: var(--space-xl) 0 var(--space-lg) 0;
-  font-size: 0.8rem;
+  padding-top: var(--space-xl);
+  margin-top: var(--space-2xl);
+  font-size: 0.82rem;
   color: var(--text-dim);
   display: flex;
   flex-direction: column;
@@ -565,5 +410,18 @@ article.article-content {
 }
 
 .site-footer a:hover {
-  color: var(--accent-copper);
+  color: var(--text-accent);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .newsletter-form .form-row {
+    flex-direction: column;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+  .site-title {
+    font-size: 1.4rem;
+  }
 }
