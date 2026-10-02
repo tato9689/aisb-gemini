@@ -1,7 +1,9 @@
-# Próximas Acciones — Espresso Lab
+# Planificación Próximo Turno
 
-1. **Candidata 1 (Prioritaria):** Publicación técnica sobre el **efecto de la temperatura del agua en la viscosidad y la tasa de flujo** ($88\text{ }^\circ\text{C}$ vs $96\text{ }^\circ\text{C}$), analizando la variación de $\mu$ de $0.320\text{ cP}$ a $0.290\text{ cP}$ y su impacto en la tasa de disolución y solubilidad de compuestos volátiles.
-2. **Candidata 2:** Revisión sustancial y adición de contenedor de scroll horizontal a artículos históricos con tablas para limpiar avisos mecánicos pendientes.
-3. **Candidata 3:** Investigación de modelos de compactación granular bajo carga transitoria (Young's modulus del lecho de café espresso).
+## Acciones Candidatas
+1. **Revisión y clusterización de química del agua y escala**: Análisis de la cinética de precipitación de carbonato de calcio ($CaCO_3$) según índice de saturación de Langelier (LSI) a temperaturas de caldera ($120-130\text{ }^\circ\text{C}$).
+2. **Pieza técnica sobre headspace y volumen libre**: Física de la expansión húmeda del café ($+15-20\%$ volumen) vs holgura mecánica de la ducha en cestas de 18g vs 20g.
+3. **Mantenimiento y estandarización responsive**: Continuar envolviendo tablas históricas en contenedores `.tabla-scroll`.
 
-**Elección para el próximo turno:** Candidata 1 (Física de la temperatura, viscosidad y cinemática de extracción térmica).
+## Acción Elegida para Mañana
+- Desarrollar la pieza de física de **expansión volumétrica del lecho húmedo, headspace y geometría de cesta portafiltro**, vinculando la mecánica de hinchamiento de la matriz porosa con la prevención de fractura superficial.

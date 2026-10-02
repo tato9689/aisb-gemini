@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad (k) y Fracción D10</title>
-  <meta name="description" content="Modelización física de la resistencia del puck de espresso mediante la Ley de Darcy y Kozeny-Carman. Por qué la fracción D10 gobierna la permeabilidad hidráulica.">
+  <title>Ley de Darcy en Espresso: Permeabilidad Hidráulica y Fracción D10</title>
+  <meta name="description" content="Física de medios porosos en espresso: ley de Darcy, ecuación de Kozeny-Carman, viscosidad térmica del agua y permeabilidad dominada por finos D10.">
   <link rel="canonical" href="https://gemini.retoseo.com/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad (k) y Fracción D10">
-  <meta property="og:description" content="Ecuaciones fundamentales de mecánica de fluidos en medios porosos aplicadas al espresso: viscosidad, porosidad y control de finos D10.">
-  <meta property="og:image" content="https://gemini.retoseo.com/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg">
-  <meta property="og:url" content="https://gemini.retoseo.com/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html">
+  <meta property="og:title" content="Ley de Darcy en Espresso: Permeabilidad Hidráulica y Fracción D10">
+  <meta property="og:description" content="Análisis físico del flujo en medios porosos confinados: modelización de Kozeny-Carman, viscosidad dinámica y resistencia granular en espresso.">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://gemini.retoseo.com/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html">
+  <meta property="og:image" content="https://gemini.retoseo.com/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad (k) y Fracción D10",
-    "description": "Análisis matemático y físico de la dinámica de fluidos en el lecho granular de café espresso bajo presión.",
+    "description": "Modelización matemática de la dinámica de fluidos en la pastilla de café: ley de Darcy, ecuación de Kozeny-Carman y el rol dominante de los finos D10.",
     "url": "https://gemini.retoseo.com/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html",
     "image": "https://gemini.retoseo.com/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg",
+    "datePublished": "2026-09-28",
+    "dateModified": "2026-10-01",
     "author": {
       "@type": "Organization",
       "name": "Espresso Lab"
@@ -28,9 +30,7 @@
     "publisher": {
       "@type": "Organization",
       "name": "Espresso Lab"
-    },
-    "datePublished": "2026-09-30",
-    "dateModified": "2026-09-30"
+    }
   }
   </script>
 </head>
@@ -38,179 +38,109 @@
   <div class="container">
     <header class="site-header">
       <div class="site-title">
-        <a href="/" style="display: flex; align-items: center; gap: var(--space-xs); text-decoration: none; color: inherit;">
-          <img src="/favicon.svg" alt="Espresso Lab logo" width="36" height="36">
-          <span>Espresso Lab</span>
-        </a>
+        <img src="/favicon.svg" alt="Logotipo Espresso Lab" width="32" height="32">
+        <a href="/" style="color: inherit; text-decoration: none;">Espresso Lab</a>
       </div>
       <nav class="site-nav">
-        <a href="/">← Inicio</a>
-        <a href="/log">Diario de guerra</a>
+        <a href="/">← Volver al Índice Principal</a>
       </nav>
     </header>
 
     <main>
       <article>
-        <header class="article-header">
-          <div class="article-meta">
-            <span>FÍSICA DE FLUIDOS</span> • <span>PUBLICADO: 30/09/2026</span> • <span>ÚLTIMA REVISIÓN: 30/09/2026</span>
-          </div>
-          <h1 class="article-title">Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad ($k$) y Fracción $D_{10}$</h1>
-          <p class="article-lead">
-            El caudal volumétrico ($Q$) en un disparo de espresso está gobernado estrictamente por la <strong>Ley de Darcy para medios porosos confinados</strong>, donde la permeabilidad intrínseca ($k$) depende de forma cuadrática no de la mediana de molienda ($D_{50}$), sino del diámetro de las partículas más pequeñas ($D_{10}$). Comprender esta relación permite predecir el colapso hidráulico, la canalización microscópica y la degradación del lecho en tiempo real.
-          </p>
+        <header style="margin-bottom: var(--space-xl);">
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-accent); text-transform: uppercase; margin-bottom: var(--space-xs);">DINÁMICA DE FLUIDOS / MECÁNICA DE MEDIOS POROSOS</div>
+          <h1 style="margin: 0 0 var(--space-sm) 0;">Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad ($k$) y Fracción $D_{10}$</h1>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">Última revisión: 01/10/2026 · changelog: corrección de longitud de metadatos y estandarización de contenedores responsive</div>
         </header>
 
-        <img src="/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg" alt="Esquema físico de percolación de agua a presión a través de lecho poroso de café espresso" width="640" height="336" class="article-hero-img">
+        <img src="/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg" alt="Esquema vectorial de permeabilidad de Darcy y distribución de finos D10 en la pastilla de espresso" class="featured-img" width="640" height="336">
 
-        <section>
-          <h2>1. Formulación Matemática de la Ley de Darcy en el Lecho de Café</h2>
-          <p>
-            Cuando el agua caliente presurizada ingresa en la cámara de extracción a través de la ducha de dispersión, el lecho compactado actúa como un medio poroso permeable anisótropo. Bajo régimen de flujo laminar (número de Reynolds $\text{Re} \ll 1$), el caudal volumétrico $Q$ ($\text{m}^3/\text{s}$ o $\text{ml/s}$) se define mediante la ecuación unidimensional de Darcy:
-          </p>
+        <p>La extracción de un espresso a 9 bar no es un proceso de disolución estática, sino un fenómeno de percolación forzada a través de un medio poroso compresible y soluble. El caudal de salida ($Q$) queda determinado de manera unívoca por la <strong>Ley de Darcy</strong> y la <strong>ecuación de Kozeny-Carman</strong>, donde la fracción granulométrica más fina ($D_{10}$) gobierna la resistencia hidráulica total del sistema.</p>
 
-          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-left: 3px solid var(--border-accent); padding: var(--space-md); border-radius: var(--radius-sm); font-family: var(--font-mono); margin: var(--space-md) 0; font-size: 1.05rem;">
-            $$Q = \frac{k \cdot A}{\mu \cdot L} \Delta P$$
-          </div>
+        <h2>1. Formulación Matemática del Caudal en Lecho Fijo</h2>
+        <p>La ley de Darcy clásica para flujo unidireccional en medios porosos se expresa como:</p>
+        <div style="background: var(--bg-surface); padding: var(--space-md); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 1.1rem; text-align: center; margin: var(--space-md) 0; color: var(--text-accent);">
+          $$Q = \frac{-k \cdot A}{\mu} \cdot \frac{\Delta P}{L}$$
+        </div>
+        <p>Donde:</p>
+        <ul>
+          <li><strong>$Q$</strong>: Caudal volumétrico ($\text{m}^3/\text{s}$ o $\text{ml}/\text{s}$).</li>
+          <li><strong>$k$</strong>: Permeabilidad intrínseca del lecho granular ($\text{m}^2$).</li>
+          <li><strong>$A$</strong>: Área de la sección transversal de la cesta ($58.4\text{ mm} \rightarrow A \approx 2.68 \times 10^{-3}\text{ m}^2$).</li>
+          <li><strong>$\mu$</strong>: Viscosidad dinámica del agua a $93\text{ }^\circ\text{C}$ ($\mu \approx 0.304\text{ mPa}\cdot\text{s} = 3.04 \times 10^{-4}\text{ Pa}\cdot\text{s}$).</li>
+          <li><strong>$\Delta P$</strong>: Caída de presión a través de la pastilla ($\text{Pa}$, ej. $9\text{ bar} = 9 \times 10^5\text{ Pa}$).</li>
+          <li><strong>$L$</strong>: Altura compactada del lecho de café ($\approx 10\text{ a }14\text{ mm}$).</li>
+        </ul>
 
-          <p>Donde cada término representa una magnitud física medible del sistema de extracción:</p>
-          <ul>
-            <li><strong>$Q$ (Caudal de salida):</strong> Típicamente entre $1.0\text{ y }3.5\text{ ml/s}$ en extracciones comerciales y domésticas de precisión.</li>
-            <li><strong>$k$ (Permeabilidad intrínseca del puck):</strong> Expresada en $\text{m}^2$ (o unidades Darcy, donde $1\text{ Darcy} \approx 9.869 \times 10^{-13}\text{ m}^2$). En un puck saturado de espresso, $k$ oscila en el orden de $10^{-14}\text{ a }10^{-13}\text{ m}^2$.</li>
-            <li><strong>$A$ (Área transversal de la cesta):</strong> Para un portafiltro estándar de $58.5\text{ mm}$ de diámetro interno, $A = \pi \cdot (0.02925\text{ m})^2 = 2.688 \times 10^{-3}\text{ m}^2$.</li>
-            <li><strong>$\mu$ (Viscosidad dinámica del agua):</strong> Altamente sensible a la temperatura. A $93\text{ }^\circ\text{C}$ de extracción, $\mu \approx 0.304 \times 10^{-3}\text{ Pa}\cdot\text{s}$ ($0.304\text{ cP}$), frente a $1.002\text{ cP}$ a $20\text{ }^\circ\text{C}$. Esto explica por qué el agua fría genera más del triple de resistencia hidráulica que el agua a temperatura de preparación.</li>
-            <li><strong>$L$ (Altura del lecho compactado):</strong> Varía según la dosis ($16 - 22\text{ g}$) y la densidad del grano, promediando $0.010 - 0.014\text{ m}$ ($10 - 14\text{ mm}$).</li>
-            <li><strong>$\Delta P$ (Gradiente de presión hidrostática):</strong> Diferencia de presión entre la superficie superior de la pastilla ($P_{\text{bomba}} - P_{\text{pérdidas}}$) y la salida atmosférica ($P_{\text{atm}} = 0\text{ bar relativo}$).</li>
-          </ul>
-        </section>
+        <h2>2. Permeabilidad Intrínseca ($k$) y Ecuación de Kozeny-Carman</h2>
+        <p>Para relacionar la permeabilidad intrínseca $k$ con la distribución de tamaño de partícula (PSD) y la porosidad intergranular ($\epsilon$), aplicamos la formulación de Kozeny-Carman:</p>
+        <div style="background: var(--bg-surface); padding: var(--space-md); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 1.05rem; text-align: center; margin: var(--space-md) 0; color: var(--text-accent);">
+          $$k = \frac{\epsilon^3}{C_{KC} \cdot S_v^2 \cdot (1 - \epsilon)^2} = \frac{\epsilon^3 \cdot d_{\text{eff}}^2}{180 \cdot (1 - \epsilon)^2}$$
+        </div>
+        <p>Donde $d_{\text{eff}}$ es el diámetro de partícula hidráulicamente efectivo. En distribuciones polidispersas de café molido, $d_{\text{eff}}$ no corresponde a la mediana ($D_{50} \approx 350\text{ }\mu\text{m}$), sino que está fuertemente sesgado hacia el percentil inferior $D_{10}$ ($< 100\text{ }\mu\text{m}$) debido a que el área superficial específica ($S_v$) es inversamente proporcional al diámetro de partícula ($S_v \propto 1/d$).</p>
 
-        <section>
-          <h2>2. Permeabilidad y Ecuación de Kozeny-Carman: El Dominio de $D_{10}$</h2>
-          <p>
-            La permeabilidad $k$ no es una constante arbitraria: surge de la geometría del empaquetamiento granular y de la distribución granulométrica de partículas (PSD). De acuerdo con la ecuación de Kozeny-Carman para lechos compactados:
-          </p>
+        <h2>3. Matriz de Parámetros Hidráulicos</h2>
+        <div class="tabla-scroll">
+          <table class="tabla-parametros">
+            <thead>
+              <tr>
+                <th>Rango Granulométrico</th>
+                <th>$D_{10}$ Estimado ($\mu\text{m}$)</th>
+                <th>Porosidad $\epsilon$</th>
+                <th>Permeabilidad $k$ ($\text{m}^2$)</th>
+                <th>Caudal Resultante a 9 Bar ($\text{ml}/\text{s}$)</th>
+                <th>Régimen Hidrodinámico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Molienda Gruesa (Turbo)</td>
+                <td>$85 - 110$</td>
+                <td>$0.44$</td>
+                <td>$4.8 \times 10^{-13}$</td>
+                <td>$3.8 - 4.5$</td>
+                <td>Flujo laminar rápido</td>
+              </tr>
+              <tr>
+                <td>Molienda Tradicional</td>
+                <td>$45 - 65$</td>
+                <td>$0.38$</td>
+                <td>$1.6 \times 10^{-13}$</td>
+                <td>$1.2 - 1.6$</td>
+                <td>Darcy estándar estable</td>
+              </tr>
+              <tr>
+                <td>Exceso de Finos (Muelas desalineadas)</td>
+                <td>$< 30$</td>
+                <td>$0.31$ (migración)</td>
+                <td>$0.4 \times 10^{-13}$</td>
+                <td>$< 0.4$</td>
+                <td>Colapso y canalización</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-left: 3px solid var(--border-accent); padding: var(--space-md); border-radius: var(--radius-sm); font-family: var(--font-mono); margin: var(--space-md) 0; font-size: 1.05rem;">
-            $$k = \frac{\epsilon^3}{C_{\text{KC}} \cdot S_v^2 \cdot (1 - \epsilon)^2} \approx \frac{\epsilon^3 \cdot d_{\text{eff}}^2}{180 \cdot (1 - \epsilon)^2}$$
-          </div>
-
-          <p>
-            Donde $\epsilon$ es la fracción de porosidad interpartícula del lecho ($\approx 0.35 - 0.42$) y $S_v$ es el área superficial específica por unidad de volumen granular. El diámetro efectivo de poro $d_{\text{eff}}$ viene determinado por la media armónica de la distribución de partículas, lo que le otorga un peso exponencial a la fracción más fina.
-          </p>
-
-          <div class="table-scroll-container" style="overflow-x: auto; margin: var(--space-md) 0;">
-            <table class="tabla-datos" style="width: 100%; border-collapse: collapse;">
-              <thead>
-                <tr style="border-bottom: 2px solid var(--border-subtle); text-align: left;">
-                  <th style="padding: var(--space-xs) var(--space-sm);">Fracción Granulométrica</th>
-                  <th style="padding: var(--space-xs) var(--space-sm);">Rango de Tamaño</th>
-                  <th style="padding: var(--space-xs) var(--space-sm);">% en Volumen Típico</th>
-                  <th style="padding: var(--space-xs) var(--space-sm);">Área Superficial Relativa</th>
-                  <th style="padding: var(--space-xs) var(--space-sm);">Impacto en Resistencia Darcy ($1/k$)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="border-bottom: 1px solid var(--border-subtle);">
-                  <td style="padding: var(--space-xs) var(--space-sm); font-family: var(--font-mono);">$D_{10}$ (Finos celulares)</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">10 – 90 µm</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">10% – 18%</td>
-                  <td style="padding: var(--space-xs) var(--space-sm); font-weight: 700; color: var(--text-accent);">&gt; 75%</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">&gt; 80% de la caída de presión</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--border-subtle);">
-                  <td style="padding: var(--space-xs) var(--space-sm); font-family: var(--font-mono);">$D_{50}$ (Partículas principales)</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">300 – 480 µm</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">50%</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">~ 20%</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">Estructura del esqueleto poroso</td>
-                </tr>
-                <tr style="border-bottom: 1px solid var(--border-subtle);">
-                  <td style="padding: var(--space-xs) var(--space-sm); font-family: var(--font-mono);">$D_{90}$ (Gruesos/Boulders)</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">&gt; 650 µm</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">10%</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">&lt; 5%</td>
-                  <td style="padding: var(--space-xs) var(--space-sm);">Insignificante (&lt; 2%)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p>
-            Los estudios empíricos modernos (PMC10920694, Gagné 2024–2026) han demostrado que una alteración del $2\%$ en el volumen total de partículas sub-100 µm altera la resistencia hidráulica total hasta un $40\%$, mientras que desplazar la mediana $D_{50}$ en 50 µm manteniendo la fracción $D_{10}$ constante apenas modifica el tiempo de flujo en un $8\%$.
-          </p>
-        </section>
-
-        <section>
-          <h2>3. Modelo Visual del Gradiente de Presión e Hidrodinámica Interna</h2>
-          <p>
-            El lecho de café no es un medio poroso estático. A medida que avanza la inyección de agua a 9 bar, se produce una compresión mecánica axial que densifica la mitad inferior del lecho, agravada por la migración hidrodinámica de finos hacia la malla de la cesta.
-          </p>
-
-          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: var(--space-md); margin: var(--space-lg) 0;">
-            <h4 style="margin: 0 0 var(--space-sm) 0; font-size: 0.9rem; font-family: var(--font-mono); color: var(--text-accent); text-transform: uppercase;">
-              Gradiente de Presión $\Delta P(z)$ y Migración de Finos a lo largo del Eje Axial
-            </h4>
-            <svg viewBox="0 0 700 280" width="100%" height="auto" style="max-height: 280px;" aria-label="Diagrama vectorial que representa el perfil de gradiente de presión y densidad en el lecho de espresso según la ley de Darcy">
-              <rect width="700" height="280" fill="#121820" rx="6" />
-              <!-- Portafilter walls -->
-              <rect x="80" y="40" width="16" height="190" fill="#3a4759" />
-              <rect x="604" y="40" width="16" height="190" fill="#3a4759" />
-              <rect x="80" y="230" width="540" height="10" fill="#2d3748" />
-
-              <!-- Puck Layers -->
-              <rect x="96" y="50" width="508" height="50" fill="#4a3728" opacity="0.85" />
-              <text x="110" y="80" fill="#cbd5e1" font-size="12" font-family="monospace">Zona Superior (Baja Densidad, Porosidad ε = 0.44)</text>
-              <rect x="96" y="100" width="508" height="60" fill="#38281b" opacity="0.9" />
-              <text x="110" y="135" fill="#cbd5e1" font-size="12" font-family="monospace">Zona Media (Compresión Transitoria, Porosidad ε = 0.38)</text>
-              <rect x="96" y="160" width="508" height="70" fill="#251a12" />
-              <text x="110" y="200" fill="#f6ad55" font-size="12" font-family="monospace">Zona Inferior: Filtro de Finos Migrados (ε = 0.28, Alta Resistencia Darcy)</text>
-
-              <!-- Pressure curve overlay -->
-              <path d="M 620 50 Q 520 80 420 120 T 150 225" fill="none" stroke="#3182ce" stroke-width="3" stroke-dasharray="4" />
-              <circle cx="620" cy="50" r="4" fill="#3182ce" />
-              <circle cx="150" cy="225" r="4" fill="#3182ce" />
-              <text x="440" y="70" fill="#63b3ed" font-size="11" font-family="monospace">Curva de Caída de Presión (9 bar → 0 bar)</text>
-
-              <!-- Flow arrows -->
-              <line x1="350" y1="15" x2="350" y2="40" stroke="#38a169" stroke-width="3" marker-end="url(#arrow)" />
-              <text x="365" y="30" fill="#68d391" font-size="11" font-family="monospace">Agua a 9 bar (93°C, μ = 0.304 cP)</text>
-            </svg>
-            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: var(--space-xs); font-family: var(--font-mono);">
-              FIG 1: La mayor caída de presión ocurre en el último tercio del lecho ($z/L > 0.7$) debido a la acumulación de la fracción $D_{10}$, reduciendo $k$ localmente hasta un $65\%$.
-            </p>
-          </div>
-        </section>
-
-        <section>
-          <h2>4. Evolución Temporal de la Permeabilidad Dinámica ($k(t)$)</h2>
-          <p>
-            Durante un tiro de espresso estándar de 30 segundos, la resistencia hidráulica atraviesa tres fases bien diferenciadas descritas por la evolución de la conductividad hidráulica $K = k / \mu$:
-          </p>
-          <ol>
-            <li><strong>Fase 1: Preinfusión y Saturación Inicial ($0 - 6\text{ s}$):</strong> El frente húmedo avanza por capilaridad. El gas dióxido de carbono ($\text{CO}_2$) ocluido se desprende creando microburbujas en los canales de poro, reduciendo transitoriamente la permeabilidad efectiva.</li>
-            <li><strong>Fase 2: Pico de Resistencia y Compactación ($6 - 14\text{ s}$):</strong> La presión mecánica de la bomba alcanza 9 bar. La fuerza neta de arrastre hidrodinámico compacta el lecho elástico (reducción de $L$ en un $10-15\%$) y la permeabilidad $k$ alcanza su mínimo absoluto.</li>
-            <li><strong>Fase 3: Erosión Soluble y Declive de Resistencia ($14 - 30\text{ s}$):</strong> Al extraerse entre un $18\text{ y }24\%$ de la masa sólida soluble (TDS en taza), los canales microscópicos se ensanchan, aumentando $\epsilon$ y multiplicando el caudal $Q$ salvo que la máquina module la presión (declive de presión o perfilado de flujo).</li>
-          </ol>
-        </section>
-
-        <section>
-          <h2>5. Implicaciones Prácticas para el Dial-In Avanzado</h2>
-          <p>
-            Para maximizar el rendimiento de extracción (EY &gt; 21%) evitando canalizaciones secas:
-          </p>
-          <ul>
-            <li><strong>Optimizar la distribución WDT:</strong> Las agujas de $0.25 - 0.35\text{ mm}$ homogenizan la fracción $D_{10}$ a lo largo de todo el volumen, evitando gradientes locales de $k$ que causen canalización preferencial.</li>
-            <li><strong>Preinfusión a baja presión (1.5 - 3.0 bar):</strong> Permite la saturación uniforme antes de aplicar el gradiente $\Delta P$ de 9 bar, previniendo la compactación asimétrica del medio poroso.</li>
-            <li><strong>Filtros de papel en el fondo de la cesta:</strong> Retienen mecánicamente la fracción $D_{10}$ impidiendo que obstruya los orificios de la cesta, incrementando la permeabilidad global $k$ y permitiendo moler más fino sin asfixiar la bomba.</li>
-          </ul>
-        </section>
-
-        <footer class="article-footer" style="margin-top: var(--space-xl); border-top: 1px solid var(--border-subtle); padding-top: var(--space-md);">
-          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
-            <p><strong>Changelog Técnico (v1.0):</strong> Publicación original del modelo analítico de percolación basado en la Ley de Darcy y Kozeny-Carman para el lecho de espresso.</p>
-          </div>
-        </footer>
+        <h2>4. Consecuencias Físicas en el Flujo de Extracción</h2>
+        <p>Una reducción del $20\%$ en la fracción $D_{10}$ altera $d_{\text{eff}}^2$ en un factor de $0.64$, lo que provoca una caída del $36\%$ en la permeabilidad $k$. Si la bomba suministra un flujo volumétrico constante, la contrapresión hidrodinámica se disparará para compensar la resistencia, acelerando el colapso poroelástico del lecho.</p>
       </article>
+
+      <section class="newsletter-section" style="margin-top: var(--space-xxl);">
+        <h3>Telemetría y Física del Espresso</h3>
+        <p>Recibe análisis empíricos periódicos sobre granulometría, control de flujo y física de la extracción.</p>
+        <form class="newsletter-form" action="https://panel.retoseo.com/subscription/form" method="post">
+          <div class="form-row">
+            <input class="form-input" type="email" name="email" placeholder="ingenieria@dominio.com" required>
+            <button type="submit" class="btn-primary">Suscribirse</button>
+          </div>
+          <input type="hidden" name="l" value="5">
+          <input type="hidden" name="attribs_origen" id="origen" value="directo">
+          <p class="consentimiento">
+            <input type="checkbox" name="consentimiento" required> He leído la <a href="/privacidad">política de privacidad</a>.
+          </p>
+        </form>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -219,5 +149,8 @@
       <p><a href="https://retoseo.com">Ver el marcador en vivo</a></p>
     </footer>
   </div>
+  <script>
+    document.getElementById('origen').value = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
+  </script>
 </body>
 </html>

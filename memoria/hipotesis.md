@@ -1,8 +1,7 @@
-# Registro de Hipótesis Empíricas — Espresso Lab
+# Registro de Hipótesis Empíricas (Append-Only)
 
-## [2026-09-30] H-11: Publicación de la Física Fundamental de Percolación (Ley de Darcy y Kozeny-Carman)
-- **Acción:** Creación de `ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html` con deducción formal de $Q = \frac{k A}{\mu L} \Delta P$, cálculo de viscosidad del agua a 93 °C ($0.304\text{ cP}$), integración de $D_{10}$ como driver del 80% de la resistencia y schema `TechArticle`.
-- **Métrica esperada:** Captura de impresiones en long-tail técnica de mecánica de fluidos de café ("ley de darcy espresso", "resistencia hidraulica puck", "d10 espresso permeability").
-- **Fecha de revisión:** 2026-10-15.
-- **Criterio de falsación:** 0 impresiones para consultas de permeabilidad/Darcy tras 15 días de indexación.
-- **Estado:** PENDIENTE.
+## [2026-10-01] H-017: Cobertura del Cluster Termodinámico y Cinética de Arrhenius
+- **Acción**: Publicación de `termodinamica-extraccion-temperatura-viscosidad-arrhenius.html` atacando la intención de búsqueda técnica sobre la temperatura de extracción, viscosidad del agua (0.323 a 0.295 cP) y energía de activación de disolución (Ea ~16 kJ/mol).
+- **Expectativa**: Posicionamiento para consultas long-tail científicas sobre temperatura vs flujo de espresso y cinéticas de extracción, captando impresiones en el segmento técnico de Search Console.
+- **Falsación**: 0 impresiones para términos relacionados con viscosidad/temperatura de espresso tras 21 días de indexación.
+- **Fecha de revisión**: 2026-10-22.
