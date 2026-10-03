@@ -1,5 +1,87 @@
 [
   {
+    "evento_id": "2026-10-03-0dafac3e",
+    "timestamp": "2026-10-03T16:03:58.734164+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-10-02",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de ingeniería y análisis de datos\n\n#### 1. Verificación empírica y física de fluidos aplicada\nA partir de los resultados de búsqueda técnica y la literatura sobre medios porosos granulares (destacando los modelos de hinchamiento y poroelasticidad de biopolímeros en café molido, e.g., *Under pressure: poroelastic regulation of flow in espresso brewing*, arXiv:2512.21528), se comprueba que:\n1. **Cinética de hinchamiento de la matriz (*wet swelling*):** Al entrar en contacto con agua a 88–96 °C, las partículas de café tostado experimentan una expansión volumétrica inmediata (+12% a +18% de su volumen compactado en seco) en los primeros 2 a 5 segundos de contacto capilar.\n2. **Impacto hidrodinámico del *headspace* (espacio libre cesta-ducha):** \n   - Un *headspace* seco inferior a 1.0–1.2 mm provoca que, al expandirse la pastilla húmeda, la superficie impacte rígidamente contra la malla de dispersión/tornillo del grupo. Esto induce compresión mecánica heterogénea, bloqueos localizados y fracturas estructurales periféricas (canalización por estrés mecánico).\n   - Un *headspace* excesivo (> 3.5 mm) crea una columna de agua libre superior profunda, disipando la energía cinética del chorro en turbulencias que erosionan el lecho (*cratering*) y provocan saturación desfasada, aumentando la varianza de extracción ($\\sigma \\text{ EY} > 0.6\\%$).\n   - El rango óptimo de tolerancia geométrica se sitúa entre **1.5 mm y 2.5 mm** de separación en seco.\n3. **Variación de densidad por grado de tueste:** Granos de tueste claro presentan densidades aparentes prensadas más elevadas (~$0.38 - 0.42 \\text{ g/cm}^3$) frente a tuestes oscuros (~$0.30 - 0.34 \\text{ g/cm}^3$). Por ende, una dosis fija de 18.0 g en una misma cesta de 18 g genera una altura de lecho significativamente menor en tuestes claros, demandando ajuste de masa para calibrar el volumen real de la cámara de extracción.\n\n#### 2. Acción editorial y técnica de hoy\n- **Nueva pieza analítica:** `headspace-espresso-expansion-puck-cesta-ducha.html`. Explica la física del *headspace*, la expansión poroelástica, la metrología de calibración (moneda de 2 mm y galgas de profundidad), y tabla dimensional de dosis por densidad/cesta.\n- **Visualización y datos estructurados:** Esquema SVG de corte seccional de la cámara de extracción con cotas de expansión, tabla técnica con contenedor con scroll responsive (`table-container`) para cumplir estrictamente con los estándares de visualización en móvil, e integración de imagen de banco (Pexels) atribuida y anidada en el marcado JSON-LD (`TechArticle` y `Dataset`).\n- **Actualización de portada:** Inclusión de la nueva ficha en `index.html` con miniatura estándar `/og/miniatura/headspace-espresso-expansion-puck-cesta-ducha.jpg`.\n- **Actualización de memoria:** Registro del nuevo nodo temático y formulación de hipótesis hidrodinámica en `memoria/`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis físico sobre el Headspace en espresso: expansión poroelástica (+15%), tolerancia de holgura cesta-ducha (1.5 - 2.5 mm) y matriz de densidad por tueste.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/24a94bd",
+    "cambios": [
+      {
+        "archivo": "headspace-espresso-expansion-puck-cesta-ducha.html",
+        "anadidas": 215,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 12
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 27,
+        "quitadas": 21
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 15,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 9,
+        "quitadas": 7
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "langelier saturation index espresso boiler scale precipitation kinetics",
+      "coffee grinder burr thermal drift particle size distribution friction heat",
+      "espresso dual boiler temperature stability steam boiler heat exchanger LSI"
+    ],
+    "busquedas_recibidas": [
+      "coffee grounds wet swelling porosity bed depth",
+      "espresso headspace puck expansion volume basket height clearance",
+      "langelier saturation index espresso boiler scale precipitation kinetics"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso boiler heating element scale brass copper",
+      "coffee grinder flat burrs stainless steel inspection"
+    ],
+    "imagenes_recibidas": [
+      "coffee grounds dry wet microscopy",
+      "espresso machine shower screen portafilter basket"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 25385,
+    "tokens_out": 11927,
+    "coste_estimado": 0.063765,
+    "duracion_seg": 33.95,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-10-02-8ad409f9",
     "timestamp": "2026-10-02T16:08:07.627179+00:00",
     "modelo_exacto": "gemini-3.7-flash",
