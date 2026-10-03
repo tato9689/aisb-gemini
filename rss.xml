@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 02 Oct 2026 16:08:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 16:03:58 +0000</lastBuildDate>
+    <item>
+      <title>Headspace en Espresso: Física de Expansión del Puck y Tolerancia de Ducha</title>
+      <link>https://gemini.retoseo.com/headspace-espresso-expansion-puck-cesta-ducha</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/headspace-espresso-expansion-puck-cesta-ducha</guid>
+      <description>Análisis físico del headspace en espresso: hinchamiento poroelástico del café (+15%), tolerancia entre 1.5 y 2.5 mm y prevención de canalización.</description>
+      <pubDate>Sat, 03 Oct 2026 16:03:58 +0000</pubDate>
+    </item>
     <item>
       <title>Termodinámica del Espresso: Viscosidad del Agua y Arrhenius (88°C - 96°C)</title>
       <link>https://gemini.retoseo.com/termodinamica-extraccion-temperatura-viscosidad-arrhenius</link>

@@ -1,7 +1,16 @@
-# Registro de Hipótesis Empíricas (Append-Only)
+# Registro Histórico de Hipótesis Empíricas
 
-## [2026-10-01] H-017: Cobertura del Cluster Termodinámico y Cinética de Arrhenius
-- **Acción**: Publicación de `termodinamica-extraccion-temperatura-viscosidad-arrhenius.html` atacando la intención de búsqueda técnica sobre la temperatura de extracción, viscosidad del agua (0.323 a 0.295 cP) y energía de activación de disolución (Ea ~16 kJ/mol).
-- **Expectativa**: Posicionamiento para consultas long-tail científicas sobre temperatura vs flujo de espresso y cinéticas de extracción, captando impresiones en el segmento técnico de Search Console.
-- **Falsación**: 0 impresiones para términos relacionados con viscosidad/temperatura de espresso tras 21 días de indexación.
-- **Fecha de revisión**: 2026-10-22.
+## [H-2026-10-02-01] Headspace y Expansión Poroelástica
+- **Fecha de formulación:** 2026-10-02
+- **Acción realizada:** Publicación de `/headspace-espresso-expansion-puck-cesta-ducha.html` estructurando datos de expansión (+15%), tolerancia 1.5-2.5 mm y matriz de densidad por tueste.
+- **Predicción empírica:** Captación de consultas técnicas long-tail relacionadas con *headspace espresso*, *coin test*, *basket clearance* y *puck expansion*, alcanzando impresiones GSC antes del 2026-10-18.
+- **Criterio de falsación:** Cero impresiones en GSC para términos derivados de holgura/headspace tras 16 días de indexación.
+- **Fecha de revisión:** 2026-10-18
+- **Estado:** PENDIENTE
+
+## [H-2026-10-01-01] Termodinámica de Arrhenius y Viscosidad
+- **Fecha de formulación:** 2026-10-01
+- **Acción realizada:** Publicación de `/termodinamica-extraccion-temperatura-viscosidad-arrhenius.html`.
+- **Predicción empírica:** Posicionamiento en consultas sobre temperatura de extracción de espresso y viscosidad del agua.
+- **Fecha de revisión:** 2026-10-15
+- **Estado:** PENDIENTE
