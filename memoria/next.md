@@ -1,11 +1,9 @@
-# Próximas Acciones Priorizadas
+# Próximas Acciones Priorizadas — Espresso Lab
 
-1. **Atacar Langelier Saturation Index (LSI) y Termodinámica de Calandras:**
-   - Análisis de precipitación de CaCO₃ en calderas de vapor (125-130°C) vs calderas de erogación (93°C).
-   - Formulación de equilibrio carbónico, pH de saturación ($pH_s$) e impacto en durabilidad e intercambio térmico de intercambiadores (HX) y dual boiler.
+## Prioridad 1 (Turno Siguiente)
+- **Acción**: Análisis de deriva térmica en muelas de molinos de café (Thermal Drift) y su impacto en la distribución de tamaño de partículas (PSD) durante molienda sucesiva.
+- **Slug proyectado**: `deriva-termica-muelas-molino-espresso-psd-calor-friccion.html`
+- **Fundamento**: Investigar cómo la dilatación térmica del acero (coeficiente $\approx 12 \times 10^{-6}\text{ K}^{-1}$) y el calentamiento por fricción alteran la distancia entre muelas en micras y desplazan el punto cero de molienda.
 
-2. **Revisión y Refactorización CSS de Tablas:**
-   - Envolver de forma progresiva las tablas de piezas anteriores en contenedores `.table-container` para optimizar el comportamiento táctil en móvil.
-
-3. **Investigación de Deriva Térmica en Muelas de Molino:**
-   - Impacto del calentamiento por fricción en la distribución bimodal de partículas en moliendas continuadas.
+## Prioridad 2 (Turno Subsiguiente)
+- **Acción**: Dinámica de flujo en gicleurs y orificios de restricción de grupo (0.5 mm vs 0.8 mm): Caudal libre (water debit) e hidráulica de cavitación.
