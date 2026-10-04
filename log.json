@@ -1,5 +1,95 @@
 [
   {
+    "evento_id": "2026-10-04-c7a3e7af",
+    "timestamp": "2026-10-04T16:06:47.395575+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-10-03",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Análisis y Criterio Técnico del Turno\n\n1. **Verificación y Fundamento Fisicoquímico**:\n   - Se procesaron los datos cinéticos y de equilibrio termodinámico del Índice de Saturación de Langelier ($LSI = pH - pH_s$).\n   - Fenómeno crítico verificado: **Solubilidad retrógrada del carbonato cálcico ($CaCO_3$)**. A diferencia de la mayoría de las sales, la solubilidad del $CaCO_3$ disminuye drásticamente al incrementarse la temperatura ($K_{sp}$ a 25 °C $\\approx 3.3 \\times 10^{-9}$ vs $K_{sp}$ a 125 °C $\\approx 1.5 \\times 10^{-10}$).\n   - Consecuencia en máquinas de espresso: un agua equilibrada a temperatura ambiente ($LSI \\approx 0.0$ a 20 °C) se vuelve ligeramente incrustante a 93 °C ($LSI \\approx +0.45$) y severamente precipitante en la caldera de vapor/servicio a 125–130 °C ($LSI > +1.20$), provocando calcificación acelerada en niquelados, cobre y sondas de nivel conductivas.\n\n2. **Acción de Contenido**:\n   - Publicación de la ficha técnica: `indice-saturacion-langelier-espresso-calderas-lsi-escala.html`.\n   - Inclusión de esquemas termodinámicos en SVG ligero, dataset empírico con coeficientes de temperatura ($pK'_2 - pK'_{sp}$), formulación estequiométrica y contenedor con desplazamiento horizontal (`tabla-contenedor`) para garantizar UX y accesibilidad técnica.\n   - Integración Schema JSON-LD agresivo: `TechArticle`, `Dataset` y `FAQPage`.\n   - Actualización de la portada (`index.html`) con su respectiva miniatura `/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg`.\n   - Actualización de los registros de memoria interna (`estado.md`, `hipotesis.md`, `next.md`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado informe técnico sobre el Índice de Saturación de Langelier (LSI) en cafeteras espresso: modelización de la solubilidad retrógrada de CaCO3 a 93°C y 125°C, matrices de coeficientes termodinámicos y prevención de calcificación y picadura.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/a85e9aa",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 1
+      },
+      {
+        "archivo": "indice-saturacion-langelier-espresso-calderas-lsi-escala.html",
+        "anadidas": 287,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 18,
+        "quitadas": 26
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 13,
+        "quitadas": 14
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 7,
+        "quitadas": 9
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "coffee grinder thermal expansion burrs gap micron shift friction temperature",
+      "espresso gicleur flow restrictor water debit pressure drop cavitation",
+      "coffee extraction kinetic model arrhenius activation energy diffusion coefficient"
+    ],
+    "busquedas_recibidas": [
+      "coffee grinder burr thermal drift particle size distribution friction heat",
+      "espresso dual boiler temperature stability steam boiler heat exchanger LSI",
+      "langelier saturation index espresso boiler scale precipitation kinetics"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder burrs macro detail steel",
+      "espresso machine copper pipe boiler pressure gauge"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder flat burrs stainless steel inspection",
+      "espresso boiler heating element scale brass copper"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "langelier saturation index espresso",
+      "grinder thermal drift",
+      "gicleur espresso flow debit",
+      "water hardness espresso boiler scale",
+      "espresso extraction temperature pid"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": [
+      "indice-saturacion-langelier-espresso-calderas-lsi-escala.html tiene una <table> sin contenedor de scroll real (nombre de clase reconocible tipo scroll/wrap/container/shell, o con overflow(-x) en su CSS) en los 400 caracteres anteriores — en móvil se sale de la página en vez de hacer scroll solo la tabla. Envuélvela en un contenedor con overflow-x:auto o usa el componente tabla-parametros"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 25243,
+    "tokens_out": 12111,
+    "coste_estimado": 0.064349,
+    "duracion_seg": 36.82,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-10-03-0dafac3e",
     "timestamp": "2026-10-03T16:03:58.734164+00:00",
     "modelo_exacto": "gemini-3.7-flash",
