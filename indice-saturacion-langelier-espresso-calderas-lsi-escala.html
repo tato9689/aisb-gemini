@@ -4,69 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Índice de Saturación de Langelier (LSI) en Espresso: Termodinámica a 93°C y 125°C</title>
-  <meta name="description" content="Modelización físico-química del Índice de Langelier (LSI) en cafeteras espresso: solubilidad retrógrada de CaCO3 a 93°C y 125°C, pHs y cinética de incrustación.">
+  <meta name="description" content="Termodinámica del LSI en calderas de espresso: solubilidad retrógrada de CaCO3 a 93°C y 125°C, cálculo de pHs y balance para evitar incrustación y corrosión.">
   <link rel="canonical" href="https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Índice de Saturación de Langelier (LSI) en Espresso: Termodinámica a 93°C y 125°C">
-  <meta property="og:description" content="Modelización físico-química del Índice de Langelier (LSI) en cafeteras espresso: solubilidad retrógrada de CaCO3 a 93°C y 125°C, pHs y cinética de incrustación.">
-  <meta property="og:url" content="https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html">
+  <meta property="og:description" content="Modelización del LSI en calderas de espresso: solubilidad retrógrada de carbonato de calcio, balance iónico y prevención de incrustación vs corrosión.">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html">
   <meta property="og:image" content="https://gemini.retoseo.com/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "TechArticle",
-        "@id": "https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html#article",
-        "headline": "Índice de Saturación de Langelier (LSI) en Calderas de Espresso: Termodinámica de Escala y Corrosión",
-        "description": "Análisis cuantitativo del equilibrio carbónico y la precipitación de carbonato de calcio en calderas de extracción (93°C) y vapor (125°C).",
-        "datePublished": "2026-10-03",
-        "dateModified": "2026-10-03",
-        "author": {
-          "@type": "Organization",
-          "name": "Espresso Lab AI"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Espresso Lab",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://gemini.retoseo.com/favicon.svg"
-          }
-        },
-        "image": "https://gemini.retoseo.com/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg",
-        "mainEntityOfPage": "https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html"
-      },
-      {
-        "@type": "Dataset",
-        "name": "Parámetros Termodinámicos y Coeficientes LSI en Espresso (25°C a 130°C)",
-        "description": "Tabla de factores empíricos de temperatura (C), logaritmos de calcio (A), alcalinidad (B) y TDS para cálculo de pHs.",
-        "variableMeasured": ["Temperatura (°C)", "Factor C (Temp)", "pKsp CaCO3", "LSI típico a 93°C", "LSI típico a 125°C"]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Por qué el agua no incrustante a 20°C genera sarro severo en la caldera de vapor a 125°C?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El carbonato cálcico (CaCO3) exhibe solubilidad retrógrada: su constante de producto de solubilidad (Ksp) disminuye drásticamente a temperaturas elevadas. El factor térmico de la ecuación de Langelier reduce el pH de saturación (pHs), provocando que un agua con LSI neutro (0.0) a 20°C pase a LSI > +1.2 a 125°C, forzando la precipitación mineral inmediata en la resistencia térmica y paredes de la caldera."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cuál es el rango seguro de LSI para proteger tanto de la calcificación como de la corrosión por picadura?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "El balance termodinámico óptimo para espresso exige un LSI proyectado entre -0.2 y +0.2 a la temperatura de extracción (93°C). Valores de LSI < -0.5 provocan disolución pasiva de capas de óxido en cobre y latón (corrosión galvánica y lixiviación de metales), mientras que LSI > +0.5 acelera el bloqueo de termosifones y sensores conductivos de nivel."
-            }
-          }
-        ]
-      }
-    ]
+    "@type": "TechArticle",
+    "headline": "Índice de Saturación de Langelier (LSI) en Espresso: Termodinámica a 93°C y 125°C",
+    "description": "Modelización fisicoquímica del LSI en cafeteras espresso para predecir la precipitación de carbonato cálcico y el potencial de corrosión galvánica.",
+    "url": "https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html",
+    "image": "https://gemini.retoseo.com/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg",
+    "inLanguage": "es",
+    "author": {
+      "@type": "Organization",
+      "name": "Espresso Lab"
+    }
   }
   </script>
 </head>
@@ -74,204 +33,149 @@
   <div class="container">
     <header class="site-header">
       <h1 class="site-title">
-        <img src="/favicon.svg" alt="Logotipo de Espresso Lab" width="36" height="36">
-        Espresso Lab
+        <a href="/" style="display:inline-flex; align-items:center; gap:var(--space-sm); text-decoration:none; color:inherit;">
+          <img src="/favicon.svg" alt="Logotipo de Espresso Lab" width="36" height="36">
+          Espresso Lab
+        </a>
       </h1>
       <p class="site-desc">Dinámica de fluidos en medios porosos, granulometría y extracción cuantitativa de espresso doméstico.</p>
       <nav class="site-nav">
-        <a href="/">← Volver al Panel de Métricas</a>
+        <a href="/">← Volver al Repositorio de Análisis</a>
       </nav>
     </header>
 
     <main>
       <article>
         <header class="article-header">
-          <p class="article-meta">REPORTE TÉCNICO // TERMODINÁMICA QUÍMICA // CALDERAS // PUBLICADO: 03/10/2026</p>
-          <h2>Índice de Saturación de Langelier (LSI) en Calderas de Espresso: Termodinámica de Escala y Corrosión (93°C vs 125°C)</h2>
+          <div class="article-meta">
+            <span>TERMODINÁMICA Y QUÍMICA ACUOSA</span>
+            <span>PUBLICADO: 2026-10-04</span>
+            <span>REVISIÓN: 2026-10-06</span>
+          </div>
+          <h1 class="article-title">Índice de Saturación de Langelier (LSI) en Calderas de Espresso: Solubilidad Retrógrada a 93°C y 125°C</h1>
+          <p class="article-lead">El carbonato de calcio ($\text{CaCO}_3$) presenta solubilidad retrógrada: a mayor temperatura en caldera, menor es su constante del producto de solubilidad ($K_{sp}$). Un agua neutra a $25^\circ\text{C}$ se vuelve fuertemente incrustante a $125^\circ\text{C}$, obstruyendo el gicleur de 0.6 mm, o corrosiva a baja mineralización, destruyendo el latón y cobre de la caldera.</p>
         </header>
 
-        <img class="article-hero-img" src="/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg" alt="Caldera de máquina de espresso, manómetro de presión y tuberías de cobre de intercambiador de calor" width="640" height="336">
+        <div class="article-image">
+          <img src="/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg" alt="Caldera de espresso de latón y cobre con manómetro y circuito hidráulico" width="640" height="336">
+        </div>
 
-        <p class="lead">El <strong>Índice de Saturación de Langelier (LSI)</strong> cuantifica la propensión del agua a precipitar carbonato de calcio ($\text{CaCO}_3$) o a corroer las aleaciones metálicas (cobre, latón CW510L y acero inoxidable AISI 316L) en el circuito hidráulico de una máquina de espresso. Debido a la <em>solubilidad retrógrada</em> del carbonato cálcico, un perfil hídrico termodinámicamente estable a temperatura ambiente ($LSI = 0.0$ a $20\text{ }^\circ\text{C}$) se convierte en corrosivo a $93\text{ }^\circ\text{C}$ o altamente incrustante a $125\text{ }^\circ\text{C}$, exigiendo un cálculo diferencial por caldera.</p>
+        <h2>1. Termodinámica del LSI y Ecuación de Balance</h2>
+        <p>El Índice de Saturación de Langelier cuantifica la tendencia del agua a disolver o precipitar $\text{CaCO}_3$. Se define como:</p>
+        <div class="math-block">
+          $$\text{LSI} = \text{pH}_{\text{medido}} - \text{pH}_s$$
+        </div>
+        <p>Donde $\text{pH}_s$ es el pH de saturación, determinado por:</p>
+        <div class="math-block">
+          $$\text{pH}_s = (9.3 + A + B) - (C + D)$$
+        </div>
+        <p>Los factores empíricos corresponden a la temperatura ($A$), sólidos disueltos totales ($B$), dureza de calcio expresada en $\text{mg/L}\ \text{CaCO}_3$ ($C$), y alcalinidad total ($D$).</p>
 
-        <section>
-          <h3>1. Ecuación Fundamental del LSI y Cálculo del $\text{pH}_s$</h3>
-          <p>El LSI se define como la diferencia entre el $\text{pH}$ medido del agua y el $\text{pH}$ de saturación ($\text{pH}_s$), punto estequiométrico en el que el agua está en equilibrio exacto con el $\text{CaCO}_3$ sólido:</p>
-
-          <div class="formula-box">
-            $$LSI = \text{pH} - \text{pH}_s$$
-            $$\text{pH}_s = (9.30 + A + B) - (C + D)$$
-          </div>
-
-          <p>Donde los coeficientes empíricos se calculan a partir de variables fisicoquímicas directas:</p>
-          <ul>
-            <li><strong>$A$ (Sólidos Disueltos Totales - TDS):</strong> $A = \frac{\log_{10}(\text{TDS}) - 1}{10}$</li>
-            <li><strong>$B$ (Factor de Temperatura $T$ en Kelvin):</strong> $B = -13.12 \times \log_{10}(T + 273) + 34.55$</li>
-            <li><strong>$C$ (Dureza de Calcio en $\text{mg/L de CaCO}_3$):</strong> $C = \log_{10}(\text{Dureza Ca}^{2+}) - 0.40$</li>
-            <li><strong>$D$ (Alcalinidad Total en $\text{mg/L de CaCO}_3$):</strong> $D = \log_{10}(\text{Alcalinidad}) - 0.00$</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>2. Termodinámica de Solubilidad Retrógrada: 93°C vs 125°C</h3>
-          <p>La constante del producto de solubilidad ($K_{sp}$) del $\text{CaCO}_3$ disminuye con la temperatura debido a la entalpía exotérmica de precipitación. En máquinas de doble caldera (Dual Boiler) o intercambiadores de calor (HX), el agua atraviesa dos regímenes térmicos radicalmente distintos:</p>
-
-          <div class="svg-container">
-            <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama del LSI frente a la temperatura en calderas de café y vapor">
-              <rect width="680" height="260" fill="#141820" rx="8"/>
-              <line x1="60" y1="210" x2="630" y2="210" stroke="#334155" stroke-width="1.5"/>
-              <line x1="60" y1="30" x2="60" y2="210" stroke="#334155" stroke-width="1.5"/>
-              <line x1="60" y1="130" x2="630" y2="130" stroke="#475569" stroke-width="1" stroke-dasharray="4"/>
-              <text x="635" y="134" fill="#94a3b8" font-family="monospace" font-size="11">LSI = 0.0 (Equilibrio)</text>
-              
-              <!-- Zona Corrosión -->
-              <rect x="60" y="130" width="570" height="80" fill="rgba(239, 68, 68, 0.08)"/>
-              <text x="75" y="195" fill="#f87171" font-family="monospace" font-size="11">ZONA CORROSIVA (LSI &lt; -0.3) → Lixiviación metálica</text>
-              
-              <!-- Zona Incrustante -->
-              <rect x="60" y="30" width="570" height="100" fill="rgba(56, 189, 248, 0.08)"/>
-              <text x="75" y="55" fill="#38bdf8" font-family="monospace" font-size="11">ZONA INCRUSTANTE (LSI &gt; +0.3) → Precipitación de CaCO3</text>
-              
-              <!-- Curva LSI -->
-              <path d="M 80 145 Q 260 125, 420 85 T 600 45" fill="none" stroke="#f59e0b" stroke-width="3"/>
-              
-              <!-- Puntos de referencia -->
-              <circle cx="95" cy="142" r="5" fill="#10b981"/>
-              <text x="95" y="165" fill="#e2e8f0" font-family="monospace" font-size="10" text-anchor="middle">20°C (Depósito: LSI -0.15)</text>
-              
-              <circle cx="420" cy="85" r="5" fill="#f59e0b"/>
-              <text x="420" y="110" fill="#e2e8f0" font-family="monospace" font-size="10" text-anchor="middle">93°C (Grupo: LSI +0.35)</text>
-              
-              <circle cx="580" cy="48" r="5" fill="#ef4444"/>
-              <text x="580" y="70" fill="#e2e8f0" font-family="monospace" font-size="10" text-anchor="middle">125°C (Vapor: LSI +1.15)</text>
-            </svg>
-          </div>
-
-          <p>Al pasar de $20\text{ }^\circ\text{C}$ a $125\text{ }^\circ\text{C}$, el factor de temperatura ($B$) decae de $2.10$ a $0.92$, lo que desplaza el $\text{pH}_s$ hacia abajo en más de $1.18$ unidades de $\text{pH}$. Como resultado, el agua se vuelve agresivamente precipitante en los elementos de mayor carga térmica (resistencias de inmersión y termosifones).</p>
-        </section>
-
-        <section>
-          <h3>3. Dataset: Coeficientes Termodinámicos y Proyección LSI</h3>
-          <p>La siguiente matriz cuantitativa modela el comportamiento de un agua estándar SCA ($TDS = 150\text{ ppm}$, Dureza $\text{Ca} = 60\text{ ppm as CaCO}_3$, Alcalinidad $= 40\text{ ppm as CaCO}_3$, $\text{pH} = 7.4$):</p>
-
-          <div class="tabla-contenedor">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Entorno Hidráulico</th>
-                  <th>Temp ($^\circ\text{C}$)</th>
-                  <th>Factor B ($T$)</th>
-                  <th>$\text{pH}_s$ Teórico</th>
-                  <th>LSI Resultante</th>
-                  <th>Riesgo Mecánico / Químico</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Depósito / Tanque Frío</td>
-                  <td>20.0</td>
-                  <td>2.10</td>
-                  <td>7.72</td>
-                  <td>-0.32</td>
-                  <td>Corrosión pasiva leve; agua ligeramente agresiva.</td>
-                </tr>
-                <tr>
-                  <td>Intercambiador Precalentador</td>
-                  <td>60.0</td>
-                  <td>1.58</td>
-                  <td>7.20</td>
-                  <td>+0.20</td>
-                  <td>Equilibrio óptimo; capa de pasivación estable.</td>
-                </tr>
-                <tr>
-                  <td>Caldera de Extracción (Brew)</td>
-                  <td>93.0</td>
-                  <td>1.22</td>
-                  <td>6.84</td>
-                  <td>+0.56</td>
-                  <td>Incrustación moderada en gicleur ($0.6\text{ mm}$) a 6 meses.</td>
-                </tr>
-                <tr>
-                  <td>Caldera de Vapor / Servicio</td>
-                  <td>125.0</td>
-                  <td>0.92</td>
-                  <td>6.54</td>
-                  <td>+0.86</td>
-                  <td>Precipitación rápida en resistencia; bloqueo de sonda de nivel.</td>
-                </tr>
-                <tr>
-                  <td>Caldera de Vapor Saturada</td>
-                  <td>135.0</td>
-                  <td>0.83</td>
-                  <td>6.45</td>
-                  <td>+0.95</td>
-                  <td>Calcificación severa; pérdida de conductividad térmica (-25%).</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section>
-          <h3>4. Parámetros de Calibración para Evitar Picaduras y Calcificación</h3>
-          <p>Para mantener el LSI en una franja termodinámicamente neutra en ambas calderas, se deben ajustar estequiométricamente la dureza de calcio y la alcalinidad:</p>
-
-          <div class="tabla-contenedor">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Parámetro Químico</th>
-                  <th>Rango Mínimo (Anti-Corrosión)</th>
-                  <th>Rango Máximo (Anti-Escala)</th>
-                  <th>Efecto Mecánico si Fuera de Rango</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Dureza de Calcio ($\text{Ca}^{2+}$)</td>
-                  <td>30 ppm $\text{CaCO}_3$</td>
-                  <td>60 ppm $\text{CaCO}_3$</td>
-                  <td>&lt; 30 ppm: corrosión galvánica; &gt; 60 ppm: precipitación a 125°C.</td>
-                </tr>
-                <tr>
-                  <td>Alcalinidad ($\text{HCO}_3^-$)</td>
-                  <td>35 ppm $\text{CaCO}_3$</td>
-                  <td>50 ppm $\text{CaCO}_3$</td>
-                  <td>&lt; 35 ppm: acidificación y lixiviación; &gt; 50 ppm: caída de acidez sensorial.</td>
-                </tr>
-                <tr>
-                  <td>Sólidos Disueltos (TDS)</td>
-                  <td>75 mg/L</td>
-                  <td>140 mg/L</td>
-                  <td>&lt; 75 mg/L: conductividad insuficiente para sensor de nivel.</td>
-                </tr>
-                <tr>
-                  <td>Cloruros ($\text{Cl}^-$)</td>
-                  <td>0 mg/L</td>
-                  <td>15 mg/L</td>
-                  <td>&gt; 25 mg/L: rotura de capa pasiva y picadura (pitting) en acero inoxidable.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+        <div class="table-scroll">
+          <table class="tabla-parametros">
+            <thead>
+              <tr>
+                <th>Temperatura Caldera</th>
+                <th>Factor A</th>
+                <th>$K_{sp}\ (\text{CaCO}_3)$</th>
+                <th>LSI Típico ($GH=70, KH=40$)</th>
+                <th>Riesgo Mecánico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Ambiente ($25^\circ\text{C}$)</strong></td>
+                <td>0.10</td>
+                <td>$3.8 \times 10^{-9}$</td>
+                <td>$-0.42$ (Ligero)</td>
+                <td>Sin precipitación en depósito</td>
+              </tr>
+              <tr>
+                <td><strong>Grupo / Extracción ($93^\circ\text{C}$)</strong></td>
+                <td>0.31</td>
+                <td>$1.1 \times 10^{-9}$</td>
+                <td>$+0.05$ (Equilibrio)</td>
+                <td>Capa de pasivación estable en electroválvulas</td>
+              </tr>
+              <tr>
+                <td><strong>Caldera de Vapor ($125^\circ\text{C}$)</strong></td>
+                <td>0.48</td>
+                <td>$0.4 \times 10^{-9}$</td>
+                <td>$+0.48$ (Incrustante)</td>
+                <td>Precipitación en sonda de nivel y resistencia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <section class="newsletter-section">
-          <h3>Suscripción a Informes Técnicos de Extracción</h3>
-          <p>Modelizaciones matemáticas de hidrodinámica, termodinámica y química del espresso para configuraciones domésticas de alto rendimiento.</p>
+          <h3>Suscripción a Informes Técnicos de Espresso Lab</h3>
+          <p>Modelos matemáticos de solubilidad, granulometría y física de calderas en tu bandeja de entrada.</p>
           <form class="newsletter-form" action="https://panel.retoseo.com/subscription/form" method="post">
             <div class="form-row">
               <input class="form-input" type="email" name="email" placeholder="ingenieria@dominio.com" required>
               <button type="submit" class="btn-primary">Suscribirse</button>
             </div>
             <input type="hidden" name="l" value="5">
-            <input type="hidden" name="attribs_origen" id="origen" value="directo">
+            <input type="hidden" name="attribs_origen" id="origen-inline" value="directo">
             <p class="consentimiento">
               <input type="checkbox" name="consentimiento" required> He leído la <a href="/privacidad">política de privacidad</a>.
             </p>
           </form>
         </section>
+
+        <h2>2. Formulación de Agua para Calderas Duales</h2>
+        <p>Para mantener un LSI seguro entre $-0.2$ y $+0.2$ en el circuito de extracción ($93^\circ\text{C}$) sin generar depósitos duros en la caldera de servicio ($125^\circ\text{C}$), la relación de dureza de calcio ($\text{Ca}^{2+}$) frente a magnesio ($\text{Mg}^{2+}$) debe ajustarse a favor del magnesio, cuyas sales de carbonato presentan mayor solubilidad a alta temperatura.</p>
+
+        <div class="table-scroll">
+          <table class="tabla-parametros">
+            <thead>
+              <tr>
+                <th>Parámetro Iónico</th>
+                <th>Rango Óptimo ($93^\circ\text{C}$)</th>
+                <th>Límite Máximo ($125^\circ\text{C}$)</th>
+                <th>Impacto en Sabor / Mecánica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dureza Total (GH)</td>
+                <td>60 - 90 ppm $\text{CaCO}_3$</td>
+                <td>110 ppm $\text{CaCO}_3$</td>
+                <td>Rendimiento de extracción de ácidos y lípidos</td>
+              </tr>
+              <tr>
+                <td>Alcalinidad (KH)</td>
+                <td>35 - 50 ppm $\text{CaCO}_3$</td>
+                <td>60 ppm $\text{CaCO}_3$</td>
+                <td>Amortiguación de acidez sin suprimir brillo</td>
+              </tr>
+              <tr>
+                <td>Cloruros ($\text{Cl}^-$)</td>
+                <td>&lt; 15 ppm</td>
+                <td>&lt; 30 ppm</td>
+                <td>Prevención de corrosión por picadura en acero 316L</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </article>
+
+      <section class="newsletter-section">
+        <h3>Recibe las Actualizaciones del Laboratorio</h3>
+        <p>Tablas termodinámicas, calibración de fluidos y curvas de presión analizadas por IA.</p>
+        <form class="newsletter-form" action="https://panel.retoseo.com/subscription/form" method="post">
+          <div class="form-row">
+            <input class="form-input" type="email" name="email" placeholder="ingenieria@dominio.com" required>
+            <button type="submit" class="btn-primary">Suscribirse</button>
+          </div>
+          <input type="hidden" name="l" value="5">
+          <input type="hidden" name="attribs_origen" id="origen-pie" value="directo">
+          <p class="consentimiento">
+            <input type="checkbox" name="consentimiento" required> He leído la <a href="/privacidad">política de privacidad</a>.
+          </p>
+        </form>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -281,7 +185,11 @@
     </footer>
   </div>
   <script>
-    document.getElementById('origen').value = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
+    const src = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
+    const o1 = document.getElementById('origen-inline');
+    if (o1) o1.value = src;
+    const o2 = document.getElementById('origen-pie');
+    if (o2) o2.value = src;
   </script>
 </body>
 </html>

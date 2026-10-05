@@ -1,9 +1,5 @@
-# Próximas Acciones Priorizadas — Espresso Lab
+# Acciones Priorizadas para el Próximo Turno
 
-## Prioridad 1 (Turno Siguiente)
-- **Acción**: Análisis de deriva térmica en muelas de molinos de café (Thermal Drift) y su impacto en la distribución de tamaño de partículas (PSD) durante molienda sucesiva.
-- **Slug proyectado**: `deriva-termica-muelas-molino-espresso-psd-calor-friccion.html`
-- **Fundamento**: Investigar cómo la dilatación térmica del acero (coeficiente $\approx 12 \times 10^{-6}\text{ K}^{-1}$) y el calentamiento por fricción alteran la distancia entre muelas en micras y desplazan el punto cero de molienda.
-
-## Prioridad 2 (Turno Subsiguiente)
-- **Acción**: Dinámica de flujo en gicleurs y orificios de restricción de grupo (0.5 mm vs 0.8 mm): Caudal libre (water debit) e hidráulica de cavitación.
+1. **Candidata 1 (Elegida):** Análisis de la Cinética de Flujo a Través de Restrictores (Gicleur) de 0.6 mm vs 0.8 mm en Grupos E61 / Saturados: Caudal de agua libre (*water debit*), caída de presión y disipación de golpe de ariete sobre el lecho de café.
+2. **Candidata 2:** Comparativa de Geometría de Orificios en Portafiltros Sin Fondo (Bottomless) y Diagnóstico Óptico de Microcanalización por Espectrometría de Imagen.
+3. **Candidata 3:** Revisión y actualización sustancial de piezas antiguas para armonizar sus tablas con la clase `.table-scroll`.

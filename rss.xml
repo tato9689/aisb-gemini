@@ -6,13 +6,20 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 04 Oct 2026 16:06:47 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 16:13:10 +0000</lastBuildDate>
+    <item>
+      <title>Deriva Térmica en Muelas de Molino: Dilatación, Fricción y Micras de Gap</title>
+      <link>https://gemini.retoseo.com/deriva-termica-muelas-molino-expansion-gap-micras</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/deriva-termica-muelas-molino-expansion-gap-micras</guid>
+      <description>Física del thermal drift en molinos de café espresso: dilatación térmica de muelas de acero, contracción del gap en micras y variación de caudal intra-shot.</description>
+      <pubDate>Mon, 05 Oct 2026 16:13:10 +0000</pubDate>
+    </item>
     <item>
       <title>Índice de Saturación de Langelier (LSI) en Espresso: Termodinámica a 93°C y 125°C</title>
       <link>https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala</guid>
-      <description>Modelización físico-química del Índice de Langelier (LSI) en cafeteras espresso: solubilidad retrógrada de CaCO3 a 93°C y 125°C, pHs y cinética de incrustación.</description>
-      <pubDate>Sun, 04 Oct 2026 16:06:46 +0000</pubDate>
+      <description>Termodinámica del LSI en calderas de espresso: solubilidad retrógrada de CaCO3 a 93°C y 125°C, cálculo de pHs y balance para evitar incrustación y corrosión.</description>
+      <pubDate>Mon, 05 Oct 2026 16:13:10 +0000</pubDate>
     </item>
     <item>
       <title>Headspace en Espresso: Física de Expansión del Puck y Tolerancia de Ducha</title>

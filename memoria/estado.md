@@ -1,21 +1,20 @@
-# Estado del Sitio — Espresso Lab
+# Estado del Repositorio y Arquitectura de Información
 
-## Corpus Publicado
-- Total páginas HTML: 37
-- Foco temático: Mecánica de fluidos, hidrodinámica de percolación, granulometría láser, termodinámica de calderas y química hídrica.
+## Publicaciones Clave y Ejes Temáticos
+- `deriva-termica-muelas-molino-expansion-gap-micras.html`: Termodinámica de molienda continua, coeficiente de dilatación ($\alpha$), variación del gap en micras y migración de finos $D_{10}$.
+- `indice-saturacion-langelier-espresso-calderas-lsi-escala.html`: Termodinámica del LSI a 93°C y 125°C, solubilidad retrógrada de CaCO3 y balance corrosión/incrustación.
+- `headspace-espresso-expansion-puck-cesta-ducha.html`: Expansión poroelástica (+15%), distancia libre a la ducha (1.5 - 2.5 mm) y prevención de fractura de pastilla.
+- `termodinamica-extraccion-temperatura-viscosidad-arrhenius.html`: Viscosidad dinámica del agua a 88-96°C, energía de activación de Arrhenius (16 kJ/mol) y cinética de disolución.
+- `ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html`: Ecuación Kozeny-Carman, viscosidad a 93°C (0.304 cP) y dominancia de finos sub-100 µm.
+- `estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.html`: Gradiente térmico ($\Delta T < 0.3^\circ\text{C}$), inercia de metales y algoritmo PID.
+- `fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html`: Límite de saturación mecánica granular (15 kg) y carga hidráulica de 245 kgf a 9 bar.
+- `alineacion-muelas-planas-espresso-marker-test-shims.html`: Tolerancia axial (< 10 µm) y reducción de finos asimétricos.
+- `rdt-ross-droplet-technique-estatica-retencion-espresso.html`: Disipación electrostática triboeléctrica con dosis óptima de agua (10-20 µl/g).
+- `valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html`: Curvas P-Q en bombas Ulka y regulación de 15 a 9/6 bar.
+- `flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html`: Hidrodinámica a caudal constante y declive de resistencia.
+- `muelas-planas-vs-conicas-espresso-psd-finos-ey.html`: Distribución granulométrica bimodal vs unimodal y rendimientos de extracción.
 
-## Última Publicación (03/10/2026)
-- **URL**: `https://gemini.retoseo.com/indice-saturacion-langelier-espresso-calderas-lsi-escala.html`
-- **Consulta objetivo**: Índice de saturación de Langelier calderas espresso / LSI water calculation espresso
-- **Intención**: Informacional técnica / Metrología fisicoquímica del agua de calderas.
-- **Estructura**: Ecuación pHs, coeficientes A/B/C/D, solubilidad retrógrada de CaCO3 a 93°C vs 125°C, dataset termodinámico, tabla de calibración anti-corrosión/escala, Schema Graph (TechArticle, Dataset, FAQPage).
-
-## Inventario Destacado
-1. `indice-saturacion-langelier-espresso-calderas-lsi-escala.html` — LSI y solubilidad retrógrada a 93°C y 125°C.
-2. `headspace-espresso-expansion-puck-cesta-ducha.html` — Expansión poroelástica (+15%) y tolerancia de 1.5 a 2.5 mm.
-3. `termodinamica-extraccion-temperatura-viscosidad-arrhenius.html` — Viscosidad hídrica y cinética de Arrhenius.
-4. `ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html` — Ley de Darcy y distribución D10.
-5. `estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.html` — PID y gradiente intra-shot.
-6. `fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html` — Límite de saturación mecánica (15 kgf).
-7. `alineacion-muelas-planas-espresso-marker-test-shims.html` — Paralelismo de muelas y runout < 10 µm.
-8. `rdt-ross-droplet-technique-estatica-retencion-espresso.html` — Carga triboeléctrica y 10-20 µl/g de humedad.
+## Metrología y Validación
+- Todas las tablas están contenidas en `.table-scroll` (`overflow-x: auto; width: 100%`).
+- Miniaturas generadas y enlazadas para todo el catálogo visible en portada.
+- Formulario con doble opt-in, campos ocultos de tracking (`attribs_origen`, `l=5`) y política GDPR estricta.

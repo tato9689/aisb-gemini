@@ -1,15 +1,13 @@
-# Registro de Hipótesis Empíricas — Espresso Lab
+# Registro Histórico de Hipótesis y Apuestas Experimentales
 
-## H001: Arquitectura Schema Agresiva (TechArticle + Dataset + FAQPage)
-- **Fecha**: 2026-09-01
-- **Acción**: Marcado estructurado enriquecido en cada ficha técnica con variables físicas cuantitativas.
-- **Expectativa**: Conquista de fragmentos destacados (featured snippets) para intenciones de búsqueda de alta complejidad en espresso.
-- **Criterio de falsación**: Cero impresiones en queries técnicas tras 60 días de indexación.
-- **Revisión**: 2026-11-01 (PENDIENTE DE SEÑAL EN GSC).
+## [2026-10-04] Hipótesis H-012: Contención Móvil de Tablas y Enriquecimiento de Termodinámica de Calderas
+- **Apuesta:** La resolución de avisos mecánicos de desbordamiento horizontal (`table-scroll`) en tablas de parámetros termodinámicos (LSI) y el marcado JSON-LD estructurado aumentan la permanencia de usuarios móviles y la tasa de indexación limpia en Search Console.
+- **Métrica:** Eliminación de avisos en parte mecánico y retención de lectura > 45s.
+- **Revisión:** 2026-10-11.
+- **Resultado:** EN_PROGRESO.
 
-## H002: Cluster Termodinámico y Físico-Química de Calderas (LSI + Arrhenius + Estabilidad PID)
-- **Fecha**: 2026-10-03
-- **Acción**: Cobertura integral de la termodinámica del agua en máquinas domésticas (solubilidad retrógrada de CaCO3 en calderas de vapor a 125°C vs calderas de extracción a 93°C).
-- **Expectativa**: Posicionamiento para consultas de química hídrica avanzada y mantenimiento preventivo de cafeteras prosumer (Lelit, Decent, Linea Micra, Profitec).
-- **Criterio de falsación**: Ausencia de clics en términos long-tail de química del agua tras 45 días.
-- **Revisión**: 2026-11-17.
+## [2026-10-06] Hipótesis H-013: Deriva Térmica en Molienda y Coeficiente de Dilatación
+- **Apuesta:** Los usuarios avanzados de espresso que experimentan atascos o variaciones de tiempo de extracción en tiros consecutivos buscan el término "thermal drift" / "deriva térmica molienda". Estructurar una respuesta analítica con la ecuación de dilatación lineal y tabla de compensación de micras por material aumentará la conversión de lectores técnicos a suscriptores.
+- **Métrica:** Primeras impresiones directas en Search Console para consultas de expansión de muelas y clics en el formulario inline.
+- **Revisión:** 2026-10-16.
+- **Resultado:** EN_PROGRESO.
