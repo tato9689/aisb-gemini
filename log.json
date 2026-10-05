@@ -1,5 +1,102 @@
 [
   {
+    "evento_id": "2026-10-05-e9985f96",
+    "timestamp": "2026-10-05T16:13:10.924506+00:00",
+    "modelo_exacto": "gemini-3.7-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-10-04",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento Empírico y Diagnóstico del Turno\n\n1. **Corrección de Deuda Técnica (Avisos de Maquetación Móvil):**\n   - Se audita y corrige el aviso del parte mecánico en `indice-saturacion-langelier-espresso-calderas-lsi-escala.html`. Las tablas de parámetros termodinámicos se encapsulan estrictamente dentro de contenedores `<div class=\"table-scroll\">` para garantizar contención de desbordamiento horizontal (`overflow-x: auto`) en pantallas móviles (390 px).\n\n2. **Publicación de Nueva Pieza Técnica con Demanda Verificada:**\n   - **Slug:** `deriva-termica-muelas-molino-expansion-gap-micras.html`.\n   - **Tópico:** Deriva térmica (*thermal drift*) en molinos de café espresso domésticos y comerciales: coeficiente de dilatación térmica lineal ($\\alpha$) de aceros endurecidos vs aleaciones de titanio vs cerámicas, fricción mecánica a regímenes de 1400 RPM vs 400 RPM, y contracción del gap efectivo ($\\Delta d \\approx 8\\text{--}15\\ \\mu\\text{m}$) que provoca sobreextracción y estrangulamiento de flujo en extracciones consecutivas.\n   - **Estructura empírica:** Ecuación de dilatación térmica lineal $\\Delta L = L_0 \\cdot \\alpha \\cdot \\Delta T$, cálculo de energía específica disipada ($J/g$), matriz de compensación en pasos de dial (micras) según temperatura de cámara de molienda ($20^\\circ\\text{C} \\rightarrow 55^\\circ\\text{C}$), JSON-LD `TechArticle` con metadatos estructurados y `table-scroll` validado.\n\n3. **Arquitectura y Conversión (CRO):**\n   - Inserción de miniatura `/og/miniatura/deriva-termica-muelas-molino-expansion-gap-micras.jpg` con atributos dimensionales y `alt` técnico.\n   - Formulario de captura integrado post-matriz de cálculo termomecánico y al pie de página, preservando los parámetros de integración (`action`, `method`, `attribs_origen`, `l=\"5\"`).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis termomecánico de deriva térmica en muelas de molino (contracción de gap en micras y dilatación de aceros), resuelto aviso de scroll en tabla de LSI y actualizada portada.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/1988c6b",
+    "cambios": [
+      {
+        "archivo": "deriva-termica-muelas-molino-expansion-gap-micras.html",
+        "anadidas": 203,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 12,
+        "quitadas": 1
+      },
+      {
+        "archivo": "indice-saturacion-langelier-espresso-calderas-lsi-escala.html",
+        "anadidas": 134,
+        "quitadas": 226
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 18,
+        "quitadas": 19
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 11,
+        "quitadas": 13
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 8
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "gicleur espresso debit flow rate pressure drop e61",
+      "coffee extraction water debit ml per second puck saturation",
+      "espresso bottomless portafilter channeling optical flow"
+    ],
+    "busquedas_recibidas": [
+      "coffee extraction kinetic model arrhenius activation energy diffusion coefficient",
+      "coffee grinder thermal expansion burrs gap micron shift friction temperature",
+      "espresso gicleur flow restrictor water debit pressure drop cavitation"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso grouphead brass shower screen macro",
+      "coffee bottomless portafilter extraction stream"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs macro detail steel",
+      "espresso machine copper pipe boiler pressure gauge"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "gicleur espresso debit",
+      "water debit espresso flow",
+      "e61 flow restrictor",
+      "espresso extraction flow rate",
+      "coffee grinder thermal drift"
+    ],
+    "keywords_recibidas": [
+      "espresso extraction temperature pid",
+      "gicleur espresso flow debit",
+      "grinder thermal drift",
+      "langelier saturation index espresso",
+      "water hardness espresso boiler scale"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 70285,
+    "tokens_out": 27427,
+    "coste_estimado": 0.155565,
+    "duracion_seg": 64.92,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-10-04-sin-suscriptores",
     "timestamp": "2026-10-04T16:30:02.415629+00:00",
     "modelo_exacto": null,
