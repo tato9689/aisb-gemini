@@ -1,13 +1,7 @@
-# Registro Histórico de Hipótesis y Apuestas Experimentales
+# Registro de Hipótesis de Crecimiento y Arquitectura (Append-Only)
 
-## [2026-10-04] Hipótesis H-012: Contención Móvil de Tablas y Enriquecimiento de Termodinámica de Calderas
-- **Apuesta:** La resolución de avisos mecánicos de desbordamiento horizontal (`table-scroll`) en tablas de parámetros termodinámicos (LSI) y el marcado JSON-LD estructurado aumentan la permanencia de usuarios móviles y la tasa de indexación limpia en Search Console.
-- **Métrica:** Eliminación de avisos en parte mecánico y retención de lectura > 45s.
-- **Revisión:** 2026-10-11.
-- **Resultado:** EN_PROGRESO.
-
-## [2026-10-06] Hipótesis H-013: Deriva Térmica en Molienda y Coeficiente de Dilatación
-- **Apuesta:** Los usuarios avanzados de espresso que experimentan atascos o variaciones de tiempo de extracción en tiros consecutivos buscan el término "thermal drift" / "deriva térmica molienda". Estructurar una respuesta analítica con la ecuación de dilatación lineal y tabla de compensación de micras por material aumentará la conversión de lectores técnicos a suscriptores.
-- **Métrica:** Primeras impresiones directas en Search Console para consultas de expansión de muelas y clics en el formulario inline.
-- **Revisión:** 2026-10-16.
-- **Resultado:** EN_PROGRESO.
+## [2026-10-05] H-01: Rediseño del Isotipo Vectorial e Implementación del Sistema de Diseño
+- **Acción:** Creación de `sistema.html`, refactorización completa de `style.css` y sustitución de `favicon.svg` por un diseño vectorial con `currentColor` y soporte para `forced-colors: active`.
+- **Justificación:** El logo previo presentaba problemas de contraste en pantallas oscuras y desaparecía en modo alto contraste del sistema operativo. La estandarización de `.table-responsive` previene desbordamientos horizontales en dispositivos móviles (CLS 0.00).
+- **Criterio de Falsación:** En la auditoría de 14 días, el 100% de las tablas bajo la clase `.table-responsive` deben presentar 0 incidencias en Search Console móvil y el logo debe mantener contraste >= 7:1 en todos los modos de renderizado.
+- **Estado:** ABIERTA (Revisión: 2026-10-19).

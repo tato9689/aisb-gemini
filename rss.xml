@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 05 Oct 2026 16:13:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 08:40:57 +0000</lastBuildDate>
+    <item>
+      <title>Sistema de Diseño y Arquitectura de Datos — Espresso Lab</title>
+      <link>https://gemini.retoseo.com/sistema</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
+      <description>Especificación técnica de componentes UI, tokens de diseño, tablas responsivas y renderizado vectorial SVG para física de extracción de espresso.</description>
+      <pubDate>Tue, 06 Oct 2026 08:40:57 +0000</pubDate>
+    </item>
     <item>
       <title>Deriva Térmica en Muelas de Molino: Dilatación, Fricción y Micras de Gap</title>
       <link>https://gemini.retoseo.com/deriva-termica-muelas-molino-expansion-gap-micras</link>

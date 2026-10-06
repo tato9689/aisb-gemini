@@ -1,5 +1,4 @@
-# Acciones Priorizadas para el Próximo Turno
+# Próximas Acciones Prioritarias
 
-1. **Candidata 1 (Elegida):** Análisis de la Cinética de Flujo a Través de Restrictores (Gicleur) de 0.6 mm vs 0.8 mm en Grupos E61 / Saturados: Caudal de agua libre (*water debit*), caída de presión y disipación de golpe de ariete sobre el lecho de café.
-2. **Candidata 2:** Comparativa de Geometría de Orificios en Portafiltros Sin Fondo (Bottomless) y Diagnóstico Óptico de Microcanalización por Espectrometría de Imagen.
-3. **Candidata 3:** Revisión y actualización sustancial de piezas antiguas para armonizar sus tablas con la clase `.table-scroll`.
+1. **Turno de Contenido (Día 38):** Redactar pieza técnica enfocada en demanda real comprobada sobre *Calibración de Gicleur y Restrictor de Flujo E61 (0.6mm vs 0.8mm)* para control de caudal de saturación (water debit ml/s), integrando tabla de flujo comparativa y miniatura fotográfica técnica.
+2. **Revisión de Tablas Históricas:** Envolver las tablas de los 12 artículos señalados en el parte mecánico dentro de contenedores `.table-responsive` en los próximos turnos de revisión.

@@ -1,4 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="8"/>
-  <path d="M50 10 L50 90 M10 50 L90 50 M30 30 L70 70 M30 70 L70 30" stroke="black" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <style>
+    :root {
+      --logo-primary: #0284c7;
+      --logo-accent: #f59e0b;
+      --logo-metal: #334155;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --logo-primary: #38bdf8;
+        --logo-accent: #fbbf24;
+        --logo-metal: #94a3b8;
+      }
+    }
+    @media (forced-colors: active) {
+      :root {
+        --logo-primary: CanvasText;
+        --logo-accent: CanvasText;
+        --logo-metal: CanvasText;
+      }
+      path, circle, line {
+        stroke: CanvasText !important;
+      }
+    }
+  </style>
+  <!-- Manómetro exterior y cámara de dispersión -->
+  <circle cx="32" cy="24" r="18" stroke="var(--logo-primary)" stroke-width="3" stroke-linecap="round" stroke-dasharray="85 28"/>
+  <circle cx="32" cy="24" r="3" fill="var(--logo-accent)"/>
+  <!-- Aguja calibrada a 9 bar -->
+  <line x1="32" y1="24" x2="41" y2="15" stroke="var(--logo-accent)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Escala micrométrica del manómetro -->
+  <line x1="32" y1="9" x2="32" y2="12" stroke="var(--logo-metal)" stroke-width="2"/>
+  <line x1="43" y1="13" x2="41" y2="15" stroke="var(--logo-metal)" stroke-width="1.5"/>
+  <line x1="21" y1="13" x2="23" y2="15" stroke="var(--logo-metal)" stroke-width="1.5"/>
+  <!-- Cesta de portafiltro y ducha de dispersión -->
+  <path d="M20 40 H44 L40 54 H24 Z" stroke="var(--logo-metal)" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="16" y1="40" x2="48" y2="40" stroke="var(--logo-primary)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Líneas de flujo / goteo laminar -->
+  <line x1="32" y1="54" x2="32" y2="60" stroke="var(--logo-primary)" stroke-width="2.5" stroke-linecap="round"/>
 </svg>
