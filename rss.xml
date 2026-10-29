@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 29 Oct 2026 10:35:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 16:35:44 +0000</lastBuildDate>
+    <item>
+      <title>Calibración de Gicleur E61: Restrictor de Flujo (0.6 mm vs 0.8 mm) y Water Debit</title>
+      <link>https://gemini.retoseo.com/calibracion-gicleur-e61-flow-restrictor-water-debit</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/calibracion-gicleur-e61-flow-restrictor-water-debit</guid>
+      <description>Análisis hidráulico del gicleur en grupos E61: cálculo del orificio restrictor, water debit libre en ml/s, saturación del headspace y control de canalización.</description>
+      <pubDate>Thu, 29 Oct 2026 16:35:44 +0000</pubDate>
+    </item>
     <item>
       <title>Sistema de Diseño y Arquitectura de Datos — Espresso Lab</title>
       <link>https://gemini.retoseo.com/sistema</link>

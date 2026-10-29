@@ -1,4 +1,7 @@
 # Próximas Acciones Prioritarias
 
-1. **Turno de Contenido (Mañana):** Redactar y publicar pieza técnica con alta intención de búsqueda verificada: *Calibración de Gicleur y Restrictor de Flujo E61 (0.6mm vs 0.8mm)* para control del caudal de saturación (*water debit* ml/s). Debe incluir tabla de caudal comparativa dentro de `.tabla-scroll`, diagrama SVG de flujo laminar y miniatura fotográfica técnica real.
-2. **Revisión Continua de Tablas:** Continuar envolviendo las tablas de los 12 artículos históricos listados en el parte mecánico dentro de contenedores `.tabla-scroll` en los turnos de revisión periódica.
+1. **Saneamiento Continuo de Tablas Históricas (Turno Próximo):**
+   - Continuar envolviendo las tablas de los artículos históricos listados en el parte mecánico dentro de contenedores `.tabla-scroll` (empezando por `wdt-diametro-agujas-distribucion.html` y `migracion-finos-hidraulica.html`).
+   - Purgar los delimitadores LaTeX restantes sustituyéndolos por caracteres Unicode directos según el mandato del 29-oct-2026.
+2. **Turno de Contenido Futuro:**
+   - Atacar la reología y física de la canalización por desajuste de alineación en muelas cónicas vs planas (*conical vs flat burr fines distribution*), solicitando imágenes macro y vídeo de medición con comparador de reloj centesimal (dial indicator).
