@@ -6,6 +6,8 @@
   <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
   <meta name="description" content="Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.">
   <link rel="canonical" href="https://gemini.retoseo.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="application/ld+json">
@@ -21,224 +23,147 @@
 <body>
   <div class="container">
     <header class="site-header">
-      <h1 class="site-title">
-        <img src="/favicon.svg" alt="Logotipo de Espresso Lab" width="36" height="36">
-        Espresso Lab
-      </h1>
-      <p class="site-desc">Dinámica de fluidos en medios porosos, granulometría y extracción cuantitativa de espresso doméstico.</p>
+      <div class="header-topbar">
+        <a href="/" class="brand-wrapper">
+          <svg class="brand-symbol" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <line x1="2" y1="6" x2="30" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+            <path d="M5 6L7.5 22C7.7 23.1 8.6 24 9.8 24H22.2C23.4 24 24.3 23.1 24.5 22L27 6" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/>
+            <line x1="11" y1="10" x2="11" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="16" y1="9" x2="16" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="21" y1="10" x2="21" y2="18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="16" cy="28" r="1.5" fill="currentColor"/>
+          </svg>
+          <span class="brand-title">Espresso Lab</span>
+        </a>
+        <div class="header-meta">
+          <span>CANAL DE METROLOGÍA DE EXTRACCIÓN</span>
+        </div>
+      </div>
+      <p class="site-desc">Dinámica de fluidos en lechos porosos de café, termodinámica de calderas y metrología granulométrica cuantitativa.</p>
+      <nav class="site-nav">
+        <a href="/sistema">Sistema de Diseño</a>
+        <a href="/log">Diario de Guerra</a>
+      </nav>
     </header>
 
     <main>
+      <!-- Lead Story Showcase (Editorial de Gran Formato) -->
       <section>
-        <h2 class="section-heading">
-          <span>Modelos Empíricos y Fichas Técnicas</span>
-          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">DATASET ACTIVO</span>
-        </h2>
-        <div class="card-grid">
-          <article class="tech-card">
+        <article class="showcase-lead">
+          <div class="showcase-lead-media">
             <img src="/og/miniatura/deriva-termica-muelas-molino-expansion-gap-micras.jpg" alt="Deriva térmica en muelas de molino de espresso y variación de micras" width="640" height="336">
-            <div class="tech-card-body">
-              <h3><a href="/deriva-termica-muelas-molino-expansion-gap-micras.html">Deriva Térmica en Muelas: Expansión Metálica, Fricción y Variación del Gap</a></h3>
-              <p>Termomecánica de molienda continua: coeficiente de dilatación lineal ($\alpha$), contracción del gap ($-10\ \mu\text{m}$) y aumento de finos $D_{10}$.</p>
-              <div class="tech-card-meta">
-                <span>TERMODINÁMICA: DILATACIÓN</span>
-                <span>GAP: -8 a -15 µm</span>
-              </div>
+          </div>
+          <div class="showcase-lead-content">
+            <div class="kicker">TERMODINÁMICA // FÍSICA DE MOLIENDA</div>
+            <h2><a href="/deriva-termica-muelas-molino-expansion-gap-micras.html">Deriva Térmica en Muelas: Expansión Metálica, Fricción y Variación del Gap</a></h2>
+            <p>Análisis de termomecánica en régimen continuo: coeficiente de dilatación lineal ($\alpha$), contracción del espacio interfacial de corte ($-10\ \mu\text{m}$) y aumento forzado de la fracción de finos $D_{10}$.</p>
+            <div class="editorial-card-meta">
+              <span>GAP: -8 a -15 µm</span>
+              <span>DILATACIÓN LINEAL</span>
             </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg" alt="Índice de Saturación de Langelier (LSI) en calderas de espresso, escala y corrosión" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
+          </div>
+        </article>
+      </section>
+
+      <!-- Rejilla Editorial Secundaria -->
+      <section>
+        <div class="editorial-grid">
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/indice-saturacion-langelier-espresso-calderas-lsi-escala.jpg" alt="Índice de Saturación de Langelier (LSI) en calderas de espresso, escala y corrosión" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">QUÍMICA DEL AGUA</div>
               <h3><a href="/indice-saturacion-langelier-espresso-calderas-lsi-escala.html">Índice de Saturación de Langelier (LSI): Termodinámica a 93°C y 125°C</a></h3>
               <p>Solubilidad retrógrada de CaCO₃, cálculo de pHs, cinética de incrustación vs picadura metálica y formulación de agua para calderas duales.</p>
-              <div class="tech-card-meta">
-                <span>QUÍMICA: LSI</span>
-                <span>TERMODINÁMICA: 93°C vs 125°C</span>
+              <div class="editorial-card-meta">
+                <span>LSI</span>
+                <span>93°C vs 125°C</span>
               </div>
             </div>
           </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/headspace-espresso-expansion-puck-cesta-ducha.jpg" alt="Headspace en espresso, expansión volumétrica del puck y tolerancia de ducha" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
+
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/headspace-espresso-expansion-puck-cesta-ducha.jpg" alt="Headspace en espresso, expansión volumétrica del puck y tolerancia de ducha" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">MECÁNICA DE FLUIDOS</div>
               <h3><a href="/headspace-espresso-expansion-puck-cesta-ducha.html">Headspace en Espresso: Expansión del Puck (+15%) y Tolerancia de Ducha</a></h3>
-              <p>Física de expansión poroelástica, calibración geométrica (1.5 – 2.5 mm), densidad por tueste y prevención de fractura mecánica.</p>
-              <div class="tech-card-meta">
-                <span>FLUIDOS: EXPANSION</span>
-                <span>TOLERANCIA: 1.5 - 2.5 mm</span>
+              <p>Física de expansión poroelástica, calibración geométrica (1.5 – 2.5 mm), densidad por tueste y prevención de fractura mecánica del lecho.</p>
+              <div class="editorial-card-meta">
+                <span>HEADSPACE</span>
+                <span>1.5 - 2.5 mm</span>
               </div>
             </div>
           </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/termodinamica-extraccion-temperatura-viscosidad-arrhenius.jpg" alt="Termodinámica del espresso, viscosidad del agua y cinética de Arrhenius" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
+
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/termodinamica-extraccion-temperatura-viscosidad-arrhenius.jpg" alt="Termodinámica del espresso, viscosidad del agua y cinética de Arrhenius" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">TERMODINÁMICA</div>
               <h3><a href="/termodinamica-extraccion-temperatura-viscosidad-arrhenius.html">Termodinámica del Espresso: Viscosidad del Agua y Arrhenius (88°C - 96°C)</a></h3>
-              <p>Impacto hidrodinámico y cinético: fluidificación del agua ($0.323 \rightarrow 0.295\text{ cP}$), energía de activación ($16\text{ kJ/mol}$) y solubilización de fenoles.</p>
-              <div class="tech-card-meta">
-                <span>TERMODINÁMICA: ARRHENIUS</span>
+              <p>Impacto hidrodinámico y cinético: fluidificación del agua ($0.323 \rightarrow 0.295\text{ cP}$), energía de activación ($16\text{ kJ/mol}$) y solubilización fenólica.</p>
+              <div class="editorial-card-meta">
+                <span>ARRHENIUS</span>
                 <span>VISCOSIDAD: -8.9%</span>
               </div>
             </div>
           </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg" alt="Ley de Darcy en espresso, permeabilidad hidráulica k y fracción de finos D10" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html">Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad (k) y Fracción D10</a></h3>
-              <p>Mecánica de fluidos en medios porosos confinados, modelo Kozeny-Carman, viscosidad térmica del agua (0.304 cP) y dominancia de finos sub-100 µm.</p>
-              <div class="tech-card-meta">
-                <span>FLUIDOS: DARCY</span>
-                <span>PERMEABILIDAD: D10 DOMINANTE</span>
+
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.jpg" alt="Ley de Darcy en espresso, permeabilidad hidráulica k y fracción de finos D10" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">LECHO POROSO</div>
+              <h3><a href="/ley-darcy-resistencia-hidraulica-puck-espresso-d10-permeabilidad.html">Ley de Darcy en Espresso: Resistencia Hidráulica, Permeabilidad (k) y Finos D10</a></h3>
+              <p>Mecánica de fluidos en medios confinados, modelo Kozeny-Carman, viscosidad térmica del agua (0.304 cP) y dominancia de finos sub-100 µm.</p>
+              <div class="editorial-card-meta">
+                <span>DARCY</span>
+                <span>$D_{10}$ DOMINANTE</span>
               </div>
             </div>
           </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.jpg" alt="Estabilidad térmica en espresso: calderas de latón, termobloques y grupos saturados" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
+
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.jpg" alt="Estabilidad térmica en espresso: calderas de latón, termobloques y grupos saturados" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">METROLOGÍA TÉRMICA</div>
               <h3><a href="/estabilidad-termica-espresso-caldera-termobloque-grupo-saturado.html">Estabilidad Térmica: Caldera de Latón vs Termobloque vs Grupo Saturado</a></h3>
-              <p>Termodinámica de fluidos, gradiente intra-shot ($\Delta T < 0.3\text{ }^\circ\text{C}$), inercia térmica de metales y algoritmo PID para extracción cuantitativa.</p>
-              <div class="tech-card-meta">
-                <span>TERMODINÁMICA: PID</span>
-                <span>ESTABILIDAD: $\Delta T \pm 0.25\text{ }^\circ\text{C}$</span>
+              <p>Termodinámica de fluidos, gradiente intra-shot ($\Delta T < 0.3\text{ }^\circ\text{C}$), inercia térmica metálica y algoritmo PID de control.</p>
+              <div class="editorial-card-meta">
+                <span>PID</span>
+                <span>$\Delta T \pm 0.25\text{ }^\circ\text{C}$</span>
               </div>
             </div>
           </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.jpg" alt="Mecánica del tamping y prensado en espresso: límite de saturación y planaridad" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html">Fuerza de Prensado: Límite de Saturación Mecánica (15 kg), Carga Hidráulica y Planaridad</a></h3>
-              <p>Física de compresión granular confinada, fuerza de 245 kgf a 9 bar y tolerancia angular de nivelación (&lt; 0.5°) para mitigar canalizaciones.</p>
-              <div class="tech-card-meta">
-                <span>MECÁNICA: TAMPING</span>
-                <span>SATURACIÓN: 10-15 kgf</span>
-              </div>
+
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.jpg" alt="Mecánica del tamping y prensado en espresso: límite de saturación y planaridad" width="640" height="336" loading="lazy">
             </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/alineacion-muelas-planas-espresso-marker-test-shims.jpg" alt="Alineación mecánica de muelas planas en espresso y marker test" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/alineacion-muelas-planas-espresso-marker-test-shims.html">Alineación de Muelas Planas: Marker Test, Calzos en Micras y Paralelismo</a></h3>
-              <p>Mecánica de alineación axial, eliminación de runout (&lt; 10 µm), calzado de aluminio y reducción de finos asimétricos para +3.0% EY.</p>
-              <div class="tech-card-meta">
-                <span>GRANULOMETRÍA: SHIMS</span>
-                <span>TOLERANCIA: &lt; 10 µm</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/rdt-ross-droplet-technique-estatica-retencion-espresso.jpg" alt="Física de la técnica RDT en espresso y disipación de carga triboeléctrica" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/rdt-ross-droplet-technique-estatica-retencion-espresso.html">Física de la Técnica RDT: Carga Triboeléctrica, Humedad y Reducción de Retención en Espresso</a></h3>
-              <p>Mecánica de fricción electrostática, disipación por película iónica de agua (10-20 µl/g) y abatimiento de retención de >10% a <2.5%.</p>
-              <div class="tech-card-meta">
-                <span>GRANULOMETRÍA: RDT</span>
-                <span>DOSIS: 10 - 20 µl/g</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.jpg" alt="Válvula OPV y bomba vibratoria en espresso: curva P-Q y calibración a 9 y 6 bar" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/valvula-opv-calibracion-presion-bomba-vibratoria-espresso.html">Válvula OPV y Bomba Vibratoria: Calibración a 9 y 6 Bar, Curva P-Q y Física de Extracción</a></h3>
-              <p>Mecánica de bombas Ulka, contrapresión de fábrica (12-15 bar), regulación por muelle y prevención de colapso del lecho granular.</p>
-              <div class="tech-card-meta">
-                <span>HIDRÁULICA: OPV</span>
-                <span>CURVA P-Q: 9 vs 6 BAR</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.jpg" alt="Flow profiling vs pressure profiling en espresso y dinámica de flujo" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/flow-profiling-vs-pressure-profiling-espresso-dinamica-flujo.html">Flow Profiling vs Pressure Profiling: Ley de Darcy, Degradación del Puck y Caudal</a></h3>
-              <p>Modelización de medios porosos solubles, declive natural de presión a caudal constante (2 ml/s) y prevención de erosión tardía.</p>
-              <div class="tech-card-meta">
-                <span>HIDRODINÁMICA: DARCY</span>
-                <span>CAUDAL: 1.8 - 2.2 ml/s</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/muelas-planas-vs-conicas-espresso-psd-finos-ey.jpg" alt="Muelas planas vs cónicas en espresso y distribución de partículas PSD" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/muelas-planas-vs-conicas-espresso-psd-finos-ey.html">Muelas Planas vs Cónicas: Granulometría (PSD), Finos y Rendimiento (EY)</a></h3>
-              <p>Mecánica de fractura por corte vs compresión, fracción de finos sub-100 µm (8% vs 20%) y perfiles unimodales vs bimodales.</p>
-              <div class="tech-card-meta">
-                <span>GRANULOMETRÍA: PSD</span>
-                <span>FINOS: 8% vs 20%</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/preinfusion-espresso-dinamica-capilar-saturacion-presion.jpg" alt="Preinfusión en espresso, dinámica capilar y saturación de pastilla" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/preinfusion-espresso-dinamica-capilar-saturacion-presion.html">Preinfusión en Espresso: Dinámica Capilar, Presión (1-4 Bar) y Saturación</a></h3>
-              <p>Mecánica de saturación capilar, hinchamiento de la matriz celular (+15%), prevención de fractura a 9 bar y estabilidad de extracción.</p>
-              <div class="tech-card-meta">
-                <span>FLUIDOS: CAPILARIDAD</span>
-                <span>RANGO: 1.5 - 3.5 BAR</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/refractometro-cafe-brix-tds-extraccion-ey.jpg" alt="Refractometría en espresso, conversión Brix a TDS y cálculo de EY" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/refractometro-cafe-brix-tds-extraccion-ey.html">Metrología de la Extracción: Conversión Brix a %TDS, Filtrado Óptico y EY</a></h3>
-              <p>Física óptica del índice de refracción, corrección de escala sacarosa (%TDS = °Bx × 0.85) y cálculo cuantitativo de rendimiento de extracción.</p>
-              <div class="tech-card-meta">
-                <span>METROLOGÍA: TDS</span>
-                <span>FACTOR: 0.85 BRIX</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.jpg" alt="Química del agua para espresso, dureza y alcalinidad" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/quimica-agua-espresso-dureza-alcalinidad-magnesio-calcio.html">Química del Agua para Espresso: Dureza (GH), Alcalinidad (KH) y Extracción</a></h3>
-              <p>Termodinámica de solvatación catiónica (Mg²⁺ vs Ca²⁺), tamponamiento de acidez por bicarbonatos y formulación estequiométrica.</p>
-              <div class="tech-card-meta">
-                <span>QUÍMICA: GH/KH</span>
-                <span>CALIBRACIÓN: 70/40 ppm</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/puck-screen-espresso-hidrodinamica-dispersion-150-micras.jpg" alt="Física del puck screen y dispersión hidrodinámica a 150 micras" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/puck-screen-espresso-hidrodinamica-dispersion-150-micras.html">Física del Puck Screen: Malla Sinterizada de 150 µm, Headspace e Hidrodinámica</a></h3>
-              <p>Mecánica de dispersión isobárica superficial, reducción de erosión por chorro de ducha y varianza de extracción σ EY &lt; 0.20%.</p>
-              <div class="tech-card-meta">
-                <span>MATRIZ: 150 µm</span>
-                <span>DESVIACIÓN: σ 0.18%</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/turbo-shot-espresso-fisica-extraccion-6-bar.jpg" alt="Física del Turbo Shot y extracción de espresso a 6 bar" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/turbo-shot-espresso-fisica-extraccion-6-bar.html">Física del Turbo Shot: Extracción a 6 Bar, Resistencia Hidráulica y Rendimiento de Extracción (EY)</a></h3>
-              <p>Modelo de percolación de Cameron et al., régimen de 6 bar en 15s y erradicación de microcanalización para EY &gt; 22%.</p>
-              <div class="tech-card-meta">
-                <span>HIDRODINÁMICA: 6 BAR</span>
-                <span>TIEMPO: 12-16 s</span>
-              </div>
-            </div>
-          </article>
-          <article class="tech-card">
-            <img src="/og/miniatura/desgasificacion-cafe-co2-tiempo-reposo-espresso.jpg" alt="Desgasificación de CO2 y tiempos de reposo en espresso" width="640" height="336" loading="lazy">
-            <div class="tech-card-body">
-              <h3><a href="/desgasificacion-cafe-co2-tiempo-reposo-espresso.html">Física de la Desgasificación del Café: Cinética de CO₂, Resistencia Hidráulica y Reposo en Espresso</a></h3>
-              <p>Cinética difusiva de Fick en matriz porosa, impacto del gas ocluido en canalizaciones a 9 bar y tablas de reposo por tueste.</p>
-              <div class="tech-card-meta">
-                <span>CINÉTICA: CO₂</span>
-                <span>REPOSO: 14-28 DÍAS</span>
+            <div class="editorial-card-body">
+              <div class="kicker">MECÁNICA GRANULAR</div>
+              <h3><a href="/fuerza-prensado-tamping-espresso-saturacion-mecanica-kg.html">Fuerza de Prensado: Límite de Saturación Mecánica (15 kg) y Planaridad</a></h3>
+              <p>Física de compresión granular confinada, carga hidráulica de 245 kgf a 9 bar y tolerancia angular (&lt; 0.5°) para mitigar canalizaciones.</p>
+              <div class="editorial-card-meta">
+                <span>TAMPING</span>
+                <span>SATURACIÓN: 15 kgf</span>
               </div>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- Sección de Suscripción al Dispatch Técnico -->
       <section class="newsletter-section">
-        <h3>Suscripción a Informes Técnicos</h3>
-        <p>Recibe análisis empíricos periódicos sobre granulometría, control de flujo y física de la extracción.</p>
+        <h3>Dispatch Metrológico y Modelos de Extracción</h3>
+        <p>Recibe los análisis numéricos de laboratorio sobre dinámica de fluidos, perfiles de presión y calibración de molienda directamente en tu bandeja.</p>
         <form class="newsletter-form" action="https://panel.retoseo.com/subscription/form" method="post">
           <div class="form-row">
             <input class="form-input" type="email" name="email" placeholder="ingenieria@dominio.com" required>
