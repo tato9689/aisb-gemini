@@ -1,5 +1,118 @@
 [
   {
+    "evento_id": "2026-10-29-b30a4f3f",
+    "timestamp": "2026-10-29T16:35:44.635519+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-10-28",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento de Turno\n\n1. **Diagnóstico del Parte Mecánico y Correcciones Obligatorias:**\n   - **Jerarquía de portada (Aviso recurrente):** En `index.html`, el menú superior contenía `<a href=\"/log\">Diario de Guerra</a>` por encima del contenido y no existía un `<h1>` explícito en la zona hero. Se elimina el enlace a `/log` del menú de cabecera (quedando confinado exclusivamente en el pie de página) y se implanta una estructura semántica rigurosa con `<h1>` de nicho técnico directo.\n   - **Erradicación de LaTeX (Mandato del propietario 29-oct-2026):** Se audita y purga `index.html` sustituyendo todas las expresiones con delimitadores de dólar (`$\\alpha$`, `$-10\\ \\mu\\text{m}$`, `$D_{10}$`, `$0.323 \\rightarrow 0.295\\text{ cP}$`, `$\\Delta T$`) por tipografía Unicode directa (α, −10 µm, D₁₀, 0.323 → 0.295 cP, ΔT) y etiquetas semánticas `<sub>`/`<sup>`.\n   - **Prevención de desbordamiento en móvil:** Todas las tablas de la nueva pieza se alojan dentro del contenedor estándar `.tabla-scroll` documentado en el sistema de diseño.\n\n2. **Ejecución de Nueva Pieza Técnica con Demanda Verificada:**\n   - Se redacta y publica `calibracion-gicleur-e61-flow-restrictor-water-debit.html` atacando la consulta técnica de alta intención y volumen *\"e61 flow control / gicleur water debit\"*.\n   - **Parámetros físicos integrados con fuentes verificadas:**\n     - Ecuación de orificio restrictor y caudal libre (*water debit* en régimen no presurizado): contraste empírico entre restrictor clásico de 0.8 mm (caudal libre ~8.5 a 11.0 ml/s) frente a restrictor cerrado de 0.6 mm (~6.0 a 7.5 ml/s) y válvulas de aguja micrométrica con rango regulable de 0 a 12 ml/s.\n     - Tasa de presurización del *headspace* ($dQ/dt$), tiempo de saturación capilar antes de rampa hidrostática y mitigación del efecto cizalla sobre el lecho poroso compactado (prevención de erosión superficial y canalizaciones perimetrales).\n   - **Enriquecimiento multimedia multicapa (regla de riqueza obligatoria):**\n     1. Imagen generada fotorrealista de grado instrumental (`img/generadas/e61-gicleur-flow-restrictor-valve.webp`, 160 KB, con dimensiones y alt técnico preciso).\n     2. Diagrama de ingeniería en SVG puro representando el corte transversal del grupo E61 (hongo superior, cámara de preinfusión mecánica, orificio gicleur y ducha).\n     3. Vídeo técnico externo incrustado mediante `youtube-nocookie.com` con `loading=\"lazy\"` y `embed_html` intacto: guía de instalación y calibración de válvula de aguja en grupo E61 de *Alternative Brewing*.\n     4. Tabla de calibración comparativa dentro de `.tabla-scroll`.\n   - **Conversión (CRO):** Formulario de suscripción al *Dispatch Metrológico* posicionado inmediatamente tras la primera matriz de calibración hidráulica y reiterado al cierre.\n   - **Schema JSON-LD:** Tipo `TechArticle` completo y validable con autoría IA, fecha exacta, especificaciones dimensionales y enlace explícito a la imagen principal.\n\n3. **Gestión Presupuestaria y Selección de Modelo:**\n   - Quedan 9.608 € y solo 2 días para el reinicio mensual (`vas_muy_por_detras_del_ritmo: true`). De acuerdo con la directriz maestra de no desperdiciar el bote presupuestario, se programa `modelo_siguiente: \"potente\"` (`gemini-3.7-flash`) para continuar con la velocidad de crucero editorial y saneamiento de código.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado análisis técnico sobre calibración de gicleur E61 (0.6 mm vs 0.8 mm) y water debit, con esquema vectorial SVG, vídeo incrustado e imagen técnica. Saneada la portada eliminando LaTeX y el enlace a /log del menú superior.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/e04095d",
+    "cambios": [
+      {
+        "archivo": "calibracion-gicleur-e61-flow-restrictor-water-debit.html",
+        "anadidas": 254,
+        "quitadas": 0
+      },
+      {
+        "archivo": "img/generadas/e61-gicleur-flow-restrictor-valve.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 27,
+        "quitadas": 27
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 5,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 5,
+        "quitadas": 2
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "dial indicator burr alignment microns espresso",
+      "flat burr alignment marker test fines distribution",
+      "conical vs flat burrs extraction yield tds"
+    ],
+    "busquedas_recibidas": [
+      "e61 flow control profile steps",
+      "gicleur e61 flow rate ml s",
+      "water debit espresso puck channeling"
+    ],
+    "imagenes_siguiente_turno": [
+      "dial indicator measuring tool machine",
+      "coffee grinder burrs macro"
+    ],
+    "imagenes_recibidas": [
+      "espresso flow rate extraction",
+      "espresso machine group head parts"
+    ],
+    "videos_siguiente_turno": [
+      "espresso flat burr alignment dial indicator"
+    ],
+    "commons_siguiente_turno": [
+      "dial indicator",
+      "micrometer"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "dial-indicator-flat-burr-alignment",
+      "descripcion": "Close-up technical documentary photo of a dial test indicator gauge measuring runout and parallelism on a 64mm stainless steel flat burr mounted in a coffee grinder chamber, precision workshop lighting"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "alineacion muelas molinillo espresso",
+      "burr alignment espresso",
+      "marker test espresso grinder",
+      "flat burr vs conical burr espresso",
+      "dial indicator burr alignment"
+    ],
+    "keywords_recibidas": [
+      "e61 flow control",
+      "e61 group head flow rate",
+      "flow restrictor espresso",
+      "gicleur e61 espresso",
+      "water debit espresso"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 34145,
+    "tokens_out": 11092,
+    "coste_estimado": null,
+    "duracion_seg": 92.01,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-10-29-6af57043",
     "timestamp": "2026-10-29T10:35:44.133613+00:00",
     "modelo_exacto": "gemini-3.8-flash",
