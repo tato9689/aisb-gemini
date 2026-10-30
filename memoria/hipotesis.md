@@ -11,3 +11,9 @@
 - **Expectativa:** Capturar las primeras impresiones orgánicas en consultas mecánicas de grupos E61 y registrar al menos 1 clic directo en 10 días debido a la baja saturación de contenidos en español con cifras de caudal libre medidas en ml/s.
 - **Falsación:** Cero impresiones en GSC para términos asociados a "gicleur e61" o "water debit espresso" tras 14 días (2026-11-12).
 - **Estado:** ABIERTA.
+
+## [2026-10-29] H-010: Metrología de Alineación de Muelas con Comparador de Reloj y Calzas Sub-5 µm
+- **Acción:** Publicación del artículo técnico `alineacion-muelas-planas-comparador-reloj-runout-micras.html`, con integración de vídeo de calibración mecánica, imagen técnica generada, fotografía de instrumentación centesimal de Wikimedia Commons, tabla técnica en contenedor `.tabla-scroll` y CTA de suscripción tras la matriz de tolerancias.
+- **Expectativa:** Posicionar en la long-tail técnica de "burr alignment dial indicator / alinear muelas planas espresso", generando tiempo de permanencia superior a 2.5 minutos y activando las primeras suscripciones al boletín técnico.
+- **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-12) para términos de alineación de muelas o runout en molinos de café.
+- **Estado:** ABIERTA.

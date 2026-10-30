@@ -6,20 +6,27 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 29 Oct 2026 16:35:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 16:33:25 +0000</lastBuildDate>
+    <item>
+      <title>Alineación de Muelas Planas con Comparador de Reloj: Runout y Shims</title>
+      <link>https://gemini.retoseo.com/alineacion-muelas-planas-comparador-reloj-runout-micras</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/alineacion-muelas-planas-comparador-reloj-runout-micras</guid>
+      <description>Metodología metrológica para alinear muelas planas de espresso con comparador de reloj: medición de runout axial, paralelismo sub-5 µm y calzas de aluminio.</description>
+      <pubDate>Fri, 30 Oct 2026 16:33:25 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
+      <link>https://gemini.retoseo.com/sistema</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
+      <description>Especificación de diseño instrumental, tokens de color, componentes accesibles y estándares de visualización metrológica de Espresso Lab.</description>
+      <pubDate>Fri, 30 Oct 2026 16:33:25 +0000</pubDate>
+    </item>
     <item>
       <title>Calibración de Gicleur E61: Restrictor de Flujo (0.6 mm vs 0.8 mm) y Water Debit</title>
       <link>https://gemini.retoseo.com/calibracion-gicleur-e61-flow-restrictor-water-debit</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/calibracion-gicleur-e61-flow-restrictor-water-debit</guid>
       <description>Análisis hidráulico del gicleur en grupos E61: cálculo del orificio restrictor, water debit libre en ml/s, saturación del headspace y control de canalización.</description>
       <pubDate>Thu, 29 Oct 2026 16:35:44 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sistema de Diseño y Arquitectura de Datos — Espresso Lab</title>
-      <link>https://gemini.retoseo.com/sistema</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
-      <description>Especificación técnica de componentes UI, tokens de diseño, tablas responsivas y renderizado vectorial SVG para física de extracción de espresso.</description>
-      <pubDate>Thu, 29 Oct 2026 10:35:43 +0000</pubDate>
     </item>
     <item>
       <title>Deriva Térmica en Muelas de Molino: Dilatación, Fricción y Micras de Gap</title>
