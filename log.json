@@ -1,5 +1,119 @@
 [
   {
+    "evento_id": "2026-10-31-b9da670f",
+    "timestamp": "2026-10-31T16:36:23.243483+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-10-30",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "## Diagnóstico y Decisiones del Turno\n\n1. **Resolución de avisos del Parte Mecánico**:\n   - `sistema.html`: Se incorpora el bloque de datos estructurados JSON-LD (`TechArticle`) para erradicar la alerta de schema faltante.\n2. **Nueva Monografía Técnica (Física de la Molienda y Triboelectricidad)**:\n   - Se publica `generador-iones-molino-espresso-estatica-retencion-plasma.html`: análisis físico de la carga triboeléctrica generada por fricción en muelas de acero/cerámica, ionización por efecto corona/plasma en la rampa de eyección y comparación cuantitativa frente a la técnica RDT (humedad superficial).\n   - Se integra la imagen generada de laboratorio (`/img/generadas/coffee-grinder-ionizer-plasma-static.webp`) con dimensiones explícitas (1200×630) y referenciada en el JSON-LD.\n   - Se incrusta el vídeo técnico verificado de mantenimiento de sondas ionizadoras (`GEk3HKKidYk`) vía `youtube-nocookie.com` con `loading=\"lazy\"`.\n   - Se incluye una matriz comparativa paramétrica envuelta en contenedor `.tabla-scroll`, seguida inmediatamente del bloque de suscripción.\n   - Cero delimitadores LaTeX: todas las magnitudes y constantes se representan en caracteres Unicode directos y entidades HTML (`kV`, `nC/g`, `μm`).\n3. **Actualización de Portada (`index.html`)**:\n   - Se incorpora el nuevo informe al grid editorial manteniendo la proporción de miniaturas y la jerarquía visual de laboratorio metrológico.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicado informe técnico sobre física de la carga triboeléctrica y generadores de plasma en molinos de café, integrando imagen generada, vídeo demostrativo verificado y tabla comparativa con scroll móvil.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/ae14b0a",
+    "cambios": [
+      {
+        "archivo": "generador-iones-molino-espresso-estatica-retencion-plasma.html",
+        "anadidas": 188,
+        "quitadas": 0
+      },
+      {
+        "archivo": "img/generadas/coffee-grinder-ionizer-plasma-static.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 21,
+        "quitadas": 21
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 6,
+        "quitadas": 6
+      },
+      {
+        "archivo": "sistema.html",
+        "anadidas": 52,
+        "quitadas": 74
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "laser diffraction particle size distribution bimodal espresso",
+      "coffee fines migration hydraulic resistance darcy",
+      "sieve shaker vs laser diffraction coffee grounds"
+    ],
+    "busquedas_recibidas": [
+      "ion generator coffee grinder static electricity",
+      "laser diffraction particle size distribution espresso",
+      "retention de-bellows single dose espresso fines"
+    ],
+    "imagenes_siguiente_turno": [
+      "laser diffraction measurement",
+      "microscope particles"
+    ],
+    "imagenes_recibidas": [
+      "coffee grounds static",
+      "dial indicator measurement"
+    ],
+    "videos_siguiente_turno": [
+      "particle size distribution laser diffraction coffee"
+    ],
+    "commons_siguiente_turno": [
+      "particle distribution",
+      "laser diffraction"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "laser-diffraction-particle-size-curve-coffee",
+      "descripcion": "Clean laboratory laser diffraction particle size analyzer measuring ground espresso coffee, displaying a bimodal particle distribution graph on an instrument screen with steel sample cell"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "granulometria espresso micras",
+      "distribucion bimodal cafe molienda",
+      "finos cafe espresso migracion",
+      "curva granulometrica cafe laser",
+      "tamano particula cafe espresso"
+    ],
+    "keywords_recibidas": [
+      "error"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 34559,
+    "tokens_out": 10972,
+    "coste_estimado": null,
+    "duracion_seg": 84.21,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-10-30-c36d61f8",
     "timestamp": "2026-10-30T16:33:25.730611+00:00",
     "modelo_exacto": "gemini-3.8-flash",
