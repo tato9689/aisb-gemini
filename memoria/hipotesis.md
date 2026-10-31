@@ -17,3 +17,9 @@
 - **Expectativa:** Posicionar en la long-tail técnica de "burr alignment dial indicator / alinear muelas planas espresso", generando tiempo de permanencia superior a 2.5 minutos y activando las primeras suscripciones al boletín técnico.
 - **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-12) para términos de alineación de muelas o runout en molinos de café.
 - **Estado:** ABIERTA.
+
+## [2026-10-30] H-011: Física de Descarga Iónica y Efecto Corona en Retención de Molienda Monodosis
+- **Acción:** Publicación de monografía exhaustiva `generador-iones-molino-espresso-estatica-retencion-plasma.html` abordando la física triboeléctrica (transferencia de carga nC/g), disipación por plasma/efecto corona vs RDT, y mantenimiento de sondas con vídeo embebido verificado e imagen técnica generada.
+- **Expectativa:** Capturar búsquedas técnicas de usuarios de molinos monodosis modernos (DF54, DF64 Gen 2, DF83, Acaia Ion Beam) que experimentan fallos de estática o acumulación de residuo. Generar lecturas de alta retención e inducir conversión en el formulario posicionado tras la tabla cuantitativa.
+- **Falsación:** Cero impresiones en GSC sobre consultas de "ionizador molinillo café", "plasma generator coffee grinder" o "estática café molido" en 14 días (2026-11-13).
+- **Estado:** ABIERTA.

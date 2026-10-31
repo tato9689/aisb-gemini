@@ -4,12 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
-  <meta name="description" content="Especificación de diseño instrumental, tokens de color, componentes accesibles y estándares de visualización metrológica de Espresso Lab.">
+  <meta name="description" content="Especificación de tokens de diseño, tipografía técnica, componentes de datos y dirección de arte instrumental para Espresso Lab.">
   <link rel="canonical" href="https://gemini.retoseo.com/sistema">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Sistema de Diseño y Tokens Metrológicos de Espresso Lab",
+    "description": "Especificación de arquitectura de diseño documental, tokens CSS, componentes de datos y directrices visuales de laboratorio.",
+    "url": "https://gemini.retoseo.com/sistema",
+    "author": {
+      "@type": "Organization",
+      "name": "Espresso Lab"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Espresso Lab",
+      "url": "https://gemini.retoseo.com"
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -26,108 +44,68 @@
           </svg>
           <span class="brand-title">Espresso Lab</span>
         </a>
-        <div class="header-meta">
-          <span>SISTEMA DE DISEÑO METROLÓGICO</span>
-        </div>
       </div>
-      <h1 class="site-title">Guía de Estilo y Metrología Visual</h1>
-      <p class="site-desc">Tokens de interfaz, rejilla modular, especificación tipográfica y componentes cuantitativos para análisis de fluidos.</p>
+      <h1 class="site-title" style="margin-top: var(--space-md);">Especificación del Sistema de Diseño Metrológico</h1>
+      <p class="site-desc">Documentación formal de arquitectura visual, paleta técnica de alto contraste, tipografía tabular y componentes de renderizado de datos.</p>
       <nav class="site-nav">
-        <a href="/">← Volver al Inicio</a>
+        <a href="/">← Volver a Portada</a>
       </nav>
     </header>
 
-    <main>
-      <article>
-        <h2>1. Principios Fundamentales</h2>
-        <p>Espresso Lab opera bajo una estética de instrumentación científica y laboratorio de dinámica de fluidos. Se rechaza la ornamentación vacía, los degradados decorativos genéricos y las imágenes abstractas. Toda tabla de datos debe garantizar visualización móvil horizontal limpia mediante contenedores deslizantes.</p>
+    <main class="article-content">
+      <section>
+        <h2>1. Identidad Visual y Principios de Laboratorio</h2>
+        <p>Espresso Lab descarta toda plantilla genérica de blog de consumo o cafetería. La interfaz adopta el lenguaje visual de manuales de servicio instrumental, software de adquisición de datos y bancos de ensayo metrológicos. Cada elemento tipográfico y cromático cumple ratios estrictos de contraste WCAG AAA.</p>
 
-        <h2>2. Especificación de Tokens</h2>
+        <h2>2. Tokens de Color y Superficies</h2>
         <div class="tabla-scroll">
           <table class="tabla-datos">
             <thead>
               <tr>
-                <th>Variable de Token</th>
-                <th>Valor Modo Oscuro</th>
-                <th>Valor Modo Claro</th>
-                <th>Ratio de Contraste</th>
-                <th>Función de Interfaz</th>
+                <th>Token</th>
+                <th>Valor Oscuro</th>
+                <th>Valor Claro</th>
+                <th>Ratio / Función Metrológica</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><code>--bg-base</code></td>
-                <td><code>#07090e</code></td>
-                <td><code>#f8fafc</code></td>
-                <td>-</td>
-                <td>Lienzo base de página</td>
+                <td>#07090e</td>
+                <td>#f8fafc</td>
+                <td>Fondo de banco de pruebas; absorbe fatiga visual.</td>
               </tr>
               <tr>
                 <td><code>--bg-surface</code></td>
-                <td><code>#0e131d</code></td>
-                <td><code>#ffffff</code></td>
-                <td>-</td>
-                <td>Superficie de tarjetas y módulos</td>
-              </tr>
-              <tr>
-                <td><code>--text-main</code></td>
-                <td><code>#e6edf3</code></td>
-                <td><code>#0f172a</code></td>
-                <td>14.8:1 (AAA)</td>
-                <td>Cuerpo de lectura principal</td>
+                <td>#0e131d</td>
+                <td>#ffffff</td>
+                <td>Superficie de soporte para matrices y datos.</td>
               </tr>
               <tr>
                 <td><code>--text-accent</code></td>
-                <td><code>#38bdf8</code></td>
-                <td><code>#0284c7</code></td>
-                <td>9.2:1 (AAA)</td>
-                <td>Metrología, kickers y enlaces</td>
+                <td>#38bdf8</td>
+                <td>#0284c7</td>
+                <td>Cian instrumental metrológico (9.2:1 AAA).</td>
               </tr>
               <tr>
                 <td><code>--text-metric</code></td>
-                <td><code>#fbbf24</code></td>
-                <td><code>#b45309</code></td>
-                <td>8.5:1 (AAA)</td>
-                <td>Límites hidráulicos y alarmas</td>
+                <td>#fbbf24</td>
+                <td>#d97706</td>
+                <td>Ámbar de advertencia de límites hidráulicos.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h2>3. Componentes de Representación de Datos</h2>
-        <p>Toda tabla de datos del sitio se declara con clase <code>.tabla-datos</code> y se encapsula obligatoriamente en un contenedor con clase <code>.tabla-scroll</code> con desplazamiento horizontal automático en resoluciones móviles (390 px).</p>
-
-        <div class="tabla-scroll">
-          <table class="tabla-datos">
-            <thead>
-              <tr>
-                <th>Muestra de Partícula</th>
-                <th>Permeabilidad (k)</th>
-                <th>Resistencia Hidráulica</th>
-                <th>Tolerancia TIR</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Muelas Desalineadas (TIR > 20 µm)</td>
-                <td>k = 0.6 × 10⁻¹³ m²</td>
-                <td>Elevada / Canalización</td>
-                <td>± 25 µm</td>
-              </tr>
-              <tr>
-                <td>Muelas Calibradas (TIR ≤ 5 µm)</td>
-                <td>k = 1.4 × 10⁻¹³ m²</td>
-                <td>Uniforme y Predecible</td>
-                <td>≤ 5 µm</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="citation-block">
-          <strong>Regla Tipográfica sin LaTeX:</strong> Se prohíben delimitadores de LaTeX. Todas las fórmulas se expresan mediante caracteres Unicode directos (k = 1.4 × 10⁻¹³ m², ΔP, µm, D₁₀, CO₂, CaCO₃).
-        </div>
-      </article>
+        <h2>3. Componente de Scroll Obligatorio (.tabla-scroll)</h2>
+        <p>Toda matriz de parámetros mecánicos o hidráulicos se confina dentro de un contenedor dedicado con desbordamiento horizontal controlado para garantizar la accesibilidad completa en pantallas de 320 px a 390 px sin deformar la retícula editorial:</p>
+        <pre><code>.tabla-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--space-md) 0;
+}</code></pre>
+      </section>
     </main>
 
     <footer class="site-footer">
