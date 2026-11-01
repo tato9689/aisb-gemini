@@ -1,5 +1,33 @@
 [
   {
+    "evento_id": "2026-11-01-7214fdd2",
+    "timestamp": "2026-11-01T16:34:15.675785+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-10-31",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "Se ejecuta la planificación de contenido técnico e hidrodinámico para la monografía de granulometría y metrología láser, complementada con la resolución de advertencias mecánicas históricas en tablas y notación matemática.\n\n### 1. Verificación empírica y fundamentos físicos\nLos datos de difracción láser analizados confirman que:\n1. En el rango de molienda de espresso no existe una distribución rigurosamente unimodal en la literatura revisada por pares (Bora et al., 2026; Gagné, 300 perfiles analizados). Toda molienda de café tostado y molido exhibe una morfología bimodal compuesta por:\n   - Un pico secundario de finos (fragmentos celulares puros sub-100 µm, centrados típicamente entre 30 y 60 µm).\n   - Un pico primario o modal de partículas gruesas (estructuras multicelulares intactas, centradas entre 250 y 500 µm según el ajuste del molino).\n2. El diámetro percentil $D_{10}$ (la cota dimensional por debajo de la cual se encuentra el 10% del volumen acumulado) rige la resistencia hidráulica del lecho y la permeabilidad intrínseca $k$ en la ley de Darcy ($Q = \\frac{-k \\cdot A}{\\mu} \\frac{\\Delta P}{L}$), ejerciendo una influencia significativamente superior a la del diámetro modal $D_{50}$ sobre la colmatación y el riesgo de canalización.\n3. La granulometría láser (dispersión volumétrica equivalente) y el tamizado mecánico por mallas arrojan valores discrepantes debido al factor de esfericidad: los granos fragmentados de café son alargados y angulares, atravesando mallas cuadradas por su eje menor, mientras que el láser mide la sección esférica de difracción óptica.\n\n### 2. Recursos visuales y enriquecimiento multimedia\n- Se integra la imagen generada `/img/generadas/laser-diffraction-particle-size-curve-coffee.webp` tanto en la cabecera visual de la nueva monografía técnica como en el marcado estructurado `TechArticle` / `image`.\n- Se incorpora la imagen de difracción óptica certificada de Wikimedia Commons con su licencia CC BY-SA 4.0 intacta.\n- Se incrusta el vídeo verificado de YouTube sobre metrología de partículas mediante difracción láser (`youtube-nocookie.com`, `loading=\"lazy\"`, responsive sin CLS).\n- Se genera un diagrama SVG embebido que ilustra las curvas de densidad volumétrica $q_3(x)$ en escala semilogarítmica (muelas planas unimodales de 64/83 mm vs muelas cónicas tradicionales).\n\n### 3. Saneamiento mecánico y de accesibilidad\n- Se envuelven las tablas de `wdt-diametro-agujas-distribucion.html` y `migracion-finos-hidraulica.html` en contenedores `.tabla-scroll` para resolver los avisos pendientes del validador.\n- Se purgan los delimitadores LaTeX de `wdt-diametro-agujas-distribucion.html`, sustituyendo la notación matemática por caracteres UTF-8 directos (`≤`, `≥`, `µm`).\n- Se actualiza la portada `index.html` colocando la nueva monografía en la posición `.showcase-lead` y preservando el ratio mínimo de miniaturas visuales.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre granulometría láser, curvas bimodales y percentiles D10/D50/D90 en espresso, con saneamiento de tablas y LaTeX en piezas históricas.",
+    "output_url": null,
+    "tokens_in": 34086,
+    "tokens_out": 17340,
+    "coste_estimado": null,
+    "duracion_seg": 123.61,
+    "resultado": "error",
+    "detalle_error": "bloqueado por guardarraíles: granulometria-laser-espresso-distribucion-bimodal-d10-d50-d90.html: afirmación financiera — afirma ausencia de riesgo («…una extracción homogénea del 22–24% EY sin riesgo de atasco hidráulico. Dispatch Metrológ…»)",
+    "avisos": null
+  },
+  {
     "evento_id": "2026-10-31-b9da670f",
     "timestamp": "2026-10-31T16:36:23.243483+00:00",
     "modelo_exacto": "gemini-3.8-flash",
