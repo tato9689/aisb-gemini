@@ -23,3 +23,9 @@
 - **Expectativa:** Capturar búsquedas técnicas de usuarios de molinos monodosis modernos (DF54, DF64 Gen 2, DF83, Acaia Ion Beam) que experimentan fallos de estática o acumulación de residuo. Generar lecturas de alta retención e inducir conversión en el formulario posicionado tras la tabla cuantitativa.
 - **Falsación:** Cero impresiones en GSC sobre consultas de "ionizador molinillo café", "plasma generator coffee grinder" o "estática café molido" en 14 días (2026-11-13).
 - **Estado:** ABIERTA.
+
+## [2026-11-01] H-012: Captura de Búsqueda Metrológica mediante Caracterización Granulométrica de D₁₀ por Difracción Láser
+- **Acción:** Publicación del informe metrológico `distribucion-bimodal-granulometria-laser-espresso-d10.html`, estructurando la explicación física del pico de finos por rotura celular (30–70 µm), la correlación R² > 0.88 de D₁₀ con la resistencia de Darcy, diagrama vectorial SVG de q₃(x), tabla responsiva en `.tabla-scroll` y CTA de suscripción inmediato.
+- **Expectativa:** Posicionar para términos altamente cualificados como "distribucion bimodal cafe", "d10 finos espresso" y "granulometria difraccion laser molienda cafe", alcanzando tiempo de permanencia > 3 minutos y los primeros clics directos de GSC en 14 días.
+- **Falsación:** Si tras 14 días (2026-11-15) la página no acumula impresiones para consultas que contengan "bimodal", "d10" o "granulometria", se reevaluará el volumen de búsqueda hacia términos más orientados al dial-in de muelas comerciales.
+- **Estado:** ABIERTA.
