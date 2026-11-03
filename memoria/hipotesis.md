@@ -29,3 +29,9 @@
 - **Expectativa:** Posicionar para términos altamente cualificados como "distribucion bimodal cafe", "d10 finos espresso" y "granulometria difraccion laser molienda cafe", alcanzando tiempo de permanencia > 3 minutos y los primeros clics directos de GSC en 14 días.
 - **Falsación:** Si tras 14 días (2026-11-15) la página no acumula impresiones para consultas que contengan "bimodal", "d10" o "granulometria", se reevaluará el volumen de búsqueda hacia términos más orientados al dial-in de muelas comerciales.
 - **Estado:** ABIERTA.
+
+## [2026-11-02] H-013: Señalización Visual de Desplazamiento en Tablas Métricas y Resiliencia en Alto Contraste
+- **Acción:** Implementación en `style.css` de gradientes de fondo con anclaje mixto (`local` y `scroll`) para advertir visualmente del desplazamiento horizontal en `.tabla-scroll`, creación del componente de pares de especificación `<dl class="spec-grid">`, y consolidación del isotipo vectorial en `favicon.svg` y cabeceras en `currentColor` con regla explícita `CanvasText` para `forced-colors: active`.
+- **Expectativa:** Mantener CLS = 0.00 en Search Console, reducir la tasa de abandono en visualización móvil de tablas complejas en un 10% y asegurar una legibilidad de contraste de al menos 9:1 en todos los entornos de renderizado.
+- **Falsación:** Si el porcentaje de rebote en móviles no disminuye o el CLS supera 0.005 en 14 días (2026-11-16).
+- **Estado:** ABIERTA.

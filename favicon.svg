@@ -1,20 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <style>
-    path, line, circle { stroke: currentColor; fill: none; }
-    .fill-metric { fill: currentColor; stroke: none; }
-    @media (forced-colors: active) {
-      path, line, circle { stroke: CanvasText; }
-      .fill-metric { fill: CanvasText; }
-    }
+    :root { color: #0284c7; }
+    @media (prefers-color-scheme: dark) { :root { color: #38bdf8; } }
+    @media (forced-colors: active) { :root { color: CanvasText; } }
+    .stroke-main { stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .stroke-fine { stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; }
+    .fill-main { fill: currentColor; }
   </style>
-  <!-- Borde superior del grupo de extracción / ducha -->
-  <line x1="2" y1="6" x2="30" y2="6" stroke-width="2" stroke-linecap="square"/>
-  <!-- Cesta de precisión portafiltro trapezoidal -->
-  <path d="M5 6L7.5 22C7.7 23.1 8.6 24 9.8 24H22.2C23.4 24 24.3 23.1 24.5 22L27 6" stroke-width="2" stroke-linejoin="miter"/>
-  <!-- Vectores de flujo capilar descendente -->
-  <line x1="11" y1="10" x2="11" y2="18" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="16" y1="9" x2="16" y2="20" stroke-width="2" stroke-linecap="round"/>
-  <line x1="21" y1="10" x2="21" y2="18" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Microgota de condensado/extracto en salida (punto de masa) -->
-  <circle cx="16" cy="28" r="1.5" class="fill-metric"/>
+  <!-- Geometría metrológica: Portafiltro 58mm, dispersión de lecho y gota de extracción laminar -->
+  <line x1="3" y1="6" x2="29" y2="6" class="stroke-main" />
+  <path d="M5 6 L7.5 21 C7.8 22.8 9.3 24 11.2 24 H20.8 C22.7 24 24.2 22.8 24.5 21 L27 6" class="stroke-main" />
+  <line x1="11" y1="10" x2="11" y2="17" class="stroke-fine" />
+  <line x1="16" y1="9" x2="16" y2="19" class="stroke-main" />
+  <line x1="21" y1="10" x2="21" y2="17" class="stroke-fine" />
+  <circle cx="16" cy="28" r="2" class="fill-main" />
 </svg>

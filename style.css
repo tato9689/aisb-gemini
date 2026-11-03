@@ -1,6 +1,6 @@
 /* ==========================================================================
    ESPRESSO LAB — SISTEMA DE DISEÑO EDITORIAL Y METROLOGÍA UI
-   Inspiración: Publicación técnica de alta precisión (Pentagram / Businessweek).
+   Inspiración: Publicación técnica de alta precisión (Pentagram / Swiss Style).
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
@@ -17,12 +17,12 @@
   --color-text-dim: #64748b;
   --color-text-inverse: #030712;
   
-  /* Acento Instrumental */
+  /* Acento Instrumental Metrológico */
   --color-accent: #38bdf8;
   --color-accent-hover: #7dd3fc;
   --color-accent-subtle: rgba(56, 189, 248, 0.12);
   
-  /* Señalización Metrológica */
+  /* Señalización de Parámetros */
   --color-state-ok: #34d399;
   --color-state-warn: #fbbf24;
   --color-state-crit: #f87171;
@@ -45,7 +45,7 @@
   --step-3: clamp(1.85rem, calc(1.58rem + 1.35vw), 2.50rem);
   --step-4: clamp(2.35rem, calc(1.95rem + 2.00vw), 3.40rem);
   
-  /* Espaciado Base Modular (8px) */
+  /* Espaciado Base Modular */
   --space-3xs: 0.25rem;
   --space-2xs: 0.5rem;
   --space-xs: 0.75rem;
@@ -55,12 +55,12 @@
   --space-xl: 3rem;
   --space-2xl: 4.5rem;
   
-  /* Geometría Técnica (Bordes arquitectónicos, cero redondeo excesivo) */
+  /* Geometría Técnica */
   --radius-sharp: 0px;
   --radius-fine: 2px;
   --radius-card: 4px;
   
-  /* Dimensiones de Retícula */
+  /* Retícula */
   --width-prose: 72ch;
   --width-container: 1180px;
   --line-height-prose: 1.65;
@@ -111,7 +111,7 @@
 }
 
 /* ==========================================================================
-   RESET RIGUROSO & REGLAS BASE
+   RESET & REGLAS BASE
    ========================================================================== */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -172,7 +172,7 @@ p {
   max-width: var(--width-prose);
 }
 
-.mono-metric, table, code, time, .badge-kpi {
+.mono-metric, table, code, time, .badge-kpi, .spec-value {
   font-variant-numeric: tabular-nums lining-nums;
   font-feature-settings: "tnum" 1, "zero" 1;
 }
@@ -440,6 +440,7 @@ a:hover {
 
 /* ==========================================================================
    TABLAS RESPONSIVAS CON CONTENEDOR SEGURO DE SCROLL (.tabla-scroll)
+   Incluye gradiente sutil indicador de desplazamiento táctil en móvil
    ========================================================================== */
 .tabla-scroll, .table-scroll, .table-responsive, .tabla-parametros {
   width: 100%;
@@ -449,6 +450,16 @@ a:hover {
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-card);
   background: var(--color-bg-surface);
+  position: relative;
+  background-image: 
+    linear-gradient(to right, var(--color-bg-surface) 30%, rgba(14, 19, 29, 0)),
+    linear-gradient(to right, rgba(14, 19, 29, 0), var(--color-bg-surface) 70%),
+    radial-gradient(farthest-side at 0 50%, rgba(56, 189, 248, 0.2), rgba(0, 0, 0, 0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(56, 189, 248, 0.2), rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+  background-position: 0 0, 100% 0, 0 0, 100% 0;
+  background-attachment: local, local, scroll, scroll;
 }
 
 table {
@@ -490,11 +501,52 @@ tr:hover td {
   background: var(--color-accent-subtle);
 }
 
-/* Bloques de Metrología y Citación */
+/* ==========================================================================
+   COMPONENTES SEMÁNTICOS DE METROLOGÍA: DL, CALLOUTS Y CITAS
+   ========================================================================== */
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xs);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  padding: var(--space-md);
+  margin: var(--space-md) 0 var(--space-lg) 0;
+}
+
+@media (min-width: 600px) {
+  .spec-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: var(--space-2xs);
+}
+
+.spec-key {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.spec-val {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
 .citation-block {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--color-text-dim);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
   background: var(--color-bg-subtle);
   border-left: 3px solid var(--color-accent);
   padding: var(--space-xs) var(--space-sm);
@@ -585,11 +637,12 @@ tr:hover td {
   padding: var(--space-xs) var(--space-md);
   cursor: pointer;
   letter-spacing: -0.01em;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
 }
 
 .btn-primary:hover {
   opacity: 0.9;
+  background-color: var(--color-accent-hover);
 }
 
 .consentimiento {

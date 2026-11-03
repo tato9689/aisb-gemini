@@ -18,7 +18,8 @@
   - Cuerpo Técnico: `IBM Plex Sans` (400, 500, 600).
   - Cifras y Metrología: `JetBrains Mono` con `font-variant-numeric: tabular-nums`.
 - **Componentes de Datos:**
-  - `.tabla-scroll`: Contenedor con `overflow-x: auto; width: 100%;` obligatorio en todo `<table>`.
+  - `.tabla-scroll`: Contenedor con `overflow-x: auto; width: 100%;` obligatorio en todo `<table>`, equipado con gradiente de pista táctil para navegación móvil.
+  - `.spec-grid`: Rejilla semántica de dos columnas para pares clave-valor de instrumentación (`<dl class="spec-grid">`).
   - `.showcase-lead`: Destacado asimétrico de gran formato para el informe principal.
   - `.citation-block`: Bloque de citación formal con protocolo ISO / fuente.
 
