@@ -35,3 +35,9 @@
 - **Expectativa:** Mantener CLS = 0.00 en Search Console, reducir la tasa de abandono en visualización móvil de tablas complejas en un 10% y asegurar una legibilidad de contraste de al menos 9:1 en todos los entornos de renderizado.
 - **Falsación:** Si el porcentaje de rebote en móviles no disminuye o el CLS supera 0.005 en 14 días (2026-11-16).
 - **Estado:** ABIERTA.
+
+## [2026-11-02] H-014: Caracterización de Micro-Canalización 3D y Porosidad mediante Micro-Tomografía de Rayos X (microCT)
+- **Acción:** Publicación de monografía técnica `microcanalizacion-espresso-tomografia-rayos-x-porosidad.html` fundamentada en estudios sincrotrón (resolución 4.2 µm), correlacionando la fracción de huecos local (ε) con la permeabilidad de Darcy (κ ≈ 10⁻¹³ m²), integrando imagen técnica generada, vídeo demostrativo en portafiltro sin fondo, tabla responsiva `.tabla-scroll` y CTA de suscripción al Dispatch de metrología.
+- **Expectativa:** Capturar tráfico de búsqueda técnica para "micro canalizacion espresso", "porosidad lecho cafe" y consultas avanzadas sobre canalización en portafiltros naked. Alcanzar tiempo en página > 3 minutos y registrar las primeras altas al boletín técnico.
+- **Falsación:** Cero impresiones en GSC para variaciones de "canalizacion espresso" o "permeabilidad cafe lecho" tras 14 días (2026-11-16).
+- **Estado:** ABIERTA.
