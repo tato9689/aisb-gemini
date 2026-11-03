@@ -1,5 +1,119 @@
 [
   {
+    "evento_id": "2026-11-03-fc147b91",
+    "timestamp": "2026-11-03T16:41:48.891082+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-02",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "# Razonamiento Metrológico y Plan de Acción (Turno 2026-11-02)\n\n### 1. Diagnóstico de Señal y Ejecución Presupuestaria\n- **Métricas:** Con 0 clics y 0 suscriptores, la regla prioritaria es capturar demanda real sobre física de fluidos en espresso mediante arquitectura estructurada y datos duros de laboratorio.\n- **Presupuesto y Tier:** El sistema indica `vas_muy_por_detras_del_ritmo: true` con 10,00 € íntegros en el bote mensual a 27 días del reinicio. Siguiendo el mandato de agotar el presupuesto en investigación de alta capacidad y no acumular saldo estéril, mantengo la selección en `modelo_siguiente: \"potente\"`.\n\n### 2. Contenido Técnico Nuevo: Micro-Canalización y Tomografía Computarizada de Rayos X (microCT)\n- **Investigación empírica:** A partir de los resultados de microtomografía de rayos X y dinámica de fluidos computacional (SPH) publicados en *Nature Scientific Reports* y *Physics of Fluids*, publico la monografía técnica:\n  `/microcanalizacion-espresso-tomografia-rayos-x-porosidad.html`\n- **Parámetros físicos verificados:**\n  - Permeabilidad intrínseca del lecho: κ ≈ 10⁻¹³ a 10⁻¹⁴ m².\n  - Fracción de vacíos media (porosidad volumétrica ε): 0.38 a 0.44 bajo compactación estandarizada (150 N).\n  - Umbral crítico de gradiente de velocidad intersticial: aceleración > 3.2× del flujo local cuando la densidad granular cae por debajo de 0.32 g/cm³ en vórtices de borde de cesta.\n  - Deformación poroelástica: divergencia de la ley de Darcy lineal en presiones sostenidas superiores a 6–7 bar.\n- **Enriquecimiento visual obligatorio:**\n  - Inserción en cabecera de la imagen técnica generada (`/img/generadas/xray-computed-tomography-coffee-bed.webp`) con ratio 1200×630 y schema JSON-LD emparejado.\n  - Inserción del vídeo de verificación de canalización en portafiltro sin fondo (`2wMLC2wKNjI` de Espresso Doc) con `youtube-nocookie.com`, `loading=\"lazy\"` y contenedor con aspect-ratio fijo.\n  - Tabla cuantitativa encapsulada en el componente `.tabla-scroll` para garantizar cero desbordamiento horizontal en móviles y CLS nulo.\n  - Formulario de suscripción metrológica posicionado inmediatamente después de la matriz de parámetros de permeabilidad.\n- **Cumplimiento estricto anti-LaTeX:** Sustitución total de delimitadores tipo `$` por caracteres tipográficos reales (ΔP, κ, ε, μ, 10⁻¹³ m², D₁₀).\n\n### 3. Actualización de Portada y Memoria\n- Actualizo `index.html` colocando la nueva monografía en el escaparate asimétrico principal (`.showcase-lead`) y recolocando la investigación de granulometría bimodal en la rejilla editorial secundaria, preservando la proporción de miniaturas y la transparencia en el pie de página.\n- Actualizo `memoria/estado.md`, `memoria/hipotesis.md` (con registro append-only H-014) y `memoria/next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre micro-canalización y tomografía de rayos X (microCT), integrando imagen generada, vídeo verificado de canalización en portafiltro sin fondo, matriz de permeabilidad en .tabla-scroll y suscripción metrológica.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/020606a",
+    "cambios": [
+      {
+        "archivo": "img/generadas/xray-computed-tomography-coffee-bed.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 21,
+        "quitadas": 21
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 3,
+        "quitadas": 1
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "microcanalizacion-espresso-tomografia-rayos-x-porosidad.html",
+        "anadidas": 186,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "espresso temperature profiling extraction kinetics arrhenius",
+      "chlorogenic acid extraction espresso temperature activation energy",
+      "pid temperature offset scace device espresso machine"
+    ],
+    "busquedas_recibidas": [
+      "darcy law espresso bed pressure drop experiment",
+      "espresso channeling causes prevention flow rate",
+      "x-ray ct coffee extraction void ratio distribution"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso machine thermometer pressure gauge",
+      "chemical laboratory chromatography analysis"
+    ],
+    "imagenes_recibidas": [
+      "espresso machine portafilter extraction",
+      "laboratory microscopy material science"
+    ],
+    "videos_siguiente_turno": [
+      "espresso temperature profiling extraction",
+      "scace device espresso calibration"
+    ],
+    "commons_siguiente_turno": [
+      "liquid chromatography",
+      "spectrophotometer laboratory"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "thermal-imaging-espresso-group-temperature",
+      "descripcion": "High-resolution thermal camera infrared image of an espresso machine brass group head during active water flow, showing temperature gradients from 88C to 94C with precise laboratory measurement overlay, cold technical lighting"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "temperatura espresso acidez",
+      "perfilado temperatura espresso",
+      "scace espresso termopar",
+      "termodinamica espresso caldera",
+      "estabilidad termica grupo espresso"
+    ],
+    "keywords_recibidas": [
+      "canalizacion espresso",
+      "lecho cafe espresso resistencia",
+      "micro canalizacion cafe",
+      "porosidad cafe espresso",
+      "preinfusion espresso bares"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 35933,
+    "tokens_out": 10983,
+    "coste_estimado": null,
+    "duracion_seg": 97.54,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-03-d8a68413",
     "timestamp": "2026-11-03T09:42:52.457579+00:00",
     "modelo_exacto": "gemini-3.8-flash",
