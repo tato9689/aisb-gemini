@@ -1,5 +1,119 @@
 [
   {
+    "evento_id": "2026-11-04-9563efe0",
+    "timestamp": "2026-11-04T16:34:28.537025+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-03",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Diagnóstico de Telemetría y Criterio Numérico\n\n1. **Estado de indexación y conversión:** El informe a 2026-11-03 registra 0 impresiones y 0 clics acumulados en Search Console, con 0 conversiones en el sistema de captación. Conforme a la directriz de foco único hacia los primeros 5 suscriptores y la escalera de métricas, el objetivo inmediato reside en saturar intenciones de búsqueda de alta especificidad metrológica donde la competencia generalista no aporta datos experimentales de laboratorio.\n2. **Resultados de consultas previas:** Los datos sobre cinética de extracción (Arrhenius, $E_a$) e instrumentación Scace revelan que el término «offset» y la termodinámica de calderas en foros y talleres técnicos presentan una brecha documental en español: la mayoría de guías se limitan a explicar \"cómo cambiar el número en la pantalla del PID\", omitiendo el cálculo del gradiente de temperatura real ($\\Delta T_{\\text{offset}} = T_{\\text{caldera}} - T_{\\text{puck}}$), la masa térmica del grupo y la resistencia de flujo calibrada del dispositivo Scace (1.2–1.4 ml/s a 9 bar).\n3. **Decisión editorial y de ingeniería:** \n   - Publicación de monografía técnica exhaustiva: `calibracion-offset-termico-scace-espresso-pid.html` atacando la física de la estabilidad térmica en la interfaz café-agua, el protocolo estándar de la WBC (World Barista Championship) con dispositivo Scace I/II y sonda termopar tipo T, la curva de recuperación frente al volumen de caldera y la matriz de calibración por familias de grupo (E61, grupo saturado, caldera pequeña de latón y termobloque).\n   - Inclusión de doble recurso visual de ingeniería: la imagen técnica de termografía de grupo generada (`/img/generadas/thermal-imaging-espresso-group-temperature.webp`), el vídeo técnico verificado de Prima Coffee sobre el funcionamiento interno del termofiltro Scace, y tablas de parámetros alojadas en contenedores `.tabla-scroll`.\n   - Conversión directa: inserción del formulario de suscripción al Dispatch metrológico inmediatamente después de la tabla comparativa de tolerancias de offset.\n   - Actualización de `index.html` para incorporar el nuevo recurso metrológico en la jerarquía editorial principal y actualización append-only de `memoria/hipotesis.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía metrológica sobre calibración de offset térmico en cafeteras espresso mediante termofiltro Scace y termopar tipo T, con matriz de tolerancias por tipo de grupo, vídeo técnico de Prima Coffee y termografía infrarroja.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/40881fb",
+    "cambios": [
+      {
+        "archivo": "calibracion-offset-termico-scace-espresso-pid.html",
+        "anadidas": 222,
+        "quitadas": 0
+      },
+      {
+        "archivo": "img/generadas/thermal-imaging-espresso-group-temperature.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 32,
+        "quitadas": 32
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 6,
+        "quitadas": 3
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 5,
+        "quitadas": 4
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "ssp burrs unimodal vs bimodal particle size distribution espresso",
+      "flat burr geometry tooth angle fines production micrometer",
+      "turbo shot high extraction yield unimodal flat burrs"
+    ],
+    "busquedas_recibidas": [
+      "chlorogenic acid extraction espresso temperature activation energy",
+      "espresso temperature profiling extraction kinetics arrhenius",
+      "pid temperature offset scace device espresso machine"
+    ],
+    "imagenes_siguiente_turno": [
+      "coffee grinder flat burrs stainless steel",
+      "micrometer dial caliper engineering tool"
+    ],
+    "imagenes_recibidas": [
+      "chemical laboratory chromatography analysis",
+      "espresso machine thermometer pressure gauge"
+    ],
+    "videos_siguiente_turno": [
+      "ssp burrs comparison espresso dial in",
+      "flat burr geometry espresso extraction"
+    ],
+    "commons_siguiente_turno": [
+      "grinding wheel profile",
+      "particle size analyzer"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "ssp-flat-burr-geometry-cutting-teeth",
+      "descripcion": "Close-up macro technical photograph of 64mm titanium nitride flat burr set for espresso grinder showing precision engineered geometric cutting teeth and finishing serrations on clean stainless steel surface under neutral laboratory lighting"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "muelas unimodales espresso",
+      "ssp burrs espresso",
+      "alineacion muelas molinillo cafe",
+      "granulometria muelas planas",
+      "geometria muelas espresso finos"
+    ],
+    "keywords_recibidas": [
+      "estabilidad termica grupo espresso",
+      "perfilado temperatura espresso",
+      "scace espresso termopar",
+      "temperatura espresso acidez",
+      "termodinamica espresso caldera"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 36781,
+    "tokens_out": 11815,
+    "coste_estimado": null,
+    "duracion_seg": 119.42,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-03-fc147b91",
     "timestamp": "2026-11-03T16:41:48.891082+00:00",
     "modelo_exacto": "gemini-3.8-flash",
