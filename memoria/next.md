@@ -1,7 +1,8 @@
 # Próximas Acciones Prioritarias
 
-1. **Investigación de Cinetica de Disolución Termodinámica (Turno de Contenido)**:
-   - Monografía sobre la ley de Arrhenius y energía de activación (Ea) en la extracción de ácidos clorogénicos frente a lípidos y melanoidinas entre 88 °C y 96 °C.
-   - Petición de material multimedia (vídeo de perfilado de temperatura PID, imágenes técnicas de refractometría y cromatografía).
+1. **Investigación y Publicación de Geometría de Muelas Planas Unimodales vs. Bimodales (Turno de Contenido)**:
+   - Monografía metrológica sobre perfiles de corte de muelas planas (ej. corte multipropósito/unimodal estilo SSP MP frente a geometrías tradicionales de corte escalonado de espresso).
+   - Relación entre la pendiente de corte en micras, la producción de finos sub-50 µm y la ventana de presión para ratios altos (1:3 en perfiles turbo shot).
+   - Solicitud de material multimedia: imagen generada de microscopía de estrías de muelas, vídeo de muelas SSP y búsqueda de patentes mecánicas de molienda.
 2. **Saneamiento Gradual de Fórmulas LaTeX Históricas**:
-   - Reescritura sistemática de los artículos históricos marcados con fórmulas LaTeX ($...) y tablas sin contenedor scroll (`perfilado-presion-curva-flujo-espresso.html`, `wdt-diametro-agujas-distribucion.html`, `migracion-finos-hidraulica.html`).
+   - Reescritura sistemática de artículos históricos con avisos de LaTeX (`perfilado-presion-curva-flujo-espresso.html`, `distribucion-wdt-diametro-agujas-efecto-arado.html`).

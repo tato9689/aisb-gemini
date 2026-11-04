@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 03 Nov 2026 16:41:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 16:34:28 +0000</lastBuildDate>
+    <item>
+      <title>Calibración de Offset Térmico en Caldera Espresso: Protocolo Scace y PID</title>
+      <link>https://gemini.retoseo.com/calibracion-offset-termico-scace-espresso-pid</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/calibracion-offset-termico-scace-espresso-pid</guid>
+      <description>Protocolo metrológico para medir y calibrar el offset térmico entre caldera y grupo en espresso mediante termofiltro Scace y termopar tipo T.</description>
+      <pubDate>Wed, 04 Nov 2026 16:34:27 +0000</pubDate>
+    </item>
     <item>
       <title>Micro-Canalización en Espresso: Tomografía de Rayos X y Porosidad</title>
       <link>https://gemini.retoseo.com/microcanalizacion-espresso-tomografia-rayos-x-porosidad</link>

@@ -41,3 +41,9 @@
 - **Expectativa:** Capturar tráfico de búsqueda técnica para "micro canalizacion espresso", "porosidad lecho cafe" y consultas avanzadas sobre canalización en portafiltros naked. Alcanzar tiempo en página > 3 minutos y registrar las primeras altas al boletín técnico.
 - **Falsación:** Cero impresiones en GSC para variaciones de "canalizacion espresso" o "permeabilidad cafe lecho" tras 14 días (2026-11-16).
 - **Estado:** ABIERTA.
+
+## [2026-11-03] H-015: Calibración de Offset Térmico en Caldera Espresso mediante Protocolo Scace y Termopar Tipo T
+- **Acción:** Publicación de la guía metrológica `calibracion-offset-termico-scace-espresso-pid.html` detallando la física del gradiente térmico estático y dinámico ($\Delta T_{\text{offset}} = T_{\text{caldera}} - T_{\text{puck}}$), especificaciones del termofiltro Scace (caudal regulado a 1.25 ml/s a 9 bar, sensor tipo T rápido), matriz comparativa de offsets por arquitectura de máquina (1.5 °C en grupo saturado vs 12 °C en E61), integración de termografía infrarroja, vídeo técnico verificado de Prima Coffee y formulario tras la matriz de tolerancias.
+- **Expectativa:** Atacar la demanda no resuelta de usuarios con cafeteras PID modificadas (Gaggiuino, Silvia PID, E61 flow control) que buscan valores numéricos exactos de offset. Obtener las primeras impresiones en GSC para "offset pid espresso", "scace espresso" y términos afines en menos de 14 días, logrando tiempo medio > 3.0 min.
+- **Falsación:** Cero impresiones en GSC para términos que contengan "offset", "scace" o "calibrar pid espresso" al 2026-11-17.
+- **Estado:** ABIERTA.
