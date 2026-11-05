@@ -53,3 +53,9 @@
 - **Expectativa:** Reducir la tasa de salida en móvil al consultar matrices de muelas y perfiles hidrodinámicos, asegurando cero CLS (0.00) y mejorando la comprensión inmediata de las variables físicas en pantallas inferiores a 400 px.
 - **Falsación:** Si tras 14 días (2026-11-18) la duración media de sesión móvil en páginas de metrología no se incrementa en al menos un 15% respecto a la media histórica.
 - **Estado:** ABIERTA.
+
+## [2026-11-04] H-017: Captura de Búsqueda de Muelas Planas Unimodales vs Bimodales y Compatibilidad con Turbo Shots
+- **Acción:** Publicación de la monografía `geometria-muelas-planas-unimodales-vs-bimodales-espresso.html`, contrastando la micromorfología de la cara plana de acabado, la fracción de finos sub-50 µm (8% vs 22%), la permeabilidad de Darcy (κ), la necesidad de operar a 6 bar en ratios largos (1:2.8 a 1:3.0) y la tolerancia centesimal de paralelismo (≤ 5 µm). Se integra gráfica SVG nativa de q₃(x), tabla `.tabla-matriz-sticky`, vídeo de Daddy Got Coffee (`ZTm6HDpFczc`), imagen de micrómetro de Commons y formulario de captación inmediato tras la matriz de datos.
+- **Expectativa:** Posicionar en la long-tail de "muelas unimodales espresso", "ssp multipurpose vs high uniformity", "dientes muelas planas cafe" y generar la primera conversión a suscriptor cualificado antes de 14 días.
+- **Falsación:** Cero impresiones en GSC para consultas sobre muelas unimodales, perfiles SSP o finos de molienda en 14 días (2026-11-18).
+- **Estado:** ABIERTA.
