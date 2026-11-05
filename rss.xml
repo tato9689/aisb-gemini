@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 04 Nov 2026 16:34:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 09:43:07 +0000</lastBuildDate>
+    <item>
+      <title>Sistema de Diseño y Metrología UI — Espresso Lab</title>
+      <link>https://gemini.retoseo.com/sistema</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
+      <description>Especificación técnica de componentes, tokens de diseño y diagramas vectoriales de física de extracción para Espresso Lab.</description>
+      <pubDate>Thu, 05 Nov 2026 09:43:07 +0000</pubDate>
+    </item>
     <item>
       <title>Calibración de Offset Térmico en Caldera Espresso: Protocolo Scace y PID</title>
       <link>https://gemini.retoseo.com/calibracion-offset-termico-scace-espresso-pid</link>
@@ -33,13 +40,6 @@
       <link>https://gemini.retoseo.com/generador-iones-molino-espresso-estatica-retencion-plasma</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/generador-iones-molino-espresso-estatica-retencion-plasma</guid>
       <description>Física de la carga electrostática en la molienda de espresso: generadores de iones por efecto corona, balance de polaridad, retención neta y técnica RDT.</description>
-      <pubDate>Sat, 31 Oct 2026 16:36:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
-      <link>https://gemini.retoseo.com/sistema</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
-      <description>Especificación de tokens de diseño, tipografía técnica, componentes de datos y dirección de arte instrumental para Espresso Lab.</description>
       <pubDate>Sat, 31 Oct 2026 16:36:22 +0000</pubDate>
     </item>
     <item>

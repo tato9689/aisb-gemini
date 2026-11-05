@@ -21,11 +21,17 @@
   --color-accent: #38bdf8;
   --color-accent-hover: #7dd3fc;
   --color-accent-subtle: rgba(56, 189, 248, 0.12);
+  --color-accent-active: #0284c7;
   
-  /* Señalización de Parámetros */
+  /* Señalización de Parámetros de Extracción */
   --color-state-ok: #34d399;
   --color-state-warn: #fbbf24;
   --color-state-crit: #f87171;
+  
+  /* Curvas Hidráulicas (Doble Eje) */
+  --curve-pressure: #38bdf8;
+  --curve-flow: #fbbf24;
+  --curve-grid: #1e293b;
   
   /* Filetes y Estructura */
   --color-border-subtle: #1e293b;
@@ -81,6 +87,11 @@
     --color-accent: #0284c7;
     --color-accent-hover: #0369a1;
     --color-accent-subtle: rgba(2, 132, 199, 0.08);
+    --color-accent-active: #0c4a6e;
+    
+    --curve-pressure: #0284c7;
+    --curve-flow: #d97706;
+    --curve-grid: #e2e8f0;
     
     --color-border-subtle: #e2e8f0;
     --color-border-strong: #cbd5e1;
@@ -103,6 +114,11 @@
     --color-accent: Highlight;
     --color-accent-hover: Highlight;
     --color-accent-subtle: Canvas;
+    --color-accent-active: Highlight;
+    
+    --curve-pressure: CanvasText;
+    --curve-flow: CanvasText;
+    --curve-grid: CanvasText;
     
     --color-border-subtle: CanvasText;
     --color-border-strong: CanvasText;
@@ -172,7 +188,7 @@ p {
   max-width: var(--width-prose);
 }
 
-.mono-metric, table, code, time, .badge-kpi, .spec-value {
+.mono-metric, table, code, time, .badge-kpi, .spec-value, .metric-unit {
   font-variant-numeric: tabular-nums lining-nums;
   font-feature-settings: "tnum" 1, "zero" 1;
 }
@@ -440,7 +456,7 @@ a:hover {
 
 /* ==========================================================================
    TABLAS RESPONSIVAS CON CONTENEDOR SEGURO DE SCROLL (.tabla-scroll)
-   Incluye gradiente sutil indicador de desplazamiento táctil en móvil
+   Y SOPORTE PARA COLUMNA FIJA (.tabla-matriz-sticky)
    ========================================================================== */
 .tabla-scroll, .table-scroll, .table-responsive, .tabla-parametros {
   width: 100%;
@@ -454,8 +470,8 @@ a:hover {
   background-image: 
     linear-gradient(to right, var(--color-bg-surface) 30%, rgba(14, 19, 29, 0)),
     linear-gradient(to right, rgba(14, 19, 29, 0), var(--color-bg-surface) 70%),
-    radial-gradient(farthest-side at 0 50%, rgba(56, 189, 248, 0.2), rgba(0, 0, 0, 0)),
-    radial-gradient(farthest-side at 100% 50%, rgba(56, 189, 248, 0.2), rgba(0, 0, 0, 0));
+    radial-gradient(farthest-side at 0 50%, rgba(56, 189, 248, 0.25), rgba(0, 0, 0, 0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(56, 189, 248, 0.25), rgba(0, 0, 0, 0));
   background-repeat: no-repeat;
   background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
   background-position: 0 0, 100% 0, 0 0, 100% 0;
@@ -467,7 +483,7 @@ table {
   border-collapse: collapse;
   font-size: 0.88rem;
   text-align: left;
-  min-width: 520px;
+  min-width: 540px;
 }
 
 th, td {
@@ -501,8 +517,50 @@ tr:hover td {
   background: var(--color-accent-subtle);
 }
 
+/* Sub-variante: Primera columna anclada (Frozen Header + Frozen Col) */
+.tabla-matriz-sticky th:first-child,
+.tabla-matriz-sticky td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: var(--color-bg-surface);
+  border-right: 2px solid var(--color-border-strong);
+}
+
+.tabla-matriz-sticky th:first-child {
+  z-index: 4;
+  background: var(--color-bg-elevated);
+}
+
+/* Badges Metrológicos de Estado */
+.badge-state {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.70rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.15em 0.5em;
+  border-radius: var(--radius-fine);
+  border: 1px solid currentColor;
+}
+
+.badge-state.ok {
+  color: var(--color-state-ok);
+  background: rgba(52, 211, 153, 0.1);
+}
+
+.badge-state.warn {
+  color: var(--color-state-warn);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.badge-state.crit {
+  color: var(--color-state-crit);
+  background: rgba(248, 113, 113, 0.1);
+}
+
 /* ==========================================================================
-   COMPONENTES SEMÁNTICOS DE METROLOGÍA: DL, CALLOUTS Y CITAS
+   COMPONENTES SEMÁNTICOS DE METROLOGÍA: DL, CALLOUTS Y FÓRMULAS
    ========================================================================== */
 .spec-grid {
   display: grid;
@@ -554,6 +612,47 @@ tr:hover td {
   border-radius: 0 var(--radius-fine) var(--radius-fine) 0;
 }
 
+/* Caja de Formulación Física Tipográfica (Sustituto Oficial de LaTeX) */
+.formula-block {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-strong);
+  border-left: 3px solid var(--color-border-accent);
+  border-radius: var(--radius-card);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-md) 0;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  overflow-x: auto;
+}
+
+.formula-title {
+  font-size: 0.70rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.formula-eq {
+  font-size: 1.1rem;
+  color: var(--color-text-main);
+  letter-spacing: 0.02em;
+  padding: var(--space-2xs) 0;
+}
+
+.formula-notes {
+  font-size: 0.78rem;
+  color: var(--color-text-dim);
+  border-top: 1px dashed var(--color-border-subtle);
+  padding-top: var(--space-2xs);
+}
+
+/* ==========================================================================
+   MOTOR VECTORIAL SVG: GRÁFICOS METROLÓGICOS DE FLUIDOS
+   ========================================================================== */
 .chart-container {
   background: var(--color-bg-surface);
   border: 1px solid var(--color-border-strong);
@@ -562,14 +661,54 @@ tr:hover td {
   margin: var(--space-lg) 0;
 }
 
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: var(--space-xs);
+}
+
 .chart-title {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.80rem;
   font-weight: 700;
   color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: var(--space-xs);
+}
+
+.chart-legend {
+  display: flex;
+  gap: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+
+.legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+}
+
+.legend-swatch.pressure { background: var(--curve-pressure); }
+.legend-swatch.flow { background: var(--curve-flow); }
+
+.svg-diagram {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 380px;
 }
 
 /* ==========================================================================
@@ -582,6 +721,11 @@ tr:hover td {
   padding: var(--space-lg);
   margin: var(--space-2xl) 0;
   position: relative;
+  transition: border-color 0.15s ease;
+}
+
+.newsletter-section:focus-within {
+  border-color: var(--color-accent);
 }
 
 .newsletter-section::before {
@@ -618,12 +762,13 @@ tr:hover td {
   color: var(--color-text-main);
   font-family: var(--font-mono);
   font-size: 0.9rem;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .form-input:focus {
   border-color: var(--color-accent);
   outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent-subtle);
 }
 
 .btn-primary {
@@ -637,12 +782,16 @@ tr:hover td {
   padding: var(--space-xs) var(--space-md);
   cursor: pointer;
   letter-spacing: -0.01em;
-  transition: opacity 0.15s ease, background-color 0.15s ease;
+  transition: background-color 0.15s ease, transform 0.05s ease;
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
   background-color: var(--color-accent-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--color-accent-active);
+  transform: translateY(1px);
 }
 
 .consentimiento {

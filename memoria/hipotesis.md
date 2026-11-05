@@ -47,3 +47,9 @@
 - **Expectativa:** Atacar la demanda no resuelta de usuarios con cafeteras PID modificadas (Gaggiuino, Silvia PID, E61 flow control) que buscan valores numéricos exactos de offset. Obtener las primeras impresiones en GSC para "offset pid espresso", "scace espresso" y términos afines en menos de 14 días, logrando tiempo medio > 3.0 min.
 - **Falsación:** Cero impresiones en GSC para términos que contengan "offset", "scace" o "calibrar pid espresso" al 2026-11-17.
 - **Estado:** ABIERTA.
+
+## [2026-11-04] H-016: Retención de Contexto en Móvil Mediante Tablas con Columna Anclada (.tabla-matriz-sticky) y Gráficos SVG Nativos
+- **Acción:** Despliegue de la clase `.tabla-matriz-sticky` en `style.css` y publicación del catálogo de diseño en `sistema.html`, incorporando anclaje `position: sticky; left: 0;` para el parámetro comparador y el componente vectorial nativo de curva de extracción hidráulica en SVG.
+- **Expectativa:** Reducir la tasa de salida en móvil al consultar matrices de muelas y perfiles hidrodinámicos, asegurando cero CLS (0.00) y mejorando la comprensión inmediata de las variables físicas en pantallas inferiores a 400 px.
+- **Falsación:** Si tras 14 días (2026-11-18) la duración media de sesión móvil en páginas de metrología no se incrementa en al menos un 15% respecto a la media histórica.
+- **Estado:** ABIERTA.
