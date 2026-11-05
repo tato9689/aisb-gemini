@@ -1,5 +1,113 @@
 [
   {
+    "evento_id": "2026-11-05-5d3f368d",
+    "timestamp": "2026-11-05T16:47:23.002146+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-04",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "El análisis de difracción láser y la hidrodinámica de lechos granulares demuestran que el factor limitante de la resistencia hidráulica de Darcy en espresso no es el diámetro medio $D_{50}$, sino la fracción volumétrica de finos sub-50 µm ($D_{10}$) generados en la zona de acabado de las muelas. \n\nEn este turno publicamos la monografía técnica de referencia sobre geometría de corte en muelas planas: **«Geometría de Muelas Planas: Unimodal vs Bimodal en Extracción de Espresso»** (`geometria-muelas-planas-unimodales-vs-bimodales-espresso.html`). En ella desglosamos la micromorfología del corte:\n1. **Muelas Bimodales (High Uniformity / Estándar Espresso):** Zona de corte tangencial escalonada con cara plana (*flat finishing band*) amplia (1.2 a 2.5 mm). Maximiza la producción de finos ($D_{10} \\approx 30\\text{--}50\\ \\mu\\text{m}$, volumen 18–26%), creando el lecho auto-sellante indispensable para generar 9 bar de presión estática a ratios tradicionales 1:2.0 en 28–32 segundos.\n2. **Muelas Unimodales (Multi-Purpose / Brewing geometry):** Dientes de corte radial continuo sin banda plana de trituración. Reducción drástica del pico de finos ($D_{10} < 10\\text{--}14\\%$). Esto multiplica la permeabilidad intrínseca ($\\kappa \\approx 3.5 \\times 10^{-13}\\ \\text{m}^2$), obligando a operar bajo parámetros de alto caudal o perfiles de *Turbo Shot* (6 bar, ratios 1:2.7 a 1:3.0 en 14–18 segundos) para evitar la canalización destructiva o la subextracción astringente.\n\nLa pieza integra:\n- **Dos recursos visuales enriquecidos externos**: Vídeo técnico comparativo de Daddy Got Coffee (`ZTm6HDpFczc`) sobre comportamiento de perfiles SSP e instrumentación fotográfica de micrómetro de precisión de Wikimedia Commons para calibración de holguras axiales.\n- **Diagrama vectorial SVG interactivo**: Curvas diferenciales de distribución de tamaño de partícula $q_3(x)$ comparando la curva bimodal tradicional frente a la unimodal de alta claridad.\n- **Matriz de parámetros técnicos responsiva**: Implementación del nuevo componente `.tabla-matriz-sticky` con primera columna congelada en pantallas móviles para navegación comparativa sin pérdida de contexto.\n- **Suscripción colocada tras la matriz cuantitativa** y al final de la pieza, orientada al envío dominical del informe metrológico.\n- **Cumplimiento estricto de tipografía matemática sin LaTeX crudo**: uso exhaustivo de caracteres Unicode nativos (Δ, µm, κ, D₁₀, D₅₀, D₉₀, R²).\n\nActualizamos la portada `index.html` para incorporar el nuevo artículo en el escaparate editorial y reflejamos las hipótesis y próximos pasos en la memoria operativa.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicada monografía técnica sobre geometría de muelas planas unimodales vs bimodales (finos sub-50 µm, Darcy, perfiles a 6 vs 9 bar), con gráfica SVG nativa, tabla sticky y vídeo verificado.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/85336d0",
+    "cambios": [
+      {
+        "archivo": "geometria-muelas-planas-unimodales-vs-bimodales-espresso.html",
+        "anadidas": 317,
+        "quitadas": 0
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 22,
+        "quitadas": 22
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 8,
+        "quitadas": 14
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 9,
+        "quitadas": 8
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "water viscosity temperature espresso flow rate darcy",
+      "viscosidad dinamica agua extraccion cafe temperatura",
+      "arrhenius extraction kinetics espresso yield temperature"
+    ],
+    "busquedas_recibidas": [
+      "flat burr cutting geometry fines generation espresso",
+      "ssp burrs multipurpose vs high uniformity particle distribution",
+      "turbo shot 6 bar flow rate unimodal burrs"
+    ],
+    "imagenes_siguiente_turno": [
+      "water drop fluid dynamics laboratory",
+      "pressure gauge espresso machine steam boiler"
+    ],
+    "imagenes_recibidas": [
+      "coffee grinder burrs",
+      "dial indicator caliper engineering"
+    ],
+    "videos_siguiente_turno": [
+      "espresso extraction temperature flow profiling"
+    ],
+    "commons_siguiente_turno": [
+      "viscometer glass capillary",
+      "thermocouple probe temperature measurement"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "capillary-viscometer-hot-water-espresso",
+      "descripcion": "Close-up laboratory photography of a precision glass capillary viscometer filled with clear hot water at 93 degrees Celsius, mounted on an industrial stainless steel test bench with mechanical dial gauges and clinical 5000K overhead lighting."
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "temperatura agua viscosidad espresso",
+      "viscosidad dinamica cafe flujo",
+      "temperatura extraccion espresso",
+      "cinetica extraccion espresso arrhenius",
+      "perfil temperatura caldera espresso"
+    ],
+    "keywords_recibidas": [
+      "alineacion muelas molinillo cafe",
+      "geometria muelas espresso finos",
+      "granulometria muelas planas",
+      "muelas unimodales espresso",
+      "ssp burrs espresso"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 37048,
+    "tokens_out": 14384,
+    "coste_estimado": null,
+    "duracion_seg": 117.35,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-05-8d99ae73",
     "timestamp": "2026-11-05T09:43:07.744534+00:00",
     "modelo_exacto": "gemini-3.8-flash",
