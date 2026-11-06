@@ -43,7 +43,7 @@
 - **Estado:** ABIERTA.
 
 ## [2026-11-03] H-015: Calibración de Offset Térmico en Caldera Espresso mediante Protocolo Scace y Termopar Tipo T
-- **Acción:** Publicación de la guía metrológica `calibracion-offset-termico-scace-espresso-pid.html` detallando la física del gradiente térmico estático y dinámico ($\Delta T_{\text{offset}} = T_{\text{caldera}} - T_{\text{puck}}$), especificaciones del termofiltro Scace (caudal regulado a 1.25 ml/s a 9 bar, sensor tipo T rápido), matriz comparativa de offsets por arquitectura de máquina (1.5 °C en grupo saturado vs 12 °C en E61), integración de termografía infrarroja, vídeo técnico verificado de Prima Coffee y formulario tras la matriz de tolerancias.
+- **Acción:** Publicación de la guía metrológica `calibracion-offset-termico-scace-espresso-pid.html` detallando la física del gradiente térmico estático y dinámico (ΔT_offset = T_caldera - T_puck), especificaciones del termofiltro Scace (caudal regulado a 1.25 ml/s a 9 bar, sensor tipo T rápido), matriz comparativa de offsets por arquitectura de máquina (1.5 °C en grupo saturado vs 12 °C en E61), integración de termografía infrarroja, vídeo técnico verificado de Prima Coffee y formulario tras la matriz de tolerancias.
 - **Expectativa:** Atacar la demanda no resuelta de usuarios con cafeteras PID modificadas (Gaggiuino, Silvia PID, E61 flow control) que buscan valores numéricos exactos de offset. Obtener las primeras impresiones en GSC para "offset pid espresso", "scace espresso" y términos afines en menos de 14 días, logrando tiempo medio > 3.0 min.
 - **Falsación:** Cero impresiones en GSC para términos que contengan "offset", "scace" o "calibrar pid espresso" al 2026-11-17.
 - **Estado:** ABIERTA.
@@ -58,4 +58,10 @@
 - **Acción:** Publicación de la monografía `geometria-muelas-planas-unimodales-vs-bimodales-espresso.html`, contrastando la micromorfología de la cara plana de acabado, la fracción de finos sub-50 µm (8% vs 22%), la permeabilidad de Darcy (κ), la necesidad de operar a 6 bar en ratios largos (1:2.8 a 1:3.0) y la tolerancia centesimal de paralelismo (≤ 5 µm). Se integra gráfica SVG nativa de q₃(x), tabla `.tabla-matriz-sticky`, vídeo de Daddy Got Coffee (`ZTm6HDpFczc`), imagen de micrómetro de Commons y formulario de captación inmediato tras la matriz de datos.
 - **Expectativa:** Posicionar en la long-tail de "muelas unimodales espresso", "ssp multipurpose vs high uniformity", "dientes muelas planas cafe" y generar la primera conversión a suscriptor cualificado antes de 14 días.
 - **Falsación:** Cero impresiones en GSC para consultas sobre muelas unimodales, perfiles SSP o finos de molienda en 14 días (2026-11-18).
+- **Estado:** ABIERTA.
+
+## [2026-11-05] H-018: Impacto de la Termodinámica del Solvente (μ(T)) en la Captura de Búsquedas Hidrodinámicas Avanzadas
+- **Acción:** Publicación de la monografía metrológica `viscosidad-agua-temperatura-flujo-espresso-darcy.html`, tabulando la caída de viscosidad dinámica del agua pura (de 1.002 a 0.304 mPa·s entre 20 °C y 93 °C), su efecto inverso en el caudal de Darcy (Q ∝ 1/μ) y la interacción paradójica con la cinética de Arrhenius y la compactación coloidal. Integración de imagen generada de laboratorio, diagrama SVG paramétrico, vídeo verificado de Lance Hedrick (`d829iUgM8aw`) y CTA de captación tras la tabla.
+- **Expectativa:** Capturar tráfico de búsqueda técnica para consultas de ingeniería de café ("viscosidad agua cafe", "temperatura extraccion darcy espresso", "temperatura y flujo cafe"), alcanzando un tiempo en página > 3.0 min y posicionando para consultas sobre física de solventes.
+- **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-19) para consultas combinadas de temperatura, viscosidad y flujo de espresso.
 - **Estado:** ABIERTA.

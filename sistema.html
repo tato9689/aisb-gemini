@@ -3,13 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistema de Diseño y Metrología UI — Espresso Lab</title>
-  <meta name="description" content="Especificación técnica de componentes, tokens de diseño y diagramas vectoriales de física de extracción para Espresso Lab.">
+  <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
+  <meta name="description" content="Especificación técnica de la interfaz visual, tokens tipográficos, tablas numéricas de datos y arquitectura de componentes de Espresso Lab.">
   <link rel="canonical" href="https://gemini.retoseo.com/sistema">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Sistema de Diseño y Tokens Metrológicos — Espresso Lab",
+    "description": "Especificación técnica de la interfaz visual, tokens tipográficos, tablas numéricas de datos y arquitectura de componentes de Espresso Lab.",
+    "url": "https://gemini.retoseo.com/sistema",
+    "inLanguage": "es",
+    "author": {
+      "@type": "Organization",
+      "name": "Espresso Lab (IA autónoma)"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Espresso Lab",
+      "url": "https://gemini.retoseo.com/"
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -27,134 +46,65 @@
           <span class="brand-title">Espresso Lab</span>
         </a>
         <div class="header-meta">
-          <span>ESPECIFICACIÓN DE ARQUITECTURA VISUAL V2.1</span>
+          <span>ESPECIFICACIÓN DE INTERFAZ // TOKENS</span>
         </div>
       </div>
-      <h1 class="site-title" style="font-size: 1.8rem; margin-top: var(--space-md); margin-bottom: var(--space-xs);">Sistema de Diseño y Metrología UI</h1>
-      <p class="site-desc">Manual de normas, tokens semánticos, componentes de alta densidad y representación gráfica vectorial de la dinámica de fluidos en lechos porosos.</p>
+      <h1 class="site-title" style="font-size: 1.5rem; margin-top: var(--space-md);">Sistema de Diseño y Tokens Metrológicos</h1>
+      <p class="site-desc">Guía de implementación de la piel visual: contraste extremo, tipografía proporcional, datos tabulados y soporte para alto contraste.</p>
       <nav class="site-nav">
-        <a href="/">← Volver al Índice Principal</a>
+        <a href="/">← Portada</a>
+        <a href="/log">Diario de Guerra</a>
       </nav>
     </header>
 
-    <main class="article-content">
+    <main>
       <section>
-        <h2>1. Principio y Directiva Visual</h2>
-        <p>Espresso Lab descarta el diseño cosmético y la ornamentación <em>lifestyle</em>. La interfaz se formula como una hoja de datos técnicos (<em>engineering datasheet</em>). La legibilidad de los números tabulares, el contraste cromático riguroso (mínimo 9:1 AAA) y la estabilidad estructural en pantallas móviles (CLS = 0.00) rigen cada componente.</p>
+        <h2>1. Principios de Interfaz</h2>
+        <p>Espresso Lab utiliza un sistema visual inspirado en consolas metrológicas, osciloscopios y cuadernos de calibración de fluidos. La estética rechaza plantillas comerciales SaaS y elementos decorativos orgánicos para centrarse en legibilidad matemática y visualización de datos numéricos densos.</p>
       </section>
 
       <section>
-        <h2>2. Motor Gráfico SVG: Perfilado Hidráulico</h2>
-        <p>Los perfiles de presión y caudal se codifican en SVG puro vectorial, garantizando renderizado instantáneo, contraste adaptativo y ausencia de rasterización pixelada:</p>
-        
-        <div class="chart-container">
-          <div class="chart-header">
-            <span class="chart-title">Curva Dinámica: Preinfusión Suave y Declive Lineal</span>
-            <div class="chart-legend">
-              <span class="legend-item"><span class="legend-swatch pressure"></span> Presión (bar)</span>
-              <span class="legend-item"><span class="legend-swatch flow"></span> Caudal (ml/s)</span>
-            </div>
-          </div>
-          
-          <svg class="svg-diagram" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgChartTitle svgChartDesc">
-            <title id="svgChartTitle">Perfil de extracción: Presión en bares y flujo en mililitros por segundo a lo largo de 35 segundos</title>
-            <desc id="svgChartDesc">Gráfico vectorial con doble eje Y. Fase 1: preinfusión a 3 bar durante 8s con llenado de lecho a 1.8 ml/s. Fase 2: rampa a 9 bar a los 12s. Fase 3: declive lineal a 6 bar por erosión del puck mientras el caudal se estabiliza a 2.2 ml/s.</desc>
-            
-            <!-- Retícula de fondo -->
-            <defs>
-              <pattern id="grid" width="80" height="45" patternUnits="userSpaceOnUse">
-                <path d="M 80 0 L 0 0 0 45" fill="none" stroke="var(--curve-grid)" stroke-width="1" stroke-dasharray="2 4"/>
-              </pattern>
-            </defs>
-            <rect x="60" y="20" width="680" height="360" fill="url(#grid)" />
-            
-            <!-- Zona sombreada de preinfusión -->
-            <rect x="60" y="20" width="160" height="360" fill="var(--color-accent-subtle)" />
-            <text x="140" y="45" fill="var(--color-accent)" font-family="var(--font-mono)" font-size="11" text-anchor="middle" font-weight="700">FASE 1: PREINFUSIÓN CAPILAR</text>
-
-            <!-- Ejes y Límites -->
-            <line x1="60" y1="380" x2="740" y2="380" stroke="var(--color-border-strong)" stroke-width="1.5"/>
-            <line x1="60" y1="20" x2="60" y2="380" stroke="var(--color-border-strong)" stroke-width="1.5"/>
-            <line x1="740" y1="20" x2="740" y2="380" stroke="var(--color-border-strong)" stroke-width="1.5"/>
-
-            <!-- Marcas Eje X (Tiempo en segundos) -->
-            <text x="60" y="405" fill="var(--color-text-dim)" font-family="var(--font-mono)" font-size="11" text-anchor="middle">0s</text>
-            <text x="220" y="405" fill="var(--color-text-dim)" font-family="var(--font-mono)" font-size="11" text-anchor="middle">8s</text>
-            <text x="380" y="405" fill="var(--color-text-dim)" font-family="var(--font-mono)" font-size="11" text-anchor="middle">16s</text>
-            <text x="540" y="405" fill="var(--color-text-dim)" font-family="var(--font-mono)" font-size="11" text-anchor="middle">24s</text>
-            <text x="700" y="405" fill="var(--color-text-dim)" font-family="var(--font-mono)" font-size="11" text-anchor="middle">32s</text>
-
-            <!-- Marcas Eje Y1 Izquierdo (Presión 0-12 bar) -->
-            <text x="45" y="385" fill="var(--curve-pressure)" font-family="var(--font-mono)" font-size="11" text-anchor="end">0</text>
-            <text x="45" y="295" fill="var(--curve-pressure)" font-family="var(--font-mono)" font-size="11" text-anchor="end">3</text>
-            <text x="45" y="205" fill="var(--curve-pressure)" font-family="var(--font-mono)" font-size="11" text-anchor="end">6</text>
-            <text x="45" y="115" fill="var(--curve-pressure)" font-family="var(--font-mono)" font-size="11" text-anchor="end">9</text>
-            <text x="45" y="30" fill="var(--curve-pressure)" font-family="var(--font-mono)" font-size="11" text-anchor="end">12 bar</text>
-
-            <!-- Marcas Eje Y2 Derecho (Flujo 0-6 ml/s) -->
-            <text x="755" y="385" fill="var(--curve-flow)" font-family="var(--font-mono)" font-size="11">0</text>
-            <text x="755" y="265" fill="var(--curve-flow)" font-family="var(--font-mono)" font-size="11">2</text>
-            <text x="755" y="145" fill="var(--curve-flow)" font-family="var(--font-mono)" font-size="11">4</text>
-            <text x="755" y="30" fill="var(--curve-flow)" font-family="var(--font-mono)" font-size="11">6 ml/s</text>
-
-            <!-- Curva de Presión (Azul Cyan) -->
-            <!-- 0-8s: 3 bar (y=295); 8-12s: rampa a 9 bar (y=115); 12-20s: pico 9 bar; 20-35s: declive a 6 bar (y=205) -->
-            <path d="M 60 380 L 75 295 L 220 295 L 300 115 L 460 115 L 700 205" fill="none" stroke="var(--curve-pressure)" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="300" cy="115" r="4" fill="var(--curve-pressure)"/>
-            <text x="310" y="105" fill="var(--curve-pressure)" font-family="var(--font-mono)" font-size="10" font-weight="700">PICO: 9.0 BAR</text>
-
-            <!-- Curva de Caudal (Ámbar) -->
-            <!-- 0-6s: 0 ml/s; 6-8s: 1.2 ml/s; 8-14s: caída transitoria; 14-35s: estabilizado en 2.2 ml/s (y=253) -->
-            <path d="M 60 380 L 180 380 Q 220 310 260 310 Q 300 340 380 260 L 700 250" fill="none" stroke="var(--curve-flow)" stroke-width="2.5" stroke-dasharray="6 3" stroke-linecap="round"/>
-            <circle cx="700" cy="250" r="4" fill="var(--curve-flow)"/>
-            <text x="630" y="240" fill="var(--curve-flow)" font-family="var(--font-mono)" font-size="10" font-weight="700">2.2 ML/S</text>
-          </svg>
-        </div>
-      </section>
-
-      <section>
-        <h2>3. Tablas con Primera Columna Fija (.tabla-matriz-sticky)</h2>
-        <p>Toda matriz cuantitativa va encapsulada en <code>.tabla-scroll</code>. En matrices complejas se añade la clase <code>.tabla-matriz-sticky</code> para fijar la primera columna durante el desplazamiento lateral en móviles:</p>
-
+        <h2>2. Tokens de Color y Superficies</h2>
         <div class="tabla-scroll">
           <table class="tabla-matriz-sticky">
             <thead>
               <tr>
-                <th>Geometría de Muela</th>
-                <th>D₁₀ Finos (ISO 13320)</th>
-                <th>Tolerancia Runout</th>
-                <th>Ventana Caudal</th>
-                <th>Estado Calibración</th>
+                <th scope="col">Variable</th>
+                <th scope="col">Token Oscuro</th>
+                <th scope="col">Token Claro</th>
+                <th scope="col">Uso Metrológico</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Muela Plana 64 mm SSP MP</strong></td>
-                <td>35 – 45 µm</td>
-                <td>&le; 5.0 µm</td>
-                <td>2.2 – 3.8 ml/s</td>
-                <td><span class="badge-state ok">CALIBRADA</span></td>
+                <td><code>--bg-base</code></td>
+                <td><code>#07090e</code></td>
+                <td><code>#f8fafc</code></td>
+                <td>Fondo estructural del viewport</td>
               </tr>
               <tr>
-                <td><strong>Muela Plana 64 mm Mazzer Super Jolly</strong></td>
-                <td>65 – 85 µm</td>
-                <td>&le; 15.0 µm</td>
-                <td>1.2 – 1.8 ml/s</td>
-                <td><span class="badge-state warn">DESVIACIÓN D₁₀</span></td>
+                <td><code>--bg-surface</code></td>
+                <td><code>#0e131d</code></td>
+                <td><code>#ffffff</code></td>
+                <td>Tarjetas editoriales y bloques de datos</td>
               </tr>
               <tr>
-                <td><strong>Muela Cónica 40 mm Kinu / Niche Zero</strong></td>
-                <td>90 – 120 µm</td>
-                <td>&le; 25.0 µm</td>
-                <td>1.0 – 1.5 ml/s</td>
-                <td><span class="badge-state ok">BIMODAL NOMINAL</span></td>
+                <td><code>--text-accent</code></td>
+                <td><code>#38bdf8</code></td>
+                <td><code>#0284c7</code></td>
+                <td>Cian metrológico (9.2:1 AAA en oscuro)</td>
               </tr>
               <tr>
-                <td><strong>Muela Plana 83 mm SSP Cast Sweet</strong></td>
-                <td>40 – 55 µm</td>
-                <td>&le; 4.0 µm</td>
-                <td>2.0 – 3.0 ml/s</td>
-                <td><span class="badge-state ok">CALIBRADA</span></td>
+                <td><code>--curve-flow</code></td>
+                <td><code>#fbbf24</code></td>
+                <td><code>#d97706</code></td>
+                <td>Curva de caudal y límites de advertencia</td>
+              </tr>
+              <tr>
+                <td><code>--border-subtle</code></td>
+                <td><code>#1e293b</code></td>
+                <td><code>#e2e8f0</code></td>
+                <td>Rejilla separadora de especificaciones</td>
               </tr>
             </tbody>
           </table>
@@ -162,42 +112,15 @@
       </section>
 
       <section>
-        <h2>4. Formulación Física Tipográfica (.formula-block)</h2>
-        <p>Eliminación completa de LaTeX no parseado. Las leyes de la física se declaran en bloques estructurados mediante caracteres Unicode y etiquetas HTML nativas:</p>
-
+        <h2>3. Componentes Especiales de Visualización</h2>
+        <h3>3.1. Expresión Matemática Tipográfica (<code>.formula-block</code>)</h3>
+        <p>Evita dependencias pesadas de librerías JS o LaTeX en crudo. Renderizado puro mediante fuentes monoespaciadas y símbolos Unicode:</p>
         <div class="formula-block">
-          <span class="formula-title">Ley de Darcy para Lecho Poroso Compresible</span>
-          <div class="formula-eq">
-            Q = (κ · A / μ) · (ΔP / L)
-          </div>
-          <div class="formula-notes">
-            Donde Q = caudal volumétrico (m³/s), κ = permeabilidad intrínseca (m²), A = sección transversal de la cesta (m²), μ = viscosidad dinámica del agua a T (Pa·s), ΔP = gradiente de presión (Pa) y L = altura compactada del puck (m).
-          </div>
+          Q = (κ · A / μ) · (ΔP / L)
         </div>
-      </section>
 
-      <section>
-        <h2>5. Pares Semánticos de Metrología (spec-grid)</h2>
-        <p>Para especificaciones de instrumentación de laboratorio sin sobrecargar con tablas:</p>
-        
-        <dl class="spec-grid">
-          <div class="spec-item">
-            <dt class="spec-key">Instrumento</dt>
-            <dd class="spec-val">Termofiltro Scace WBC v1.4</dd>
-          </div>
-          <div class="spec-item">
-            <dt class="spec-key">Sensor</dt>
-            <dd class="spec-val">Termopar Tipo T (Cobre-Constantán)</dd>
-          </div>
-          <div class="spec-item">
-            <dt class="spec-key">Constante de Tiempo (τ)</dt>
-            <dd class="spec-val">&lt; 0.10 s</dd>
-          </div>
-          <div class="spec-item">
-            <dt class="spec-key">Caudal Calibrado</dt>
-            <dd class="spec-val">1.25 ml/s ± 0.10 ml/s @ 9.0 bar</dd>
-          </div>
-        </dl>
+        <h3>3.2. Curvas Vectoriales SVG de Dinámica de Fluidos (<code>.chart-container</code>)</h3>
+        <p>Gráficos SVG ligeros (&lt; 2 KB) con dos curvas paramétricas y soporte nativo para inversión en alto contraste y modo claro/oscuro.</p>
       </section>
     </main>
 

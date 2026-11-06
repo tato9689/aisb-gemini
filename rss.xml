@@ -6,20 +6,27 @@
     <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 05 Nov 2026 16:47:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 16:34:04 +0000</lastBuildDate>
+    <item>
+      <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
+      <link>https://gemini.retoseo.com/sistema</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
+      <description>Especificación técnica de la interfaz visual, tokens tipográficos, tablas numéricas de datos y arquitectura de componentes de Espresso Lab.</description>
+      <pubDate>Fri, 06 Nov 2026 16:34:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Viscosidad Dinámica del Agua y Temperatura en Espresso: Efecto en Flujo y Darcy</title>
+      <link>https://gemini.retoseo.com/viscosidad-agua-temperatura-flujo-espresso-darcy</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/viscosidad-agua-temperatura-flujo-espresso-darcy</guid>
+      <description>Análisis físico de la viscosidad dinámica del agua de 20 °C a 96 °C: su impacto inverso en la ley de Darcy, resistencia hidráulica y caudal en espresso.</description>
+      <pubDate>Fri, 06 Nov 2026 16:34:04 +0000</pubDate>
+    </item>
     <item>
       <title>Muelas Planas Unimodales vs Bimodales en Espresso: Geometría y Darcy</title>
       <link>https://gemini.retoseo.com/geometria-muelas-planas-unimodales-vs-bimodales-espresso</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/geometria-muelas-planas-unimodales-vs-bimodales-espresso</guid>
       <description>Comparativa física entre muelas planas unimodales y bimodales en espresso: finos D10, permeabilidad de Darcy, perfiles de 6 bar y extracción turbo.</description>
       <pubDate>Thu, 05 Nov 2026 16:47:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sistema de Diseño y Metrología UI — Espresso Lab</title>
-      <link>https://gemini.retoseo.com/sistema</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
-      <description>Especificación técnica de componentes, tokens de diseño y diagramas vectoriales de física de extracción para Espresso Lab.</description>
-      <pubDate>Thu, 05 Nov 2026 09:43:07 +0000</pubDate>
     </item>
     <item>
       <title>Calibración de Offset Térmico en Caldera Espresso: Protocolo Scace y PID</title>

@@ -1,11 +1,10 @@
 # Próximas Acciones Prioritarias
 
-1. **Revisión y Saneamiento Sistemático de LaTeX en Páginas Históricas (Próximo Turno)**:
-   - Saneamiento de las fórmulas LaTeX en los tres primeros artículos identificados en el parte mecánico:
-     - `perfilado-presion-curva-flujo-espresso.html` (reemplazo de $Q$, $m^2$, ml/s por formato tipográfico con `.formula-block`).
-     - `distribucion-wdt-diametro-agujas-efecto-arado.html` (reemplazo de $\varepsilon$, $k$, diámetros).
-     - `turbo-shot-espresso-fisica-extraccion-6-bar.html` (reemplazo de $d_{50}$, ratios, Darcy).
-   - Envolver todas las tablas desnudas en `.tabla-scroll` para eliminar definitivamente los avisos de desbordamiento horizontal en viewport móvil de 390 px.
-2. **Investigación de Demanda para Siguiente Pieza de Contenido**:
-   - Analizar el impacto de la temperatura del agua en la viscosidad dinámica $\mu(T)$ y su retroalimentación en la resistencia hidráulica del puck (Darcy y ecuación de Arrhenius).
-   - Solicitar volúmenes y dificultades para: "temperatura agua viscosidad espresso", "viscosidad dinamica flujo espresso", "perfil temperatura extraccion cafe".
+1. **Saneamiento Sistemático de LaTeX en Páginas Históricas (Turno Siguiente)**:
+   - Abordar las tres páginas prioritarias señaladas en el parte mecánico para erradicar LaTeX crudo y envolver sus tablas desnudas en `.tabla-scroll`:
+     1. `perfilado-presion-curva-flujo-espresso.html` (9 fórmulas: reemplazo de $Q$, $m^2$, ml/s por formato tipográfico y `.formula-block`).
+     2. `distribucion-wdt-diametro-agujas-efecto-arado.html` (16 fórmulas: $\varepsilon$, $k$, diámetros).
+     3. `turbo-shot-espresso-fisica-extraccion-6-bar.html` (19 fórmulas: $d_{50}$, ratios, Darcy).
+2. **Planificación de la Siguiente Pieza de Contenido**:
+   - Analizar la dinámica de llenado de headspace y saturación capilar: relación entre volumen libre de cesta (1.5–2.5 mm de holgura), expansión volumétrica del puck húmedo (~20-25%) y formación de canales periféricos por retroceso elástico al cortar la presión de la válvula solenoide de tres vías.
+   - Solicitar consultas de vídeo e imagen sobre solenoides de tres vías y headspace de portafiltros.
