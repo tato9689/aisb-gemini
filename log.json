@@ -1,5 +1,125 @@
 [
   {
+    "evento_id": "2026-11-06-5a0bb9f4",
+    "timestamp": "2026-11-06T16:34:05.233156+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-05",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Diagnóstico y Plan de Operaciones\n\n1. **Balance de Recursos y Selección de Modelo**:\n   - Presupuesto disponible: 10.00 € íntegros (24 días restantes para el ciclo). El indicador `vas_muy_por_detras_del_ritmo: true` confirma que debemos sostener el modelo `potente` (`gemini-3.7-flash`) para asegurar profundidad metrológica, análisis termodinámico y rigor analítico.\n   - En este turno ejecutamos con el modelo potente y fijamos `modelo_siguiente: \"potente\"`.\n\n2. **Resolución de Avisos del Parte Mecánico**:\n   - **`sistema.html`**: El parte mecánico reportaba la ausencia de datos estructurados Schema (`sin JSON-LD (Article)`). Integramos marcado semántico `TechArticle` completo y válido en `sistema.html`.\n   - **Saneamiento de Fórmulas Tipográficas**: Se mantiene la política de tolerancia cero a LaTeX sin renderizador. En el nuevo artículo `viscosidad-agua-temperatura-flujo-espresso-darcy.html`, todas las variables y relaciones físicas (μ(T), κ, ΔP, Arrhenius k_e, D₁₀) se escriben directamente con caracteres Unicode tipográficos y contenedores `.formula-block`.\n\n3. **Nueva Publicación Técnica**:\n   - Título: *Viscosidad Dinámica del Agua y Temperatura en Espresso: Efecto en Flujo y Darcy*.\n   - Foco físico: Análisis de la caída no lineal de la viscosidad dinámica del agua pura desde 1.002 mPa·s a 20 °C hasta 0.304 mPa·s a 93 °C (reducción de un 69.7%), su impacto como variable en el denominador de la ley de Darcy ($Q = \\frac{\\kappa \\cdot A}{\\mu \\cdot L} \\Delta P$), y la interacción antagónica con la compactación poroelástica y la disolución de coloides según la cinética de Arrhenius.\n   - Elementos visuales obligatorios incorporados:\n     1. Imagen técnica generada de laboratorio: `img/generadas/capillary-viscometer-hot-water-espresso.webp` (1200×630, 118.5 KB).\n     2. Vídeo técnico verificado y reproducible: Lance Hedrick (`d829iUgM8aw`), alojado vía `youtube-nocookie.com` con `loading=\"lazy\"`.\n     3. Gráfico vectorial SVG nativo que visualiza la curva de viscosidad μ(T) frente al caudal laminar relativo.\n     4. Matriz de parámetros termofísicos en contenedor `.tabla-scroll` con primera columna `.tabla-matriz-sticky`.\n   - Captación: Formulario semántico tras la matriz de viscosidad y caudal.\n\n4. **Actualización de la Portada (`index.html`)**:\n   - Se incorpora la nueva monografía en la posición principal (`.showcase-lead`), desplazando el informe de muelas a la rejilla editorial secundaria, garantizando la proporción de miniaturas de portada (ruta `/og/miniatura/viscosidad-agua-temperatura-flujo-espresso-darcy.jpg`) con ancho y alto fijos para CLS = 0.00.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre viscosidad dinámica del agua (μ) de 20 °C a 96 °C y ley de Darcy, con SVG nativo, tabla interactiva, vídeo de Lance Hedrick y resolución de Schema en sistema.html.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/053130c",
+    "cambios": [
+      {
+        "archivo": "img/generadas/capillary-viscometer-hot-water-espresso.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 22,
+        "quitadas": 22
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 6,
+        "quitadas": 8
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 7,
+        "quitadas": 1
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 8,
+        "quitadas": 9
+      },
+      {
+        "archivo": "sistema.html",
+        "anadidas": 62,
+        "quitadas": 139
+      },
+      {
+        "archivo": "viscosidad-agua-temperatura-flujo-espresso-darcy.html",
+        "anadidas": 253,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "three way solenoid valve espresso headspace dynamics",
+      "puck expansion volume saturation espresso basket headspace",
+      "presion solenoide tres vias descompresion cafe"
+    ],
+    "busquedas_recibidas": [
+      "arrhenius extraction kinetics espresso yield temperature",
+      "viscosidad dinamica agua extraccion cafe temperatura",
+      "water viscosity temperature espresso flow rate darcy"
+    ],
+    "imagenes_siguiente_turno": [
+      "solenoid valve brass espresso machine",
+      "metal shower screen espresso portafilter"
+    ],
+    "imagenes_recibidas": [
+      "pressure gauge espresso machine steam boiler",
+      "water drop fluid dynamics laboratory"
+    ],
+    "videos_siguiente_turno": [
+      "espresso three way solenoid valve group head"
+    ],
+    "commons_siguiente_turno": [
+      "solenoid valve",
+      "capillary action"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "three-way-solenoid-valve-cross-section-espresso",
+      "descripcion": "Technical macro cross-section diagram of a three-way solenoid brass valve in an espresso group head, showing deaeration port and hydraulic pressure discharge, clean engineering laboratory lighting."
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "solenoide tres vias cafetera espresso",
+      "headspace portafiltro cafe expansion",
+      "tamano cesta portafiltro dosis cafe",
+      "valvula solenoide despresurizacion espresso",
+      "expansion lecho cafe preinfusion"
+    ],
+    "keywords_recibidas": [
+      "cinetica extraccion espresso arrhenius",
+      "perfil temperatura caldera espresso",
+      "temperatura agua viscosidad espresso",
+      "temperatura extraccion espresso",
+      "viscosidad dinamica cafe flujo"
+    ],
+    "envio": null,
+    "avisos": [
+      "index.html: 591 KB con todo lo que carga, por encima de 500 KB — mira el LCP en móvil"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 36470,
+    "tokens_out": 15252,
+    "coste_estimado": null,
+    "duracion_seg": 118.04,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-05-5d3f368d",
     "timestamp": "2026-11-05T16:47:23.002146+00:00",
     "modelo_exacto": "gemini-3.8-flash",
