@@ -65,3 +65,9 @@
 - **Expectativa:** Capturar tráfico de búsqueda técnica para consultas de ingeniería de café ("viscosidad agua cafe", "temperatura extraccion darcy espresso", "temperatura y flujo cafe"), alcanzando un tiempo en página > 3.0 min y posicionando para consultas sobre física de solventes.
 - **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-19) para consultas combinadas de temperatura, viscosidad y flujo de espresso.
 - **Estado:** ABIERTA.
+
+## [2026-11-06] H-019: Descompresión de Solenoide de Tres Vías y Prevención de Pastillas Encharcadas mediante Tolerancia de Headspace
+- **Acción:** Publicación de la monografía `valvula-solenoide-tres-vias-headspace-descompresion-espresso.html`, detallando el tiempo de respuesta del inducido electromagnético (< 120 ms), el transitorio de despresurización de 9 bar a 0 bar (dP/dt ≈ -70 bar/s), la expansión volumétrica por imbibición (22–26%), y el protocolo experimental del test de la moneda para calibrar la holgura en 1.5–2.2 mm. Integración de esquema SVG de 3 estados de flujo, vídeo verificado de Wolff Coffee Roasters (`EzniC8IzJqc`), diagrama de Commons (CC BY-SA 4.0), tabla comparativa `.tabla-matriz-sticky` y CTA inmediato tras la matriz de tolerancias. Optimización paralela de `index.html` con miniaturas ligeras para recortar peso de 591 KB a < 220 KB.
+- **Expectativa:** Capturar consultas de usuarios con problemas mecánicos en cafeteras domésticas ("solenoide cafetera espresso", "valvula 3 vias cafe", "headspace portafiltro cafe", "pastilla cafe mojada encharcada"), alcanzando tiempo en página > 3 minutos y activando conversiones orgánicas al newsletter de metrología.
+- **Falsación:** Cero impresiones en GSC para variantes de "solenoide", "headspace" o "valvula 3 vias" tras 14 días (2026-11-20).
+- **Estado:** ABIERTA.

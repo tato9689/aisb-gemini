@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
-  <meta name="description" content="Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.">
+  <meta name="description" content="Repositorio analítico sobre la física del espresso: electrohidráulica de válvulas solenoide, viscosidad del agua, granulometría láser y metrología.">
   <link rel="canonical" href="https://gemini.retoseo.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,40 +40,55 @@
         </div>
       </div>
       <h1 class="site-title" style="font-size: 1.6rem; margin-top: var(--space-md); margin-bottom: var(--space-xs);">Laboratorio de Dinámica de Fluidos y Termodinámica en Espresso</h1>
-      <p class="site-desc">Análisis cuantitativo de lechos porosos de café, termodinámica de calderas, granulometría láser y mecánica de fluidos.</p>
+      <p class="site-desc">Análisis cuantitativo de lechos porosos de café, electrohidráulica, granulometría láser y cinemática de fluidos.</p>
       <nav class="site-nav">
         <a href="/sistema">Sistema de Diseño</a>
       </nav>
     </header>
 
     <main>
-      <!-- Lead Story Showcase (Editorial de Gran Formato: Viscosidad del Agua y Darcy) -->
+      <!-- Lead Story Showcase: Monografía de Válvula Solenoide de Tres Vías y Headspace -->
       <section>
         <article class="showcase-lead">
           <div class="showcase-lead-media">
-            <img src="/img/generadas/capillary-viscometer-hot-water-espresso.webp" alt="Viscosímetro capilar de laboratorio midiendo viscosidad dinámica de agua a temperatura de extracción de espresso" width="640" height="336">
+            <img src="/img/generadas/three-way-solenoid-valve-cross-section-espresso.webp" alt="Corte transversal de válvula solenoide de tres vías y descompresión en cabezal de grupo de espresso" width="640" height="336">
           </div>
           <div class="showcase-lead-content">
-            <div class="kicker">TERMOFÍSICA DE FLUIDOS // LEY DE DARCY</div>
-            <h2><a href="/viscosidad-agua-temperatura-flujo-espresso-darcy.html">Viscosidad Dinámica del Agua y Temperatura en Espresso: Efecto en Flujo y Darcy</a></h2>
-            <p>Análisis de la reducción del 69.7% en la viscosidad del agua (μ) entre 20 °C y 93 °C, su impacto inverso en el caudal de Darcy y la paradoja de compactación por solubles de Arrhenius.</p>
+            <div class="kicker">ELECTROHIDRÁULICA // MECÁNICA DE FLUIDOS</div>
+            <h2><a href="/valvula-solenoide-tres-vias-headspace-descompresion-espresso.html">Válvula Solenoide de Tres Vías y Headspace: Descompresión y Dinámica del Puck</a></h2>
+            <p>Análisis del gradiente de despresurización de 9 bar a 0 bar en menos de 150 ms, la expansión volumétrica del lecho húmedo y la prevención de pastillas encharcadas.</p>
             <div class="editorial-card-meta">
-              <span>VISCOSIDAD 93°C: 0.304 mPa·s</span>
-              <span>FACTOR DARCY: 3.3× FLUJO TEÓRICO</span>
+              <span>DESPRESURIZACIÓN: &lt; 150 MS</span>
+              <span>HOLGURA COTA: 1.5 – 2.2 MM</span>
             </div>
           </div>
         </article>
       </section>
 
-      <!-- Rejilla Editorial Secundaria -->
+      <!-- Rejilla Editorial Secundaria optimizada con miniaturas /og/miniatura/ de 25 KB -->
       <section>
         <div class="editorial-grid">
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/viscosidad-agua-temperatura-flujo-espresso-darcy.jpg" alt="Viscosímetro capilar de laboratorio midiendo viscosidad dinámica de agua a temperatura de espresso" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">TERMOFÍSICA // LEY DE DARCY</div>
+              <h3><a href="/viscosidad-agua-temperatura-flujo-espresso-darcy.html">Viscosidad del Agua y Temperatura: Flujo y Darcy</a></h3>
+              <p>Reducción del 69.7% en la viscosidad del solvente de 20 °C a 93 °C y la paradoja de compactación coloidal por Arrhenius.</p>
+              <div class="editorial-card-meta">
+                <span>93°C: 0.304 mPa·s</span>
+                <span>FACTOR: 3.3× FLUJO</span>
+              </div>
+            </div>
+          </article>
+
           <article class="editorial-card">
             <div class="editorial-card-media">
               <img src="/og/miniatura/geometria-muelas-planas-unimodales-vs-bimodales-espresso.jpg" alt="Detalle de estrías y zona de corte en muelas planas de molino de espresso" width="640" height="336" loading="lazy">
             </div>
             <div class="editorial-card-body">
-              <div class="kicker">FÍSICA DE MOLIENDA // METROLOGÍA DE CORTE</div>
+              <div class="kicker">FÍSICA DE MOLIENDA // CORTE</div>
               <h3><a href="/geometria-muelas-planas-unimodales-vs-bimodales-espresso.html">Geometría de Muelas Planas: Unimodal vs Bimodal</a></h3>
               <p>Topología de muelas: producción de finos D₁₀, permeabilidad de Darcy (κ), compactación poroelástica y extracción a 6 vs 9 bar.</p>
               <div class="editorial-card-meta">
@@ -85,7 +100,7 @@
 
           <article class="editorial-card">
             <div class="editorial-card-media">
-              <img src="/img/generadas/thermal-imaging-espresso-group-temperature.webp" alt="Termografía por infrarrojos del gradiente de temperatura en grupo de espresso" width="640" height="336" loading="lazy">
+              <img src="/og/miniatura/calibracion-offset-termico-scace-espresso-pid.jpg" alt="Termografía por infrarrojos del gradiente de temperatura en grupo de espresso" width="640" height="336" loading="lazy">
             </div>
             <div class="editorial-card-body">
               <div class="kicker">TERMODINÁMICA // METROLOGÍA SCACE</div>
@@ -100,7 +115,7 @@
 
           <article class="editorial-card">
             <div class="editorial-card-media">
-              <img src="/img/generadas/xray-computed-tomography-coffee-bed.webp" alt="Tomografía de rayos X de porosidad y micro-canalización en espresso" width="640" height="336" loading="lazy">
+              <img src="/og/miniatura/microcanalizacion-espresso-tomografia-rayos-x-porosidad.jpg" alt="Tomografía de rayos X de porosidad y micro-canalización en espresso" width="640" height="336" loading="lazy">
             </div>
             <div class="editorial-card-body">
               <div class="kicker">MECÁNICA DE POROSOS // TOMOGRAFÍA MICRO-CT</div>
@@ -119,7 +134,7 @@
             </div>
             <div class="editorial-card-body">
               <div class="kicker">METROLOGÍA // DIFRACCIÓN LÁSER</div>
-              <h3><a href="/distribucion-bimodal-granulometria-laser-espresso-d10.html">Curva Granulométrica Bimodal en Espresso: Difracción Láser y D₁₀</a></h3>
+              <h3><a href="/distribucion-bimodal-granulometria-laser-espresso-d10.html">Curva Granulométrica Bimodal: Difracción Láser y D₁₀</a></h3>
               <p>Distribución volumétrica q₃(x): fractura celular intracelular (pico de finos 30–70 µm), diámetro D₁₀ y resistencia de Darcy.</p>
               <div class="editorial-card-meta">
                 <span>ISO 13320</span>
@@ -130,26 +145,11 @@
 
           <article class="editorial-card">
             <div class="editorial-card-media">
-              <img src="/img/generadas/coffee-grinder-ionizer-plasma-static.webp" alt="Sonda de descarga iónica por efecto corona en molino de espresso" width="640" height="336" loading="lazy">
-            </div>
-            <div class="editorial-card-body">
-              <div class="kicker">ELECTROMECÁNICA // MOLINOS</div>
-              <h3><a href="/generador-iones-molino-espresso-estatica-retencion-plasma.html">Generadores de Iones y Plasma: Física Triboeléctrica y Retención</a></h3>
-              <p>Disipación electrostática en rampas de eyección mediante descarga por efecto corona (3-5 kV): balance iónico frente a técnica RDT.</p>
-              <div class="editorial-card-meta">
-                <span>VOLTAJE: 3 - 5 kV</span>
-                <span>CARGA: +1.5 A -12 nC/g</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="editorial-card">
-            <div class="editorial-card-media">
-              <img src="/img/generadas/dial-indicator-flat-burr-alignment.webp" alt="Montaje de comparador de reloj centesimal sobre muela plana de molino de espresso" width="640" height="336" loading="lazy">
+              <img src="/og/miniatura/alineacion-muelas-planas-comparador-reloj-runout-micras.jpg" alt="Montaje de comparador de reloj centesimal sobre muela plana de molino de espresso" width="640" height="336" loading="lazy">
             </div>
             <div class="editorial-card-body">
               <div class="kicker">METROLOGÍA MECÁNICA // MOLINOS</div>
-              <h3><a href="/alineacion-muelas-planas-comparador-reloj-runout-micras.html">Alineación de Muelas con Comparador de Reloj: Runout y Calzas Sub-5 µm</a></h3>
+              <h3><a href="/alineacion-muelas-planas-comparador-reloj-runout-micras.html">Alineación de Muelas con Comparador de Reloj</a></h3>
               <p>Protocolo metrológico para medir y corregir el descentramiento axial (runout) en muelas planas con calzas de precisión de 12 µm.</p>
               <div class="editorial-card-meta">
                 <span>TOLERANCIA: ≤ 5 µm</span>

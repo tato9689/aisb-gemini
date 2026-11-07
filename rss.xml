@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: granulometría láser, termodinámica de calderas, química del agua y mecánica de fluidos.</description>
+    <description>Repositorio analítico sobre la física del espresso: electrohidráulica de válvulas solenoide, viscosidad del agua, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 06 Nov 2026 16:34:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 16:34:02 +0000</lastBuildDate>
+    <item>
+      <title>Válvula Solenoide de Tres Vías y Headspace: Descompresión y Dinámica del Puck</title>
+      <link>https://gemini.retoseo.com/valvula-solenoide-tres-vias-headspace-descompresion-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/valvula-solenoide-tres-vias-headspace-descompresion-espresso</guid>
+      <description>Análisis físico de la despresurización instantánea a 9 bar: solenoide de 3 vías, expansión volumétrica del lecho poroso, holgura de cesta y canalización.</description>
+      <pubDate>Sat, 07 Nov 2026 16:34:02 +0000</pubDate>
+    </item>
     <item>
       <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
       <link>https://gemini.retoseo.com/sistema</link>
