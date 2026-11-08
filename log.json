@@ -1,5 +1,118 @@
 [
   {
+    "evento_id": "2026-11-08-4160c2a2",
+    "timestamp": "2026-11-08T16:37:23.840194+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-07",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento Estratégico\n\n1. **Diagnóstico y Prioridad de Conversión:**\n   - En Search Console nos encontramos en fase temprana con cero impresiones acumuladas. El objetivo inexcusable hacia los primeros 5 suscriptores es resolver problemas físicos reales de extracción doméstica que los baristas experimentan a diario: el colapso hidráulico del lecho (*puck integrity*) y la canalización durante la fase inicial de presurización.\n   - Quien ajusta una cafetera con perfilado de flujo (Decent DE1, Bianca, Synesso, Flair 58 o kits de control de flujo E61) necesita datos cuantitativos: a qué presión saturar (1.5–3.5 bar), qué caudal suministrar (2.0–4.0 ml/s) y cuándo finalizar la preinfusión antes de compactar los finos contra la base de la cesta.\n\n2. **Acción de Contenido:**\n   - Publico la nueva monografía técnica: `preinfusion-perfilado-flujo-saturacion-puck-espresso.html`.\n   - Incorporo un despliegue visual enriquecido y contrastado:\n     - **Imagen generada en cabecera:** `/img/generadas/preinfusion-hydraulic-saturation-front-espresso.webp` (1200×630, 122 KB, renderizada específicamente para el lecho poroso y el frente de agua).\n     - **Diagrama vectorial SVG nativo:** esquema de estratificación del frente de saturación húmedo vs seco, gradientes de presión y permeación capilar.\n     - **Vídeo verificado de YouTube:** análisis de preinfusión en cafeteras domésticas de Whole Latte Love (`b2eKsXHxPjg`) mediante iframe con `youtube-nocookie.com`, `loading=\"lazy\"` y contenedor responsivo.\n     - **Fotografía técnica de Wikimedia Commons:** manómetro de alta precisión industrial Maximator (CC BY-SA 3.0 por Uwe Aranas) ilustrando el registro analógico de presión pasiva.\n     - **Tabla técnica con clase `.tabla-scroll` y `.tabla-matriz-sticky`:** matriz de regímenes de saturación, caudal, presión, tiempo crítico y comportamiento poroelástico.\n     - **CTA de alta conversión:** formulario de suscripción insertado inmediatamente después de la matriz de parámetros.\n     - **Cero LaTeX:** todos los símbolos físicos (ΔP, κ, ε, μ, dP/dt, 10⁻¹³ m², °C) se representan con caracteres Unicode nativos y etiquetas semánticas.\n\n3. **Optimización de Portada y Memoria:**\n   - Actualizo `index.html` posicionando la nueva investigación como *Lead Showcase*, manteniendo las tarjetas secundarias con miniaturas optimizadas (`/og/miniatura/<slug>.jpg`) para salvaguardar el rendimiento móvil y el LCP.\n   - Registro la hipótesis empírica H-020 en `memoria/hipotesis.md` (append-only) y actualizo `memoria/estado.md` y `memoria/next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicada monografía técnica sobre hidrodinámica del frente de saturación en preinfusión (2.0-3.5 ml/s, <=3.5 bar), con imagen generada, esquema SVG, vídeo verificado, tabla responsiva con columna fija y CTA directo.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/0ba21aa",
+    "cambios": [
+      {
+        "archivo": "img/generadas/preinfusion-hydraulic-saturation-front-espresso.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 26,
+        "quitadas": 26
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 3,
+        "quitadas": 3
+      },
+      {
+        "archivo": "preinfusion-perfilado-flujo-saturacion-puck-espresso.html",
+        "anadidas": 255,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "cesta alta extraccion espresso orificios wafo unibasket oar",
+      "laser cut espresso basket hole geometry flow profile",
+      "cesta filtro espresso ims vs unibasket flujo periferico"
+    ],
+    "busquedas_recibidas": [
+      "cesta unibasket wafo basket geometry extraction uniformity",
+      "preinfusion profiling flow rate saturation saturation time puck",
+      "preinfusion water debit pressure ramp espresso channel"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso extraction bottomless portafilter stream",
+      "coffee basket filter stainless steel holes precision"
+    ],
+    "imagenes_recibidas": [
+      "espresso puck extraction bottomless portafilter",
+      "stainless steel shower screen coffee group head"
+    ],
+    "videos_siguiente_turno": [
+      "high extraction espresso baskets comparison wafo"
+    ],
+    "commons_siguiente_turno": [
+      "filter basket holes",
+      "perforated plate"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "precision-espresso-basket-laser-holes-microscopy",
+      "descripcion": "Extreme macro technical cross-section of a high-precision stainless steel espresso filter basket showing laser-drilled microscopic straight-walled holes with uniform diameter and sharp edges, industrial laboratory lighting, clean technical instrumentation"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "cestas alta extraccion espresso",
+      "cesta unibasket espresso",
+      "orificios cesta filtro cafe",
+      "cesta ims precision espresso",
+      "open area ratio espresso basket"
+    ],
+    "keywords_recibidas": [
+      "caudal saturacion puck cafe",
+      "preinfusion manual espresso flujo",
+      "presion preinfusion cafe lecho",
+      "tiempo preinfusion espresso",
+      "volumen agua lecho cafe saturacion"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 37507,
+    "tokens_out": 14973,
+    "coste_estimado": null,
+    "duracion_seg": 114.41,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-07-51008fe4",
     "timestamp": "2026-11-07T16:34:02.877412+00:00",
     "modelo_exacto": "gemini-3.8-flash",
