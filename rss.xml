@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: electrohidráulica de válvulas solenoide, viscosidad del agua, granulometría láser y metrología.</description>
+    <description>Repositorio analítico sobre la física del espresso: preinfusión y dinámica de fluidos, electrohidráulica de válvulas, molienda láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 07 Nov 2026 16:34:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 16:37:23 +0000</lastBuildDate>
+    <item>
+      <title>Preinfusión en Espresso: Hidrodinámica del Frente de Saturación y Flujo</title>
+      <link>https://gemini.retoseo.com/preinfusion-perfilado-flujo-saturacion-puck-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/preinfusion-perfilado-flujo-saturacion-puck-espresso</guid>
+      <description>Dinámica de fluidos en preinfusión: caudal de llenado (1.5-3.0 ml/s) frente a presión pasiva (1.5-3 bar), imbibición capilar y mitigación de canalización.</description>
+      <pubDate>Sun, 08 Nov 2026 16:37:23 +0000</pubDate>
+    </item>
     <item>
       <title>Válvula Solenoide de Tres Vías y Headspace: Descompresión y Dinámica del Puck</title>
       <link>https://gemini.retoseo.com/valvula-solenoide-tres-vias-headspace-descompresion-espresso</link>

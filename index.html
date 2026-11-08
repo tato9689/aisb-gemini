@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
-  <meta name="description" content="Repositorio analítico sobre la física del espresso: electrohidráulica de válvulas solenoide, viscosidad del agua, granulometría láser y metrología.">
+  <meta name="description" content="Repositorio analítico sobre la física del espresso: preinfusión y dinámica de fluidos, electrohidráulica de válvulas, molienda láser y metrología.">
   <link rel="canonical" href="https://gemini.retoseo.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,19 +47,19 @@
     </header>
 
     <main>
-      <!-- Lead Story Showcase: Monografía de Válvula Solenoide de Tres Vías y Headspace -->
+      <!-- Lead Story Showcase: Preinfusión y Frente de Saturación -->
       <section>
         <article class="showcase-lead">
           <div class="showcase-lead-media">
-            <img src="/img/generadas/three-way-solenoid-valve-cross-section-espresso.webp" alt="Corte transversal de válvula solenoide de tres vías y descompresión en cabezal de grupo de espresso" width="640" height="336">
+            <img src="/img/generadas/preinfusion-hydraulic-saturation-front-espresso.webp" alt="Visualización técnica del avance del frente de saturación de agua a través de un lecho poroso de café molido" width="640" height="336">
           </div>
           <div class="showcase-lead-content">
-            <div class="kicker">ELECTROHIDRÁULICA // MECÁNICA DE FLUIDOS</div>
-            <h2><a href="/valvula-solenoide-tres-vias-headspace-descompresion-espresso.html">Válvula Solenoide de Tres Vías y Headspace: Descompresión y Dinámica del Puck</a></h2>
-            <p>Análisis del gradiente de despresurización de 9 bar a 0 bar en menos de 150 ms, la expansión volumétrica del lecho húmedo y la prevención de pastillas encharcadas.</p>
+            <div class="kicker">HIDRÁULICA DE LECHOS // SATURACIÓN</div>
+            <h2><a href="/preinfusion-perfilado-flujo-saturacion-puck-espresso.html">Preinfusión en Espresso: Hidrodinámica del Frente de Saturación y Perfiles de Caudal</a></h2>
+            <p>Dinámica de imbibición capilar: control del caudal de llenado (2.0 a 3.5 ml/s) y presión pasiva (&le; 3.5 bar) para prevenir roturas poroelásticas antes de los 9 bar.</p>
             <div class="editorial-card-meta">
-              <span>DESPRESURIZACIÓN: &lt; 150 MS</span>
-              <span>HOLGURA COTA: 1.5 – 2.2 MM</span>
+              <span>CAUDAL: 2.0 – 3.5 ml/s</span>
+              <span>UMBRAL: 3.5 BAR</span>
             </div>
           </div>
         </article>
@@ -68,6 +68,21 @@
       <!-- Rejilla Editorial Secundaria optimizada con miniaturas /og/miniatura/ de 25 KB -->
       <section>
         <div class="editorial-grid">
+          <article class="editorial-card">
+            <div class="editorial-card-media">
+              <img src="/og/miniatura/valvula-solenoide-tres-vias-headspace-descompresion-espresso.jpg" alt="Corte transversal de válvula solenoide de tres vías y descompresión en cabezal de grupo de espresso" width="640" height="336" loading="lazy">
+            </div>
+            <div class="editorial-card-body">
+              <div class="kicker">ELECTROHIDRÁULICA // SOLENOIDES</div>
+              <h3><a href="/valvula-solenoide-tres-vias-headspace-descompresion-espresso.html">Válvula Solenoide de Tres Vías y Headspace</a></h3>
+              <p>Despresurización de 9 bar a 0 bar en 150 ms, expansión volumétrica húmeda (22-26%) y prevención de pastillas encharcadas.</p>
+              <div class="editorial-card-meta">
+                <span>DESPRESURIZACIÓN: &lt; 150 MS</span>
+                <span>COTA: 1.5 – 2.2 MM</span>
+              </div>
+            </div>
+          </article>
+
           <article class="editorial-card">
             <div class="editorial-card-media">
               <img src="/og/miniatura/viscosidad-agua-temperatura-flujo-espresso-darcy.jpg" alt="Viscosímetro capilar de laboratorio midiendo viscosidad dinámica de agua a temperatura de espresso" width="640" height="336" loading="lazy">
@@ -90,7 +105,7 @@
             <div class="editorial-card-body">
               <div class="kicker">FÍSICA DE MOLIENDA // CORTE</div>
               <h3><a href="/geometria-muelas-planas-unimodales-vs-bimodales-espresso.html">Geometría de Muelas Planas: Unimodal vs Bimodal</a></h3>
-              <p>Topología de muelas: producción de finos D₁₀, permeabilidad de Darcy (κ), compactación poroelástica y extracción a 6 vs 9 bar.</p>
+              <p>Topología de muelas: producción de finos D₁₀, permeabilidad de Darcy (&kappa;), compactación poroelástica y extracción a 6 vs 9 bar.</p>
               <div class="editorial-card-meta">
                 <span>FINOS SUB-50 µm: 8% VS 22%</span>
                 <span>RÉGIMEN: 6 BAR VS 9 BAR</span>
@@ -120,10 +135,10 @@
             <div class="editorial-card-body">
               <div class="kicker">MECÁNICA DE POROSOS // TOMOGRAFÍA MICRO-CT</div>
               <h3><a href="/microcanalizacion-espresso-tomografia-rayos-x-porosidad.html">Micro-Canalización: Rayos X, Fracción de Huecos y Darcy</a></h3>
-              <p>Análisis 3D de la matriz granular compactada a 150 N: relación entre huecos (ε), permeabilidad (κ ≈ 10⁻¹³ m²) y fractura poroelástica.</p>
+              <p>Análisis 3D de la matriz granular compactada a 150 N: relación entre huecos (&epsilon;), permeabilidad (&kappa; &approx; 10⁻¹³ m²) y fractura poroelástica.</p>
               <div class="editorial-card-meta">
                 <span>MICRO-CT 4.2 µm</span>
-                <span>κ ≈ 10⁻¹³ m²</span>
+                <span>&kappa; &approx; 10⁻¹³ m²</span>
               </div>
             </div>
           </article>
@@ -139,21 +154,6 @@
               <div class="editorial-card-meta">
                 <span>ISO 13320</span>
                 <span>D₁₀: R² &gt; 0.88</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="editorial-card">
-            <div class="editorial-card-media">
-              <img src="/og/miniatura/alineacion-muelas-planas-comparador-reloj-runout-micras.jpg" alt="Montaje de comparador de reloj centesimal sobre muela plana de molino de espresso" width="640" height="336" loading="lazy">
-            </div>
-            <div class="editorial-card-body">
-              <div class="kicker">METROLOGÍA MECÁNICA // MOLINOS</div>
-              <h3><a href="/alineacion-muelas-planas-comparador-reloj-runout-micras.html">Alineación de Muelas con Comparador de Reloj</a></h3>
-              <p>Protocolo metrológico para medir y corregir el descentramiento axial (runout) en muelas planas con calzas de precisión de 12 µm.</p>
-              <div class="editorial-card-meta">
-                <span>TOLERANCIA: ≤ 5 µm</span>
-                <span>CALZAS CENTESIMALES</span>
               </div>
             </div>
           </article>

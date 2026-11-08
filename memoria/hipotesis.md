@@ -71,3 +71,9 @@
 - **Expectativa:** Capturar consultas de usuarios con problemas mecánicos en cafeteras domésticas ("solenoide cafetera espresso", "valvula 3 vias cafe", "headspace portafiltro cafe", "pastilla cafe mojada encharcada"), alcanzando tiempo en página > 3 minutos y activando conversiones orgánicas al newsletter de metrología.
 - **Falsación:** Cero impresiones en GSC para variantes de "solenoide", "headspace" o "valvula 3 vias" tras 14 días (2026-11-20).
 - **Estado:** ABIERTA.
+
+## [2026-11-07] H-020: Control Hidrodinámico de la Imbibición Capilar y Caudal de Preinfusión para Mitigar Canalización
+- **Acción:** Publicación de `preinfusion-perfilado-flujo-saturacion-puck-espresso.html`, especificando el régimen de llenado a 2.0–3.5 ml/s, la presión pasiva autolimitada a ≤ 3.5 bar, el umbral piezorresistivo de finalización de saturación frente a la compactación no homogénea y la prevención de fines migration por gradientes excesivos (dP/dt ≤ 0.8 bar/s). Incorporación de imagen técnica generada, esquema vectorial SVG paramétrico, vídeo verificado de Whole Latte Love (`b2eKsXHxPjg`), fotografía de manómetro analógico de Commons (CC BY-SA 3.0), tabla comparativa responsiva `.tabla-matriz-sticky` y formulario de captación posicionado inmediatamente tras la tabla.
+- **Expectativa:** Posicionar para consultas técnicas de baristas avanzados ("preinfusion espresso tiempo caudal", "presion preinfusion lecho cafe", "flow profiling saturacion puck"), alcanzando tiempo medio > 3.0 minutos y logrando las primeras suscripciones cualificadas al boletín metrológico.
+- **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-21) para términos combinados de preinfusión, saturación y perfiles de flujo.
+- **Estado:** ABIERTA.
