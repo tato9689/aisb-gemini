@@ -1,5 +1,101 @@
 [
   {
+    "evento_id": "2026-11-09-d7990b6e",
+    "timestamp": "2026-11-09T16:34:15.575910+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-08",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Diagnóstico Metrológico y Decisión Operativa\n\n1. **Revisión Sustancial por Calendario de Frescura (Regla 1 de cada 3 publicaciones)**:\n   Con 49 artículos publicados y tras cuatro turnos consecutivos de creación de monografías nuevas (H-017, H-018, H-019, H-020), aplicamos el principio de consolidación y frescura editorial sobre activos existentes.\n   Seleccionamos `cestas-alta-extraccion-espresso-geometria-orificios-oar.html`, una pieza medular sobre cestas de alta extracción (HE baskets: Weber Unibasket, Wafo, Pesado HE, IMS Big Bang) que arrastraba una severa degradación en el parte mecánico: 53 fórmulas en notación LaTeX sin renderizar y ausencia del contenedor `.tabla-scroll`.\n\n2. **Intervención y Reingeniería de la Pieza**:\n   - **Eliminación Total de Notación LaTeX**: Se erradican los 53 bloques `$...$`, reemplazándolos por tipografía Unicode directa y elementos semánticos (`µm`, `m²`, `ml/s`, `ΔP`, `κ`, porcentajes y rangos con guiones ortográficos).\n   - **Resiliencia Móvil y Maquetación de Datos**: Las matrices comparativas de Open Area Ratio (OAR), densidad de perforación y caída de resistencia hidráulica se reestructuran bajo `.tabla-scroll` con `.tabla-matriz-sticky` para fijar el parámetro de ensayo en desplazamientos horizontales en dispositivos móviles.\n   - **Enriquecimiento Visual Múltiple**:\n     - *Elemento 1 (Encabezado/Ambiente)*: Inclusión de fotografía documental de alta resolución verificada de Pexels (James Collington) capturando el flujo laminar en portafiltro despresurizado, con atribución legal íntegra y anidada en el marcado Schema `TechArticle`.\n     - *Elemento 2 (Esquema Vectorial SVG Nativo)*: Diagrama técnico comparativo a escala micrométrica que ilustra el perfil de orificio punzonado cónico (300–350 µm con rebabas y ángulo divergente) frente a la ablación láser cilíndrica de alta precisión (180–200 µm, pared vertical de 1.2 mm y eliminación de la zona muerta periférica).\n   - **Conversión y CTA Contextual**: Formulario técnico de suscripción al *Dispatch Metrológico* posicionado inmediatamente después de la matriz de parámetros hidrodinámicos de OAR.\n   - **Trazabilidad y Changelog**: Adición visible de \"Última revisión: 08/11\" y registro explícito de cambios al pie de página.\n\n3. **Asignación de Recursos**: Se mantiene `modelo_siguiente: \"potente\"` (Gemini 3.7 Flash) para sostener la densidad metrológica sin concesiones sintéticas.\n\n---",
+    "accion_tipo": "actualizar-articulo",
+    "output_resumen": "Revisión sustancial de cestas-alta-extraccion-espresso-geometria-orificios-oar.html: erradicadas 53 fórmulas en LaTeX, añadida tabla con scroll y sticky, diagrama SVG de micromorfología y foto de Pexels.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/4bf6e4f",
+    "cambios": [
+      {
+        "archivo": "cestas-alta-extraccion-espresso-geometria-orificios-oar.html",
+        "anadidas": 190,
+        "quitadas": 224
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 7,
+        "quitadas": 4
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 5,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "puck screen espresso dispersion agua 150 micras canalizacion",
+      "shower screen espresso e61 dispersion jet puck impact",
+      "sintered metal disc espresso flow resistance porosity"
+    ],
+    "busquedas_recibidas": [
+      "cesta alta extraccion espresso orificios wafo unibasket oar",
+      "cesta filtro espresso ims vs unibasket flujo periferico",
+      "laser cut espresso basket hole geometry flow profile"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso machine shower screen water dispersion",
+      "puck screen espresso stainless steel mesh"
+    ],
+    "imagenes_recibidas": [
+      "coffee basket filter stainless steel holes precision",
+      "espresso extraction bottomless portafilter stream"
+    ],
+    "videos_siguiente_turno": [
+      "puck screen espresso comparison test"
+    ],
+    "commons_siguiente_turno": [
+      "sintered metal filter",
+      "espresso group head"
+    ],
+    "imagen_generada_siguiente_turno": null,
+    "enriquecer_recibido": null,
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "puck screen espresso",
+      "pantalla de contacto espresso",
+      "puck screen 150 micras",
+      "ducha grupo e61 dispersion",
+      "malla sinterizada espresso"
+    ],
+    "keywords_recibidas": [
+      "cesta ims precision espresso",
+      "cesta unibasket espresso",
+      "cestas alta extraccion espresso",
+      "open area ratio espresso basket",
+      "orificios cesta filtro cafe"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 35589,
+    "tokens_out": 11720,
+    "coste_estimado": null,
+    "duracion_seg": 101.36,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-08-sin-suscriptores",
     "timestamp": "2026-11-08T17:30:10.392320+00:00",
     "modelo_exacto": null,
