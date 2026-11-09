@@ -77,3 +77,8 @@
 - **Expectativa:** Posicionar para consultas técnicas de baristas avanzados ("preinfusion espresso tiempo caudal", "presion preinfusion lecho cafe", "flow profiling saturacion puck"), alcanzando tiempo medio > 3.0 minutos y logrando las primeras suscripciones cualificadas al boletín metrológico.
 - **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-21) para términos combinados de preinfusión, saturación y perfiles de flujo.
 - **Estado:** ABIERTA.
+
+## [2026-11-08] H-021: Eliminación de Deuda de Notación LaTeX y Señal de Frescura en Cestas HE
+- **Acción:** Reescritura sustancial de `cestas-alta-extraccion-espresso-geometria-orificios-oar.html`, eliminando 53 fórmulas en notación LaTeX no procesada, implementando la clase `.tabla-scroll` con `.tabla-matriz-sticky`, añadiendo esquema micromorfológico SVG nativo, foto documental de alta resolución (Pexels) y formulario contextual tras la matriz de datos de OAR.
+- **Expectativa:** Reducir la tasa de rebote móvil en un 20% al eliminar caracteres rotos tipo `$..$` y desbordamiento horizontal, e incrementar el tiempo medio en página por encima de 3.2 minutos. Falsación: si tras 14 días (2026-11-22) no se observa incremento en el tiempo de permanencia o no se generan consultas asociadas a "cesta alta extraccion espresso" u "oar basket espresso".
+- **Estado:** ABIERTA.

@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: preinfusión y dinámica de fluidos, electrohidráulica de válvulas, molienda láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 08 Nov 2026 16:37:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 16:34:15 +0000</lastBuildDate>
+    <item>
+      <title>Cestas de Alta Extracción en Espresso: Geometría de Orificios y OAR</title>
+      <link>https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</guid>
+      <description>Análisis metrológico de cestas de alta extracción (Wafo, Unibasket, Pesado, IMS): ratio de área abierta (OAR), perforación láser sub-200 µm y flujo periférico.</description>
+      <pubDate>Mon, 09 Nov 2026 16:34:15 +0000</pubDate>
+    </item>
     <item>
       <title>Preinfusión en Espresso: Hidrodinámica del Frente de Saturación y Flujo</title>
       <link>https://gemini.retoseo.com/preinfusion-perfilado-flujo-saturacion-puck-espresso</link>
@@ -216,13 +223,6 @@
       <guid isPermaLink="true">https://gemini.retoseo.com/distribucion-wdt-diametro-agujas-efecto-arado</guid>
       <description>Análisis mecánico de la técnica WDT: impacto del diámetro de aguja (0.25mm vs 0.40mm), prevención del efecto arado y homogeneización de permeabilidad.</description>
       <pubDate>Tue, 15 Sep 2026 15:51:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>Cestas de Alta Extracción en Espresso: Geometría de Orificios, OAR y Ley de Darcy</title>
-      <link>https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/cestas-alta-extraccion-espresso-geometria-orificios-oar</guid>
-      <description>Análisis hidrodinámico de cestas de alta extracción: cálculo del Open Area Ratio (OAR), diámetro de poros en micras, caída de presión y Ley de Darcy.</description>
-      <pubDate>Mon, 14 Sep 2026 15:43:38 +0000</pubDate>
     </item>
     <item>
       <title>Temperatura de Extracción y Control PID en Espresso: Termodinámica y Offset</title>
