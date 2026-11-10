@@ -1,5 +1,120 @@
 [
   {
+    "evento_id": "2026-11-10-a1b27870",
+    "timestamp": "2026-11-10T16:40:51.276078+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-09",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento Metrológico y Decisiones de Ingeniería (Turno 2026-11-09)\n\n#### 1. Análisis de Demanda y Señales de Mercado\nLos datos de DataForSEO recibidos revelan dos señales directas:\n- `puck screen espresso`: 20 búsquedas/mes (competencia publicitaria alta).\n- `shower screen e61`: 10 búsquedas/mes (competencia baja).\n- Las variantes ultra-específicas (`puck screen 150 micras`, `malla sinterizada espresso`) no registran volumen cuantificado por DataForSEO en España (`null`).\n\nLa estrategia óptima no consiste en redactar un artículo genérico sobre puck screens (tema ya cubierto y con riesgo de canibalización interna frente a `puck-screen-espresso-hidrodinamica-dispersion-150-micras.html`), sino en atacar la física de la dispersión de agua en el punto de contacto primario del grupo: **la ducha de dispersión del grupo E61 (`shower screen e61`) frente a mallas integradas fotograbadas y discos sinterizados**. Abordamos la hidrodinámica del caudal libre (*water debit*, 180–240 ml/30 s), la velocidad lineal de chorro ($v_z$) que induce cratering superficial y la atenuación de la energía cinética del flujo entrante.\n\n#### 2. Desarrollo Editorial y Enriquecimiento Visual\nPublicamos la monografía de ingeniería:\n`shower-screen-precision-e61-dispersion-agua-canalizacion.html`\n\nCumplimiento estricto del listón instrumental y visual:\n1. **Fotografía técnica de laboratorio**: Integración de la imagen generada en el repo (`img/generadas/puck-screen-sintered-water-dispersion-lab.webp`, 1200x630, 151 KB) en la cabecera del artículo y vinculada en el Schema `TechArticle` / `image`.\n2. **Esquema vectorial SVG nativo**: Corte longitudinal paramétrico comparando la hidrodinámica de una ducha E61 estándar (efecto *jetting* y erosión por impacto) frente a una ducha de precisión fotograbada (frente de lluvia laminar distribuido).\n3. **Vídeo técnico verificado**: Incrustación mediante `embed_html` del análisis experimental de Clive Coffee (`k6YijecSpOs`: *Puck Screens & Shower Screens: How Much do They REALLY Affect Extraction?*), bajo el dominio seguro `youtube-nocookie.com`.\n4. **Matriz de parámetros empíricos en contenedor `.tabla-scroll`**: Comparativa de 4 topologías de duchas (E61 estándar estampada, IMS Competition con membrana integrada de 200 µm, Pesado HD corte láser y disco sinterizado de 150 µm), midiendo caudal libre (*water debit* ml/s), velocidad de orificio, tolerancia geométrica y caída de presión.\n5. **Captación CRO estratégica**: Formulario de suscripción al Dispatch de metrología insertado inmediatamente tras la tabla comparativa, antes de la discusión teórica de Darcy.\n6. **Saneamiento tipográfico**: Cero notación LaTeX en el nuevo artículo; todos los símbolos físicos y matemáticos se escriben como entidades Unicode limpias (Δ, μ, κ, D₁₀, v_z).\n\n#### 3. Presupuesto y Selección de Modelo\n- Gasto acumulado del mes: 0.00 EUR de 10.00 EUR. Quedan 20 días para reiniciar el tope.\n- Indicador: `vas_muy_por_detras_del_ritmo: true`.\n- Conforme a la directriz obligatoria de agotar el presupuesto en trabajo riguroso y evitar el desperdicio del fondo mensual, selecciono `modelo_siguiente: \"potente\"` para el próximo turno.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre duchas de precisión E61 (shower screen) y dispersión hidrodinámica frente a cratering, con vídeo verificado, esquema vectorial SVG y matriz de datos.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/a6c927b",
+    "cambios": [
+      {
+        "archivo": "img/generadas/puck-screen-sintered-water-dispersion-lab.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 22,
+        "quitadas": 22
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 4,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 6,
+        "quitadas": 5
+      },
+      {
+        "archivo": "shower-screen-precision-e61-dispersion-agua-canalizacion.html",
+        "anadidas": 237,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "alineacion molinillo conico deflexion eje molienda",
+      "retencion molienda fuelle silicona espresso presion",
+      "conical burr shaft runout espresso deflection"
+    ],
+    "busquedas_recibidas": [
+      "puck screen 150 micras canalizacion dispersion espresso",
+      "retencion agua puck screen headspace expansion",
+      "shower screen integrated vs sintered metal disc water debit"
+    ],
+    "imagenes_siguiente_turno": [
+      "conical burr grinder mechanism",
+      "espresso machine shower screen water"
+    ],
+    "imagenes_recibidas": [
+      "coffee extraction shower screen dispersion",
+      "espresso puck screen portafilter"
+    ],
+    "videos_siguiente_turno": [
+      "conical burr alignment espresso"
+    ],
+    "commons_siguiente_turno": [
+      "conical burr",
+      "dial indicator"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "conical-burrs-shaft-deflection-bench",
+      "descripcion": "Close-up engineering view of an espresso grinder conical burr set mounted on a test bench with a digital dial indicator measuring lateral shaft deflection under simulated load, neutral technical lighting, macro photography."
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "alinear molinillo cafe",
+      "fuelle monodosis cafe",
+      "molinillo conico espresso",
+      "retencion molinillo cafe",
+      "shaft runout grinder"
+    ],
+    "keywords_recibidas": [
+      "malla sinterizada espresso",
+      "pantalla de contacto espresso",
+      "puck screen 150 micras",
+      "puck screen espresso",
+      "shower screen e61"
+    ],
+    "envio": null,
+    "avisos": [
+      "shower-screen-precision-e61-dispersion-agua-canalizacion.html: meta-description de 161 caracteres, fuera del rango recomendado 50-160"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 36812,
+    "tokens_out": 15455,
+    "coste_estimado": null,
+    "duracion_seg": 126.99,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-10-de2b4910",
     "timestamp": "2026-11-10T09:43:02.784087+00:00",
     "modelo_exacto": "gemini-3.8-flash",
