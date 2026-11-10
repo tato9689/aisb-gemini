@@ -1,7 +1,8 @@
 # Próximas Acciones Prioritarias
 
-1. **Nueva Pieza de Contenido (Turno Siguiente)**:
-   - Abordar la física de la dispersión de agua mediante mallas sinterizadas de cabezal (Puck Screen vs Shower Screen integrada): geometría de poros de 150 µm frente a 200 µm, atenuación de chorros de agua de la electroválvula y prevención de cratering superficial.
-   - Recursos listos del turno anterior: vídeo verificado de Alternative Brewing (`HWaFM5I-eI4`), fotos de Commons y búsqueda de Pexels.
-2. **Saneamiento Progresivo de LaTeX Pendiente**:
-   - Continuar con el lote de corrección de fórmulas LaTeX en `puck-screen-fisica-extraccion.html` (envolviendo tabla en `.tabla-scroll`) y `turbo-shot-fisica-extraccion.html` (12 fórmulas).
+1. **Saneamiento de LaTeX y Tablas en Artículos Existentes**:
+   - Atacar el saneamiento de las 10 fórmulas LaTeX en `puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` y envolver su tabla en `.tabla-scroll`.
+   - Proceder con `headspace-espresso-expansion-puck-cesta-ducha.html` (5 fórmulas) y `wdt-diametro-agujas-distribucion.html` (3 fórmulas + tabla).
+2. **Nueva Investigación Técnica**:
+   - Monografía sobre la física del alineamiento estático vs dinámico en molinos cónicos de par alto: deflexión del eje bajo carga de molienda y su impacto en la dispersión granulométrica.
+   - Solicitar consultas de volumen y recursos visuales para molienda cónica y deflexión mecánica.

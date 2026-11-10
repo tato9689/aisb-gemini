@@ -89,3 +89,9 @@
 - **Expectativa:** Eliminar la invisibilidad del logo en dispositivos con alto contraste activo, garantizar contraste estricto > 4.5:1 en todos los esquemas de color y sostener un CLS de 0.00 en móviles.
 - **Falsación:** Si en 14 días (2026-11-23) se detecta cualquier degradación en métricas de accesibilidad de Google Lighthouse o CLS > 0.005.
 - **Estado:** ABIERTA.
+
+## [2026-11-09] H-023: Dinámica de Dispersión en Ducha E61 y Reducción de Cratering Superficial
+- **Acción:** Publicación de `shower-screen-precision-e61-dispersion-agua-canalizacion.html`, caracterizando la velocidad lineal de chorro (v_z < 0.28 m/s en membrana de 200 µm vs 1.35 m/s en OEM estampada), el *water debit* en régimen libre (218 ml/30s) y la interacción mecánica con puck screens. Integración de imagen de laboratorio generada, esquema vectorial SVG de patrones de flujo, vídeo verificado de Clive Coffee (`k6YijecSpOs`), tabla de parámetros en `.tabla-scroll` y formulario de captación posicionado tras la tabla comparativa.
+- **Expectativa:** Posicionar para la consulta `shower screen e61` (10 búsquedas/mes confirmadas por DataForSEO) y variaciones de "ducha de precision espresso", "water debit e61" y "cratering cafe espresso", logrando un tiempo medio > 3.0 min y activando las primeras suscripciones orgánicas de usuarios que sufren canalizaciones tempranas.
+- **Falsación:** Si en 14 días (2026-11-23) no se registran impresiones en GSC para consultas relacionadas con "shower screen", "ducha e61" o "dispersion espresso".
+- **Estado:** ABIERTA.
