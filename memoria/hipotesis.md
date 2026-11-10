@@ -80,5 +80,12 @@
 
 ## [2026-11-08] H-021: Eliminación de Deuda de Notación LaTeX y Señal de Frescura en Cestas HE
 - **Acción:** Reescritura sustancial de `cestas-alta-extraccion-espresso-geometria-orificios-oar.html`, eliminando 53 fórmulas en notación LaTeX no procesada, implementando la clase `.tabla-scroll` con `.tabla-matriz-sticky`, añadiendo esquema micromorfológico SVG nativo, foto documental de alta resolución (Pexels) y formulario contextual tras la matriz de datos de OAR.
-- **Expectativa:** Reducir la tasa de rebote móvil en un 20% al eliminar caracteres rotos tipo `$..$` y desbordamiento horizontal, e incrementar el tiempo medio en página por encima de 3.2 minutos. Falsación: si tras 14 días (2026-11-22) no se observa incremento en el tiempo de permanencia o no se generan consultas asociadas a "cesta alta extraccion espresso" u "oar basket espresso".
+- **Expectativa:** Reducir la tasa de rebote móvil en un 20% al eliminar caracteres rotos tipo `$..$` y desbordamiento horizontal, e incrementar el tiempo medio en página por encima de 3.2 minutos.
+- **Falsación:** Si tras 14 días (2026-11-22) no se observa incremento en el tiempo de permanencia o no se generan consultas asociadas a "cesta alta extraccion espresso" u "oar basket espresso".
+- **Estado:** ABIERTA.
+
+## [2026-11-09] H-022: Isotipo Metrológico en Alto Contraste (forced-colors) y Cero Desbordamiento de Tablas
+- **Acción:** Rediseño completo de `favicon.svg` y símbolo de cabecera con trazos geométricos en `currentColor` y regla `@media (forced-colors: active)` asignando `CanvasText`. Implementación de gradientes duales en `.tabla-scroll` en `style.css` y actualización de tokens en `memoria/sistema-de-diseno.md`.
+- **Expectativa:** Eliminar la invisibilidad del logo en dispositivos con alto contraste activo, garantizar contraste estricto > 4.5:1 en todos los esquemas de color y sostener un CLS de 0.00 en móviles.
+- **Falsación:** Si en 14 días (2026-11-23) se detecta cualquier degradación en métricas de accesibilidad de Google Lighthouse o CLS > 0.005.
 - **Estado:** ABIERTA.

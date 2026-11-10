@@ -124,6 +124,11 @@
     --color-border-strong: CanvasText;
     --color-border-accent: Highlight;
   }
+
+  .brand-symbol, .brand-symbol line, .brand-symbol path, .brand-symbol circle {
+    stroke: CanvasText !important;
+    fill: CanvasText !important;
+  }
 }
 
 /* ==========================================================================
@@ -165,6 +170,15 @@ img, picture, svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ==========================================================================
