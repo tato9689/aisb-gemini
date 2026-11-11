@@ -1,5 +1,123 @@
 [
   {
+    "evento_id": "2026-11-11-d08461fe",
+    "timestamp": "2026-11-11T16:45:49.228184+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-10",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "Investigación metrológica sobre cinemática de muelas y deflexión del eje en molinos cónicos de espresso (*radial runout & dynamic shaft deflection*), resolución del aviso de longitud en la meta-description de `shower-screen-precision-e61-dispersion-agua-canalizacion.html`, e indexación editorial del nuevo análisis en portada y memorias operativas.\n\n### 1. Diagnóstico del Aviso y Metrología de Molienda Cónica\n\n1. **Aviso de longitud en meta-description**: El informe de `shower-screen-precision-e61-dispersion-agua-canalizacion.html` registraba 161 caracteres. Se compacta a 138 caracteres sin pérdida de densidad técnica ni palabras clave principales (*shower screen E61*, membrana 200 µm, *cratering* y velocidad lineal de chorro).\n2. **Física de deflexión dinámica en muelas cónicas**: La creencia popular asume que un molinillo cónico es autoalineable debido a la geometría convergente del cono macho respecto al anillo hembra. No obstante, bajo par de torsión (*torque* de fractura de grano de tueste ligero, que alcanza entre 1.8 y 3.2 N·m a 400 rpm), la componente de fuerza radial descompuesta sobre la superficie helicoidal genera un momento flector sobre el eje central.\n   - En molinos con rodamientos espaciados a menos de 45 mm o ejes de diámetro inferior a 10 mm, la holgura radial acumulada (*play* en rodamientos ABEC 3/5 + deflexión elástica del eje de acero inoxidable) produce un *runout* dinámico medido de entre 0.04 mm y 0.12 mm (40 a 120 µm).\n   - Dado que el *gap* efectivo en espresso oscila entre 80 y 160 µm, una excentricidad instantánea de 50 µm altera el ancho de la ranura de salida en más del 40% a lo largo de los 360° de la circunferencia. Como consecuencia directa, una sección del anillo tritura por cizalla extrema generando un exceso de microfinos sub-30 µm (inductores de migración coloidal y taponamiento de poros), mientras que la sección opuesta permite el escape de fragmentos sobredimensionados (> 450 µm), destruyendo la uniformidad de Darcy y disparando la canalización prematura.\n\n### 2. Recursos Multimedia y Enriquecimiento Técnico\n- **Imagen generada de banco de pruebas**: `img/generadas/conical-burrs-shaft-deflection-bench.webp` (1200x630, 72 KB, con `alt` descriptivo y anclaje explícito en Schema JSON-LD).\n- **Esquema vectorial SVG de vectores de fuerza**: Descomposición de la fuerza axial, fuerza normal de corte y deflexión radial con ángulo de desplazamiento angular del cono.\n- **Instrumentación de metrología (Wikimedia Commons)**: Comparador centesimal Mahr MarCator 810 A (resolución 0.01 mm) con atribución de licencia CC BY-SA 3.0 intacta.\n- **Vídeo verificado de ajuste**: Inserción de *Easy And Safe Burr Alignment* (`Gb3PgeQ6ewY`) de *The Wired Gourmet* vía `youtube-nocookie.com`.\n- **Formulario de captación y tablas responsivas**: Formulario tras la primera matriz de tolerancias centesimales con selector de holgura y clase `.tabla-matriz-sticky` dentro de `.tabla-scroll`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía metrológica sobre deflexión de eje y runout dinámico en molinos cónicos de espresso, corrección del aviso de longitud en shower screen E61 y actualización de portada.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/f802f61",
+    "cambios": [
+      {
+        "archivo": "alineacion-molino-conico-deflexion-eje-runout-espresso.html",
+        "anadidas": 276,
+        "quitadas": 0
+      },
+      {
+        "archivo": "img/generadas/conical-burrs-shaft-deflection-bench.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 23,
+        "quitadas": 23
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 5,
+        "quitadas": 4
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 4,
+        "quitadas": 4
+      },
+      {
+        "archivo": "shower-screen-precision-e61-dispersion-agua-canalizacion.html",
+        "anadidas": 116,
+        "quitadas": 119
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "cesta espresso fondo plano vs convexo flujo",
+      "convex vs flat bottom espresso basket extraction",
+      "basket hole geometry flow resistance espresso"
+    ],
+    "busquedas_recibidas": [
+      "alineacion molinillo conico deflexion eje molienda",
+      "conical burr shaft runout espresso deflection",
+      "retencion molienda fuelle silicona espresso presion"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso filter basket holes bottom",
+      "espresso extraction bottomless portafilter"
+    ],
+    "imagenes_recibidas": [
+      "conical burr grinder mechanism",
+      "espresso machine shower screen water"
+    ],
+    "videos_siguiente_turno": [
+      "espresso filter basket comparison flow"
+    ],
+    "commons_siguiente_turno": [
+      "filter basket espresso",
+      "perforated plate"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "espresso-basket-flat-vs-convex-hydrodynamics",
+      "descripcion": "Cross-section comparison diagram of a 58mm stainless steel espresso filter basket in laboratory conditions, contrasting flat-bottom versus convex base flow dynamics under 9 bar water pressure, technical lighting."
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "cesta espresso fondo plano",
+      "convex espresso basket",
+      "geometria orificios cesta cafe",
+      "cesta de precision espresso",
+      "flow resistance coffee basket"
+    ],
+    "keywords_recibidas": [
+      "alinear molinillo cafe",
+      "fuelle monodosis cafe",
+      "molinillo conico espresso",
+      "retencion molinillo cafe",
+      "shaft runout grinder"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 38885,
+    "tokens_out": 22720,
+    "coste_estimado": null,
+    "duracion_seg": 180.95,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-10-a1b27870",
     "timestamp": "2026-11-10T16:40:51.276078+00:00",
     "modelo_exacto": "gemini-3.8-flash",
