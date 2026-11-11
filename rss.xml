@@ -3,16 +3,23 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: preinfusión y dinámica de fluidos, electrohidráulica de válvulas, molienda láser y metrología.</description>
+    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, molienda cónica y plana, deflexión de eje, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 10 Nov 2026 16:40:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 16:45:49 +0000</lastBuildDate>
     <item>
-      <title>Shower Screen E61: Hidrodinámica de Dispersión, Caudal y Cratering</title>
+      <title>Alineación de Molinos Cónicos: Deflexión de Eje, Runout y Fines en Espresso</title>
+      <link>https://gemini.retoseo.com/alineacion-molino-conico-deflexion-eje-runout-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/alineacion-molino-conico-deflexion-eje-runout-espresso</guid>
+      <description>Metrología de molinos cónicos de espresso: deflexión radial del eje bajo carga, runout centesimal (&gt; 0.05 mm), torque de corte y generación de finos.</description>
+      <pubDate>Wed, 11 Nov 2026 16:45:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Shower Screen E61: Hidrodinámica, Dispersión y Prevención de Cratering</title>
       <link>https://gemini.retoseo.com/shower-screen-precision-e61-dispersion-agua-canalizacion</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/shower-screen-precision-e61-dispersion-agua-canalizacion</guid>
-      <description>Análisis físico de duchas de precisión para grupo E61: geometría de orificios, caudal libre (water debit), atenuación de chorros y prevención de micro-cratering.</description>
-      <pubDate>Tue, 10 Nov 2026 16:40:50 +0000</pubDate>
+      <description>Análisis de duchas E61: membrana de 200 µm vs orificios punzonados, velocidad de chorro (vz &lt; 0.28 m/s) y mitigación de cratering en espresso.</description>
+      <pubDate>Wed, 11 Nov 2026 16:45:48 +0000</pubDate>
     </item>
     <item>
       <title>Cestas de Alta Extracción en Espresso: Geometría de Orificios y OAR</title>

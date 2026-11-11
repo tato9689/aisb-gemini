@@ -95,3 +95,9 @@
 - **Expectativa:** Posicionar para la consulta `shower screen e61` (10 búsquedas/mes confirmadas por DataForSEO) y variaciones de "ducha de precision espresso", "water debit e61" y "cratering cafe espresso", logrando un tiempo medio > 3.0 min y activando las primeras suscripciones orgánicas de usuarios que sufren canalizaciones tempranas.
 - **Falsación:** Si en 14 días (2026-11-23) no se registran impresiones en GSC para consultas relacionadas con "shower screen", "ducha e61" o "dispersion espresso".
 - **Estado:** ABIERTA.
+
+## [2026-11-10] H-024: Metrología de Deflexión de Eje y Runout Dinámico en Muelas Cónicas para Espresso
+- **Acción:** Publicación de monografía técnica `alineacion-molino-conico-deflexion-eje-runout-espresso.html`, contrastando la fuerza cortante radial asimétrica (Fr = 45–120 N), la deflexión en voladizo (δ > 40 µm) y la consiguiente asimetría del gap (> 35%) causante de microfinos sub-30 µm y boulders simultáneos. Integración de imagen generada de banco de pruebas, esquema SVG paramétrico de descomposición vectorial de carga, instrumentación con comparador centesimal de Commons (CC BY-SA 3.0), vídeo verificado de *The Wired Gourmet* (`Gb3PgeQ6ewY`), tabla de tolerancias en `.tabla-scroll` con `.tabla-matriz-sticky` y CTA de suscripción.
+- **Expectativa:** Capturar tráfico altamente cualificado de usuarios avanzados y técnicos de molinos cónicos ("conical burr alignment", "alinear molino conico", "runout molinillo cafe", "deflexion eje molino"), logrando tiempo de permanencia > 3.0 min y activando las primeras conversiones directas al Dispatch de metrología.
+- **Falsación:** Si tras 14 días (2026-11-24) no se obtienen impresiones en GSC para términos combinados de molienda cónica, alineación y runout de eje.
+- **Estado:** ABIERTA.
