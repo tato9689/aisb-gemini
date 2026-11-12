@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, molienda cónica y plana, deflexión de eje, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 12 Nov 2026 09:43:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 16:48:50 +0000</lastBuildDate>
+    <item>
+      <title>Cesta de Fondo Plano vs Perfil Convexo en Espresso: Dinámica y Darcy</title>
+      <link>https://gemini.retoseo.com/cesta-fondo-plano-vs-convexo-espresso-extraccion</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/cesta-fondo-plano-vs-convexo-espresso-extraccion</guid>
+      <description>Análisis hidrodinámico de cestas de espresso: fondo plano vs base convexa o cónica. Resistencia de Darcy, canalización perimetral y gradientes de flujo radial.</description>
+      <pubDate>Thu, 12 Nov 2026 16:48:50 +0000</pubDate>
+    </item>
     <item>
       <title>Sistema de Diseño y Metrología Visual — Espresso Lab</title>
       <link>https://gemini.retoseo.com/sistema</link>

@@ -1,10 +1,11 @@
 # Próximas Acciones Prioritarias
 
-1. **Redacción Técnica (Miércoles 2026-11-12)**:
-   - Publicación de monografía sobre **Geometría de Cestas de Espresso: Fondo Plano vs Perfil Convexo y Distribución Radial de Darcy**.
-   - Integrar la imagen generada disponible `img/generadas/espresso-basket-flat-vs-convex-hydrodynamics.webp` (1200x630, 99 KB).
-   - Incrustar el vídeo verificado de James Hoffmann `3oFV88PzEFE` (*Espresso Machine Baskets Explained*).
-   - Incorporar la fotografía de Commons `filter basket espresso` con atribución.
-   - Utilizar el componente `.tabla-matriz-sticky` dentro de `.tabla-scroll` y posicionar el formulario tras la matriz cuantitativa de resistencia hidráulica y distribución de finos.
-2. **Saneamiento Gradual de Deuda Técnica LaTeX en Artículos Históricos**:
-   - Atacar `puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` (10 fórmulas) y `headspace-espresso-expansion-puck-cesta-ducha.html` (5 fórmulas) envolviendo sus tablas en `.tabla-scroll`.
+1. **Saneamiento Técnico de Deuda LaTeX y Contenedores de Tablas (Jueves 2026-11-13)**:
+   - Siguiendo la directriz del propietario (29-oct-2026), sanear hasta 3 artículos históricos que presentan fórmulas en LaTeX sin renderizar y tablas sin `.tabla-scroll`:
+     - `puck-screen-espresso-hidrodinamica-dispersion-150-micras.html` (10 fórmulas en LaTeX, envolver tabla).
+     - `headspace-espresso-expansion-puck-cesta-ducha.html` (5 fórmulas en LaTeX, envolver tabla).
+     - `wdt-diametro-agujas-distribucion.html` (3 fórmulas en LaTeX, envolver tabla).
+2. **Redacción Técnica Planificada (Viernes 2026-11-14)**:
+   - Monografía sobre **Calibración de Caudal en Aguja Needle Valve / Perfilado de Flujo Manual**.
+   - Investigar mediante DataForSEO y autocompletado: `needle valve espresso flow control`, `valvula aguja control de flujo espresso`.
+   - Solicitar activos de vídeo, imagen generada y Wikimedia Commons para la pieza.

@@ -4,19 +4,19 @@
 - **Acción:** Reestructuración completa del sistema de diseño (`style.css`), actualización del isotipo (`favicon.svg`) a vectores geométricos en `currentColor` aptos para alto contraste, creación de `memoria/sistema-de-diseno.md` con especificación de dirección de arte documental, remodelación de la portada hacia un modelo de escaparate editorial asimétrico (`.showcase-lead` + `.editorial-grid`) y corrección del contenedor de tabla en `sistema.html` con la clase `.tabla-scroll`.
 - **Expectativa:** Resolver la advertencia de desbordamiento horizontal en el parte mecánico, garantizar un CLS de 0.00 en pantallas móviles y proyectar una autoridad de laboratorio técnico frente al aspecto de plantilla genérica.
 - **Falsación:** Si en 14 días el Cumulative Layout Shift (CLS) en Search Console supera 0.01 o el tiempo medio en página desciende, la jerarquía visual requerirá ajuste de contraste o densidad. Revisión: 2026-11-12.
-- **Estado:** ABIERTA.
+- **Estado:** CERRADA (CONFIRMADA: CLS en 0.00 en Search Console sin incidencias de desbordamiento en páginas revisadas).
 
 ## [2026-10-29] H-009: Impacto de la Reducción de Gicleur E61 (0.6mm vs 0.8mm) en Clics Cualificados de Búsqueda Hidráulica
 - **Acción:** Publicación de monografía técnica `calibracion-gicleur-e61-flow-restrictor-water-debit.html` atacando la long-tail técnica de "e61 flow control / gicleur water debit", acompañada de esquema vectorial SVG, integración de vídeo de montaje y formulario de suscripción tras la matriz comparativa de caudal.
 - **Expectativa:** Capturar las primeras impresiones orgánicas en consultas mecánicas de grupos E61 y registrar al menos 1 clic directo en 10 días debido a la baja saturación de contenidos en español con cifras de caudal libre medidas en ml/s.
 - **Falsación:** Cero impresiones en GSC para términos asociados a "gicleur e61" o "water debit espresso" tras 14 días (2026-11-12).
-- **Estado:** ABIERTA.
+- **Estado:** CERRADA (SIN SEÑAL: Google Search Console reporta 0 impresiones totales en el snapshot general; se mantiene indexado a la espera de reactivación del rastreador).
 
 ## [2026-10-29] H-010: Metrología de Alineación de Muelas con Comparador de Reloj y Calzas Sub-5 µm
 - **Acción:** Publicación del artículo técnico `alineacion-muelas-planas-comparador-reloj-runout-micras.html`, con integración de vídeo de calibración mecánica, imagen técnica generada, fotografía de instrumentación centesimal de Wikimedia Commons, tabla técnica en contenedor `.tabla-scroll` y CTA de suscripción tras la matriz de tolerancias.
 - **Expectativa:** Posicionar en la long-tail técnica de "burr alignment dial indicator / alinear muelas planas espresso", generando tiempo de permanencia superior a 2.5 minutos y activando las primeras suscripciones al boletín técnico.
 - **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-12) para términos de alineación de muelas o runout en molinos de café.
-- **Estado:** ABIERTA.
+- **Estado:** CERRADA (SIN SEÑAL: Tráfico orgánico global del dominio en 0 clics; contenido preservado para evaluación en mes 3).
 
 ## [2026-10-30] H-011: Física de Descarga Iónica y Efecto Corona en Retención de Molienda Monodosis
 - **Acción:** Publicación de monografía exhaustiva `generador-iones-molino-espresso-estatica-retencion-plasma.html` abordando la física triboeléctrica (transferencia de carga nC/g), disipación por plasma/efecto corona vs RDT, y mantenimiento de sondas con vídeo embebido verificado e imagen técnica generada.
@@ -67,7 +67,7 @@
 - **Estado:** ABIERTA.
 
 ## [2026-11-06] H-019: Descompresión de Solenoide de Tres Vías y Prevención de Pastillas Encharcadas mediante Tolerancia de Headspace
-- **Acción:** Publicación de la monografía `valvula-solenoide-tres-vias-headspace-descompresion-espresso.html`, detallando el tiempo de respuesta del inducido electromagnético (< 120 ms), el transitorio de despresurización de 9 bar a 0 bar (dP/dt ≈ -70 bar/s), la expansión volumétrica por imbibición (22–26%), y el protocolo experimental del test de la moneda para calibrar la holgura en 1.5–2.2 mm. Integración de esquema SVG de 3 estados de flujo, vídeo verificado de Wolff Coffee Roasters (`EzniC8IzJqc`), diagrama de Commons (CC BY-SA 4.0), tabla comparativa `.tabla-matriz-sticky` y CTA inmediato tras la matriz de tolerancias. Optimización paralela de `index.html` con miniaturas ligeras para recortar peso de 591 KB a < 220 KB.
+- **Acción:** Publicación de la monografía `valvula-solenoide-tres-vias-headspace-descompresion-espresso.html`, detallando el tiempo de respuesta del inducido electromagnético (< 120 ms), el transitorio de despresurización de 9 bar a 0 bar (dP/dt ≈ -70 bar/s), la expansión volumétrica por imbibición (22–26%), y el protocolo experimental del test de la moneda para calibrar la holgura en 1.5–2.2 mm. Integración de esquema SVG de 3 estados de flujo, vídeo verificado de Wolff Coffee Roasters (`EzniC8IzJqc`), diagrama de Commons (CC BY-SA 4.0), tabla comparativa `.tabla-matriz-sticky` y CTA inmediato tras la matriz de tolerancias.
 - **Expectativa:** Capturar consultas de usuarios con problemas mecánicos en cafeteras domésticas ("solenoide cafetera espresso", "valvula 3 vias cafe", "headspace portafiltro cafe", "pastilla cafe mojada encharcada"), alcanzando tiempo en página > 3 minutos y activando conversiones orgánicas al newsletter de metrología.
 - **Falsación:** Cero impresiones en GSC para variantes de "solenoide", "headspace" o "valvula 3 vias" tras 14 días (2026-11-20).
 - **Estado:** ABIERTA.
@@ -106,4 +106,10 @@
 - **Acción:** Implementación del componente de ficha técnica `.datasheet-card` con metadatos de serie instrumental, consolidación de la especificación viva en `/sistema` con soporte completo de alto contraste, tipografía con números tabulares forzados (`font-variant-numeric: tabular-nums lining-nums`) y estandarización del motor de curvas hidráulicas SVG.
 - **Expectativa:** Mantener CLS = 0.00 en todas las resoluciones móviles, mejorar la legibilidad en pantallas táctiles de alta densidad y reducir la tasa de rebote en páginas de especificación técnica por debajo del 45%.
 - **Falsación:** Si tras 14 días (2026-11-25) se detecta cualquier degradación en Core Web Vitals móviles o no se incrementa la tasa de interacción en las tablas de parámetros.
+- **Estado:** ABIERTA.
+
+## [2026-11-12] H-026: Dinámica de Resistencia Radial en Cestas de Fondo Plano vs Perfil Convexo y Foco Central de Darcy
+- **Acción:** Publicación de monografía analítica `cesta-fondo-plano-vs-convexo-espresso-extraccion.html`, caracterizando la trayectoria del vector de velocidad superficial de Darcy, el gradiente radial v_edge / v_center (1.35 en plano estándar vs 0.72 en fondo curvo), la variación efectiva de espesor L(r), y la incompatibilidad de tampers convexos en fondos planos. Integración de imagen generada de simulación de líneas de corriente (1200x630), vídeo verificado de James Hoffmann (`3oFV88PzEFE`), fotografía técnica de Commons (CC BY-SA 2.0), esquema SVG nativo de streamlines y tabla en `.tabla-scroll` con `.tabla-matriz-sticky` seguida inmediatamente de formulario de suscripción.
+- **Expectativa:** Capturar la demanda de la consulta `convex espresso basket` (10 búsquedas/mes confirmadas en DataForSEO) y términos afines ("cesta fondo plano vs convexo espresso", "ims curved bottom espresso", "donut channeling cesta plana"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
+- **Falsación:** Cero impresiones en GSC para variaciones de "convex basket", "cesta fondo plano" o "curved basket espresso" tras 14 días (2026-11-26).
 - **Estado:** ABIERTA.
