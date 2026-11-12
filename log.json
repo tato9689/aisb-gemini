@@ -1,5 +1,118 @@
 [
   {
+    "evento_id": "2026-11-12-30ad8269",
+    "timestamp": "2026-11-12T16:48:50.611087+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-11",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Análisis Estratégico y Razonamiento del Turno\n\n#### 1. Diagnóstico de Señales y Demanda de Búsqueda\n- **Demanda comprobada:** La consulta técnica `convex espresso basket` arrojó volumen mensual real en DataForSEO (10 búsquedas mensuales exactas sin estacionalidad artificial), confirmando interés técnico en la long-tail de accesorios de extracción mecánica. En las búsquedas de Brave Search, foros especializados (Home-Barista, Reddit r/espresso, Artisan Grind) revelan un debate recurrente en 2025–2026: cómo afecta la geometría del fondo (plano ortogonal vs. cóncavo/convexo/abombado de marcas como IMS Curved Bottom o cestas de base reducida como IKAPE) a la resistencia hidráulica de Darcy y a la aparición de canalización perimetral (*donut channeling*).\n- **Parámetros físicos verificados:** \n  1. *Ecuación de Darcy en coordenadas cilíndricas:* $Q = \\frac{\\kappa \\cdot A}{\\mu \\cdot L} \\Delta P$, donde la longitud del lecho ($L$) deja de ser constante en un fondo convexo ($L(r)$ varía desde un espesor perimetral mayor hasta un espesor central menor si el puck se prensa plano, o viceversa si se utiliza un tamper convexo).\n  2. *Caudal libre en orificios de precisión:* Baskets de precisión de alta velocidad presentan caudales libres de 25–30 ml/s frente a 9–12 ml/s en cestas prensadas OEM, forzando una molienda significativamente más fina que agudiza la compactación poroelástica en las zonas de mayor gradiente de presión.\n- **Activos multimedia disponibles:** Se integran la imagen técnica generada (`img/generadas/convex-vs-flat-basket-fluid-dynamics.webp`, 1200×630, 133 KB), la fotografía documental de portafiltros y cestas de Wikimedia Commons (CC BY-SA 2.0), el vídeo verificado de James Hoffmann (`3oFV88PzEFE`, *Espresso Machine Baskets Explained*), un esquema vectorial SVG nativo de líneas de corriente hidráulica, y tabla responsiva con clase `.tabla-matriz-sticky` dentro de `.tabla-scroll`.\n\n#### 2. Plan Operativo\n1. **Redacción y Publicación:** Crear `cesta-fondo-plano-vs-convexo-espresso-extraccion.html`, estructurando la física del flujo radial, la resistencia hidráulica diferencial y la compatibilidad con pisones planos vs. convexos. Formulario de suscripción colocado estrictamente tras la matriz técnica comparativa. Cero notación LaTeX ($..$ eliminado en favor de entidades HTML y caracteres Unicode: ΔP, κ, μ, L).\n2. **Actualización de Portada (`index.html`):** Incorporar la nueva investigación en la rejilla editorial destacada con su miniatura calculada `/og/miniatura/cesta-fondo-plano-vs-convexo-espresso-extraccion.jpg` (ratio 640×336).\n3. **Memoria y Telemetría:** Registrar la hipótesis H-026 en `memoria/hipotesis.md`, actualizar `memoria/estado.md` y priorizar los siguientes pasos en `memoria/next.md`.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicada monografía técnica sobre Cestas de Fondo Plano vs Perfil Convexo en Espresso atacando la consulta con volumen confirmado 'convex espresso basket' (DataForSEO: 10/mes). Se incluye simulación SVG de streamlines, matriz de Darcy en .tabla-scroll sticky, imagen generada, vídeo verificado de James Hoffmann, fotografía de Commons y formulario de captación.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/fe68514",
+    "cambios": [
+      {
+        "archivo": "cesta-fondo-plano-vs-convexo-espresso-extraccion.html",
+        "anadidas": 330,
+        "quitadas": 0
+      },
+      {
+        "archivo": "img/generadas/convex-vs-flat-basket-fluid-dynamics.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 22,
+        "quitadas": 22
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 6,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 10,
+        "quitadas": 4
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 9,
+        "quitadas": 8
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "needle valve espresso flow control debit",
+      "valvula aguja perfilado flujo cafe espresso",
+      "flow profiling paddle needle valve pressure"
+    ],
+    "busquedas_recibidas": [
+      "cesta fondo plano vs convexo espresso extraccion",
+      "curved bottom portafilter basket channeling",
+      "precision basket extraction yield flow rate"
+    ],
+    "imagenes_siguiente_turno": [
+      "needle valve espresso",
+      "coffee machine flow control"
+    ],
+    "imagenes_recibidas": [
+      "espresso filter basket",
+      "portafilter extraction stream"
+    ],
+    "videos_siguiente_turno": [
+      "espresso needle valve flow control"
+    ],
+    "commons_siguiente_turno": [
+      "needle valve",
+      "pressure gauge"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "needle-valve-flow-control-e61-bench",
+      "descripcion": "Precision stainless steel needle valve cutaway mounted on an espresso machine group head, fine micrometer adjustment dial, glycerol pressure gauge showing 6 bar, technical workshop bench lighting, extreme detail, macro photography"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "needle valve espresso",
+      "control de flujo valvula aguja espresso",
+      "e61 flow control valve",
+      "flow profiling espresso needle",
+      "valvula aguja e61"
+    ],
+    "keywords_recibidas": [
+      "basket espresso flow",
+      "cesta de precision espresso",
+      "cesta espresso fondo plano",
+      "convex espresso basket",
+      "filtro portafiltro plano o curvo"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 39355,
+    "tokens_out": 18146,
+    "coste_estimado": null,
+    "duracion_seg": 137.57,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-12-322fc935",
     "timestamp": "2026-11-12T09:43:27.332713+00:00",
     "modelo_exacto": "gemini-3.8-flash",
