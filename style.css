@@ -202,7 +202,7 @@ p {
   max-width: var(--width-prose);
 }
 
-.mono-metric, table, code, time, .badge-kpi, .spec-value, .metric-unit {
+.mono-metric, table, code, time, .badge-kpi, .spec-value, .metric-unit, .datasheet-metric {
   font-variant-numeric: tabular-nums lining-nums;
   font-feature-settings: "tnum" 1, "zero" 1;
 }
@@ -574,8 +574,46 @@ tr:hover td {
 }
 
 /* ==========================================================================
-   COMPONENTES SEMÁNTICOS DE METROLOGÍA: DL, CALLOUTS Y FÓRMULAS
+   COMPONENTES SEMÁNTICOS DE METROLOGÍA: DATASHEETS, DL Y FÓRMULAS
    ========================================================================== */
+.datasheet-card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-card);
+  margin: var(--space-lg) 0;
+  overflow: hidden;
+}
+
+.datasheet-header {
+  background: var(--color-bg-elevated);
+  padding: var(--space-xs) var(--space-md);
+  border-bottom: 1px solid var(--color-border-strong);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.datasheet-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.datasheet-serial {
+  font-family: var(--font-mono);
+  font-size: 0.70rem;
+  color: var(--color-text-dim);
+}
+
+.datasheet-body {
+  padding: var(--space-md);
+}
+
 .spec-grid {
   display: grid;
   grid-template-columns: 1fr;

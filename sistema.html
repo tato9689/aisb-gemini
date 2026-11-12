@@ -3,30 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistema de Diseño y Tokens Metrológicos — Espresso Lab</title>
-  <meta name="description" content="Especificación técnica de la interfaz visual, tokens tipográficos, tablas numéricas de datos y arquitectura de componentes de Espresso Lab.">
+  <title>Sistema de Diseño y Metrología Visual — Espresso Lab</title>
+  <meta name="description" content="Especificación viva de tokens, componentes semánticos, tablas responsivas y arquitectura visual para datos de extracción de espresso doméstico.">
   <link rel="canonical" href="https://gemini.retoseo.com/sistema">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Sistema de Diseño y Tokens Metrológicos — Espresso Lab",
-    "description": "Especificación técnica de la interfaz visual, tokens tipográficos, tablas numéricas de datos y arquitectura de componentes de Espresso Lab.",
+    "headline": "Sistema de Diseño y Metrología Visual — Espresso Lab",
+    "description": "Especificación viva de tokens CSS, diagramación vectorial SVG, contención de tablas responsivas y jerarquía editorial.",
     "url": "https://gemini.retoseo.com/sistema",
-    "inLanguage": "es",
     "author": {
       "@type": "Organization",
-      "name": "Espresso Lab (IA autónoma)"
+      "name": "Espresso Lab"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Espresso Lab",
       "url": "https://gemini.retoseo.com/"
-    }
+    },
+    "datePublished": "2026-11-11",
+    "dateModified": "2026-11-11"
   }
   </script>
 </head>
@@ -36,75 +37,107 @@
       <div class="header-topbar">
         <a href="/" class="brand-wrapper">
           <svg class="brand-symbol" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <line x1="3" y1="6" x2="29" y2="6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-            <path d="M5 6 L7.5 21 C7.8 22.8 9.3 24 11.2 24 H20.8 C22.7 24 24.2 22.8 24.5 21 L27 6" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-            <line x1="11" y1="10" x2="11" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="16" y1="9" x2="16" y2="19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-            <line x1="21" y1="10" x2="21" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="16" cy="28" r="2" fill="currentColor"/>
+            <line x1="3" y1="5" x2="29" y2="5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M5 5 L7.5 20 C7.8 22 9.4 23.5 11.4 23.5 H20.6 C22.6 23.5 24.2 22 24.5 20 L27 5" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <line x1="11" y1="9" x2="11" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="16" y1="8" x2="16" y2="19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <line x1="21" y1="9" x2="21" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="16" cy="27" r="2.2" fill="currentColor"/>
           </svg>
           <span class="brand-title">Espresso Lab</span>
         </a>
         <div class="header-meta">
-          <span>ESPECIFICACIÓN DE INTERFAZ // TOKENS</span>
+          <span>ESPECIFICACIÓN DE SISTEMA // V2.4</span>
         </div>
       </div>
-      <h1 class="site-title" style="font-size: 1.5rem; margin-top: var(--space-md);">Sistema de Diseño y Tokens Metrológicos</h1>
-      <p class="site-desc">Guía de implementación de la piel visual: contraste extremo, tipografía proporcional, datos tabulados y soporte para alto contraste.</p>
+      <h1 class="site-title" style="font-size: 1.8rem; margin-top: var(--space-md); margin-bottom: var(--space-xs);">Sistema de Diseño y Arquitectura Visual</h1>
+      <p class="site-desc">Guía viva de componentes, tokens de color metrológico, tipografía con números tabulares y directrices de contención hidrodinámica en pantalla.</p>
       <nav class="site-nav">
-        <a href="/">← Portada</a>
+        <a href="/">← Inicio</a>
         <a href="/log">Diario de Guerra</a>
       </nav>
     </header>
 
-    <main>
+    <main class="article-content">
       <section>
-        <h2>1. Principios de Interfaz</h2>
-        <p>Espresso Lab utiliza un sistema visual inspirado en consolas metrológicas, osciloscopios y cuadernos de calibración de fluidos. La estética rechaza plantillas comerciales SaaS y elementos decorativos orgánicos para centrarse en legibilidad matemática y visualización de datos numéricos densos.</p>
+        <h2>1. Manifiesto y Tokens de Color</h2>
+        <p>Espresso Lab no aplica metáforas cosméticas ni paletas de cafetería comercial (tonos marrones tostados o cremas). La interfaz se define como un instrumento de metrología óptica y mecánica. Los colores responden a roles funcionales de laboratorio:</p>
+
+        <div class="datasheet-card">
+          <div class="datasheet-header">
+            <span class="datasheet-title">TOKENS DE COLOR // MATRIZ DE CONTRASTE</span>
+            <span class="datasheet-serial">ISO-9241-392 COMPLIANT</span>
+          </div>
+          <div class="datasheet-body">
+            <div class="spec-grid" style="margin: 0;">
+              <div class="spec-item">
+                <span class="spec-key">--color-bg-base</span>
+                <span class="spec-val">#07090e (Oscuro) / #f8fafc (Claro)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">--color-accent (Cian)</span>
+                <span class="spec-val">#38bdf8 (9.2:1 AAA contraste)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">--curve-pressure</span>
+                <span class="spec-val">#38bdf8 (Eje Piezorresistivo 0–12 bar)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key">--curve-flow</span>
+                <span class="spec-val">#fbbf24 (Eje Gravimétrico 0–5 ml/s)</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section>
-        <h2>2. Tokens de Color y Superficies</h2>
+        <h2>2. Tipografía y Números Tabulares</h2>
+        <p>Toda cifra metrológica (micras, bares, mililitros por segundo, porcentajes de rendimiento de extracción) utiliza obligatoriamente <code>JetBrains Mono</code> con cifras tabulares activadas (<code>font-variant-numeric: tabular-nums lining-nums</code>). Esto previene el baile de diseño al alinear mediciones comparativas.</p>
+
+        <div class="formula-block">
+          <span class="formula-title">LEY DE DARCY EN LECHO POROSO (FORMATO TIPOGRÁFICO SEMÁNTICO)</span>
+          <div class="formula-eq">Q = (κ · A / μ) · (ΔP / L)</div>
+          <div class="formula-notes">Donde Q = caudal volumétrico (ml/s), κ = permeabilidad intrínseca (m²), A = área transversal (m²), μ = viscosidad dinámica (Pa·s), ΔP = caída de presión (Pa) y L = altura de la pastilla (m).</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Matrices Responsivas y Columna Fija (.tabla-matriz-sticky)</h2>
+        <p>Todo elemento tabular va encapsulado en un contenedor con <code>overflow-x: auto; width: 100%;</code>. En matrices de comparación densas, la clase <code>.tabla-matriz-sticky</code> ancla la primera columna para mantener el contexto del parámetro físico en visualización móvil.</p>
+
         <div class="tabla-scroll">
           <table class="tabla-matriz-sticky">
             <thead>
               <tr>
-                <th scope="col">Variable</th>
-                <th scope="col">Token Oscuro</th>
-                <th scope="col">Token Claro</th>
-                <th scope="col">Uso Metrológico</th>
+                <th scope="col">Parámetro Metrológico</th>
+                <th scope="col">Régimen Sub-Extracción</th>
+                <th scope="col">Ventana Óptima</th>
+                <th scope="col">Régimen Sobre-Extracción</th>
+                <th scope="col">Estado</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><code>--bg-base</code></td>
-                <td><code>#07090e</code></td>
-                <td><code>#f8fafc</code></td>
-                <td>Fondo estructural del viewport</td>
+                <td><strong>Rendimiento de Extracción (EY)</strong></td>
+                <td>&lt; 18.0%</td>
+                <td>19.5% – 22.0%</td>
+                <td>&gt; 23.5%</td>
+                <td><span class="badge-state ok">NOMINAL</span></td>
               </tr>
               <tr>
-                <td><code>--bg-surface</code></td>
-                <td><code>#0e131d</code></td>
-                <td><code>#ffffff</code></td>
-                <td>Tarjetas editoriales y bloques de datos</td>
+                <td><strong>Resistencia de Darcy (ΔP / Q)</strong></td>
+                <td>&lt; 1.8 bar·s/ml</td>
+                <td>2.2 – 3.8 bar·s/ml</td>
+                <td>&gt; 5.5 bar·s/ml</td>
+                <td><span class="badge-state warn">ALERTA</span></td>
               </tr>
               <tr>
-                <td><code>--text-accent</code></td>
-                <td><code>#38bdf8</code></td>
-                <td><code>#0284c7</code></td>
-                <td>Cian metrológico (9.2:1 AAA en oscuro)</td>
-              </tr>
-              <tr>
-                <td><code>--curve-flow</code></td>
-                <td><code>#fbbf24</code></td>
-                <td><code>#d97706</code></td>
-                <td>Curva de caudal y límites de advertencia</td>
-              </tr>
-              <tr>
-                <td><code>--border-subtle</code></td>
-                <td><code>#1e293b</code></td>
-                <td><code>#e2e8f0</code></td>
-                <td>Rejilla separadora de especificaciones</td>
+                <td><strong>Excentricidad de Muela (TIR)</strong></td>
+                <td>&gt; 0.060 mm</td>
+                <td>&lt; 0.020 mm</td>
+                <td>&gt; 0.080 mm</td>
+                <td><span class="badge-state crit">CRÍTICO</span></td>
               </tr>
             </tbody>
           </table>
@@ -112,15 +145,59 @@
       </section>
 
       <section>
-        <h2>3. Componentes Especiales de Visualización</h2>
-        <h3>3.1. Expresión Matemática Tipográfica (<code>.formula-block</code>)</h3>
-        <p>Evita dependencias pesadas de librerías JS o LaTeX en crudo. Renderizado puro mediante fuentes monoespaciadas y símbolos Unicode:</p>
-        <div class="formula-block">
-          Q = (κ · A / μ) · (ΔP / L)
-        </div>
+        <h2>4. Motor de Diagramas Vectoriales SVG Nativos</h2>
+        <p>Los perfiles de extracción y la descomposición cinemática de fuerzas se renderizan en SVG puro, accesible y escalable, garantizando legibilidad en pantallas de alta densidad sin degradación de artefactos de compresión.</p>
 
-        <h3>3.2. Curvas Vectoriales SVG de Dinámica de Fluidos (<code>.chart-container</code>)</h3>
-        <p>Gráficos SVG ligeros (&lt; 2 KB) con dos curvas paramétricas y soporte nativo para inversión en alto contraste y modo claro/oscuro.</p>
+        <div class="chart-container">
+          <div class="chart-header">
+            <span class="chart-title">PERFIL HIDRÁULICO: PREINFUSIÓN Y DECLIVE DE PRESIÓN</span>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-swatch pressure"></span> PRESIÓN (BAR)</span>
+              <span class="legend-item"><span class="legend-swatch flow"></span> CAUDAL (ML/S)</span>
+            </div>
+          </div>
+          <svg class="svg-diagram" viewBox="0 0 640 240" fill="none" aria-label="Curvas superpuestas de presión y caudal a lo largo de un disparo de espresso moderno">
+            <!-- Retícula de fondo -->
+            <line x1="40" y1="30" x2="600" y2="30" stroke="#1e293b" stroke-dasharray="3 3"/>
+            <line x1="40" y1="80" x2="600" y2="80" stroke="#1e293b" stroke-dasharray="3 3"/>
+            <line x1="40" y1="130" x2="600" y2="130" stroke="#1e293b" stroke-dasharray="3 3"/>
+            <line x1="40" y1="180" x2="600" y2="180" stroke="#1e293b" stroke-dasharray="3 3"/>
+            <line x1="40" y1="210" x2="600" y2="210" stroke="#334155" stroke-width="1.5"/>
+
+            <!-- Curva de Presión (Cian) -->
+            <path d="M40 210 L100 190 L160 60 L380 60 L480 110 L580 180" stroke="#38bdf8" stroke-width="2.5" fill="none"/>
+            <!-- Curva de Flujo (Ámbar) -->
+            <path d="M40 210 L100 200 L160 180 L380 140 L480 120 L580 90" stroke="#fbbf24" stroke-width="2.2" stroke-dasharray="4 2" fill="none"/>
+
+            <!-- Ejes y Leyendas de Escala -->
+            <text x="40" y="228" fill="#64748b" font-family="JetBrains Mono, monospace" font-size="10">0s (INICIO)</text>
+            <text x="160" y="228" fill="#64748b" font-family="JetBrains Mono, monospace" font-size="10">8s (SATURADO)</text>
+            <text x="380" y="228" fill="#64748b" font-family="JetBrains Mono, monospace" font-size="10">22s (DECLIVE)</text>
+            <text x="560" y="228" fill="#64748b" font-family="JetBrains Mono, monospace" font-size="10">32s (CORTE)</text>
+
+            <text x="15" y="65" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="10">9 bar</text>
+            <text x="15" y="135" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="10">5 bar</text>
+            <text x="605" y="95" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="10">3.5 ml/s</text>
+            <text x="605" y="185" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="10">1.2 ml/s</text>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Bloque de Suscripción al Dispatch Técnico -->
+      <section class="newsletter-section">
+        <h3>Dispatch Metrológico y Modelos de Extracción</h3>
+        <p>Recibe los análisis numéricos de laboratorio sobre dinámica de fluidos, perfiles de presión y calibración de molienda directamente en tu bandeja.</p>
+        <form class="newsletter-form" action="https://panel.retoseo.com/subscription/form" method="post">
+          <div class="form-row">
+            <input class="form-input" type="email" name="email" placeholder="ingenieria@dominio.com" required>
+            <button type="submit" class="btn-primary">Suscribirse</button>
+          </div>
+          <input type="hidden" name="l" value="5">
+          <input type="hidden" name="attribs_origen" id="origen" value="directo">
+          <p class="consentimiento">
+            <input type="checkbox" name="consentimiento" required> He leído la <a href="/privacidad">política de privacidad</a>.
+          </p>
+        </form>
       </section>
     </main>
 
@@ -130,5 +207,8 @@
       <p><a href="https://retoseo.com">Ver el marcador en vivo</a></p>
     </footer>
   </div>
+  <script>
+    document.getElementById('origen').value = new URLSearchParams(window.location.search).get('utm_source') || 'directo';
+  </script>
 </body>
 </html>

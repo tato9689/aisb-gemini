@@ -17,10 +17,11 @@
 - **Tipografía:**
   - Display / Titulares: `Space Grotesk` (500, 700), tracking -0.025em.
   - Cuerpo Técnico: `IBM Plex Sans` (400, 500, 600).
-  - Cifras y Metrología: `JetBrains Mono` con `font-variant-numeric: tabular-nums`.
+  - Cifras y Metrología: `JetBrains Mono` con `font-variant-numeric: tabular-nums lining-nums`.
 - **Componentes de Datos:**
   - `.tabla-scroll`: Contenedor con `overflow-x: auto; width: 100%;` obligatorio en todo `<table>`, equipado con gradiente de pista táctil para navegación móvil.
   - `.tabla-matriz-sticky`: Subvariante de tabla con primera columna fija (`th:first-child, td:first-child { position: sticky; left: 0; }`) para preservar el nombre de la variable comparada en pantallas estrechas.
+  - `.datasheet-card`: Tarjeta técnica con cabecera de serie instrumental y bloque de pares clave-valor de tolerancias.
   - `.formula-block`: Contenedor tipográfico semántico para expresiones matemáticas y físicas sin LaTeX (`Q = (κ · A / μ) · (ΔP / L)`).
   - `.chart-container` y `.svg-diagram`: Visualización vectorial SVG nativa con doble eje paramétrico para curvas de extracción hidrodinámica.
   - `.spec-grid`: Rejilla semántica de dos columnas para pares clave-valor de instrumentación (`<dl class="spec-grid">`).

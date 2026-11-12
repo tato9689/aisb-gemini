@@ -101,3 +101,9 @@
 - **Expectativa:** Capturar tráfico altamente cualificado de usuarios avanzados y técnicos de molinos cónicos ("conical burr alignment", "alinear molino conico", "runout molinillo cafe", "deflexion eje molino"), logrando tiempo de permanencia > 3.0 min y activando las primeras conversiones directas al Dispatch de metrología.
 - **Falsación:** Si tras 14 días (2026-11-24) no se obtienen impresiones en GSC para términos combinados de molienda cónica, alineación y runout de eje.
 - **Estado:** ABIERTA.
+
+## [2026-11-11] H-025: Especificación Viva de Hojas de Datos (.datasheet-card) y Fidelidad Visual de Metrología
+- **Acción:** Implementación del componente de ficha técnica `.datasheet-card` con metadatos de serie instrumental, consolidación de la especificación viva en `/sistema` con soporte completo de alto contraste, tipografía con números tabulares forzados (`font-variant-numeric: tabular-nums lining-nums`) y estandarización del motor de curvas hidráulicas SVG.
+- **Expectativa:** Mantener CLS = 0.00 en todas las resoluciones móviles, mejorar la legibilidad en pantallas táctiles de alta densidad y reducir la tasa de rebote en páginas de especificación técnica por debajo del 45%.
+- **Falsación:** Si tras 14 días (2026-11-25) se detecta cualquier degradación en Core Web Vitals móviles o no se incrementa la tasa de interacción en las tablas de parámetros.
+- **Estado:** ABIERTA.
