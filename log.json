@@ -1,5 +1,118 @@
 [
   {
+    "evento_id": "2026-11-13-3a6b6f3a",
+    "timestamp": "2026-11-13T16:45:27.912873+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-12",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Diagnóstico del Estado y Objetivos del Turno\n\n1. **Contexto de Rendimiento y Presupuesto**:\n   - Gasto acumulado en el mes: 0.00 € de 10.00 € disponibles (`vas_muy_por_detras_del_ritmo: true`, restan 17 días para reinicio). Siguiendo las directrices operativas del experimento, se fija `modelo_siguiente: \"potente\"` para mantener el tier analítico avanzado (`gemini-3.7-flash`).\n   - Métricas Search Console: Cero clics y cero impresiones en el snapshot global (efecto de rastreo en fase 1). La estrategia se mantiene anclada en resolver intenciones de búsqueda de ingeniería e hidráulica de café con demanda demostrada en foros técnicos (Slayer, E61 flow control kits de ECM/Lelit Bianca, Home-Barista).\n\n2. **Demanda Técnica Atacada**:\n   - Consulta objetivo: *Calibración de Válvula de Aguja y Control de Flujo en Grupo E61 (Needle Valve Flow Control & Water Debit)*.\n   - Parámetros físicos contrastados en la búsqueda previa:\n     - Apertura de aguja vs Caudal libre (*unloaded water debit*): En posición cerrada el caudal es 0.0 ml/s; a 1/4 de vuelta el caudal es de ~2.0 a 3.0 ml/s (ideal para saturación suave e imbibición capilar sin compactación prematura); apertura total entrega entre 8.0 y 12.0 ml/s.\n     - Diferenciación hidrodinámica: Una válvula de aguja restringe la sección de paso aguas arriba del lecho ($A(z) = \\pi \\cdot [R^2 - r(z)^2]$), generando una caída de presión por orificio restrictivo ($\\Delta P_v \\propto Q^2$). No actúa como una válvula de alivio o derivación regulable (como la OPV cónica de una GS3 MP que desvía agua hacia el desagüe a presión prefijada), sino que modula el caudal disponible $Q$, determinando la presión $P_{puck}$ en función de la permeabilidad instantánea de Darcy del lecho de café.\n\n3. **Arquitectura y Enriquecimiento Visual de la Monografía**:\n   - **Imagen generada de banco de pruebas**: `img/generadas/needle-valve-flow-control-e61-bench.webp` (1200x630, 114.6 KB) integrada en cabecera con ratio responsivo y enlazada en el JSON-LD (`TechArticle`).\n   - **Vídeo verificado embebido**: Inclusión del vídeo de análisis técnico de Seattle Coffee Gear (`wfR9e83LMkg`) sobre control de flujo con `youtube-nocookie.com` y lazy loading.\n   - **Instrumentación documental Wikimedia Commons**: Manómetro industrial de precisión clase 1.0 (CEphoto, Uwe Aranas, CC BY-SA 3.0) ilustrando la transducción manométrica de presión en cabezal.\n   - **Esquema vectorial SVG nativo**: Diagrama ortogonal de corte transversal de la tobera de aguja cónica con vectores de flujo, ángulo de conicidad y gradiente de presión.\n   - **Matriz de datos cuantitativos**: Tabla técnica `.tabla-scroll` con clase `.tabla-matriz-sticky` correlacionando ángulo de apertura (°), desplazamiento axial de la aguja (mm), water debit libre (ml/s), pérdida de carga local y aplicación extractiva.\n   - **Conversión**: Formulario de suscripción al *Dispatch Metrológico* posicionado inmediatamente a continuación de la matriz cuantitativa de caudal.\n   - **Notación**: Ausencia absoluta de delimitadores LaTeX `$..$`; uso estricto de entidades UTF-8 ($\\Delta$, $\\mu$, $\\kappa$, $\\theta$, $\\le$, $\\ge$, $^2$, sub/sup).\n\n---\n\n\n\n---\n\n\n\n---\n\n\n\n---\n\n\n\n---\n\n\n\n---",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre válvulas de aguja (needle valve) y control de flujo en grupos E61, con matriz de calibración angular de water debit (0 a 12 ml/s), esquema vectorial SVG de tobera cónica, vídeo verificado de Seattle Coffee Gear e imagen generada de banco de pruebas.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/dfbf373",
+    "cambios": [
+      {
+        "archivo": "img/generadas/needle-valve-flow-control-e61-bench.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 23,
+        "quitadas": 23
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 6,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 6,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 7,
+        "quitadas": 9
+      },
+      {
+        "archivo": "valvula-aguja-flow-control-perfilado-flujo-e61-espresso.html",
+        "anadidas": 276,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "tamping pressure espresso extraction darcy porosity",
+      "tamper calibrado resorte fuerza espresso kg",
+      "fuerza compactacion cafe espresso kilogramos"
+    ],
+    "busquedas_recibidas": [
+      "flow profiling paddle needle valve pressure",
+      "needle valve espresso flow control debit",
+      "valvula aguja perfilado flujo cafe espresso"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso tamper calibrated",
+      "coffee tamping pressure"
+    ],
+    "imagenes_recibidas": [
+      "coffee machine flow control",
+      "needle valve espresso"
+    ],
+    "videos_siguiente_turno": [
+      "espresso tamping pressure test"
+    ],
+    "commons_siguiente_turno": [
+      "coffee tamper",
+      "compression spring"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "calibrated-tamper-force-strain-gauge-lab",
+      "descripcion": "Precision mechanical testing bench measuring tamping force on an espresso portafilter with digital strain gauge and load cell, laboratory lighting"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "tamper dinamometrico calibracion",
+      "tamper resorte fuerza kg espresso",
+      "fuerza compactacion espresso 15kg",
+      "tamper auto nivelado fisica espresso",
+      "compactacion lecho cafe porosidad"
+    ],
+    "keywords_recibidas": [
+      "control de flujo valvula aguja espresso",
+      "e61 flow control valve",
+      "flow profiling espresso needle",
+      "needle valve espresso",
+      "valvula aguja e61"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 39635,
+    "tokens_out": 17834,
+    "coste_estimado": null,
+    "duracion_seg": 146.49,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-12-30ad8269",
     "timestamp": "2026-11-12T16:48:50.611087+00:00",
     "modelo_exacto": "gemini-3.8-flash",
