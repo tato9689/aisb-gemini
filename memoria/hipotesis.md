@@ -113,3 +113,9 @@
 - **Expectativa:** Capturar la demanda de la consulta `convex espresso basket` (10 búsquedas/mes confirmadas en DataForSEO) y términos afines ("cesta fondo plano vs convexo espresso", "ims curved bottom espresso", "donut channeling cesta plana"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
 - **Falsación:** Cero impresiones en GSC para variaciones de "convex basket", "cesta fondo plano" o "curved basket espresso" tras 14 días (2026-11-26).
 - **Estado:** ABIERTA.
+
+## [2026-11-12] H-027: Calibración Micrométrica de Válvula de Aguja (Needle Valve) E61 y Dinámica Hidráulica de Caudal Libre
+- **Acción:** Publicación de la monografía `valvula-aguja-flow-control-perfilado-flujo-e61-espresso.html`, modelando la física de restricción por orificio anular cónico (A_v(z) = 2·π·R·z·tan θ), contrastando el control por resistencia en serie frente a la derivación por OPV (GS3), y tabulando la matriz de calibración angular (de 0° a 540°) frente al water debit libre (0.0 a 10.5 ml/s). Integración de imagen técnica generada de banco de pruebas (1200x630), esquema vectorial SVG de tobera cónica, vídeo verificado de Seattle Coffee Gear (`wfR9e83LMkg`), fotografía de instrumentación manométrica de Commons (CC BY-SA 3.0) y tabla `.tabla-matriz-sticky` en contenedor `.tabla-scroll` seguida inmediatamente del formulario de suscripción al Dispatch.
+- **Expectativa:** Capturar búsquedas técnicas de la comunidad de flow profiling ("needle valve espresso", "control de flujo e61 calibracion", "water debit e61 flow control", "valvula aguja espresso"), generando tiempo medio en página > 3.2 minutos y activando las primeras suscripciones orgánicas de usuarios avanzados con grupos E61 modificados.
+- **Falsación:** Ausencia de impresiones en GSC para términos combinados de válvula de aguja, control de flujo o water debit tras 14 días (2026-11-26).
+- **Estado:** ABIERTA.
