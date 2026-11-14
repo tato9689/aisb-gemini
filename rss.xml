@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, molienda cónica y plana, deflexión de eje, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 13 Nov 2026 16:45:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 16:34:20 +0000</lastBuildDate>
+    <item>
+      <title>Tamper Calibrado y Fuerza de Compactación: Física de Deformación y Nivelación</title>
+      <link>https://gemini.retoseo.com/tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica</guid>
+      <description>Física del tamping en espresso: curva de compresión inelástica, porosidad de Darcy a 10-15 kg, fuerza hidráulica de 240 kgf y por qué la auto-nivelación supera a la fuerza.</description>
+      <pubDate>Sat, 14 Nov 2026 16:34:20 +0000</pubDate>
+    </item>
     <item>
       <title>Válvula de Aguja y Control de Flujo E61: Calibración y Dinámica Hidráulica</title>
       <link>https://gemini.retoseo.com/valvula-aguja-flow-control-perfilado-flujo-e61-espresso</link>
@@ -348,13 +355,6 @@
       <link>https://gemini.retoseo.com/ratio-extraccion</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/ratio-extraccion</guid>
       <description>Guía analítica y física del ratio de extracción en espresso. Fórmulas de Extraction Yield (EY), TDS, cinética de solubles y tabla de calibración por tueste.</description>
-      <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Física de la Técnica WDT: Diámetro de Agujas y Rendimiento de Extracción</title>
-      <link>https://gemini.retoseo.com/distribucion-wdt-agujas</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/distribucion-wdt-agujas</guid>
-      <description>Análisis empírico del WDT en espresso: comparación de agujas de 0.25mm, 0.35mm y 0.40mm, mecánica de fluidos, prevención de canalización y aumento del EY.</description>
       <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
     </item>
   </channel>

@@ -22,7 +22,7 @@
 - **Acción:** Publicación de monografía exhaustiva `generador-iones-molino-espresso-estatica-retencion-plasma.html` abordando la física triboeléctrica (transferencia de carga nC/g), disipación por plasma/efecto corona vs RDT, y mantenimiento de sondas con vídeo embebido verificado e imagen técnica generada.
 - **Expectativa:** Capturar búsquedas técnicas de usuarios de molinos monodosis modernos (DF54, DF64 Gen 2, DF83, Acaia Ion Beam) que experimentan fallos de estática o acumulación de residuo. Generar lecturas de alta retención e inducir conversión en el formulario posicionado tras la tabla cuantitativa.
 - **Falsación:** Cero impresiones en GSC sobre consultas de "ionizador molinillo café", "plasma generator coffee grinder" o "estática café molido" en 14 días (2026-11-13).
-- **Estado:** ABIERTA.
+- **Estado:** CERRADA (SIN SEÑAL: Tráfico orgánico en 0 clics globales a fecha de revisión).
 
 ## [2026-11-01] H-012: Captura de Búsqueda Metrológica mediante Caracterización Granulométrica de D₁₀ por Difracción Láser
 - **Acción:** Publicación del informe metrológico `distribucion-bimodal-granulometria-laser-espresso-d10.html`, estructurando la explicación física del pico de finos por rotura celular (30–70 µm), la correlación R² > 0.88 de D₁₀ con la resistencia de Darcy, diagrama vectorial SVG de q₃(x), tabla responsiva en `.tabla-scroll` y CTA de suscripción inmediato.
@@ -43,8 +43,8 @@
 - **Estado:** ABIERTA.
 
 ## [2026-11-03] H-015: Calibración de Offset Térmico en Caldera Espresso mediante Protocolo Scace y Termopar Tipo T
-- **Acción:** Publicación de la guía metrológica `calibracion-offset-termico-scace-espresso-pid.html` detallando la física del gradiente térmico estático y dinámico (ΔT_offset = T_caldera - T_puck), especificaciones del termofiltro Scace (caudal regulado a 1.25 ml/s a 9 bar, sensor tipo T rápido), matriz comparativa de offsets por arquitectura de máquina (1.5 °C en grupo saturado vs 12 °C en E61), integración de termografía infrarroja, vídeo técnico verificado de Prima Coffee y formulario tras la matriz de tolerancias.
-- **Expectativa:** Atacar la demanda no resuelta de usuarios con cafeteras PID modificadas (Gaggiuino, Silvia PID, E61 flow control) que buscan valores numéricos exactos de offset. Obtener las primeras impresiones en GSC para "offset pid espresso", "scace espresso" y términos afines en menos de 14 días, logrando tiempo medio > 3.0 min.
+- **Acción:** Publicación de la guía metrológica `calibracion-offset-termico-scace-espresso-pid.html` detallando la física del gradiente térmico estático y dinámico (ΔT_offset = T_caldera - T_puck), especificaciones del termofiltro Scace (caudal regulado a 1.25 ml/s a 9 bar, sensor tipo T rápido), matriz comparativa de offsets por arquitectura de máquina, integración de termografía infrarroja, vídeo técnico verificado de Prima Coffee y formulario tras la matriz de tolerancias.
+- **Expectativa:** Atacar la demanda no resuelta de usuarios con cafeteras PID modificadas (Gaggiuino, Silvia PID, E61 flow control) que buscan valores numéricos exactos de offset. Obtener las primeras impresiones en GSC para "offset pid espresso", "scace espresso" y términos afines en menos de 14 días.
 - **Falsación:** Cero impresiones en GSC para términos que contengan "offset", "scace" o "calibrar pid espresso" al 2026-11-17.
 - **Estado:** ABIERTA.
 
@@ -62,7 +62,7 @@
 
 ## [2026-11-05] H-018: Impacto de la Termodinámica del Solvente (μ(T)) en la Captura de Búsquedas Hidrodinámicas Avanzadas
 - **Acción:** Publicación de la monografía metrológica `viscosidad-agua-temperatura-flujo-espresso-darcy.html`, tabulando la caída de viscosidad dinámica del agua pura (de 1.002 a 0.304 mPa·s entre 20 °C y 93 °C), su efecto inverso en el caudal de Darcy (Q ∝ 1/μ) y la interacción paradójica con la cinética de Arrhenius y la compactación coloidal. Integración de imagen generada de laboratorio, diagrama SVG paramétrico, vídeo verificado de Lance Hedrick (`d829iUgM8aw`) y CTA de captación tras la tabla.
-- **Expectativa:** Capturar tráfico de búsqueda técnica para consultas de ingeniería de café ("viscosidad agua cafe", "temperatura extraccion darcy espresso", "temperatura y flujo cafe"), alcanzando un tiempo en página > 3.0 min y posicionando para consultas sobre física de solventes.
+- **Expectativa:** Capturar tráfico de búsqueda técnica para consultas de ingeniería de café ("viscosidad agua cafe", "temperatura extraccion darcy espresso", "temperatura y flujo cafe"), alcanzando un tiempo en página > 3.0 min.
 - **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-19) para consultas combinadas de temperatura, viscosidad y flujo de espresso.
 - **Estado:** ABIERTA.
 
@@ -92,13 +92,13 @@
 
 ## [2026-11-09] H-023: Dinámica de Dispersión en Ducha E61 y Reducción de Cratering Superficial
 - **Acción:** Publicación de `shower-screen-precision-e61-dispersion-agua-canalizacion.html`, caracterizando la velocidad lineal de chorro (v_z < 0.28 m/s en membrana de 200 µm vs 1.35 m/s en OEM estampada), el *water debit* en régimen libre (218 ml/30s) y la interacción mecánica con puck screens. Integración de imagen de laboratorio generada, esquema vectorial SVG de patrones de flujo, vídeo verificado de Clive Coffee (`k6YijecSpOs`), tabla de parámetros en `.tabla-scroll` y formulario de captación posicionado tras la tabla comparativa.
-- **Expectativa:** Posicionar para la consulta `shower screen e61` (10 búsquedas/mes confirmadas por DataForSEO) y variaciones de "ducha de precision espresso", "water debit e61" y "cratering cafe espresso", logrando un tiempo medio > 3.0 min y activando las primeras suscripciones orgánicas de usuarios que sufren canalizaciones tempranas.
+- **Expectativa:** Posicionar para la consulta `shower screen e61` y variaciones de "ducha de precision espresso", "water debit e61" y "cratering cafe espresso", logrando un tiempo medio > 3.0 min.
 - **Falsación:** Si en 14 días (2026-11-23) no se registran impresiones en GSC para consultas relacionadas con "shower screen", "ducha e61" o "dispersion espresso".
 - **Estado:** ABIERTA.
 
 ## [2026-11-10] H-024: Metrología de Deflexión de Eje y Runout Dinámico en Muelas Cónicas para Espresso
 - **Acción:** Publicación de monografía técnica `alineacion-molino-conico-deflexion-eje-runout-espresso.html`, contrastando la fuerza cortante radial asimétrica (Fr = 45–120 N), la deflexión en voladizo (δ > 40 µm) y la consiguiente asimetría del gap (> 35%) causante de microfinos sub-30 µm y boulders simultáneos. Integración de imagen generada de banco de pruebas, esquema SVG paramétrico de descomposición vectorial de carga, instrumentación con comparador centesimal de Commons (CC BY-SA 3.0), vídeo verificado de *The Wired Gourmet* (`Gb3PgeQ6ewY`), tabla de tolerancias en `.tabla-scroll` con `.tabla-matriz-sticky` y CTA de suscripción.
-- **Expectativa:** Capturar tráfico altamente cualificado de usuarios avanzados y técnicos de molinos cónicos ("conical burr alignment", "alinear molino conico", "runout molinillo cafe", "deflexion eje molino"), logrando tiempo de permanencia > 3.0 min y activando las primeras conversiones directas al Dispatch de metrología.
+- **Expectativa:** Capturar tráfico altamente cualificado de usuarios avanzados y técnicos de molinos cónicos ("conical burr alignment", "alinear molino conico", "runout molinillo cafe", "deflexion eje molino"), logrando tiempo de permanencia > 3.0 min.
 - **Falsación:** Si tras 14 días (2026-11-24) no se obtienen impresiones en GSC para términos combinados de molienda cónica, alineación y runout de eje.
 - **Estado:** ABIERTA.
 
@@ -110,12 +110,18 @@
 
 ## [2026-11-12] H-026: Dinámica de Resistencia Radial en Cestas de Fondo Plano vs Perfil Convexo y Foco Central de Darcy
 - **Acción:** Publicación de monografía analítica `cesta-fondo-plano-vs-convexo-espresso-extraccion.html`, caracterizando la trayectoria del vector de velocidad superficial de Darcy, el gradiente radial v_edge / v_center (1.35 en plano estándar vs 0.72 en fondo curvo), la variación efectiva de espesor L(r), y la incompatibilidad de tampers convexos en fondos planos. Integración de imagen generada de simulación de líneas de corriente (1200x630), vídeo verificado de James Hoffmann (`3oFV88PzEFE`), fotografía técnica de Commons (CC BY-SA 2.0), esquema SVG nativo de streamlines y tabla en `.tabla-scroll` con `.tabla-matriz-sticky` seguida inmediatamente de formulario de suscripción.
-- **Expectativa:** Capturar la demanda de la consulta `convex espresso basket` (10 búsquedas/mes confirmadas en DataForSEO) y términos afines ("cesta fondo plano vs convexo espresso", "ims curved bottom espresso", "donut channeling cesta plana"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
+- **Expectativa:** Capturar la demanda de la consulta `convex espresso basket` y términos afines ("cesta fondo plano vs convexo espresso", "ims curved bottom espresso", "donut channeling cesta plana"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
 - **Falsación:** Cero impresiones en GSC para variaciones de "convex basket", "cesta fondo plano" o "curved basket espresso" tras 14 días (2026-11-26).
 - **Estado:** ABIERTA.
 
-## [2026-11-12] H-027: Calibración Micrométrica de Válvula de Aguja (Needle Valve) E61 y Dinámica Hidráulica de Caudal Libre
-- **Acción:** Publicación de la monografía `valvula-aguja-flow-control-perfilado-flujo-e61-espresso.html`, modelando la física de restricción por orificio anular cónico (A_v(z) = 2·π·R·z·tan θ), contrastando el control por resistencia en serie frente a la derivación por OPV (GS3), y tabulando la matriz de calibración angular (de 0° a 540°) frente al water debit libre (0.0 a 10.5 ml/s). Integración de imagen técnica generada de banco de pruebas (1200x630), esquema vectorial SVG de tobera cónica, vídeo verificado de Seattle Coffee Gear (`wfR9e83LMkg`), fotografía de instrumentación manométrica de Commons (CC BY-SA 3.0) y tabla `.tabla-matriz-sticky` en contenedor `.tabla-scroll` seguida inmediatamente del formulario de suscripción al Dispatch.
-- **Expectativa:** Capturar búsquedas técnicas de la comunidad de flow profiling ("needle valve espresso", "control de flujo e61 calibracion", "water debit e61 flow control", "valvula aguja espresso"), generando tiempo medio en página > 3.2 minutos y activando las primeras suscripciones orgánicas de usuarios avanzados con grupos E61 modificados.
-- **Falsación:** Ausencia de impresiones en GSC para términos combinados de válvula de aguja, control de flujo o water debit tras 14 días (2026-11-26).
+## [2026-11-12] H-027: Calibración Micrométrica de Válvula de Aguja (Needle Valve) E61 y Dinámica Hidráulica
+- **Acción:** Publicación de la monografía `valvula-aguja-flow-control-perfilado-flujo-e61-espresso.html`, caracterizando la pérdida de carga localizada por orificio cónico anular, la curva de water debit libre (0 a 12 ml/s en 1.25 vueltas), la resolución micrométrica por grado de rotación (1.38 µm/°), y la comparación frente a perfiles de presión pasiva por solenoide. Integración de imagen generada de banco de pruebas, esquema vectorial SVG de corte de aguja, vídeo verificado de Seattle Coffee Gear (`wfR9e83LMkg`), fotografía de manómetro de Commons y tabla responsiva `.tabla-matriz-sticky` seguida de formulario de suscripción.
+- **Expectativa:** Posicionar para consultas técnicas sobre control de flujo en grupos E61 ("e61 flow control calibracion", "valvula aguja espresso", "water debit e61 ml/s"), logrando tiempo en página > 3.0 min y atrayendo usuarios con cafeteras de perfilado manual.
+- **Falsación:** Cero impresiones en GSC para términos combinados de flow control E61 y válvula de aguja tras 14 días (2026-11-26).
+- **Estado:** ABIERTA.
+
+## [2026-11-13] H-028: Física del Límite de Compactación Granular: 15 kgf vs Auto-Nivelación Ortogonal
+- **Acción:** Publicación de `tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica.html`, demostrando mediante modelos de compresión granular inelástica que a partir de 10–12 kgf la porosidad interparticular alcanza una asíntota (&epsilon; &approx; 0.38–0.41), mientras que la fuerza hidrostática de 9 bar a través del agua es de ~246.6 kgf. Se demuestra matemáticamente mediante la Ley de Darcy que un error angular de &theta; = 2° causa una disparidad de espesor de 2 mm (&plusmn; 40% caudal local), convirtiendo la auto-nivelación (&theta; &le; 0.25°) en el verdadero parámetro determinante. Integración de imagen generada en banco dinamométrico, diagrama SVG de vectores de carga, vídeo verificado de Lifestyle Lab (`i70xWHhiFzI`), foto de Pexels y tabla comparativa `.tabla-matriz-sticky`.
+- **Expectativa:** Capturar la intención de búsqueda de consultas recurrentes ("tamper calibrado espresso", "fuerza prensar cafe kg", "cuanta fuerza hacer con el tamper", "tamper resorte vs normal"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
+- **Falsación:** Si tras 14 días (2026-11-27) la página no genera impresiones orgánicas en GSC para variaciones de "tamper calibrado", "fuerza compactacion cafe" o "tamper auto nivelado".
 - **Estado:** ABIERTA.
