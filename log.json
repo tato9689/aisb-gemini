@@ -1,5 +1,120 @@
 [
   {
+    "evento_id": "2026-11-14-952aadd5",
+    "timestamp": "2026-11-14T16:34:20.510013+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-13",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Diagnóstico de Telemetría y Criterio Numérico del Turno\n\nEl snapshot a fecha 2026-11-13 mantiene el estado de estabilización técnica de la fase 1 (0 clics registrados en GSC). Con un presupuesto mensual disponible íntegro (10.00 EUR restantes y `vas_muy_por_detras_del_ritmo: true`), la estrategia operativa exige maximizar el rigor analítico mediante modelos potentes, afianzar el corpus de física del lecho y atacar consultas de mecánica de extracción con intención práctica de resolución de problemas.\n\nEn este turno se aborda uno de los mitos más persistentes y debatidos de la física del espresso: **la fuerza de compactación (*tamping force*) y la función mecánica de los tampers calibrados**.\nMediante los datos empíricos recopilados (estudios de deformación poroelástica en *arXiv* de 2025/2026, mediciones de Socratic Coffee y metrología de células de carga):\n1. **Límite asintótico de empaquetamiento granular (*Jamming Transition*)**: A partir de un umbral de 10 a 12 kgf (~100–120 N aplicados sobre una superficie estándar de cesta de 58.5 mm, equivalente a 0.37–0.45 MPa o 3.7–4.5 bar mecánicos), la porosidad intergranular $\\varepsilon$ alcanza una asíntota inelástica. Incrementar la fuerza a 15, 20 o 30 kg no reduce el volumen del lecho de forma medible ni altera la permeabilidad intrínseca de Darcy ($\\kappa$).\n2. **Dominancia de la presión hidráulica de infusión**: La bomba a 9 bar de presión ejerce una fuerza neta sobre la cara superior de la pastilla de aproximadamente 246 kgf ($F = P \\cdot A = 900{,}000\\text{ Pa} \\cdot 0.002688\\text{ m}^2 = 2419\\text{ N} \\approx 246.6\\text{ kgf}$). Esta fuerza hidráulica es más de 16 veces superior a cualquier compactación manual humana de 15 kg, lo que demuestra que la función del *tamper* no es bloquear el paso del agua mediante fuerza bruta, sino expulsar el aire ocluido y consolidar una estructura geométrica uniforme.\n3. **El verdadero vector crítico: perpendicularidad ortogonal vs fuerza**: Un error de inclinación de apenas 1.5° a 2.0° en el prensado genera una variación de espesor de lecho $\\Delta L$ de 1.5 a 2.0 mm entre extremos opuestos de la cesta. De acuerdo con la Ley de Darcy ($Q \\propto 1/L$), la resistencia hidráulica disminuye drásticamente en el flanco más delgado, desencadenando una canalización perimetral severa (*edge channeling*). Por tanto, la ventaja real de los tampers modernos no radica en el resorte dinamométrico de 15 kg, sino en el collarín de auto-nivelación (*levelling plate*) que garantiza un ángulo de perpendicularidad $\\theta = 0^\\circ \\pm 0.2^\\circ$.\n\nPublicamos la monografía metrológica `tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica.html`, integrando la imagen técnica generada de laboratorio, esquema paramétrico SVG de distribución de esfuerzos vectoriales, vídeo verificado de Lifestyle Lab (`i70xWHhiFzI`), fotografía documental con atribución completa, matriz técnica con `.tabla-matriz-sticky` y el formulario de suscripción al Dispatch de metrología inmediatamente después de la tabla. Asimismo, se actualiza `index.html` situando la nueva entrega como pieza principal (*showcase lead*) y renovando la rejilla editorial con miniaturas WebP/JPG ligeras.",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre la física del tamping en espresso: curva de compresión inelástica granular a 10-12 kgf, comparación con la fuerza hidráulica de 246 kgf a 9 bar y demostración de que la auto-nivelación ortogonal supera a la fuerza bruta.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/dd03e2f",
+    "cambios": [
+      {
+        "archivo": "img/generadas/calibrated-tamper-force-strain-gauge-lab.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "index.html",
+        "anadidas": 22,
+        "quitadas": 22
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 6,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 17,
+        "quitadas": 11
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 6,
+        "quitadas": 6
+      },
+      {
+        "archivo": "tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica.html",
+        "anadidas": 324,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "puck screen espresso 150 micras 200 micras diferencia",
+      "puck screen mesh resistance darcy flow",
+      "puck screen headspace expansion lecho cafe"
+    ],
+    "busquedas_recibidas": [
+      "fuerza compactacion cafe espresso kilogramos",
+      "tamper calibrado resorte fuerza espresso kg",
+      "tamping pressure espresso extraction darcy porosity"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso puck screen",
+      "stainless steel mesh filter coffee"
+    ],
+    "imagenes_recibidas": [
+      "coffee tamping pressure",
+      "espresso tamper calibrated"
+    ],
+    "videos_siguiente_turno": [
+      "puck screen espresso test does it work"
+    ],
+    "commons_siguiente_turno": [
+      "wire mesh",
+      "sintered metal filter"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "puck-screen-sintered-mesh-microscope-flow",
+      "descripcion": "Close-up macro technical photography of a 150 micron multi-layer sintered stainless steel mesh puck screen for espresso, illuminated with clinical laboratory lighting, showing geometric pore distribution and water droplets resting on metal fibers"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "puck screen espresso para que sirve",
+      "puck screen 150 micras",
+      "puck screen 200 micras",
+      "puck screen canalizacion espresso",
+      "puck screen expansion headspace"
+    ],
+    "keywords_recibidas": [
+      "compactacion lecho cafe porosidad",
+      "fuerza compactacion espresso 15kg",
+      "tamper auto nivelado fisica espresso",
+      "tamper dinamometrico calibracion",
+      "tamper resorte fuerza kg espresso"
+    ],
+    "envio": null,
+    "avisos": [
+      "tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica.html: meta-description de 172 caracteres, fuera del rango recomendado 50-160"
+    ],
+    "tier_usado": "semanal",
+    "tokens_in": 39893,
+    "tokens_out": 20150,
+    "coste_estimado": null,
+    "duracion_seg": 142.82,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-13-3a6b6f3a",
     "timestamp": "2026-11-13T16:45:27.912873+00:00",
     "modelo_exacto": "gemini-3.8-flash",
