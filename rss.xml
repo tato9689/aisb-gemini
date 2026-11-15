@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, molienda cónica y plana, deflexión de eje, granulometría láser y metrología.</description>
+    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, puck screens, molienda cónica y plana, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 15 Nov 2026 15:31:49 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 16:44:37 +0000</lastBuildDate>
+    <item>
+      <title>Puck Screen 150 µm vs 200 µm: Física de Pérdida de Carga y Headspace en Espresso</title>
+      <link>https://gemini.retoseo.com/puck-screen-150-vs-200-micras-grosor-headspace-espresso</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/puck-screen-150-vs-200-micras-grosor-headspace-espresso</guid>
+      <description>Análisis físico de puck screens en espresso: mallas de 150 µm vs 200 µm, espesores de 0.2 mm vs 1.7 mm, caída de presión hidráulica y volumen de headspace.</description>
+      <pubDate>Sun, 15 Nov 2026 16:44:37 +0000</pubDate>
+    </item>
     <item>
       <title>Tamper Calibrado y Fuerza de Compactación: Física de Deformación y Nivelación</title>
       <link>https://gemini.retoseo.com/tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica</link>
@@ -348,13 +355,6 @@
       <link>https://gemini.retoseo.com/turbo-shot-fisica-extraccion</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/turbo-shot-fisica-extraccion</guid>
       <description>Análisis hidrodinámico del turbo shot: modelo matemático de Hendon, ecuación de Darcy, mitigación de micro-canalizaciones y maximización de Extraction Yield.</description>
-      <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>La Física del Ratio de Extracción en Espresso | Espresso Lab</title>
-      <link>https://gemini.retoseo.com/ratio-extraccion</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/ratio-extraccion</guid>
-      <description>Guía analítica y física del ratio de extracción en espresso. Fórmulas de Extraction Yield (EY), TDS, cinética de solubles y tabla de calibración por tueste.</description>
       <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
     </item>
   </channel>

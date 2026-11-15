@@ -1,19 +1,14 @@
 # Registro de Hipótesis Empíricas — Espresso Lab
 
-## Resumen de Hipótesis Históricas Cerradas (H-001 a H-011)
+## Resumen de Hipótesis Históricas Cerradas (H-001 a H-012)
 - **H-001 a H-007 (Fase Inicial):** Despliegue de monografías fundamentales de extracción, dial-in y calibración. Cerradas sin señal orgánica directa debido al periodo inicial de indexación del dominio.
 - **H-008 [2026-10-29] (Rediseño Editorial y Contenedor .tabla-scroll):** CERRADA (CONFIRMADA: CLS = 0.00 en Search Console y estabilidad visual en pantallas estrechas).
 - **H-009 [2026-10-29] (Gicleur E61 0.6mm vs 0.8mm):** CERRADA (SIN SEÑAL: 0 clics y 0 impresiones consolidadas en snapshot de GSC).
 - **H-010 [2026-10-29] (Alineación Muelas Comparador Reloj):** CERRADA (SIN SEÑAL: Tráfico orgánico en 0 clics a la fecha de revisión).
 - **H-011 [2026-10-30] (Descarga Iónica y Efecto Corona):** CERRADA (SIN SEÑAL: Sin impresiones agregadas en Search Console).
+- **H-012 [2026-11-01] (Granulometría de D₁₀ por Difracción Láser):** CERRADA (SIN SEÑAL: GSC reporta 0 clics y 0 impresiones consolidadas al 2026-11-14).
 
 ---
-
-## [2026-11-01] H-012: Captura de Búsqueda Metrológica mediante Granulometría de D₁₀ por Difracción Láser
-- **Acción:** Publicación de monografía sobre pico de finos (30–70 µm), correlación con Darcy, gráfico SVG q₃(x) y tabla en `.tabla-scroll`.
-- **Expectativa:** Capturar consultas de "distribucion bimodal cafe" y "d10 finos espresso" con tiempo > 3 min y clics en 14 días.
-- **Falsación:** Ausencia de impresiones al 2026-11-15.
-- **Estado:** CERRADA (SIN SEÑAL: GSC reporta 0 clics y 0 impresiones consolidadas en el snapshot de fecha 2026-11-14).
 
 ## [2026-11-02] H-013: Señalización Visual de Desplazamiento en Tablas Métricas y Resiliencia en Alto Contraste
 - **Acción:** Implementación de gradientes de desplazamiento en `.tabla-scroll` y estandarización del isotipo en `currentColor` con `CanvasText`.
@@ -76,7 +71,7 @@
 - **Estado:** ABIERTA.
 
 ## [2026-11-09] H-023: Dinámica de Dispersión en Ducha E61 y Prevención de Cratering
-- **Acción:** Caracterización de velocidad de chorro (vz < 0.28 m/s en 200 µm) y *water debit* en régimen libre.
+- **Acción:** Caracterización de velocidad de chorro (vz < 0.28 m/s en 200 µm) y water debit en régimen libre.
 - **Expectativa:** Posicionar para "shower screen e61" y "ducha de precision espresso".
 - **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-23).
 - **Estado:** ABIERTA.
@@ -109,4 +104,10 @@
 - **Acción:** Publicación de monografía sobre fuerza de compactación en tamper calibrado vs fuerza de la bomba (246 kgf), y tolerancia angular ≤ 0.25°.
 - **Expectativa:** Posicionar para "tamper calibrado 15 kg sirve" y "fuerza compactacion espresso".
 - **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-27).
+- **Estado:** ABIERTA.
+
+## [2026-11-14] H-029: Pérdida de Carga Ergun en Puck Screens (150 µm vs 200 µm) y Tolerancia de Headspace
+- **Acción:** Publicación de monografía analítica sobre la física de pantallas de dispersión: cálculo de &Delta;P (< 0.12 bar en limpio), compromiso de masa térmica (20 g vs 3 g) y reducción de headspace en discos de 1.7 mm frente a 0.2 mm. Integración de vídeo de YouTube, esquema SVG nativo y tabla de matriz en `.tabla-scroll`.
+- **Expectativa:** Capturar consultas con volumen confirmado en DataForSEO ("puck screen espresso", "puck screen para que sirve", "grosor puck screen espresso") y retener lectores mediante la matriz técnica.
+- **Falsación:** Cero impresiones en Search Console tras 14 días (2026-11-28).
 - **Estado:** ABIERTA.
