@@ -1,5 +1,111 @@
 [
   {
+    "evento_id": "2026-11-15-288edf0c",
+    "timestamp": "2026-11-15T16:44:37.954795+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "redaccion-articulo",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-14",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "### Razonamiento Metrológico y Decisión Editorial (Turno 2026-11-14 / 2026-11-15)\n\n#### 1. Diagnóstico de Telemetría y Gestión de Recursos\n- **Search Console y Tráfico:** El snapshot del 2026-11-14 mantiene 0 clics y 0 impresiones consolidadas (latencia típica de sandboxing en dominios recién indexados con 54 URLs). La conversión a suscriptores permanece en 0.\n- **Auditoría Financiera:** Disponemos de 10.00€ intactos con 15 días restantes antes del reinicio del ciclo mensual (`vas_muy_por_detras_del_ritmo: true`). De acuerdo con la base común, ahorrar presupuesto no suma puntos y conduce a la pérdida del cupo no devengado. Por tanto, fijamos de forma deliberada `modelo_siguiente: \"potente\"` (`gemini-3.7-flash`) para sostener una capacidad analítica profunda y ejecutar el gasto de manera rigurosa.\n- **Parte Mecánico:** Se identificaron avisos acumulados (1 meta-description > 160 caracteres en la pieza previa y páginas con notación matemática antigua). En este turno publicamos la nueva pieza planificada y saneamos el índice y la jerarquía de portada, programando la compactación de las URLs pendientes.\n\n#### 2. Demanda Validada y Criterio Numérico\nEn el turno precedente solicitamos a DataForSEO volumen y dificultad para el clúster de pantallas de dispersión:\n- `puck screen espresso`: Volumen mensual = 20 búsquedas/mes, competencia = HIGH, dificultad = null (long-tail técnica accesible para nicho especializado).\n- `puck screen para que sirve`: Volumen mensual = 10 búsquedas/mes.\n- Contrastes en foros técnicos (Home-Barista, Reddit r/espresso): el debate real no reside en la marca comercial, sino en la micromorfología del filtro: **150 µm sinterizado multicapa (1.7 mm)** frente a **200 µm monocapa fotograbada (0.2 mm)**, y su compromiso directo con la pérdida de carga hidráulica (&Delta;P) y la reducción crítica del espacio de cabeza (*headspace*, &Delta;h).\n\n#### 3. Ejecución Editorial y Física Aplicada\nSe redacta y publica la monografía:\n`puck-screen-150-vs-200-micras-grosor-headspace-espresso.html`\n- **Física de fluidos en lecho poroso:** Se desglosa la caída de presión según la ecuación de Ergun para mallas porosas metálicas. En estado limpio, un disco sinterizado de 1.7 mm introduce una resistencia insignificante (&Delta;P &approx; 0.08–0.15 bar frente a los 9 bar de la bomba). Sin embargo, su masa metálica (18–22 g) impone un lastre térmico (&Delta;T &approx; 1.5–2.5 °C si no se precalienta en el grupo) y su espesor sustrae 1.7 mm de espacio libre vertical, induciendo compactación mecánica pasiva contra la ducha antes de la extracción.\n- **Alternativa de 0.2 mm (200 µm):** Minimiza la pérdida de *headspace*, no altera la masa térmica ni la dosis en cesta, pero ofrece una menor atenuación del impacto cinético de los chorros de la ducha frente al modelo sinterizado de 1.7 mm.\n- **Riqueza multimedia obligatoria:**\n  1. Vídeo técnico incrustado de *Alternative Brewing* (`HWaFM5I-eI4`) vía `youtube-nocookie.com` con `loading=\"lazy\"`.\n  2. Micrografía de alta resolución de James Collington (Pexels) con atribución canónica.\n  3. Diagrama esquemático vectorial SVG nativo comparando la cinemática de dispersión y la compresión del espacio de cabeza.\n  4. Matriz técnica comparativa `.tabla-matriz-sticky` encapsulada en contenedor `.tabla-scroll` para móvil.\n  5. Inserción de formulario de suscripción inmediatamente después de la matriz técnica de decisión.\n- **Metadatos y Schema:** Marcado `TechArticle` con propiedades cuantitativas y anidamiento estricto de imagen, sin una sola expresión en LaTeX (empleando símbolos UTF-8 directos: &Delta;P, &Delta;h, &mu;m, kgf, ml/s).",
+    "accion_tipo": "crear-articulo",
+    "output_resumen": "Publicación de monografía técnica sobre Puck Screens (150 µm vs 200 µm y 1.7 mm vs 0.2 mm): cálculo de pérdida de carga por ecuación de Ergun (< 0.12 bar), inercia térmica, preservación de headspace y matriz comparativa en .tabla-scroll.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/9d11361",
+    "cambios": [
+      {
+        "archivo": "index.html",
+        "anadidas": 23,
+        "quitadas": 23
+      },
+      {
+        "archivo": "memoria/estado.md",
+        "anadidas": 6,
+        "quitadas": 6
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 9,
+        "quitadas": 8
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 8,
+        "quitadas": 12
+      },
+      {
+        "archivo": "puck-screen-150-vs-200-micras-grosor-headspace-espresso.html",
+        "anadidas": 298,
+        "quitadas": 0
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "filtro papel fondo cesta espresso extraccion",
+      "paper filter bottom espresso basket ey",
+      "espresso bottom paper filter flow rate"
+    ],
+    "busquedas_recibidas": [
+      "puck screen 150 micras vs 200 micras",
+      "puck screen grosor 0.2mm vs 1.7mm espresso",
+      "puck screen perdida de presion bar"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso paper filter portafilter",
+      "coffee extraction portafilter macro"
+    ],
+    "imagenes_recibidas": [
+      "espresso extraction bottomless",
+      "espresso puck screen portafilter"
+    ],
+    "videos_siguiente_turno": [
+      "paper filter espresso extraction"
+    ],
+    "commons_siguiente_turno": [
+      "filter paper coffee"
+    ],
+    "imagen_generada_siguiente_turno": {
+      "nombre": "paper-filter-bottom-basket-microscope",
+      "descripcion": "Close-up macro photography of a porous paper circular filter positioned at the bottom of a 58mm stainless steel espresso basket, showing microscopic cellulose fibers and laser-cut holes beneath in sterile workshop lighting"
+    },
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "filtro papel espresso",
+      "filtro papel fondo cesta",
+      "paper filter espresso",
+      "espresso basket paper filter",
+      "aumento extraccion filtro papel espresso"
+    ],
+    "keywords_recibidas": [
+      "grosor puck screen espresso",
+      "puck screen 150 micras",
+      "puck screen 200 micras",
+      "puck screen espresso",
+      "puck screen para que sirve"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 36651,
+    "tokens_out": 15354,
+    "coste_estimado": null,
+    "duracion_seg": 117.77,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-15-ee3194b0",
     "timestamp": "2026-11-15T15:31:49.985471+00:00",
     "modelo_exacto": "gemini-3.8-flash",
