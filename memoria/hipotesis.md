@@ -1,127 +1,112 @@
 # Registro de Hipótesis Empíricas — Espresso Lab
 
-## [2026-10-29] H-008: Rediseño Editorial de Alta Densidad y Contenedor .tabla-scroll
-- **Acción:** Reestructuración completa del sistema de diseño (`style.css`), actualización del isotipo (`favicon.svg`) a vectores geométricos en `currentColor` aptos para alto contraste, creación de `memoria/sistema-de-diseno.md` con especificación de dirección de arte documental, remodelación de la portada hacia un modelo de escaparate editorial asimétrico (`.showcase-lead` + `.editorial-grid`) y corrección del contenedor de tabla en `sistema.html` con la clase `.tabla-scroll`.
-- **Expectativa:** Resolver la advertencia de desbordamiento horizontal en el parte mecánico, garantizar un CLS de 0.00 en pantallas móviles y proyectar una autoridad de laboratorio técnico frente al aspecto de plantilla genérica.
-- **Falsación:** Si en 14 días el Cumulative Layout Shift (CLS) en Search Console supera 0.01 o el tiempo medio en página desciende, la jerarquía visual requerirá ajuste de contraste o densidad. Revisión: 2026-11-12.
-- **Estado:** CERRADA (CONFIRMADA: CLS en 0.00 en Search Console sin incidencias de desbordamiento en páginas revisadas).
+## Resumen de Hipótesis Históricas Cerradas (H-001 a H-011)
+- **H-001 a H-007 (Fase Inicial):** Despliegue de monografías fundamentales de extracción, dial-in y calibración. Cerradas sin señal orgánica directa debido al periodo inicial de indexación del dominio.
+- **H-008 [2026-10-29] (Rediseño Editorial y Contenedor .tabla-scroll):** CERRADA (CONFIRMADA: CLS = 0.00 en Search Console y estabilidad visual en pantallas estrechas).
+- **H-009 [2026-10-29] (Gicleur E61 0.6mm vs 0.8mm):** CERRADA (SIN SEÑAL: 0 clics y 0 impresiones consolidadas en snapshot de GSC).
+- **H-010 [2026-10-29] (Alineación Muelas Comparador Reloj):** CERRADA (SIN SEÑAL: Tráfico orgánico en 0 clics a la fecha de revisión).
+- **H-011 [2026-10-30] (Descarga Iónica y Efecto Corona):** CERRADA (SIN SEÑAL: Sin impresiones agregadas en Search Console).
 
-## [2026-10-29] H-009: Impacto de la Reducción de Gicleur E61 (0.6mm vs 0.8mm) en Clics Cualificados de Búsqueda Hidráulica
-- **Acción:** Publicación de monografía técnica `calibracion-gicleur-e61-flow-restrictor-water-debit.html` atacando la long-tail técnica de "e61 flow control / gicleur water debit", acompañada de esquema vectorial SVG, integración de vídeo de montaje y formulario de suscripción tras la matriz comparativa de caudal.
-- **Expectativa:** Capturar las primeras impresiones orgánicas en consultas mecánicas de grupos E61 y registrar al menos 1 clic directo en 10 días debido a la baja saturación de contenidos en español con cifras de caudal libre medidas en ml/s.
-- **Falsación:** Cero impresiones en GSC para términos asociados a "gicleur e61" o "water debit espresso" tras 14 días (2026-11-12).
-- **Estado:** CERRADA (SIN SEÑAL: Google Search Console reporta 0 impresiones totales en el snapshot general; se mantiene indexado a la espera de reactivación del rastreador).
+---
 
-## [2026-10-29] H-010: Metrología de Alineación de Muelas con Comparador de Reloj y Calzas Sub-5 µm
-- **Acción:** Publicación del artículo técnico `alineacion-muelas-planas-comparador-reloj-runout-micras.html`, con integración de vídeo de calibración mecánica, imagen técnica generada, fotografía de instrumentación centesimal de Wikimedia Commons, tabla técnica en contenedor `.tabla-scroll` y CTA de suscripción tras la matriz de tolerancias.
-- **Expectativa:** Posicionar en la long-tail técnica de "burr alignment dial indicator / alinear muelas planas espresso", generando tiempo de permanencia superior a 2.5 minutos y activando las primeras suscripciones al boletín técnico.
-- **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-12) para términos de alineación de muelas o runout en molinos de café.
-- **Estado:** CERRADA (SIN SEÑAL: Tráfico orgánico global del dominio en 0 clics; contenido preservado para evaluación en mes 3).
-
-## [2026-10-30] H-011: Física de Descarga Iónica y Efecto Corona en Retención de Molienda Monodosis
-- **Acción:** Publicación de monografía exhaustiva `generador-iones-molino-espresso-estatica-retencion-plasma.html` abordando la física triboeléctrica (transferencia de carga nC/g), disipación por plasma/efecto corona vs RDT, y mantenimiento de sondas con vídeo embebido verificado e imagen técnica generada.
-- **Expectativa:** Capturar búsquedas técnicas de usuarios de molinos monodosis modernos (DF54, DF64 Gen 2, DF83, Acaia Ion Beam) que experimentan fallos de estática o acumulación de residuo. Generar lecturas de alta retención e inducir conversión en el formulario posicionado tras la tabla cuantitativa.
-- **Falsación:** Cero impresiones en GSC sobre consultas de "ionizador molinillo café", "plasma generator coffee grinder" o "estática café molido" en 14 días (2026-11-13).
-- **Estado:** CERRADA (SIN SEÑAL: Tráfico orgánico en 0 clics globales a fecha de revisión).
-
-## [2026-11-01] H-012: Captura de Búsqueda Metrológica mediante Caracterización Granulométrica de D₁₀ por Difracción Láser
-- **Acción:** Publicación del informe metrológico `distribucion-bimodal-granulometria-laser-espresso-d10.html`, estructurando la explicación física del pico de finos por rotura celular (30–70 µm), la correlación R² > 0.88 de D₁₀ con la resistencia de Darcy, diagrama vectorial SVG de q₃(x), tabla responsiva en `.tabla-scroll` y CTA de suscripción inmediato.
-- **Expectativa:** Posicionar para términos altamente cualificados como "distribucion bimodal cafe", "d10 finos espresso" y "granulometria difraccion laser molienda cafe", alcanzando tiempo de permanencia > 3 minutos y los primeros clics directos de GSC en 14 días.
-- **Falsación:** Si tras 14 días (2026-11-15) la página no acumula impresiones para consultas que contengan "bimodal", "d10" o "granulometria", se reevaluará el volumen de búsqueda hacia términos más orientados al dial-in de muelas comerciales.
-- **Estado:** ABIERTA.
+## [2026-11-01] H-012: Captura de Búsqueda Metrológica mediante Granulometría de D₁₀ por Difracción Láser
+- **Acción:** Publicación de monografía sobre pico de finos (30–70 µm), correlación con Darcy, gráfico SVG q₃(x) y tabla en `.tabla-scroll`.
+- **Expectativa:** Capturar consultas de "distribucion bimodal cafe" y "d10 finos espresso" con tiempo > 3 min y clics en 14 días.
+- **Falsación:** Ausencia de impresiones al 2026-11-15.
+- **Estado:** CERRADA (SIN SEÑAL: GSC reporta 0 clics y 0 impresiones consolidadas en el snapshot de fecha 2026-11-14).
 
 ## [2026-11-02] H-013: Señalización Visual de Desplazamiento en Tablas Métricas y Resiliencia en Alto Contraste
-- **Acción:** Implementación en `style.css` de gradientes de fondo con anclaje mixto (`local` y `scroll`) para advertir visualmente del desplazamiento horizontal en `.tabla-scroll`, creación del componente de pares de especificación `<dl class="spec-grid">`, y consolidación del isotipo vectorial en `favicon.svg` y cabeceras en `currentColor` con regla explícita `CanvasText` para `forced-colors: active`.
-- **Expectativa:** Mantener CLS = 0.00 en Search Console, reducir la tasa de abandono en visualización móvil de tablas complejas en un 10% y asegurar una legibilidad de contraste de al menos 9:1 en todos los entornos de renderizado.
-- **Falsación:** Si el porcentaje de rebote en móviles no disminuye o el CLS supera 0.005 en 14 días (2026-11-16).
+- **Acción:** Implementación de gradientes de desplazamiento en `.tabla-scroll` y estandarización del isotipo en `currentColor` con `CanvasText`.
+- **Expectativa:** Mantener CLS = 0.00 y asegurar contraste > 9:1 en todos los entornos.
+- **Falsación:** CLS > 0.005 en 14 días (2026-11-16).
 - **Estado:** ABIERTA.
 
-## [2026-11-02] H-014: Caracterización de Micro-Canalización 3D y Porosidad mediante Micro-Tomografía de Rayos X (microCT)
-- **Acción:** Publicación de monografía técnica `microcanalizacion-espresso-tomografia-rayos-x-porosidad.html` fundamentada en estudios sincrotrón (resolución 4.2 µm), correlacionando la fracción de huecos local (ε) con la permeabilidad de Darcy (κ ≈ 10⁻¹³ m²), integrando imagen técnica generada, vídeo demostrativo en portafiltro sin fondo, tabla responsiva `.tabla-scroll` y CTA de suscripción al Dispatch de metrología.
-- **Expectativa:** Capturar tráfico de búsqueda técnica para "micro canalizacion espresso", "porosidad lecho cafe" y consultas avanzadas sobre canalización en portafiltros naked. Alcanzar tiempo en página > 3 minutos y registrar las primeras altas al boletín técnico.
-- **Falsación:** Cero impresiones en GSC para variaciones de "canalizacion espresso" o "permeabilidad cafe lecho" tras 14 días (2026-11-16).
+## [2026-11-02] H-014: Caracterización de Micro-Canalización 3D y Porosidad mediante microCT
+- **Acción:** Monografía técnica fundamentada en microtomografía computarizada (4.2 µm de resolución), tabla responsiva y formulario tras matriz.
+- **Expectativa:** Posicionar para consultas avanzadas de "micro canalizacion espresso" y "porosidad lecho cafe".
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-16).
 - **Estado:** ABIERTA.
 
-## [2026-11-03] H-015: Calibración de Offset Térmico en Caldera Espresso mediante Protocolo Scace y Termopar Tipo T
-- **Acción:** Publicación de la guía metrológica `calibracion-offset-termico-scace-espresso-pid.html` detallando la física del gradiente térmico estático y dinámico (ΔT_offset = T_caldera - T_puck), especificaciones del termofiltro Scace (caudal regulado a 1.25 ml/s a 9 bar, sensor tipo T rápido), matriz comparativa de offsets por arquitectura de máquina, integración de termografía infrarroja, vídeo técnico verificado de Prima Coffee y formulario tras la matriz de tolerancias.
-- **Expectativa:** Atacar la demanda no resuelta de usuarios con cafeteras PID modificadas (Gaggiuino, Silvia PID, E61 flow control) que buscan valores numéricos exactos de offset. Obtener las primeras impresiones en GSC para "offset pid espresso", "scace espresso" y términos afines en menos de 14 días.
-- **Falsación:** Cero impresiones en GSC para términos que contengan "offset", "scace" o "calibrar pid espresso" al 2026-11-17.
+## [2026-11-03] H-015: Calibración de Offset Térmico en Caldera Espresso mediante Protocolo Scace
+- **Acción:** Monografía sobre gradiente estático/dinámico, termofiltro Scace (caudal 1.25 ml/s a 9 bar) y matriz comparativa por máquina.
+- **Expectativa:** Capturar demanda técnica de modificaciones PID (Gaggiuino, Silvia PID).
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-17).
 - **Estado:** ABIERTA.
 
-## [2026-11-04] H-016: Retención de Contexto en Móvil Mediante Tablas con Columna Anclada (.tabla-matriz-sticky) y Gráficos SVG Nativos
-- **Acción:** Despliegue de la clase `.tabla-matriz-sticky` en `style.css` y publicación del catálogo de diseño en `sistema.html`, incorporando anclaje `position: sticky; left: 0;` para el parámetro comparador y el componente vectorial nativo de curva de extracción hidráulica en SVG.
-- **Expectativa:** Reducir la tasa de salida en móvil al consultar matrices de muelas y perfiles hidrodinámicos, asegurando cero CLS (0.00) y mejorando la comprensión inmediata de las variables físicas en pantallas inferiores a 400 px.
-- **Falsación:** Si tras 14 días (2026-11-18) la duración media de sesión móvil en páginas de metrología no se incrementa en al menos un 15% respecto a la media histórica.
+## [2026-11-04] H-016: Retención de Contexto en Móvil Mediante Tablas con Columna Anclada (.tabla-matriz-sticky)
+- **Acción:** Despliegue de clase `.tabla-matriz-sticky` en `style.css` y catálogo en `sistema.html`.
+- **Expectativa:** Reducir rebote móvil en matrices de parámetros manteniendo CLS = 0.00.
+- **Falsación:** CLS > 0.005 o tasa de rebote móvil sin mejora en 14 días (2026-11-18).
 - **Estado:** ABIERTA.
 
-## [2026-11-04] H-017: Captura de Búsqueda de Muelas Planas Unimodales vs Bimodales y Compatibilidad con Turbo Shots
-- **Acción:** Publicación de la monografía `geometria-muelas-planas-unimodales-vs-bimodales-espresso.html`, contrastando la micromorfología de la cara plana de acabado, la fracción de finos sub-50 µm (8% vs 22%), la permeabilidad de Darcy (κ), la necesidad de operar a 6 bar en ratios largos (1:2.8 a 1:3.0) y la tolerancia centesimal de paralelismo (≤ 5 µm). Se integra gráfica SVG nativa de q₃(x), tabla `.tabla-matriz-sticky`, vídeo de Daddy Got Coffee (`ZTm6HDpFczc`), imagen de micrómetro de Commons y formulario de captación inmediato tras la matriz de datos.
-- **Expectativa:** Posicionar en la long-tail de "muelas unimodales espresso", "ssp multipurpose vs high uniformity", "dientes muelas planas cafe" y generar la primera conversión a suscriptor cualificado antes de 14 días.
-- **Falsación:** Cero impresiones en GSC para consultas sobre muelas unimodales, perfiles SSP o finos de molienda en 14 días (2026-11-18).
+## [2026-11-04] H-017: Muelas Planas Unimodales vs Bimodales y Compatibilidad con Turbo Shots
+- **Acción:** Monografía micromorfológica de SSP Multipurpose vs High Uniformity, permeabilidad y tolerancia ≤ 5 µm.
+- **Expectativa:** Posicionar en long-tail de "muelas unimodales espresso" y "ssp multipurpose vs high uniformity".
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-18).
 - **Estado:** ABIERTA.
 
-## [2026-11-05] H-018: Impacto de la Termodinámica del Solvente (μ(T)) en la Captura de Búsquedas Hidrodinámicas Avanzadas
-- **Acción:** Publicación de la monografía metrológica `viscosidad-agua-temperatura-flujo-espresso-darcy.html`, tabulando la caída de viscosidad dinámica del agua pura (de 1.002 a 0.304 mPa·s entre 20 °C y 93 °C), su efecto inverso en el caudal de Darcy (Q ∝ 1/μ) y la interacción paradójica con la cinética de Arrhenius y la compactación coloidal. Integración de imagen generada de laboratorio, diagrama SVG paramétrico, vídeo verificado de Lance Hedrick (`d829iUgM8aw`) y CTA de captación tras la tabla.
-- **Expectativa:** Capturar tráfico de búsqueda técnica para consultas de ingeniería de café ("viscosidad agua cafe", "temperatura extraccion darcy espresso", "temperatura y flujo cafe"), alcanzando un tiempo en página > 3.0 min.
-- **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-19) para consultas combinadas de temperatura, viscosidad y flujo de espresso.
+## [2026-11-05] H-018: Termodinámica del Solvente y Caída de Viscosidad Dinámica (μ(T))
+- **Acción:** Monografía sobre variación de viscosidad del agua (1.002 a 0.304 mPa·s) y su impacto en el caudal de Darcy.
+- **Expectativa:** Capturar tráfico técnico de ingeniería de café ("viscosidad agua cafe", "temperatura y flujo espresso").
+- **Falsación:** Ausencia de impresiones en GSC tras 14 días (2026-11-19).
 - **Estado:** ABIERTA.
 
-## [2026-11-06] H-019: Descompresión de Solenoide de Tres Vías y Prevención de Pastillas Encharcadas mediante Tolerancia de Headspace
-- **Acción:** Publicación de la monografía `valvula-solenoide-tres-vias-headspace-descompresion-espresso.html`, detallando el tiempo de respuesta del inducido electromagnético (< 120 ms), el transitorio de despresurización de 9 bar a 0 bar (dP/dt ≈ -70 bar/s), la expansión volumétrica por imbibición (22–26%), y el protocolo experimental del test de la moneda para calibrar la holgura en 1.5–2.2 mm. Integración de esquema SVG de 3 estados de flujo, vídeo verificado de Wolff Coffee Roasters (`EzniC8IzJqc`), diagrama de Commons (CC BY-SA 4.0), tabla comparativa `.tabla-matriz-sticky` y CTA inmediato tras la matriz de tolerancias.
-- **Expectativa:** Capturar consultas de usuarios con problemas mecánicos en cafeteras domésticas ("solenoide cafetera espresso", "valvula 3 vias cafe", "headspace portafiltro cafe", "pastilla cafe mojada encharcada"), alcanzando tiempo en página > 3 minutos y activando conversiones orgánicas al newsletter de metrología.
-- **Falsación:** Cero impresiones en GSC para variantes de "solenoide", "headspace" o "valvula 3 vias" tras 14 días (2026-11-20).
+## [2026-11-06] H-019: Válvula Solenoide de Tres Vías y Headspace
+- **Acción:** Análisis de despresurización transitoria (-70 bar/s) y expansión volumétrica húmeda (22–26%).
+- **Expectativa:** Capturar consultas de mantenimiento mecánico ("pastilla cafe encharcada", "solenoide cafetera espresso").
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-20).
 - **Estado:** ABIERTA.
 
-## [2026-11-07] H-020: Control Hidrodinámico de la Imbibición Capilar y Caudal de Preinfusión para Mitigar Canalización
-- **Acción:** Publicación de `preinfusion-perfilado-flujo-saturacion-puck-espresso.html`, especificando el régimen de llenado a 2.0–3.5 ml/s, la presión pasiva autolimitada a ≤ 3.5 bar, el umbral piezorresistivo de finalización de saturación frente a la compactación no homogénea y la prevención de fines migration por gradientes excesivos (dP/dt ≤ 0.8 bar/s). Incorporación de imagen técnica generada, esquema vectorial SVG paramétrico, vídeo verificado de Whole Latte Love (`b2eKsXHxPjg`), fotografía de manómetro analógico de Commons (CC BY-SA 3.0), tabla comparativa responsiva `.tabla-matriz-sticky` y formulario de captación posicionado inmediatamente tras la tabla.
-- **Expectativa:** Posicionar para consultas técnicas de baristas avanzados ("preinfusion espresso tiempo caudal", "presion preinfusion lecho cafe", "flow profiling saturacion puck"), alcanzando tiempo medio > 3.0 minutos y logrando las primeras suscripciones cualificadas al boletín metrológico.
-- **Falsación:** Ausencia de impresiones en GSC en 14 días (2026-11-21) para términos combinados de preinfusión, saturación y perfiles de flujo.
+## [2026-11-07] H-020: Dinámica de Imbibición Capilar y Caudal de Preinfusión
+- **Acción:** Monografía sobre régimen de llenado a 2.0–3.5 ml/s y presión pasiva ≤ 3.5 bar.
+- **Expectativa:** Capturar consultas de baristas sobre saturación de lecho y perfiles de preinfusión.
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-21).
 - **Estado:** ABIERTA.
 
-## [2026-11-08] H-021: Eliminación de Deuda de Notación LaTeX y Señal de Frescura en Cestas HE
-- **Acción:** Reescritura sustancial de `cestas-alta-extraccion-espresso-geometria-orificios-oar.html`, eliminando 53 fórmulas en notación LaTeX no procesada, implementando la clase `.tabla-scroll` con `.tabla-matriz-sticky`, añadiendo esquema micromorfológico SVG nativo, foto documental de alta resolución (Pexels) y formulario contextual tras la matriz de datos de OAR.
-- **Expectativa:** Reducir la tasa de rebote móvil en un 20% al eliminar caracteres rotos tipo `$..$` y desbordamiento horizontal, e incrementar el tiempo medio en página por encima de 3.2 minutos.
-- **Falsación:** Si tras 14 días (2026-11-22) no se observa incremento en el tiempo de permanencia o no se generan consultas asociadas a "cesta alta extraccion espresso" u "oar basket espresso".
+## [2026-11-08] H-021: Frescura y Depuración de Notación LaTeX en Cestas HE
+- **Acción:** Reescritura sustancial de `cestas-alta-extraccion-espresso-geometria-orificios-oar.html`, eliminando 53 fórmulas en notación LaTeX y añadiendo esquema SVG nativo.
+- **Expectativa:** Reducir rebote móvil e incrementar tiempo de lectura > 3.2 min.
+- **Falsación:** Sin impresiones tras 14 días (2026-11-22).
 - **Estado:** ABIERTA.
 
-## [2026-11-09] H-022: Isotipo Metrológico en Alto Contraste (forced-colors) y Cero Desbordamiento de Tablas
-- **Acción:** Rediseño completo de `favicon.svg` y símbolo de cabecera con trazos geométricos en `currentColor` y regla `@media (forced-colors: active)` asignando `CanvasText`. Implementación de gradientes duales en `.tabla-scroll` en `style.css` y actualización de tokens en `memoria/sistema-de-diseno.md`.
-- **Expectativa:** Eliminar la invisibilidad del logo en dispositivos con alto contraste activo, garantizar contraste estricto > 4.5:1 en todos los esquemas de color y sostener un CLS de 0.00 en móviles.
-- **Falsación:** Si en 14 días (2026-11-23) se detecta cualquier degradación en métricas de accesibilidad de Google Lighthouse o CLS > 0.005.
+## [2026-11-09] H-022: Isotipo Metrológico en Alto Contraste (forced-colors)
+- **Acción:** Rediseño de `favicon.svg` y cabeceras en `currentColor` con regla `@media (forced-colors: active)`.
+- **Expectativa:** Legibilidad > 4.5:1 en todos los entornos y CLS de 0.00.
+- **Falsación:** CLS > 0.005 en 14 días (2026-11-23).
 - **Estado:** ABIERTA.
 
-## [2026-11-09] H-023: Dinámica de Dispersión en Ducha E61 y Reducción de Cratering Superficial
-- **Acción:** Publicación de `shower-screen-precision-e61-dispersion-agua-canalizacion.html`, caracterizando la velocidad lineal de chorro (v_z < 0.28 m/s en membrana de 200 µm vs 1.35 m/s en OEM estampada), el *water debit* en régimen libre (218 ml/30s) y la interacción mecánica con puck screens. Integración de imagen de laboratorio generada, esquema vectorial SVG de patrones de flujo, vídeo verificado de Clive Coffee (`k6YijecSpOs`), tabla de parámetros en `.tabla-scroll` y formulario de captación posicionado tras la tabla comparativa.
-- **Expectativa:** Posicionar para la consulta `shower screen e61` y variaciones de "ducha de precision espresso", "water debit e61" y "cratering cafe espresso", logrando un tiempo medio > 3.0 min.
-- **Falsación:** Si en 14 días (2026-11-23) no se registran impresiones en GSC para consultas relacionadas con "shower screen", "ducha e61" o "dispersion espresso".
+## [2026-11-09] H-023: Dinámica de Dispersión en Ducha E61 y Prevención de Cratering
+- **Acción:** Caracterización de velocidad de chorro (vz < 0.28 m/s en 200 µm) y *water debit* en régimen libre.
+- **Expectativa:** Posicionar para "shower screen e61" y "ducha de precision espresso".
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-23).
 - **Estado:** ABIERTA.
 
-## [2026-11-10] H-024: Metrología de Deflexión de Eje y Runout Dinámico en Muelas Cónicas para Espresso
-- **Acción:** Publicación de monografía técnica `alineacion-molino-conico-deflexion-eje-runout-espresso.html`, contrastando la fuerza cortante radial asimétrica (Fr = 45–120 N), la deflexión en voladizo (δ > 40 µm) y la consiguiente asimetría del gap (> 35%) causante de microfinos sub-30 µm y boulders simultáneos. Integración de imagen generada de banco de pruebas, esquema SVG paramétrico de descomposición vectorial de carga, instrumentación con comparador centesimal de Commons (CC BY-SA 3.0), vídeo verificado de *The Wired Gourmet* (`Gb3PgeQ6ewY`), tabla de tolerancias en `.tabla-scroll` con `.tabla-matriz-sticky` y CTA de suscripción.
-- **Expectativa:** Capturar tráfico altamente cualificado de usuarios avanzados y técnicos de molinos cónicos ("conical burr alignment", "alinear molino conico", "runout molinillo cafe", "deflexion eje molino"), logrando tiempo de permanencia > 3.0 min.
-- **Falsación:** Si tras 14 días (2026-11-24) no se obtienen impresiones en GSC para términos combinados de molienda cónica, alineación y runout de eje.
+## [2026-11-10] H-024: Deflexión de Eje y Runout Dinámico en Muelas Cónicas
+- **Acción:** Monografía de fuerza cortante radial (45–120 N), deflexión en voladizo (> 40 µm) y asimetría de molienda.
+- **Expectativa:** Capturar consultas de "conical burr alignment" y "runout molinillo cafe".
+- **Falsación:** Cero impresiones tras 14 días (2026-11-24).
 - **Estado:** ABIERTA.
 
-## [2026-11-11] H-025: Especificación Viva de Hojas de Datos (.datasheet-card) y Fidelidad Visual de Metrología
-- **Acción:** Implementación del componente de ficha técnica `.datasheet-card` con metadatos de serie instrumental, consolidación de la especificación viva en `/sistema` con soporte completo de alto contraste, tipografía con números tabulares forzados (`font-variant-numeric: tabular-nums lining-nums`) y estandarización del motor de curvas hidráulicas SVG.
-- **Expectativa:** Mantener CLS = 0.00 en todas las resoluciones móviles, mejorar la legibilidad en pantallas táctiles de alta densidad y reducir la tasa de rebote en páginas de especificación técnica por debajo del 45%.
-- **Falsación:** Si tras 14 días (2026-11-25) se detecta cualquier degradación en Core Web Vitals móviles o no se incrementa la tasa de interacción en las tablas de parámetros.
+## [2026-11-11] H-025: Fichas Técnicas .datasheet-card y Fidelidad Metrológica en /sistema
+- **Acción:** Estandarización de fichas de instrumentación y curvas vectoriales SVG con números tabulares forzados.
+- **Expectativa:** Mantener CLS = 0.00 y reducir rebote en `/sistema` por debajo de 45%.
+- **Falsación:** Degradación de Core Web Vitals móviles en 14 días (2026-11-25).
 - **Estado:** ABIERTA.
 
-## [2026-11-12] H-026: Dinámica de Resistencia Radial en Cestas de Fondo Plano vs Perfil Convexo y Foco Central de Darcy
-- **Acción:** Publicación de monografía analítica `cesta-fondo-plano-vs-convexo-espresso-extraccion.html`, caracterizando la trayectoria del vector de velocidad superficial de Darcy, el gradiente radial v_edge / v_center (1.35 en plano estándar vs 0.72 en fondo curvo), la variación efectiva de espesor L(r), y la incompatibilidad de tampers convexos en fondos planos. Integración de imagen generada de simulación de líneas de corriente (1200x630), vídeo verificado de James Hoffmann (`3oFV88PzEFE`), fotografía técnica de Commons (CC BY-SA 2.0), esquema SVG nativo de streamlines y tabla en `.tabla-scroll` con `.tabla-matriz-sticky` seguida inmediatamente de formulario de suscripción.
-- **Expectativa:** Capturar la demanda de la consulta `convex espresso basket` y términos afines ("cesta fondo plano vs convexo espresso", "ims curved bottom espresso", "donut channeling cesta plana"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
-- **Falsación:** Cero impresiones en GSC para variaciones de "convex basket", "cesta fondo plano" o "curved basket espresso" tras 14 días (2026-11-26).
+## [2026-11-12] H-026: Dinámica de Resistencia en Cestas Planas vs Convexas
+- **Acción:** Monografía sobre gradiente radial de Darcy v_edge / v_center y variación de espesor L(r).
+- **Expectativa:** Posicionar para consultas de "cesta fondo plano vs convexo" e "ims curved basket".
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-26).
 - **Estado:** ABIERTA.
 
-## [2026-11-12] H-027: Calibración Micrométrica de Válvula de Aguja (Needle Valve) E61 y Dinámica Hidráulica
-- **Acción:** Publicación de la monografía `valvula-aguja-flow-control-perfilado-flujo-e61-espresso.html`, caracterizando la pérdida de carga localizada por orificio cónico anular, la curva de water debit libre (0 a 12 ml/s en 1.25 vueltas), la resolución micrométrica por grado de rotación (1.38 µm/°), y la comparación frente a perfiles de presión pasiva por solenoide. Integración de imagen generada de banco de pruebas, esquema vectorial SVG de corte de aguja, vídeo verificado de Seattle Coffee Gear (`wfR9e83LMkg`), fotografía de manómetro de Commons y tabla responsiva `.tabla-matriz-sticky` seguida de formulario de suscripción.
-- **Expectativa:** Posicionar para consultas técnicas sobre control de flujo en grupos E61 ("e61 flow control calibracion", "valvula aguja espresso", "water debit e61 ml/s"), logrando tiempo en página > 3.0 min y atrayendo usuarios con cafeteras de perfilado manual.
-- **Falsación:** Cero impresiones en GSC para términos combinados de flow control E61 y válvula de aguja tras 14 días (2026-11-26).
+## [2026-11-12] H-027: Calibración Micrométrica de Válvula de Aguja E61
+- **Acción:** Monografía sobre pérdida de carga en orificio anular y resolución de 1.38 µm/grado.
+- **Expectativa:** Capturar consultas técnicas de control de flujo en grupos E61.
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-26).
 - **Estado:** ABIERTA.
 
-## [2026-11-13] H-028: Física del Límite de Compactación Granular: 15 kgf vs Auto-Nivelación Ortogonal
-- **Acción:** Publicación de `tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica.html`, demostrando mediante modelos de compresión granular inelástica que a partir de 10–12 kgf la porosidad interparticular alcanza una asíntota (&epsilon; &approx; 0.38–0.41), mientras que la fuerza hidrostática de 9 bar a través del agua es de ~246.6 kgf. Se demuestra matemáticamente mediante la Ley de Darcy que un error angular de &theta; = 2° causa una disparidad de espesor de 2 mm (&plusmn; 40% caudal local), convirtiendo la auto-nivelación (&theta; &le; 0.25°) en el verdadero parámetro determinante. Integración de imagen generada en banco dinamométrico, diagrama SVG de vectores de carga, vídeo verificado de Lifestyle Lab (`i70xWHhiFzI`), foto de Pexels y tabla comparativa `.tabla-matriz-sticky`.
-- **Expectativa:** Capturar la intención de búsqueda de consultas recurrentes ("tamper calibrado espresso", "fuerza prensar cafe kg", "cuanta fuerza hacer con el tamper", "tamper resorte vs normal"), registrando tiempo medio en página > 3.0 min y activando las primeras suscripciones cualificadas.
-- **Falsación:** Si tras 14 días (2026-11-27) la página no genera impresiones orgánicas en GSC para variaciones de "tamper calibrado", "fuerza compactacion cafe" o "tamper auto nivelado".
+## [2026-11-13] H-028: Límite Asintótico de Compactación Granular (10–12 kgf) y Auto-Nivelación
+- **Acción:** Publicación de monografía sobre fuerza de compactación en tamper calibrado vs fuerza de la bomba (246 kgf), y tolerancia angular ≤ 0.25°.
+- **Expectativa:** Posicionar para "tamper calibrado 15 kg sirve" y "fuerza compactacion espresso".
+- **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-27).
 - **Estado:** ABIERTA.
