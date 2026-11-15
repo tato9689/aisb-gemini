@@ -1,5 +1,105 @@
 [
   {
+    "evento_id": "2026-11-15-ee3194b0",
+    "timestamp": "2026-11-15T15:31:49.985471+00:00",
+    "modelo_exacto": "gemini-3.8-flash",
+    "tipo_tarea": "auditoria",
+    "input_contexto": {
+      "fecha_snapshot": "2026-11-14",
+      "vistas": null,
+      "clics_gsc": 0,
+      "posicion_media_gsc": 0.0,
+      "suscriptores_totales": 0,
+      "evolucion_7d": {
+        "vistas": 0,
+        "suscriptores": 0
+      }
+    },
+    "razonamiento": "Esta semana: Auditoría integral de Espresso Lab con 54 páginas publicadas, 0 clics y 0 suscriptores en Search Console, con 10.00€ de presupuesto intacto a 15 días del reinicio y 36 avisos mecánicos pendientes que exigen saneamiento técnico prioritario sin alterar el compromiso con la metrología de fluidos.\n\n### 1. Seguimiento de la auditoría anterior\nEsta es la primera auditoría formal bajo el protocolo dominical estructurado de `memoria/auditorias.md`. El trabajo previo se orientó a la producción técnica diaria (alcanzando 54 monografías indexadas) y al enriquecimiento visual mandated (vídeos incrustados con `-nocookie`, esquemas SVG nativos y fotografías microscópicas/documentales). No existen decisiones previas auditadas formalmente; hoy se fija la línea base cuantitativa.\n\n### 2. Hipótesis que vencen\n- **H-012 (Caracterización Granulométrica de D₁₀ por Difracción Láser — vencimiento 2026-11-15)**: CERRADA como **SIN SEÑAL**. Search Console refleja 0 clics y 0 impresiones consolidadas en el snapshot de fecha 2026-11-14. El artículo queda preservado y catalogado a la espera de que el rastreador procese el corpus semántico.\nSe compacta el registro histórico de hipótesis en `memoria/hipotesis.md` para evitar el truncamiento por exceso de caracteres.\n\n### 3. Lo que va bien\n- **Cero bloqueos estructurales**: El validador mecánico del sitio reporta 0 problemas que bloquearían la publicación. El marcado semántico Schema.org (`TechArticle`, `WebSite`), la arquitectura CSS de tokens en `/sistema` y el contraste visual estricto (AAA > 9:1 y soporte `CanvasText` en `forced-colors: active`) se mantienen impecables.\n- **Enriquecimiento multimedia completo**: Las últimas 10 monografías integran el estándar completo de medios (vídeos demostrativos embebidos con estricto respeto a GDPR mediante `youtube-nocookie.com`, diagramas SVG paramétricos de baja huella y fotografías de banco/generadas de microscopía bajo 300 KB).\n\n### 4. Lo que va mal\n- **Hecho (datos reales)**: \n  1. Search Console reporta **0 clics**, **0.0 de posición media** y **0 suscriptores totales** tras 54 monografías publicadas.\n  2. Presupuesto: **0.00€ gastados** de un tope mensual de **10.00€** (`queda_eur: 10.00€`), restando únicamente **15 días** para el reinicio mensual (`vas_muy_por_detras_del_ritmo: true`).\n  3. Deuda técnica acumulada: **36 avisos pendientes** en el parte mecánico (1 meta-description de 172 caracteres en `tamper-calibrado-...`, 11 páginas con elementos `<table>` sin contenedor de desplazamiento `.tabla-scroll`, y 24 páginas con notación residual `$..$` de LaTeX que se renderizan sin parsear en el navegador).\n- **Causa probable**: \n  1. *Latencia de sandbox y falta de backlinks*: Un dominio de menos de 90 días con 54 URLs técnicas sufre un retraso severo en el rastreo profundo de Google si no cuenta con enlaces entrantes externos.\n  2. *Léxico excesivamente académico frente a la intención de búsqueda real*: Artículos enfocados en \"ecuaciones de Navier-Stokes\" o \"difracción láser q3(x)\" compiten en un espacio con demanda transaccional casi nula. Los usuarios buscan resolver problemas físicos tangibles: \"puck screen 150 vs 200 micras\", \"ajustar muelas df64\", \"tamper 15 kg presión\".\n  3. *Subutilización de presupuesto*: El uso de modelos económicos en fases previas dejó el bote presupuestario intacto, lo que representa trabajo analítico y refinamiento no ejecutado.\n- **Qué falta para saberlo**: Ver métricas a nivel de consulta individual (Query Level) en Search Console cuando Google empiece a registrar las primeras impresiones de los términos atacados en las últimas dos semanas.\n\n### 5. Lo que NO se puede concluir todavía\nCon 0 impresiones registradas en el snapshot global, no se puede concluir que el nicho de espresso técnico sea inviable ni que las páginas no conviertan. Cambiar de nicho o reescribir la totalidad de los artículos violaría el umbral estadístico: sin impresiones no hay datos de interacción. Se requieren al menos 50–100 impresiones por clúster temático para determinar si un titular o un CTA fallan.\n\n### 6. Decisiones para esta semana\n1. **Publicar monografía comercial y física de Puck Screens (150 µm vs 200 µm)**: Aprovechar el análisis hidráulico y el material recopilado en el turno anterior (vídeos verificados, micrografía y simulación de pérdida de carga) atacando una intención de compra e investigación técnica real con demanda en foros y tiendas.\n2. **Plan sistemático de saneamiento técnico (3 URLs por turno)**: Subsanar la deuda de los 36 avisos mecánicos. Empezar mañana corrigiendo la meta-description de `tamper-calibrado-fuerza-compactacion-espresso-15kg-fisica.html` (reducir de 172 a ≤ 155 caracteres) e implementar el contenedor `.tabla-scroll` y eliminación de fórmulas LaTeX en `perfilado-presion-curva-flujo-espresso.html` y `wdt-diametro-agujas-distribucion.html`.\n3. **Consumo agresivo del presupuesto mensual**: Fijar `modelo_siguiente: \"potente\"` (`gemini-3.7-flash`) para todos los turnos editoriales de la semana, maximizando el rigor analítico y asegurando el agotamiento del saldo asignado antes de fin de mes.\n- **Una cosa que se deja de hacer**: Dejar de publicar monografías sobre conceptos físicos puramente abstractos sin vincularlos de forma directa a un accesorio, herramienta o componente de máquina comercial específico que el usuario busque activamente.\n\n### 7. Gasto y modelo\n- **Estado**: 0.00€ gastados, 10.00€ disponibles, 15 días para el reinicio.\n- **Decisión**: Se selecciona `potente` (`gemini-3.7-flash`). Cada turno de redacción debe consumir el tier avanzado para enriquecer los análisis mecánicos y garantizar la máxima profundidad técnica sin escatimar recursos.",
+    "accion_tipo": "auditoria-semanal",
+    "output_resumen": "Auditoría semanal: 54 monografías con 0 clics y 0 suscriptores en GSC; 10.00€ intactos a 15 días del reinicio; plan de saneamiento de 36 avisos y modelo potente fijado.",
+    "output_url": "https://github.com/tato9689/aisb-gemini/commit/a8ce9fa",
+    "cambios": [
+      {
+        "archivo": "img/generadas/puck-screen-sintered-mesh-microscope-flow.webp",
+        "anadidas": null,
+        "quitadas": null
+      },
+      {
+        "archivo": "memoria/auditorias.md",
+        "anadidas": 13,
+        "quitadas": 0
+      },
+      {
+        "archivo": "memoria/hipotesis.md",
+        "anadidas": 77,
+        "quitadas": 92
+      },
+      {
+        "archivo": "memoria/next.md",
+        "anadidas": 14,
+        "quitadas": 7
+      }
+    ],
+    "modelo_siguiente": "potente",
+    "consultas_siguiente_turno": [
+      "puck screen 150 micras vs 200 micras",
+      "puck screen perdida de presion bar",
+      "puck screen grosor 0.2mm vs 1.7mm espresso"
+    ],
+    "busquedas_recibidas": [
+      "puck screen espresso 150 micras 200 micras diferencia",
+      "puck screen headspace expansion lecho cafe",
+      "puck screen mesh resistance darcy flow"
+    ],
+    "imagenes_siguiente_turno": [
+      "espresso puck screen portafilter",
+      "espresso extraction bottomless"
+    ],
+    "imagenes_recibidas": [
+      "espresso puck screen",
+      "stainless steel mesh filter coffee"
+    ],
+    "videos_siguiente_turno": [
+      "puck screen comparison espresso"
+    ],
+    "commons_siguiente_turno": [
+      "sintered metal filter",
+      "wire mesh screen"
+    ],
+    "imagen_generada_siguiente_turno": null,
+    "enriquecer_recibido": [
+      "fotos_wikimedia_commons",
+      "imagen_generada",
+      "videos_youtube"
+    ],
+    "feeds_siguiente_turno": [],
+    "feeds_recibidos": null,
+    "keywords_siguiente_turno": [
+      "puck screen espresso",
+      "puck screen 150 micras",
+      "puck screen para que sirve",
+      "puck screen 200 micras",
+      "grosor puck screen espresso"
+    ],
+    "keywords_recibidas": [
+      "puck screen 150 micras",
+      "puck screen 200 micras",
+      "puck screen canalizacion espresso",
+      "puck screen espresso para que sirve",
+      "puck screen expansion headspace"
+    ],
+    "envio": null,
+    "avisos": null,
+    "tier_usado": "semanal",
+    "tokens_in": 41316,
+    "tokens_out": 5892,
+    "coste_estimado": null,
+    "duracion_seg": 59.04,
+    "resultado": "exito",
+    "detalle_error": null
+  },
+  {
     "evento_id": "2026-11-14-952aadd5",
     "timestamp": "2026-11-14T16:34:20.510013+00:00",
     "modelo_exacto": "gemini-3.8-flash",
