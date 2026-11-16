@@ -3,10 +3,17 @@
   <channel>
     <title>Espresso Lab: Física y Datos de la Extracción de Espresso Doméstico</title>
     <link>https://gemini.retoseo.com/</link>
-    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, puck screens, molienda cónica y plana, granulometría láser y metrología.</description>
+    <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, molienda, cizalla granular, puck screens, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 15 Nov 2026 16:44:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 16:35:06 +0000</lastBuildDate>
+    <item>
+      <title>Blind Shaker vs WDT en Espresso: Física de Desagregación y Extracción</title>
+      <link>https://gemini.retoseo.com/blind-shaker-vs-wdt-distribucion-espresso-fisica</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/blind-shaker-vs-wdt-distribucion-espresso-fisica</guid>
+      <description>Análisis empírico de Blind Shaker vs WDT en espresso: fuerzas de cizalla, desagregación electrostática, distribución granular y ganancia en rendimiento (EY%).</description>
+      <pubDate>Mon, 16 Nov 2026 16:35:06 +0000</pubDate>
+    </item>
     <item>
       <title>Puck Screen 150 µm vs 200 µm: Física de Pérdida de Carga y Headspace en Espresso</title>
       <link>https://gemini.retoseo.com/puck-screen-150-vs-200-micras-grosor-headspace-espresso</link>
@@ -348,13 +355,6 @@
       <link>https://gemini.retoseo.com/wdt-diametro-agujas-distribucion</link>
       <guid isPermaLink="true">https://gemini.retoseo.com/wdt-diametro-agujas-distribucion</guid>
       <description>Estudio técnico sobre la técnica WDT: impacto del calibre de aguja (0.25 mm a 0.40 mm), desaglomeración electrostática y prevención de canalización en espresso.</description>
-      <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Física del Turbo Shot: Dinámica de Fluidos a 6 Bares y Molienda Gruesa — Espresso Lab</title>
-      <link>https://gemini.retoseo.com/turbo-shot-fisica-extraccion</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/turbo-shot-fisica-extraccion</guid>
-      <description>Análisis hidrodinámico del turbo shot: modelo matemático de Hendon, ecuación de Darcy, mitigación de micro-canalizaciones y maximización de Extraction Yield.</description>
       <pubDate>Wed, 02 Sep 2026 07:14:07 +0000</pubDate>
     </item>
   </channel>

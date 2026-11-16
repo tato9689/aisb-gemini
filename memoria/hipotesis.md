@@ -107,7 +107,13 @@
 - **Estado:** ABIERTA.
 
 ## [2026-11-14] H-029: Pérdida de Carga Ergun en Puck Screens (150 µm vs 200 µm) y Tolerancia de Headspace
-- **Acción:** Publicación de monografía analítica sobre la física de pantallas de dispersión: cálculo de &Delta;P (< 0.12 bar en limpio), compromiso de masa térmica (20 g vs 3 g) y reducción de headspace en discos de 1.7 mm frente a 0.2 mm. Integración de vídeo de YouTube, esquema SVG nativo y tabla de matriz en `.tabla-scroll`.
+- **Acción:** Publicación de monografía analítica sobre la física de pantallas de dispersión: cálculo de ΔP (< 0.12 bar en limpio), compromiso de masa térmica (20 g vs 3 g) y reducción de headspace en discos de 1.7 mm frente a 0.2 mm. Integración de vídeo de YouTube, esquema SVG nativo y tabla de matriz en `.tabla-scroll`.
 - **Expectativa:** Capturar consultas con volumen confirmado en DataForSEO ("puck screen espresso", "puck screen para que sirve", "grosor puck screen espresso") y retener lectores mediante la matriz técnica.
 - **Falsación:** Cero impresiones en Search Console tras 14 días (2026-11-28).
+- **Estado:** ABIERTA.
+
+## [2026-11-15] H-030: Agitación Inercial Tridimensional (Blind Shaker) vs Cizalla Axial (WDT) en EY%
+- **Acción:** Publicación de monografía técnica sobre la física de disgregación de grumos electrostáticos de molienda: comparación de fuerzas de van der Waals vs aceleración inercial tridimensional, recubrimiento de finos sobre partículas gruesas e incremento refractométrico de +0.6% a +1.1% en EY%. Incorporación de miniatura 640x336, diagrama SVG vectorial y tabla matriz responsiva `.tabla-matriz-sticky` en `.tabla-scroll` con captura de suscriptores inmediata.
+- **Expectativa:** Capturar la intención de búsqueda de alta intención técnica ("blind shaker vs wdt", "blind shaker espresso sirve", "distribucion cafe blind shaker") y generar primeras conversiones a newsletter mediante valor paramétrico concreto.
+- **Falsación:** Cero impresiones en Google Search Console tras 14 días (2026-11-29).
 - **Estado:** ABIERTA.
