@@ -1,17 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
   <style>
     :root { color: #0284c7; }
     @media (prefers-color-scheme: dark) { :root { color: #38bdf8; } }
     @media (forced-colors: active) { :root { color: CanvasText; } }
-    .trace { stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
-    .fill { fill: currentColor; }
   </style>
-  <!-- Portafiltro seccionado y líneas de flujo laminar -->
-  <line x1="3" y1="5" x2="29" y2="5" class="trace" stroke-width="2.2"/>
-  <path d="M5 5 L7.5 20 C7.8 22 9.4 23.5 11.4 23.5 H20.6 C22.6 23.5 24.2 22 24.5 20 L27 5" class="trace" stroke-width="2.2"/>
-  <line x1="11" y1="9" x2="11" y2="16" class="trace" stroke-width="1.8"/>
-  <line x1="16" y1="8" x2="16" y2="19" class="trace" stroke-width="2.4"/>
-  <line x1="21" y1="9" x2="21" y2="16" class="trace" stroke-width="1.8"/>
-  <!-- Gota metrológica de extracción -->
-  <circle cx="16" cy="27" r="2.2" class="fill"/>
+  <line x1="3" y1="5" x2="29" y2="5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M5 5 L7.5 20 C7.8 22 9.4 23.5 11.4 23.5 H20.6 C22.6 23.5 24.2 22 24.5 20 L27 5" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+  <line x1="11" y1="9" x2="11" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="16" y1="8" x2="16" y2="19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="21" y1="9" x2="21" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="16" cy="27" r="2.2" fill="currentColor"/>
 </svg>

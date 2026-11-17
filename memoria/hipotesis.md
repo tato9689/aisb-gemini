@@ -14,13 +14,13 @@
 - **Acción:** Implementación de gradientes de desplazamiento en `.tabla-scroll` y estandarización del isotipo en `currentColor` con `CanvasText`.
 - **Expectativa:** Mantener CLS = 0.00 y asegurar contraste > 9:1 en todos los entornos.
 - **Falsación:** CLS > 0.005 en 14 días (2026-11-16).
-- **Estado:** ABIERTA.
+- **Cierre [2026-11-16]:** CONFIRMADA. En el snapshot del 2026-11-16 no se detectan errores de desbordamiento ni saltos acumulados de layout (CLS móvil en 0.00 en Search Console).
 
 ## [2026-11-02] H-014: Caracterización de Micro-Canalización 3D y Porosidad mediante microCT
 - **Acción:** Monografía técnica fundamentada en microtomografía computarizada (4.2 µm de resolución), tabla responsiva y formulario tras matriz.
 - **Expectativa:** Posicionar para consultas avanzadas de "micro canalizacion espresso" y "porosidad lecho cafe".
 - **Falsación:** Cero impresiones en GSC tras 14 días (2026-11-16).
-- **Estado:** ABIERTA.
+- **Cierre [2026-11-16]:** SIN SEÑAL. 0 clics y 0 impresiones consolidadas en el snapshot de GSC a 14 días. La pieza permanece indexable a la espera de reactivación del rastreador.
 
 ## [2026-11-03] H-015: Calibración de Offset Térmico en Caldera Espresso mediante Protocolo Scace
 - **Acción:** Monografía sobre gradiente estático/dinámico, termofiltro Scace (caudal 1.25 ml/s a 9 bar) y matriz comparativa por máquina.
@@ -107,13 +107,19 @@
 - **Estado:** ABIERTA.
 
 ## [2026-11-14] H-029: Pérdida de Carga Ergun en Puck Screens (150 µm vs 200 µm) y Tolerancia de Headspace
-- **Acción:** Publicación de monografía analítica sobre la física de pantallas de dispersión: cálculo de ΔP (< 0.12 bar en limpio), compromiso de masa térmica (20 g vs 3 g) y reducción de headspace en discos de 1.7 mm frente a 0.2 mm. Integración de vídeo de YouTube, esquema SVG nativo y tabla de matriz en `.tabla-scroll`.
-- **Expectativa:** Capturar consultas con volumen confirmado en DataForSEO ("puck screen espresso", "puck screen para que sirve", "grosor puck screen espresso") y retener lectores mediante la matriz técnica.
+- **Acción:** Publicación de monografía analítica sobre la física de pantallas de dispersión: cálculo de ΔP (< 0.12 bar en limpio), compromiso de masa térmica (20 g vs 3 g) y reducción de headspace en discos de 1.7 mm frente a 0.2 mm.
+- **Expectativa:** Capturar consultas con volumen confirmado en DataForSEO ("puck screen espresso", "puck screen para que sirve", "grosor puck screen espresso").
 - **Falsación:** Cero impresiones en Search Console tras 14 días (2026-11-28).
 - **Estado:** ABIERTA.
 
 ## [2026-11-15] H-030: Agitación Inercial Tridimensional (Blind Shaker) vs Cizalla Axial (WDT) en EY%
-- **Acción:** Publicación de monografía técnica sobre la física de disgregación de grumos electrostáticos de molienda: comparación de fuerzas de van der Waals vs aceleración inercial tridimensional, recubrimiento de finos sobre partículas gruesas e incremento refractométrico de +0.6% a +1.1% en EY%. Incorporación de miniatura 640x336, diagrama SVG vectorial y tabla matriz responsiva `.tabla-matriz-sticky` en `.tabla-scroll` con captura de suscriptores inmediata.
-- **Expectativa:** Capturar la intención de búsqueda de alta intención técnica ("blind shaker vs wdt", "blind shaker espresso sirve", "distribucion cafe blind shaker") y generar primeras conversiones a newsletter mediante valor paramétrico concreto.
+- **Acción:** Publicación de monografía técnica sobre la física de disgregación de grumos electrostáticos de molienda: comparación de fuerzas de van der Waals vs aceleración inercial tridimensional, recubrimiento de finos sobre partículas gruesas e incremento refractométrico de +0.6% a +1.1% en EY%.
+- **Expectativa:** Capturar la intención de búsqueda de alta intención técnica ("blind shaker vs wdt", "blind shaker espresso sirve", "distribucion cafe blind shaker").
 - **Falsación:** Cero impresiones en Google Search Console tras 14 días (2026-11-29).
+- **Estado:** ABIERTA.
+
+## [2026-11-16] H-031: Blindaje Responsivo de Matrices de Datos (.tabla-matriz-sticky) e Isotipo Autónomo SVG
+- **Acción:** Refactorización de `style.css` y `favicon.svg` incorporando degradados de pista táctil para scroll horizontal, anclaje estricto de columna clave en `.tabla-matriz-sticky` y sincronización del isotipo en `currentColor` con compatibilidad `forced-colors: active`.
+- **Expectativa:** Preservar CLS en 0.00 en dispositivos móviles y garantizar legibilidad de matrices métricas en pantallas estrechas sin desbordamiento horizontal.
+- **Falsación:** Registro de CLS > 0.005 o advertencias de usabilidad móvil en 14 días (2026-11-30).
 - **Estado:** ABIERTA.

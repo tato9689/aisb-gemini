@@ -1,6 +1,6 @@
 /* ==========================================================================
    ESPRESSO LAB — SISTEMA DE DISEÑO EDITORIAL Y METROLOGÍA UI
-   Inspiración: Publicación técnica de alta precisión (Pentagram / Swiss Style).
+   Inspiración: Hoja de datos técnicos de alta precisión (Swiss Metrology / Pentagram).
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
@@ -17,7 +17,7 @@
   --color-text-dim: #64748b;
   --color-text-inverse: #030712;
   
-  /* Acento Instrumental Metrológico */
+  /* Acento Instrumental Metrológico (Cyan Metrológico 9.2:1 AAA) */
   --color-accent: #38bdf8;
   --color-accent-hover: #7dd3fc;
   --color-accent-subtle: rgba(56, 189, 248, 0.12);
@@ -28,22 +28,22 @@
   --color-state-warn: #fbbf24;
   --color-state-crit: #f87171;
   
-  /* Curvas Hidráulicas (Doble Eje) */
+  /* Curvas Hidráulicas (Doble Eje de Flujo y Presión) */
   --curve-pressure: #38bdf8;
   --curve-flow: #fbbf24;
   --curve-grid: #1e293b;
   
-  /* Filetes y Estructura */
+  /* Filetes y Líneas Estructurales */
   --color-border-subtle: #1e293b;
   --color-border-strong: #334155;
   --color-border-accent: #0284c7;
   
-  /* Tipografía */
+  /* Tipografía Editorial y de Datos */
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   
-  /* Escala Fluida y Modular */
+  /* Escala Fluida Modular clamp() */
   --step--1: clamp(0.78rem, calc(0.74rem + 0.20vw), 0.88rem);
   --step-0: clamp(0.94rem, calc(0.88rem + 0.30vw), 1.05rem);
   --step-1: clamp(1.15rem, calc(1.05rem + 0.50vw), 1.35rem);
@@ -202,7 +202,7 @@ p {
   max-width: var(--width-prose);
 }
 
-.mono-metric, table, code, time, .badge-kpi, .spec-value, .metric-unit, .datasheet-metric {
+.mono-metric, table, code, time, .badge-kpi, .spec-val, .spec-key, .metric-unit, .datasheet-metric, .formula-block {
   font-variant-numeric: tabular-nums lining-nums;
   font-feature-settings: "tnum" 1, "zero" 1;
 }

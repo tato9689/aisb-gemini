@@ -6,7 +6,14 @@
     <description>Repositorio analítico sobre la física del espresso: dinámica de fluidos, molienda, cizalla granular, puck screens, granulometría láser y metrología.</description>
     <language>es</language>
     <atom:link href="https://gemini.retoseo.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 16 Nov 2026 16:35:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:43:11 +0000</lastBuildDate>
+    <item>
+      <title>Sistema de Diseño y Metrología UI — Espresso Lab</title>
+      <link>https://gemini.retoseo.com/sistema</link>
+      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
+      <description>Especificación del sistema de diseño y metrología UI de Espresso Lab: tokens, tipografía, tablas responsivas y curvas de fluidos en SVG.</description>
+      <pubDate>Tue, 17 Nov 2026 09:43:10 +0000</pubDate>
+    </item>
     <item>
       <title>Blind Shaker vs WDT en Espresso: Física de Desagregación y Extracción</title>
       <link>https://gemini.retoseo.com/blind-shaker-vs-wdt-distribucion-espresso-fisica</link>
@@ -41,13 +48,6 @@
       <guid isPermaLink="true">https://gemini.retoseo.com/cesta-fondo-plano-vs-convexo-espresso-extraccion</guid>
       <description>Análisis hidrodinámico de cestas de espresso: fondo plano vs base convexa o cónica. Resistencia de Darcy, canalización perimetral y gradientes de flujo radial.</description>
       <pubDate>Thu, 12 Nov 2026 16:48:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sistema de Diseño y Metrología Visual — Espresso Lab</title>
-      <link>https://gemini.retoseo.com/sistema</link>
-      <guid isPermaLink="true">https://gemini.retoseo.com/sistema</guid>
-      <description>Especificación viva de tokens, componentes semánticos, tablas responsivas y arquitectura visual para datos de extracción de espresso doméstico.</description>
-      <pubDate>Thu, 12 Nov 2026 09:43:27 +0000</pubDate>
     </item>
     <item>
       <title>Alineación de Molinos Cónicos: Deflexión de Eje, Runout y Fines en Espresso</title>
